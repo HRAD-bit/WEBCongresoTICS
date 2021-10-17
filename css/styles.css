@@ -1,0 +1,118 @@
+/* Set por defecto */
+
+html, body {
+    max-width: 100% !important;
+    overflow: hidden !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img, svg {
+    vertical-align: middle;
+}
+
+/* SECCION HEADER */
+
+#header {
+    z-index: 997;
+    transition: all 0.5s;
+    padding: 6px 0;
+    background: #1b1b1b;
+}
+
+#header .logo, img {
+    margin-left: 25px;
+    max-width: 10%;
+    min-width: 150px;
+    height: auto;
+}
+
+/* MENU (SOLO LA PATE DE LOS BOTONES, LINKS Y DEMÁS) */
+
+/* Contenedores */
+
+.contenedor-menu {
+    display: flex !important;
+    align-items: center !important;
+    align-content: center;
+    justify-content: center !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+.menu {
+    padding: 0;
+    position: relative;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 25px;
+}
+
+/* Lista e items */
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    font-size: 18px;
+    color: #fafafa;
+    white-space: nowrap;
+    transition: 0.3s;
+    /* text-transform: uppercase; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.menu a:hover {
+    color: #8f88c9;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #0d6cfd;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+/* Boton de descarga */
+
+.btn-descargar {
+    text-decoration: none;
+    background: #E75D00;
+    border-radius: 30px;
+    margin-left: 25px;
+}
+
+#navbar ul li .btn-descargar:hover {
+    background: #d4702d;
+    color: #ffffff;
+}
