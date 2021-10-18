@@ -3,6 +3,7 @@
 html, body {
     max-width: 100% !important;
     overflow: hidden !important;
+    font-family: 'Montserrat', sans-serif;
 }
 
 * {
@@ -111,8 +112,118 @@ img, svg {
     border-radius: 30px;
     margin-left: 25px;
 }
-
+    /* Boton: Cambio de color */
 #navbar ul li .btn-descargar:hover {
     background: #d4702d;
     color: #ffffff;
 }
+
+
+/* SECCION DE PORTADA */
+
+#portada {
+    margin: 0.5rem, 0.7rem;
+    /* background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url(../img/banner-1.png); */
+    background-image: url(../img/banner-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-position-y: 0%;
+    background-size: cover;
+}
+
+
+/* Contenedor e interiores */
+
+.contenedor-portada {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 500px;
+    width: auto;
+
+}
+    /* Imagen logo Itics */
+
+.img-portada {
+    width: 200px;
+    height: auto;
+    display: block;
+    align-items: center;
+    align-content: center;
+
+}
+    /* Imagen: Tamaños */
+.img-portada img {
+    margin: 0;
+    max-width: 100%;
+    min-width: 150px;
+    height: auto;
+    transition: 1.2s;
+}
+    /* Imagen: Animación */
+.img-portada a img:hover {
+    min-width: 215px;
+    transition: 0.1s;
+    opacity: 0.96;
+}
+
+    /* Contenedor de información portada */
+.info-portada {
+    width: 720px;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+
+}
+
+    /* Info Portada: Titulos y link */
+.info-portada h2, h3, a {
+    padding: 15px 0;
+}
+
+    /* Info Portada: Primer titulo */
+.info-portada h2 {
+    font-weight: 700;
+    font-size: 46px;
+    text-transform: uppercase;
+}
+
+    /* Info Portada: Segundo titulo */
+.info-portada h3 {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 15px 5rem;
+}
+
+    /* Info Portada: Link boton */
+.info-portada a{
+    text-decoration: none;
+    background: #E75D00;
+    border-radius: 9px;
+    /* width: 200px; */
+    padding: 20px;
+    margin-top: 13px;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.info-portada a:hover {
+    background: #d4702d;
+    color: #ffffff;
+}
+
+
+
+
+
+
