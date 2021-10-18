@@ -2,7 +2,7 @@
 
 html, body {
     max-width: 100% !important;
-    overflow: hidden !important;
+    overflow: auto !important;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -39,7 +39,7 @@ img, svg {
     display: flex !important;
     align-items: center !important;
     align-content: center;
-    justify-content: center !important;
+    justify-content: space-between !important;
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
@@ -225,11 +225,40 @@ img, svg {
 
 /* -------------------- INICIO --Seccion de taller----------- */
 
+                    /* Botones por semestre */
+.btn-se{
+    /* background-color: #F0F6FA; */
+    margin: 20px auto;
+}
+.contenedor-btn-semestres{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 20px 10px;
+}
+.btn-semestre{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #EB8005;
+    border-radius: 8px;
+    border: 1px solid #EB8005;
+}
+.btn-semestre:hover{
+background-color: #3D3A6C ;
+border: #3D3A6C;
+}
+
                     /* Barra superios */
 
 /*contenedor  general de talleres*/
 .contenedor-taller{
-    background-color: #F0F6FA;
+    /* background-color: #F0F6FA; */
     
 }
 /* barra superior */
@@ -240,7 +269,7 @@ img, svg {
     flex-direction: row;
     align-items: center;
     padding: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 /* contenedor de logo & div de mes  */
 .conjunto-logoymes{
@@ -278,16 +307,20 @@ img, svg {
 }
 
                     /* Personas que dan los talleres  */
+/* contenedor general de los talleristas */
 .contenedor-personas-taller{
+    padding: 40px 0px;
     background-color: #F0F6FA;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
 }
+
+/* configuracion de imagenes */
 .persona-img-nombre{
-border: 1px solid red;
+/* border: 1px solid red; */
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
@@ -295,40 +328,59 @@ justify-content: space-around;
 align-items: center;
 align-content: center;
 }
+/* ancho de la imagen */
 .persona-img{
-    border: 1px solid black;
-    width: 300px;
+    /* border: 1px solid black; */
+    width: 150px;
 }
+/* control del tamaño de la imagen */
 .persona-img img{
-    min-width: 300px;
+    min-width: 180px;
+    margin: 0px;
 }
+/* control del nombre y de donde es la persona  */
 .persona-nombre {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 200px;
     text-align: center;
 }
+/* contenedor del nombre del taller y fechas mas hora  */
 .nombre-fecha{
-    border: 1px solid green;
-    padding: 10px;
+    /* border: 1px solid green; */
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
 }
+/* tamaño del tema  */
+.tema h2{
+    /* background-color: yellow; */
+    font-size: 18px;
+}
+/* configuracion del div de la hora  */
 .hora{
     border: 1px solid cornflowerblue;
-    margin: 10px;
+    margin: 7px;
     padding: 5px;
     text-align: center;
     background-color: #3D3A6C;
     color: white;
     border-radius: 5px;
-    width:300px;
+    width:180px;
 }
+/* tamaño de la letra  */
 .hora p{
-    font-size: 1.2em;
+    font-size: 1em;
+    margin: auto;
 }
-.dos{
+/* .dos{
     margin-left: 50px;
 }
 .tres{
     margin-left: 100px;
-}
+} */
 
 
