@@ -314,7 +314,7 @@ border: #3D3A6C;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     align-items: center;
 }
 
