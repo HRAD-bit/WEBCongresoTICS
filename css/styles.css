@@ -2,7 +2,7 @@
 
 html, body {
     max-width: 100% !important;
-    overflow: auto !important;
+    overflow: hidden !important;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -223,7 +223,112 @@ img, svg {
 }
 
 
+/* -------------------- INICIO --Seccion de taller----------- */
 
+                    /* Barra superios */
 
+/*contenedor  general de talleres*/
+.contenedor-taller{
+    background-color: #F0F6FA;
+    
+}
+/* barra superior */
+.barra-superior-taller{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+/* contenedor de logo & div de mes  */
+.conjunto-logoymes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* logo  */
+.div-logo{
+    width: 200px;
+}
+/* div que contiene "NOVIEMBRE"  */
+.taller-mes-barra{
+    background-color: #EB8005;
+    color: white;
+    padding: 3px 50px;
+    border-radius: 5px;
+}
+/* Tamaño de la letra del mes */
+.taller-mes-barra h2{
+    font-size: 1.7em;
+}
+/* Logo de tics  */
+.logo-tics-lateral{
+    width: 300px;
+    height: 100%;
+    margin-left: 30px;
+}
+/* imagen del logo de tics  */
+.logo-tics-lateral a img{
+    min-width:230px ;
+    /* height: 100%; */
+}
+
+                    /* Personas que dan los talleres  */
+.contenedor-personas-taller{
+    background-color: #F0F6FA;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.persona-img-nombre{
+border: 1px solid red;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+align-content: center;
+}
+.persona-img{
+    border: 1px solid black;
+    width: 300px;
+}
+.persona-img img{
+    min-width: 300px;
+}
+.persona-nombre {
+    border: 1px solid black;
+    width: 200px;
+    text-align: center;
+}
+.nombre-fecha{
+    border: 1px solid green;
+    padding: 10px;
+}
+.hora{
+    border: 1px solid cornflowerblue;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    background-color: #3D3A6C;
+    color: white;
+    border-radius: 5px;
+    width:300px;
+}
+.hora p{
+    font-size: 1.2em;
+}
+.dos{
+    margin-left: 50px;
+}
+.tres{
+    margin-left: 100px;
+}
 
 
