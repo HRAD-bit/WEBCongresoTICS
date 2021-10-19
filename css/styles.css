@@ -258,7 +258,7 @@ border: #3D3A6C;
 
 /*contenedor  general de talleres*/
 .contenedor-taller{
-    /* background-color: #F0F6FA; */
+    background-color: #F0F6FA;
     
 }
 /* barra superior */
@@ -383,4 +383,13 @@ align-content: center;
     margin-left: 100px;
 } */
 
+#TSem3{
+    background-color: #fa7d0898;
+}
+#TSem5{
+    background-color: #2ed0db8e;
+}
+#TSem7{
+    background-color: #ffe6009f;
+}
 
