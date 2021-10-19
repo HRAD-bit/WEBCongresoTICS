@@ -112,12 +112,13 @@ img, svg {
     border-radius: 30px;
     margin-left: 25px;
 }
-    /* Boton: Cambio de color */
+
+/* Boton: Cambio de color */
+
 #navbar ul li .btn-descargar:hover {
     background: #d4702d;
     color: #ffffff;
 }
-
 
 /* SECCION DE PORTADA */
 
@@ -132,7 +133,6 @@ img, svg {
     background-size: cover;
 }
 
-
 /* Contenedor e interiores */
 
 .contenedor-portada {
@@ -144,9 +144,9 @@ img, svg {
     flex-wrap: nowrap;
     height: 500px;
     width: auto;
-
 }
-    /* Imagen logo Itics */
+
+/* Imagen logo Itics */
 
 .img-portada {
     width: 200px;
@@ -154,9 +154,10 @@ img, svg {
     display: block;
     align-items: center;
     align-content: center;
-
 }
-    /* Imagen: Tamaños */
+
+/* Imagen: Tamaños */
+
 .img-portada img {
     margin: 0;
     max-width: 100%;
@@ -164,48 +165,54 @@ img, svg {
     height: auto;
     transition: 1.2s;
 }
-    /* Imagen: Animación */
+
+/* Imagen: Animación */
+
 .img-portada a img:hover {
     min-width: 215px;
     transition: 0.1s;
     opacity: 0.96;
 }
 
-    /* Contenedor de información portada */
+/* Contenedor de información portada */
+
 .info-portada {
     width: 720px;
     height: auto;
     text-align: center;
     color: #fff;
-    display:flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
-
 }
 
-    /* Info Portada: Titulos y link */
+/* Info Portada: Titulos y link */
+
 .info-portada h2, h3, a {
     padding: 15px 0;
 }
 
-    /* Info Portada: Primer titulo */
+/* Info Portada: Primer titulo */
+
 .info-portada h2 {
     font-weight: 700;
     font-size: 46px;
     text-transform: uppercase;
 }
 
-    /* Info Portada: Segundo titulo */
+/* Info Portada: Segundo titulo */
+
 .info-portada h3 {
     font-weight: 500;
     font-size: 18px;
     padding: 15px 5rem;
 }
 
-    /* Info Portada: Link boton */
-.info-portada a{
+/* Info Portada: Link boton */
+
+.info-portada a {
     text-decoration: none;
     background: #E75D00;
     border-radius: 9px;
@@ -216,24 +223,25 @@ img, svg {
     font-family: 'Ubuntu', sans-serif;
 }
 
-
 .info-portada a:hover {
     background: #d4702d;
     color: #ffffff;
 }
 
-
 /* -------------------- INICIO --Seccion de taller----------- */
 
-                    /* Botones por semestre */
-.btn-se{
+/* Botones por semestre */
+
+.btn-se {
     /* background-color: #F0F6FA; */
     margin: 20px auto;
 }
-.OculT{
+
+.OculT {
     background-color: #F0F6FA;
 }
-.contenedor-btn-semestres{
+
+.contenedor-btn-semestres {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -242,7 +250,8 @@ img, svg {
     align-content: center;
     padding: 20px 10px;
 }
-.btn-semestre{
+
+.btn-semestre {
     text-decoration: none;
     padding: 10px;
     font-weight: 600;
@@ -251,149 +260,160 @@ img, svg {
     background-color: #EB8005;
     border-radius: 8px;
     border: 1px solid #EB8005;
-}
-.btn-semestre:hover{
-background-color: #3D3A6C ;
-border: #3D3A6C;
+    transition: 0.5s;
 }
 
-                    /* Barra superios */
+.btn-semestre:hover {
+    background-color: #3D3A6C;
+    /* border: #3D3A6C; */
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* Barra superios */
 
 /*contenedor  general de talleres*/
-.contenedor-taller{
+
     background-color: #F0F6FA;
-    
-}
-/* barra superior */
-.barra-superior-taller{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-    /* border: 1px solid black; */
-}
-/* contenedor de logo & div de mes  */
-.conjunto-logoymes{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-/* logo  */
-.div-logo{
-    width: 200px;
-}
-/* div que contiene "NOVIEMBRE"  */
-.taller-mes-barra{
-    background-color: #EB8005;
-    color: white;
-    padding: 3px 50px;
-    border-radius: 5px;
-}
-/* Tamaño de la letra del mes */
-.taller-mes-barra h2{
-    font-size: 1.7em;
-}
-/* Logo de tics  */
-.logo-tics-lateral{
-    width: 300px;
-    height: 100%;
-    margin-left: 30px;
-}
-/* imagen del logo de tics  */
-.logo-tics-lateral a img{
-    min-width:230px ;
-    /* height: 100%; */
-}
-
-                    /* Personas que dan los talleres  */
-/* contenedor general de los talleristas */
-.contenedor-personas-taller{
-    padding: 5px 0px;
-    background-color: #F0F6FA;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    transition: all 500ms ease;
-}
-
-/* configuracion de imagenes */
-.persona-img-nombre{
-/* border: 1px solid red; */
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-around;
-align-items: center;
-align-content: center;
-}
-/* ancho de la imagen */
-.persona-img{
-    /* border: 1px solid black; */
-    width: 300px;
-    margin: 15px;
-}
-/* control del tamaño de la imagen */
-.persona-img img{
-    min-width: 300px;
-    margin: 5px;
-}
-/* control del nombre y de donde es la persona  */
-.persona-nombre {
-    /* border: 1px solid black; */
-    width: 300px;
-    text-align: center;
-    margin: 15px;
-}
-/* contenedor del nombre del taller y fechas mas hora  */
-.nombre-fecha{
-    /* border: 1px solid green; */
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-}
-/* tamaño del tema  */
-.tema h2{
-    /* background-color: yellow; */
-    font-size: 18px;
-    padding: 5px;
-}
-/* configuracion del div de la hora  */
-.hora{
-    border: 1px solid cornflowerblue;
-    margin: 7px;
-    padding: 5px;
-    text-align: center;
-    background-color: #3D3A6C;
-    color: white;
-    border-radius: 5px;
-    width:180px;
-}
-.huno{
-    margin-left: -50px;
-}
-.hdos{
-    margin-left: 30px;
-}
-.htres{
-    margin-left: 120px;
-}
-/* tamaño de la letra  */
-.hora p{
-    font-size: 1em;
-    margin: auto;
-}
-
-/* #TSem3{
+    =======.contenedor-taller {
+        /* background-color: #F0F6FA; */
+        >>>>>>>5ec6587 (Algunos cambios necesarios para empezar con la funcion de los botones)
+    }
+    /* barra superior */
+    .barra-superior-taller {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        /* border: 1px solid black; */
+    }
+    /* contenedor de logo & div de mes  */
+    .conjunto-logoymes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    /* logo  */
+    .div-logo {
+        width: 200px;
+    }
+    /* div que contiene "NOVIEMBRE"  */
+    .taller-mes-barra {
+        background-color: #EB8005;
+        color: white;
+        padding: 3px 50px;
+        border-radius: 5px;
+    }
+    /* Tamaño de la letra del mes */
+    .taller-mes-barra h2 {
+        font-size: 1.7em;
+    }
+    /* Logo de tics  */
+    .logo-tics-lateral {
+        width: 300px;
+        height: 100%;
+        margin-left: 30px;
+    }
+    /* imagen del logo de tics  */
+    .logo-tics-lateral a img {
+        min-width: 230px;
+        /* height: 100%; */
+    }
+    /* Personas que dan los talleres  */
+    /* contenedor general de los talleristas */
+    <<<<<<< HEAD .contenedor-personas-taller {
+        padding: 5px 0px;
+        =======.contenedor-personas-taller {
+            padding: 40px 0px;
+            >>>>>>>5ec6587 (Algunos cambios necesarios para empezar con la funcion de los botones) background-color: #F0F6FA;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            transition: all 500ms ease;
+        }
+        /* configuracion de imagenes */
+        .persona-img-nombre {
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+        }
+        /* ancho de la imagen */
+        .persona-img {
+            /* border: 1px solid black; */
+            width: 300px;
+            margin: 15px;
+        }
+        /* control del tamaño de la imagen */
+        <<<<<<< HEAD .persona-img img {
+            min-width: 300px;
+            margin: 5px;
+            =======.persona-img img {
+                min-width: 180px;
+                margin: 0px;
+                >>>>>>>5ec6587 (Algunos cambios necesarios para empezar con la funcion de los botones)
+            }
+            /* control del nombre y de donde es la persona  */
+            .persona-nombre {
+                /* border: 1px solid black; */
+                width: 300px;
+                text-align: center;
+                margin: 15px;
+            }
+            /* contenedor del nombre del taller y fechas mas hora  */
+            .nombre-fecha {
+                /* border: 1px solid green; */
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+                text-align: center;
+                align-content: center;
+                align-items: center;
+            }
+            /* tamaño del tema  */
+            .tema h2 {
+                /* background-color: yellow; */
+                font-size: 18px;
+                padding: 5px;
+            }
+            /* configuracion del div de la hora  */
+            .hora {
+                border: 1px solid cornflowerblue;
+                margin: 7px;
+                padding: 5px;
+                text-align: center;
+                background-color: #3D3A6C;
+                color: white;
+                border-radius: 5px;
+                width: 180px;
+            }
+            <<<<<<< HEAD .huno {
+                margin-left: -50px;
+            }
+            .hdos {
+                margin-left: 30px;
+            }
+            .htres {
+                margin-left: 120px;
+            }
+            =======>>>>>>>5ec6587 (Algunos cambios necesarios para empezar con la funcion de los botones)
+            /* tamaño de la letra  */
+            .hora p {
+                font-size: 1em;
+                margin: auto;
+            }
+            <<<<<<< HEAD
+            /* #TSem3{
     background-color: #fa7d0898;
 }
 #TSem5{
@@ -402,10 +422,9 @@ align-content: center;
 #TSem7{
     background-color: #ffe6009f;
 } */
-
-/* ventana modal  */
-
-/* .modal{
+            <<<<<<< HEAD
+            /* ventana modal  */
+            /* .modal{
     width: 100%;
     height: 100%;
     display: flex;
@@ -439,76 +458,80 @@ align-content: center;
     color: #fff;
 }
 */
-.persona-nombre label{
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 300ms ease;
-}
-/* #btn-modal{
+            .persona-nombre label {
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all 300ms ease;
+            }
+            /* #btn-modal{
     display: none;
 } */
-.container-modal{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;left: 0;
-    background-color: rgba(144, 0, 0, 0.5);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-
-}
-#btn-modal:checked ~ .container-modal{
-    display: flex;
-}
-.content-modal{
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 4px;
-}
-.content-modal p{
-    padding: 15px 0px;
-    border-top: 1px solid #dbdbdb;
-    border-bottom:1px solid #dbdbdb ;
-}
-.content-modal .btn-cerrar{
-    width: 100%;
-    margin-top: 15px;
-    display: flex;
-    justify-content: flex-end;
-}
-.content-modal .btn-cerrar label{
-    padding: 7px 10px;
-    background-color: #5488a3;
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 300ms ease;
-}
-.content-modal .btn-cerrar label:hover{
-    background-color: #185E83;
-
-}
-/* Footer copyright */
-.contenedor_copyright {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #3D3A6C;
-    color: #fff;
-  }
-  .copyright {
-    font-size: 15px;
-    padding: 25px 0;
-    font-family: "Roboto", sans-serif;
-  }
-  .text-center {
-    text-align: center !important;
-  }
-  .link-copyright {
-    text-decoration: none;
-    color: #fff;
-  }
+            .container-modal {
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: rgba(144, 0, 0, 0.5);
+                display: none;
+                justify-content: center;
+                align-items: center;
+                z-index: 100;
+            }
+            #btn-modal:checked~.container-modal {
+                display: flex;
+            }
+            .content-modal {
+                width: 100%;
+                max-width: 400px;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 4px;
+            }
+            .content-modal p {
+                padding: 15px 0px;
+                border-top: 1px solid #dbdbdb;
+                border-bottom: 1px solid #dbdbdb;
+            }
+            .content-modal .btn-cerrar {
+                width: 100%;
+                margin-top: 15px;
+                display: flex;
+                justify-content: flex-end;
+            }
+            .content-modal .btn-cerrar label {
+                padding: 7px 10px;
+                background-color: #5488a3;
+                color: #fff;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: all 300ms ease;
+            }
+            .content-modal .btn-cerrar label:hover {
+                background-color: #185E83;
+            }
+            /* Footer copyright */
+            .contenedor_copyright {
+                width: 100%;
+                margin-right: auto;
+                margin-left: auto;
+                background-color: #3D3A6C;
+                color: #fff;
+            }
+            .copyright {
+                font-size: 15px;
+                padding: 25px 0;
+                font-family: "Roboto", sans-serif;
+            }
+            .text-center {
+                text-align: center !important;
+            }
+            .link-copyright {
+                text-decoration: none;
+                color: #fff;
+            }
+            =======/* Ocultar los talleristas */
+            #talleristas-primer, #talleristas-tercer, #talleristas-quinto {
+                display: none;
+            }
+            >>>>>>>5ec6587 (Algunos cambios necesarios para empezar con la funcion de los botones)
