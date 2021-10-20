@@ -230,6 +230,9 @@ img, svg {
     /* background-color: #F0F6FA; */
     margin: 20px auto;
 }
+.OculT{
+    background-color: #F0F6FA;
+}
 .contenedor-btn-semestres{
     display: flex;
     flex-direction: row;
@@ -309,13 +312,14 @@ border: #3D3A6C;
                     /* Personas que dan los talleres  */
 /* contenedor general de los talleristas */
 .contenedor-personas-taller{
-    padding: 40px 0px;
+    padding: 5px 0px;
     background-color: #F0F6FA;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    transition: all 500ms ease;
 }
 
 /* configuracion de imagenes */
@@ -331,23 +335,25 @@ align-content: center;
 /* ancho de la imagen */
 .persona-img{
     /* border: 1px solid black; */
-    width: 150px;
+    width: 300px;
+    margin: 15px;
 }
 /* control del tamaño de la imagen */
 .persona-img img{
-    min-width: 180px;
-    margin: 0px;
+    min-width: 300px;
+    margin: 5px;
 }
 /* control del nombre y de donde es la persona  */
 .persona-nombre {
     /* border: 1px solid black; */
-    width: 200px;
+    width: 300px;
     text-align: center;
+    margin: 15px;
 }
 /* contenedor del nombre del taller y fechas mas hora  */
 .nombre-fecha{
     /* border: 1px solid green; */
-    /* padding: 10px; */
+    padding: 10px;
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -359,6 +365,7 @@ align-content: center;
 .tema h2{
     /* background-color: yellow; */
     font-size: 18px;
+    padding: 5px;
 }
 /* configuracion del div de la hora  */
 .hora{
@@ -371,19 +378,22 @@ align-content: center;
     border-radius: 5px;
     width:180px;
 }
+.huno{
+    margin-left: -50px;
+}
+.hdos{
+    margin-left: 30px;
+}
+.htres{
+    margin-left: 120px;
+}
 /* tamaño de la letra  */
 .hora p{
     font-size: 1em;
     margin: auto;
 }
-/* .dos{
-    margin-left: 50px;
-}
-.tres{
-    margin-left: 100px;
-} */
 
-#TSem3{
+/* #TSem3{
     background-color: #fa7d0898;
 }
 #TSem5{
@@ -391,5 +401,94 @@ align-content: center;
 }
 #TSem7{
     background-color: #ffe6009f;
-}
+} */
 
+/* ventana modal  */
+
+/* .modal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#chec-p-1:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor-modal{
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    background-color: rosybrown;
+    box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
+    transition: all 500ms ease;
+}
+.contenedor-modal header{
+    padding: 10px;
+    background-color: royalblue;
+    color: #fff;
+}
+*/
+.persona-nombre label{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+/* #btn-modal{
+    display: none;
+} */
+.container-modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;left: 0;
+    background-color: rgba(144, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+}
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+.content-modal{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.content-modal p{
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom:1px solid #dbdbdb ;
+}
+.content-modal .btn-cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal .btn-cerrar label{
+    padding: 7px 10px;
+    background-color: #5488a3;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.content-modal .btn-cerrar label:hover{
+    background-color: #185E83;
+
+}

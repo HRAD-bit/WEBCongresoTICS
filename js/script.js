@@ -21,6 +21,9 @@ function mostrarS1() {
         document.getElementById('TSem5').style.display = "none";
         document.getElementById('TSem7').style.display = "none";
         cont1 = 1;
+        cont2 = 0;
+        cont3 = 0;
+        cont4 = 0;
     } else {
         document.getElementById('TSem1').style.display = "none";
         cont1 = 0;
@@ -34,6 +37,9 @@ function mostrarS3() {
         document.getElementById('TSem5').style.display = "none";
         document.getElementById('TSem7').style.display = "none";
         cont2 = 1;
+        cont1 = 0;
+        cont3 = 0;
+        cont4 = 0;
     } else {
         document.getElementById('TSem3').style.display = "none";
         cont2 = 0;
@@ -46,9 +52,13 @@ function mostrarS5() {
         document.getElementById('TSem1').style.display = "none";
         document.getElementById('TSem7').style.display = "none";
         cont3 = 1;
+        cont1 = 0;
+        cont2 = 0;
+        cont4 = 0;
     } else {
         document.getElementById('TSem5').style.display = "none";
         cont3 = 0;
+
     }
 
 }
@@ -59,6 +69,9 @@ function mostrarS7() {
         document.getElementById('TSem1').style.display = "none";
         document.getElementById('TSem5').style.display = "none";
         cont4 = 1;
+        cont1 = 0;
+        cont3 = 0;
+        cont2 = 0;
     } else {
         document.getElementById('TSem7').style.display = "none";
         cont4 = 0;
