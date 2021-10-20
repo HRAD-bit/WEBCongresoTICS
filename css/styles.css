@@ -230,6 +230,15 @@ img, svg {
 
 /* -------------------- INICIO --Seccion de taller----------- */
 
+/* Titulo de talleres */
+.titulo-btn {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #3D3A6C;
+
+}
+
+
 /* Botones por semestre */
 
 .btn-se {
@@ -237,6 +246,8 @@ img, svg {
     margin: 20px auto;
     margin-bottom: 0;
     border-bottom: 2.5px solid #3D3A6C;
+    background: #fefefe;
+
 }
 
 .OculT {
@@ -539,3 +550,27 @@ img, svg {
                 display: none;
             }
             >>>>>>>5ec6587 (Algunos cambios necesarios para empezar con la funcion de los botones)
+    transition: 1s;
+}
+
+/* Footer copyright */
+.contenedor_copyright {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #3D3A6C;
+    color: #fff;
+  }
+  .copyright {
+    font-size: 15px;
+    padding: 25px 0;
+    font-family: "Roboto", sans-serif;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+  .link-copyright {
+    text-decoration: none;
+    color: #fff;
+  }
+

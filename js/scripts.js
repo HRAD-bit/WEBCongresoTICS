@@ -14,6 +14,10 @@ btnSemestre5.addEventListener("click", () => {
   seleccion = 5;
   seleccionar();
 });
+btnSemestre7.addEventListener("click", () => {
+  seleccion = 7 ;
+  seleccionar();
+})
 
 function seleccionar() {
   switch (seleccion) {
@@ -32,6 +36,10 @@ function seleccionar() {
 
     case 5:
       btn5ON();
+      break;
+
+    case 7:
+      btn7ON();
       break;
     default:
       predeterminado();
@@ -75,12 +83,15 @@ function btn1ON() {
   document.getElementById("btnSemestre1").style.borderColor = "#F1F6FA";
   document.getElementById("talleristas-primer").style.display = "flex";
   document.getElementById("btn-se").style.borderBottomColor = "#F1F6FA";
+  document.getElementById("talleristas-primer").style.transition = "2s";
   //   btn3
   document.getElementById("btnSemestre3").style.backgroundColor = "#fff";
   document.getElementById("btnSemestre3").style.color = "#858585";
   document.getElementById("btnSemestre3").style.borderColor = "#fff";
-  document.getElementById("talleristas-tercer").style.display = "none";
-  document.getElementById("btn-se").style.borderBottomColor = "#3D3A6C";
+  // document.getElementById("talleristas-tercer").style.display = "none";
+  // document.getElementById("btn-se").style.borderBottomColor = "#3D3A6C";
+  document.getElementById("talleristas-tercer").style.display = "flex";
+  document.getElementById("btn-se").style.borderBottomColor = "#F1F6FA";
 
   //    Btn5
   document.getElementById("btnSemestre5").style.backgroundColor = "#fff";
@@ -90,11 +101,11 @@ function btn1ON() {
   document.getElementById("btn-se").style.borderBottomColor = "#3D3A6C";
 
   //   //  Btn7
-  //   document.getElementById("btnSemestre7").style.backgroundColor = "#fff";
-  //   document.getElementById("btnSemestre7").style.color = "#858585";
-  //   document.getElementById("btnSemestre7").style.borderColor = "#fff";
-  //   document.getElementById("talleristas-septimo").style.display = "none";
-  //   document.getElementById("btn-se").style.borderBottomColor = "#3D3A6C";
+    document.getElementById("btnSemestre7").style.backgroundColor = "#fff";
+    document.getElementById("btnSemestre7").style.color = "#858585";
+    document.getElementById("btnSemestre7").style.borderColor = "#fff";
+    document.getElementById("talleristas-septimo").style.display = "none";
+    document.getElementById("btn-se").style.borderBottomColor = "#3D3A6C";
 }
 
 function btn3ON() {
@@ -148,9 +159,42 @@ function btn5ON() {
   document.getElementById("btn-se").style.borderBottomColor = "#3D3A6C";
 
   //   //  Btn7
-  //   document.getElementById("btnSemestre7").style.backgroundColor = "#fff";
-  //   document.getElementById("btnSemestre7").style.color = "#858585";
-  //   document.getElementById("btnSemestre7").style.borderColor = "#fff";
-  //   document.getElementById("talleristas-septimo").style.display = "none";
-  //   document.getElementById("btn-se").style.borderBottomColor = "#3D3A6C";
+    document.getElementById("btnSemestre7").style.backgroundColor = "#fff";
+    document.getElementById("btnSemestre7").style.color = "#858585";
+    document.getElementById("btnSemestre7").style.borderColor = "#fff";
+    document.getElementById("talleristas-septimo").style.display = "none";
+    document.getElementById("btn-se").style.borderBottomColor = "#3D3A6C";
+}
+
+
+function btn7ON() {
+  // Btn1 ON
+  document.getElementById("btnSemestre7").style.backgroundColor = "#F1F6FA";
+  document.getElementById("btnSemestre7").style.color = "#222222";
+  document.getElementById("btnSemestre7").style.borderColor = "#F1F6FA";
+  document.getElementById("talleristas-primer").style.display = "flex";
+  document.getElementById("btn-se").style.borderBottomColor = "#F1F6FA";
+  document.getElementById("talleristas-primer").style.transition = "2s";
+  //   btn3
+  document.getElementById("btnSemestre3").style.backgroundColor = "#fff";
+  document.getElementById("btnSemestre3").style.color = "#858585";
+  document.getElementById("btnSemestre3").style.borderColor = "#fff";
+  // document.getElementById("talleristas-tercer").style.display = "none";
+  // document.getElementById("btn-se").style.borderBottomColor = "#3D3A6C";
+  document.getElementById("talleristas-tercer").style.display = "flex";
+  document.getElementById("btn-se").style.borderBottomColor = "#F1F6FA";
+
+  //    Btn5
+  document.getElementById("btnSemestre5").style.backgroundColor = "#fff";
+  document.getElementById("btnSemestre5").style.color = "#858585";
+  document.getElementById("btnSemestre5").style.borderColor = "#fff";
+  document.getElementById("talleristas-quinto").style.display = "none";
+  document.getElementById("btn-se").style.borderBottomColor = "#3D3A6C";
+
+  //   //  Btn7
+    document.getElementById("btnSemestre1").style.backgroundColor = "#fff";
+    document.getElementById("btnSemestre1").style.color = "#858585";
+    document.getElementById("btnSemestre1").style.borderColor = "#fff";
+    document.getElementById("talleristas-septimo").style.display = "none";
+    document.getElementById("btn-se").style.borderBottomColor = "#3D3A6C";
 }
