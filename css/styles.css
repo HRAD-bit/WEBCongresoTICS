@@ -240,7 +240,7 @@ img, svg {
 
 /* Botones por semestre */
 
-.btn-se {
+.OculTSection {
     /* background-color: #F0F6FA; */
     margin: 20px auto;
     margin-bottom: 0;
@@ -248,9 +248,9 @@ img, svg {
     background: #fefefe;
 }
 
-.OculT {
+/* .OculT {
     background-color: #F0F6FA;
-}
+} */
 
 .contenedor-btn-semestres {
     display: flex;
@@ -355,12 +355,12 @@ img, svg {
 
 .contenedor-personas-taller {
     padding: 40px 0px;
+    background-color: #F0F6FA;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    transition: all 500ms ease;
 }
 
 /* configuracion de imagenes */
@@ -379,8 +379,7 @@ img, svg {
 
 .persona-img {
     /* border: 1px solid black; */
-    width: 300px;
-    margin: 15px;
+    width: 150px;
 }
 
 /* control del tamaño de la imagen */
@@ -394,16 +393,15 @@ img, svg {
 
 .persona-nombre {
     /* border: 1px solid black; */
-    width: 300px;
+    width: 200px;
     text-align: center;
-    margin: 15px;
 }
 
 /* contenedor del nombre del taller y fechas mas hora  */
 
 .nombre-fecha {
     /* border: 1px solid green; */
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -417,7 +415,6 @@ img, svg {
 .tema h2 {
     /* background-color: yellow; */
     font-size: 18px;
-    padding: 5px;
 }
 
 /* configuracion del div de la hora  */
@@ -431,18 +428,6 @@ img, svg {
     color: white;
     border-radius: 5px;
     width: 180px;
-}
-
-HEAD .huno {
-    margin-left: -50px;
-}
-
-.hdos {
-    margin-left: 30px;
-}
-
-.htres {
-    margin-left: 120px;
 }
 
 /* tamaño de la letra  */
@@ -573,12 +558,6 @@ HEAD .huno {
 .link-copyright {
     text-decoration: none;
     color: #fff;
-}
-
-/* Ocultar los talleristas */
-
-#talleristas-primer, #talleristas-tercer, #talleristas-quinto {
-    display: none;
 }
 
 /* Footer copyright */
