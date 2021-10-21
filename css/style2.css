@@ -68,3 +68,214 @@ display: flex;
     background-color: #185E83;
 
 }
+
+/* -------------------Targetas------------ */
+/* section  INICIO */
+.section-talleres{
+    background-color: #F0F6FA;
+}
+/* contendor de targetas INICIO */
+.contenedor-talleres{
+ display: flex;
+ flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+align-content: center;
+padding: 20px 10px;
+}
+/* Tarjeta INICIO */
+/* Contenedor  */
+.contenedor-targeta{
+    padding: 20px;
+    margin: 5px 5px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #707070;
+    border-radius: 100px 0px 100px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    max-width: 570px;
+}
+/* Seccion de información de la persona   INICIO*/
+.contendor-persona{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+/* div del tipo de taller  */
+.tipo-taller{
+    border-radius: 50px 0px 50px 0px;
+    background-color: #EC8603;
+    width: 180px;
+    height: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tipo-taller p{
+    font-family: 'Montserrat', sans-serif;
+}
+/* imagen de la persona  */
+.img-persona{
+    max-width: 160px;
+}
+/* nombre de la persona  */
+.div-nombre{
+max-width: 200px;
+display: flex;
+
+}
+.div-nombre label{
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+
+}
+/* lugar de donde viene  */
+.lugar-persona{
+    max-height: 30px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.lugar-persona p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+/* Seccion de la información de la persona FIN  */
+
+/* Seccion de información del evento INICIO */
+/* contenedor  */
+.contenedor-informacion{
+    /* background-color: lawngreen; */
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 240px;
+
+}
+/* Seccion de grupos % LIVE */
+.grupos-live{
+    /* background-color: lightsalmon; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.grupos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.cont-img-grupos{
+    padding: 7px;
+    margin: 0px 5px;
+    background-color: #EB2121;
+    border-radius: 50%;
+}
+.cont-img-grupos img{
+    max-width: 20px;
+}
+.grupos-asignados{
+    text-align: center;
+    margin-left: 5px;
+    padding: 5px;
+}
+.grupos-asignados p{
+    text-align: center;
+    margin: 4px 0px;
+    font-family: 'Montserrat', sans-serif;
+    color:#EB2121;
+    font-size: 12px;
+}
+.live{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+align-content: center;
+}
+.live img{
+    max-width: 32px;
+    max-height: 32px;
+    margin-right: 5px;
+}
+.cont-live{
+background-color: #EB2121;
+border-radius: 5px;
+}
+.cont-live p{
+color: #fff;
+font-family: 'Montserrat', sans-serif;
+margin: 4px 17px;
+font-size: 13px;
+}
+.tema-taller{
+    /* background-color: aqua; */
+    text-align: center;
+}
+.tema-taller h4{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hora{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.hora-div-2 {
+    margin-left: 10px;
+}
+.hora-div-2 p{
+    font-family: 'Montserrat', sans-serif;
+    color: #3D3A6C;
+    font-size: 1em;
+}
+.btn-accion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* padding: 10px 0px; */
+    background-color: #3EE45F;
+    border-radius: 10px;
+    max-width: 270px;
+    margin: auto;
+}
+.btn-input-action{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #3EE45F;
+}
+.btn-action-img{
+    max-width: 22px;
+}
+.btn-action-estado{
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+.btn-action-estado p{
+    margin: 9px 0px;
+}
+.btn-A{
+    /* display: flex; */
+    justify-content: center;
+}
