@@ -2,24 +2,27 @@ var btn1 = document.getElementById("Sbtn1"),
   btn2 = document.getElementById("Sbtn2"),
   btn3 = document.getElementById("Sbtn3"),
   btn4 = document.getElementById("Sbtn4"),
+  btn5 = document.getElementById("Sbtn5"),
   cont1 = 0,
   cont2 = 0,
   cont3 = 0,
-  cont4 = 0;
+  cont4 = 0,
+  cont5 = 0;
 
 document.getElementById("TSem1").style.display = "none";
 document.getElementById("TSem3").style.display = "none";
 document.getElementById("TSem5").style.display = "none";
 document.getElementById("TSem7").style.display = "none";
 
-btn1.addEventListener("click", mostrarS1, true);
-btn2.addEventListener("click", mostrarS3, true);
-btn3.addEventListener("click", mostrarS5, true);
-btn4.addEventListener("click", mostrarS7, true);
+btn1.addEventListener("click", mostrarLu, true);
+btn2.addEventListener("click", mostrarMa, true);
+btn3.addEventListener("click", mostrarMi, true);
+btn4.addEventListener("click", mostrarJu, true);
+btn5.addEventListener("click", mostrarVi, true);
 
-function mostrarS1() {
+function mostrarLu() {
   if (cont1 == 0) {
-    btn1ON();
+    btnLunesON();
     document.getElementById("TSem1").style.display = "block";
     document.getElementById("TSem3").style.display = "none";
     document.getElementById("TSem5").style.display = "none";
@@ -28,15 +31,16 @@ function mostrarS1() {
     cont2 = 0;
     cont3 = 0;
     cont4 = 0;
+    cont5 = 0;
   } else {
     btnOFF();
     document.getElementById("TSem1").style.display = "none";
     cont1 = 0;
   }
 }
-function mostrarS3() {
+function mostrarMa() {
   if (cont2 == 0) {
-    btn3ON();
+    btnMartesON();
     document.getElementById("TSem3").style.display = "block";
     document.getElementById("TSem1").style.display = "none";
     document.getElementById("TSem5").style.display = "none";
@@ -45,15 +49,16 @@ function mostrarS3() {
     cont1 = 0;
     cont3 = 0;
     cont4 = 0;
+    cont5 = 0;
   } else {
     btnOFF();
     document.getElementById("TSem3").style.display = "none";
     cont2 = 0;
   }
 }
-function mostrarS5() {
+function mostrarMi() {
   if (cont3 == 0) {
-    btn5ON();
+    btnMiercolesON();
     document.getElementById("TSem5").style.display = "block";
     document.getElementById("TSem3").style.display = "none";
     document.getElementById("TSem1").style.display = "none";
@@ -62,15 +67,16 @@ function mostrarS5() {
     cont1 = 0;
     cont2 = 0;
     cont4 = 0;
+    cont5 = 0;
   } else {
     btnOFF();
     document.getElementById("TSem5").style.display = "none";
     cont3 = 0;
   }
 }
-function mostrarS7() {
+function mostrarJu() {
   if (cont4 == 0) {
-    btn7ON();
+    btnJuevesON();
     document.getElementById("TSem7").style.display = "block";
     document.getElementById("TSem3").style.display = "none";
     document.getElementById("TSem1").style.display = "none";
@@ -79,6 +85,7 @@ function mostrarS7() {
     cont1 = 0;
     cont3 = 0;
     cont2 = 0;
+    cont5 = 0;
   } else {
     btnOFF();
     document.getElementById("TSem7").style.display = "none";
@@ -86,102 +93,159 @@ function mostrarS7() {
   }
 }
 
+function mostrarVi() {
+  if (cont5 == 0) {
+    btnViernesON();
+    cont5 = 1;
+    cont1 = 0;
+    cont3 = 0;
+    cont2 = 0;
+    cont4 = 0;
+  } else {
+    btnOFF();
+    cont5 = 0;
+  }
+}
+
 function btnOFF() {
-  // Btn1
+  // Lunes 15
   document.getElementById("Sbtn1").style.backgroundColor = "#fff";
-  document.getElementById("Sbtn1").style.color = "#858585";
+  document.getElementById("Sbtn1").style.color = "#3D3A6C";
   document.getElementById("Sbtn1").style.borderColor = "#fff";
-  document.getElementById("OculTSection").style.borderBottomColor = "#3D3A6C";
-  // Btn3
+  document.getElementById("contenedorBtnSemestre").style.borderBottomColor = "#707070";
+  // Martes 16
   document.getElementById("Sbtn2").style.backgroundColor = "#fff";
-  document.getElementById("Sbtn2").style.color = "#858585";
+  document.getElementById("Sbtn2").style.color = "#3D3A6C";
   document.getElementById("Sbtn2").style.borderColor = "#fff";
-  // Btn5
+  // Miercoles 17
   document.getElementById("Sbtn3").style.backgroundColor = "#fff";
-  document.getElementById("Sbtn3").style.color = "#858585";
+  document.getElementById("Sbtn3").style.color = "#3D3A6C";
   document.getElementById("Sbtn3").style.borderColor = "#fff";
-  // Btn7
+  // Jueves 18
   document.getElementById("Sbtn4").style.backgroundColor = "#fff";
-  document.getElementById("Sbtn4").style.color = "#858585";
+  document.getElementById("Sbtn4").style.color = "#3D3A6C";
   document.getElementById("Sbtn4").style.borderColor = "#fff";
+  // Viernes 19
+  document.getElementById("Sbtn5").style.backgroundColor = "#fff";
+  document.getElementById("Sbtn5").style.color = "#3D3A6C";
+  document.getElementById("Sbtn5").style.borderColor = "#fff";
 }
 
-function btn1ON() {
-  // Btn1
-  document.getElementById("Sbtn1").style.backgroundColor = "#F1F6FA";
-  document.getElementById("Sbtn1").style.color = "#222222";
-  document.getElementById("Sbtn1").style.borderColor = "#F1F6FA";
-  document.getElementById("OculTSection").style.borderBottomColor = "#F1F6FA";
-  // Btn3
+function btnLunesON() {
+  // Lunes 15
+  document.getElementById("Sbtn1").style.backgroundColor = "#F0F6FA";
+  document.getElementById("Sbtn1").style.color = "#222";
+  document.getElementById("Sbtn1").style.borderColor = "#F0F6FA";
+  document.getElementById("contenedorBtnSemestre").style.borderBottomColor = "#707070";
+  // Martes 16
   document.getElementById("Sbtn2").style.backgroundColor = "#fff";
-  document.getElementById("Sbtn2").style.color = "#858585";
+  document.getElementById("Sbtn2").style.color = "#3D3A6C";
   document.getElementById("Sbtn2").style.borderColor = "#fff";
-  // Btn5
+  // Miercoles 17
   document.getElementById("Sbtn3").style.backgroundColor = "#fff";
-  document.getElementById("Sbtn3").style.color = "#858585";
+  document.getElementById("Sbtn3").style.color = "#3D3A6C";
   document.getElementById("Sbtn3").style.borderColor = "#fff";
-  // Btn7
+  // Jueves 18
   document.getElementById("Sbtn4").style.backgroundColor = "#fff";
-  document.getElementById("Sbtn4").style.color = "#858585";
+  document.getElementById("Sbtn4").style.color = "#3D3A6C";
   document.getElementById("Sbtn4").style.borderColor = "#fff";
+  // Viernes 19
+  document.getElementById("Sbtn5").style.backgroundColor = "#fff";
+  document.getElementById("Sbtn5").style.color = "#3D3A6C";
+  document.getElementById("Sbtn5").style.borderColor = "#fff";
 }
 
-function btn3ON() {
-  // Btn3
-  document.getElementById("Sbtn2").style.backgroundColor = "#F1F6FA";
+function btnMartesON() {
+  // Lunes 15
+  document.getElementById("Sbtn1").style.backgroundColor = "#fff";
+  document.getElementById("Sbtn1").style.color = "#3D3A6C";
+  document.getElementById("Sbtn1").style.borderColor = "#fff";
+  // Martes 16
+  document.getElementById("Sbtn2").style.backgroundColor = "#F0F6FA";
   document.getElementById("Sbtn2").style.color = "#222222";
-  document.getElementById("Sbtn2").style.borderColor = "#F1F6FA";
-  document.getElementById("OculTSection").style.borderBottomColor = "#F1F6FA";
-  // Btn1
-  document.getElementById("Sbtn1").style.backgroundColor = "#fff";
-  document.getElementById("Sbtn1").style.color = "#858585";
-  document.getElementById("Sbtn1").style.borderColor = "#fff";
-  // Btn5
+  document.getElementById("Sbtn2").style.borderColor = "#F0F6FA";
+  document.getElementById("contenedorBtnSemestre").style.borderBottomColor = "#707070";
+  // Miercoles 17
   document.getElementById("Sbtn3").style.backgroundColor = "#fff";
-  document.getElementById("Sbtn3").style.color = "#858585";
+  document.getElementById("Sbtn3").style.color = "#3D3A6C";
   document.getElementById("Sbtn3").style.borderColor = "#fff";
-  // Btn7
+  // Jueves 18
   document.getElementById("Sbtn4").style.backgroundColor = "#fff";
-  document.getElementById("Sbtn4").style.color = "#858585";
+  document.getElementById("Sbtn4").style.color = "#3D3A6C";
   document.getElementById("Sbtn4").style.borderColor = "#fff";
+  // Viernes 19
+  document.getElementById("Sbtn5").style.backgroundColor = "#fff";
+  document.getElementById("Sbtn5").style.color = "#3D3A6C";
+  document.getElementById("Sbtn5").style.borderColor = "#fff";
 }
 
-function btn5ON() {
-  // Btn5
-  document.getElementById("Sbtn3").style.backgroundColor = "#F1F6FA";
+function btnMiercolesON() {
+  // Lunes 15
+  document.getElementById("Sbtn1").style.backgroundColor = "#fff";
+  document.getElementById("Sbtn1").style.color = "#3D3A6C";
+  document.getElementById("Sbtn1").style.borderColor = "#fff";
+  // Martes 16
+  document.getElementById("Sbtn2").style.backgroundColor = "#fff";
+  document.getElementById("Sbtn2").style.color = "#3D3A6C";
+  document.getElementById("Sbtn2").style.borderColor = "#fff";
+  // Miercoles 17
+  document.getElementById("Sbtn3").style.backgroundColor = "#F0F6FA";
   document.getElementById("Sbtn3").style.color = "#222222";
-  document.getElementById("Sbtn3").style.borderColor = "#F1F6FA";
-  document.getElementById("OculTSection").style.borderBottomColor = "#F1F6FA";
-  // Btn3
-  document.getElementById("Sbtn2").style.backgroundColor = "#fff";
-  document.getElementById("Sbtn2").style.color = "#858585";
-  document.getElementById("Sbtn2").style.borderColor = "#fff";
-  // Btn1
-  document.getElementById("Sbtn1").style.backgroundColor = "#fff";
-  document.getElementById("Sbtn1").style.color = "#858585";
-  document.getElementById("Sbtn1").style.borderColor = "#fff";
-  // Btn7
+  document.getElementById("Sbtn3").style.borderColor = "#F0F6FA";
+  document.getElementById("contenedorBtnSemestre").style.borderBottomColor = "#707070";
+  // Jueves 18
   document.getElementById("Sbtn4").style.backgroundColor = "#fff";
-  document.getElementById("Sbtn4").style.color = "#858585";
+  document.getElementById("Sbtn4").style.color = "#3D3A6C";
   document.getElementById("Sbtn4").style.borderColor = "#fff";
+  // Viernes 19
+  document.getElementById("Sbtn5").style.backgroundColor = "#fff";
+  document.getElementById("Sbtn5").style.color = "#3D3A6C";
+  document.getElementById("Sbtn5").style.borderColor = "#fff";
 }
 
-function btn7ON() {
-  // Btn7
-  document.getElementById("Sbtn4").style.backgroundColor = "#F1F6FA";
-  document.getElementById("Sbtn4").style.color = "#222222";
-  document.getElementById("Sbtn4").style.borderColor = "#F1F6FA";
-  document.getElementById("OculTSection").style.borderBottomColor = "#F1F6FA";
-  // Btn3
-  document.getElementById("Sbtn2").style.backgroundColor = "#fff";
-  document.getElementById("Sbtn2").style.color = "#858585";
-  document.getElementById("Sbtn2").style.borderColor = "#fff";
-  // Btn5
-  document.getElementById("Sbtn3").style.backgroundColor = "#fff";
-  document.getElementById("Sbtn3").style.color = "#858585";
-  document.getElementById("Sbtn3").style.borderColor = "#fff";
-  // Btn1
+function btnJuevesON() {
+  // Lunes 15
   document.getElementById("Sbtn1").style.backgroundColor = "#fff";
-  document.getElementById("Sbtn1").style.color = "#858585";
+  document.getElementById("Sbtn1").style.color = "#3D3A6C";
   document.getElementById("Sbtn1").style.borderColor = "#fff";
+  // Martes 16
+  document.getElementById("Sbtn2").style.backgroundColor = "#fff";
+  document.getElementById("Sbtn2").style.color = "#3D3A6C";
+  document.getElementById("Sbtn2").style.borderColor = "#fff";
+  // Miercoles 17
+  document.getElementById("Sbtn3").style.backgroundColor = "#fff";
+  document.getElementById("Sbtn3").style.color = "#3D3A6C";
+  document.getElementById("Sbtn3").style.borderColor = "#fff";
+  // Jueves 18
+  document.getElementById("Sbtn4").style.backgroundColor = "#F0F6FA";
+  document.getElementById("Sbtn4").style.color = "#222222";
+  document.getElementById("Sbtn4").style.borderColor = "#F0F6FA";
+  document.getElementById("contenedorBtnSemestre").style.borderBottomColor = "#707070";
+  // Viernes 19
+  document.getElementById("Sbtn5").style.backgroundColor = "#fff";
+  document.getElementById("Sbtn5").style.color = "#3D3A6C";
+  document.getElementById("Sbtn5").style.borderColor = "#fff";
+}
+function btnViernesON() {
+  // Lunes 15
+  document.getElementById("Sbtn1").style.backgroundColor = "#fff";
+  document.getElementById("Sbtn1").style.color = "#3D3A6C";
+  document.getElementById("Sbtn1").style.borderColor = "#fff";
+  // Martes 16
+  document.getElementById("Sbtn2").style.backgroundColor = "#fff";
+  document.getElementById("Sbtn2").style.color = "#3D3A6C";
+  document.getElementById("Sbtn2").style.borderColor = "#fff";
+  // Miercoles 17
+  document.getElementById("Sbtn3").style.backgroundColor = "#fff";
+  document.getElementById("Sbtn3").style.color = "#3D3A6C";
+  document.getElementById("Sbtn3").style.borderColor = "#fff";
+  // Jueves 18
+  document.getElementById("Sbtn4").style.backgroundColor = "#fff";
+  document.getElementById("Sbtn4").style.color = "#3D3A6C";
+  document.getElementById("Sbtn4").style.borderColor = "#fff";
+  // Viernes 19
+  document.getElementById("Sbtn5").style.backgroundColor = "#F0F6FA";
+  document.getElementById("Sbtn5").style.color = "#222222";
+  document.getElementById("Sbtn5").style.borderColor = "#F0F6FA";
+  document.getElementById("contenedorBtnSemestre").style.borderBottomColor = "#707070";
 }
