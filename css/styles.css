@@ -18,10 +18,14 @@ img, svg {
 /* SECCION HEADER */
 
 #header {
+    position: fixed;
     z-index: 997;
     transition: all 0.5s;
     padding: 6px 0;
     background: #1b1b1b;
+    width: 100%;
+    height: auto;
+    
 }
 
 #header .logo, img {
@@ -48,6 +52,7 @@ img, svg {
     margin-right: auto;
     margin-left: auto;
     box-sizing: border-box;
+    
 }
 
 .menu {
@@ -61,6 +66,7 @@ img, svg {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-right: 25px;
+    
 }
 
 /* Lista e items */
@@ -234,8 +240,11 @@ img, svg {
 
 .titulo-btn {
     text-align: center;
-    padding-bottom: 20px;
-    color: #3D3A6C;
+    padding: 10px;
+    padding-bottom: 25px;
+    color: #646464;
+    font-size: 18px;
+
 }
 
 /* Botones por semestre */
@@ -244,7 +253,7 @@ img, svg {
     /* background-color: #F0F6FA; */
     margin: 20px auto;
     margin-bottom: 0;
-    border-bottom: 2.5px solid #3D3A6C;
+    /* border-bottom: 2.5px solid #3D3A6C; */
     background: #fefefe;
 }
 
@@ -260,25 +269,27 @@ img, svg {
     align-items: center;
     align-content: center;
     padding: 20px 10px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
+    border-bottom: 1px solid #707070;
 }
 
-.btn-semestre {
+.btn-dias {
     text-decoration: none;
     padding: 10px;
-    font-weight: 600;
-    font-size: 18px;
-    color: #858585;
+    font-weight: 300;
+    font-size: 24px;
+    color: #3D3A6C;
     background-color: #fff;
     /* border-radius: 8px; */
     border: 1px solid #ffffff;
     transition: 0.5s;
+    border-radius: 2px;
 }
 
-.btn-semestre:hover {
+.btn-dias:hover {
     /* background-color: #3D3A6C; */
     /* border: #3D3A6C; */
-    color: #3D3A6C;
+    color: #111111;
     transition: 0.3s;
     cursor: pointer;
 }
