@@ -185,3 +185,7 @@ function btn7ON() {
   document.getElementById("Sbtn1").style.color = "#858585";
   document.getElementById("Sbtn1").style.borderColor = "#fff";
 }
+
+
+
+
