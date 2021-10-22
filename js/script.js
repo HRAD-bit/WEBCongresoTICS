@@ -249,3 +249,7 @@ function btnViernesON() {
   document.getElementById("Sbtn5").style.borderColor = "#F0F6FA";
   document.getElementById("contenedorBtnSemestre").style.borderBottomColor = "#707070";
 }
+
+
+
+
