@@ -2,20 +2,16 @@
 const linkLu1 = "http://google.com",
   LinkLu2 = "http://facebook.com",
   LinkLu3 = "http://google.com",
-  LinkLu4 = "http://google.com",
-  LinkMar1 = "http://google.com",
-  LinkMar2 = "http://google.com",
-  LinkMar3 = "",
-  LinkMar4 = "",
-  LinkMie1 = "",
-  LinkMie2 = "",
-  LinkMie3 = "",
-  LinkMie4 = "",
-  LinkJue1 = "",
-  LinkJue2 = "",
-  LinkVie1 = "",
-  LinkVie2 = "",
-  LinkVie3 = "";
+  LinkLu4 = "http://google.com";
+
+// TIEMPOS DE ESPERA
+
+const tarjeta1Time = "Oct 22 2021 15:38:10 GMT-05:00",
+  tarjeta2Time = "Oct 22 2021 15:38:10 GMT-05:00",
+  tarjeta3Time = "Oct 22 2021 15:38:50 GMT-05:00",
+  tarjeta4Time = "Oct 22 2021 15:39:10 GMT-05:00";
+
+
 var btn1 = document.getElementById("Sbtn1"),
   btn2 = document.getElementById("Sbtn2"),
   btn3 = document.getElementById("Sbtn3"),
@@ -339,15 +335,15 @@ const btnStateLu1 = (deadline, elem, finalMessage) => {
         <img class="btn-action-img" src="img/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
-        <div class="btnState" id="btnStateLu1"><p>Finalizazdo</p></div>
+        <div class="btnState" id="btnStateLu1"><p>Finalizado</p></div>
       </div>`;
-      document.getElementById("contenedorInfoLu1").className += " contenedor-informacion-off";
-      
+        document.getElementById("contenedorInfoLu1").className +=
+          " contenedor-informacion-off";
       }
     }
   }, 1000);
 };
-btnStateLu1("Oct 22 2021 12:17:10 GMT-05:00", "btnStateLu1", "Ingresar");
+btnStateLu1(tarjeta1Time, "btnStateLu1", "Ingresar");
 
 const btnStateLu2 = (deadline, elem, finalMessage) => {
   const el = document.getElementById(elem);
@@ -360,24 +356,24 @@ const btnStateLu2 = (deadline, elem, finalMessage) => {
       console.log(t.remainTime);
       // clearInterval(timerUpdate);
       // el.innerHTML = finalMessage;
-    //   el.innerHTML = `<a href="http://itsm.edu.mx" target="_blank">
-    //   <p>Ingresar</p>
-    // </a>`;
-    el.innerHTML = `<p> Acceder <p>`;
-    document.getElementById("liveIDLu2").style.display = "flex";
-    document.getElementById("gruposLiveLu2").style.justifyContent =
-      "space-between";
-    document.getElementById(
-      "btnAccionLu2"
-    ).innerHTML = `<a href="${LinkLu2}" target="_blank">
+      //   el.innerHTML = `<a href="http://itsm.edu.mx" target="_blank">
+      //   <p>Ingresar</p>
+      // </a>`;
+      el.innerHTML = `<p> Acceder <p>`;
+      document.getElementById("liveIDLu2").style.display = "flex";
+      document.getElementById("gruposLiveLu2").style.justifyContent =
+        "space-between";
+      document.getElementById(
+        "btnAccionLu2"
+      ).innerHTML = `<a href="${LinkLu2}" target="_blank">
     <div><img src="img/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateLu2"><p>Acceder</p></div>
     </div>
   </a>`;
-    document.getElementById("btnAccionLu2").style.backgroundColor = "#3EE45F";
+      document.getElementById("btnAccionLu2").style.backgroundColor = "#3EE45F";
 
-    // FINALIZADO
+      // FINALIZADO
       if (t.remainTime <= -15.0) {
         clearInterval(timerUpdate);
         console.log(t.remainTime);
@@ -392,17 +388,17 @@ const btnStateLu2 = (deadline, elem, finalMessage) => {
         <img class="btn-action-img" src="img/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
-        <div class="btnState" id="btnStateLu2"><p>Finalizazdo</p></div>
+        <div class="btnState" id="btnStateLu2"><p>Finalizado</p></div>
       </div>`;
-      document.getElementById("contenedorInfoLu2").className += " contenedor-informacion-off";
+        document.getElementById("contenedorInfoLu2").className +=
+          " contenedor-informacion-off";
       }
     }
   }, 1000);
 };
 
 // btnStateLu2("Nov 15 2021 15:50:20 GMT-05:00", "btnStateLu2", "Ingresar");
-btnStateLu2("Oct 22 2021 12:18:20 GMT-05:00", "btnStateLu2", "Ingresar");
-
+btnStateLu2(tarjeta2Time, "btnStateLu2", "Ingresar");
 
 const btnStateLu3 = (deadline, elem, finalMessage) => {
   const el = document.getElementById(elem);
@@ -442,16 +438,17 @@ const btnStateLu3 = (deadline, elem, finalMessage) => {
         <img class="btn-action-img" src="img/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
-        <div class="btnState" id="btnStateLu3"><p>Finalizazdo</p></div>
+        <div class="btnState" id="btnStateLu3"><p>Finalizado</p></div>
       </div>`;
-      document.getElementById("contenedorInfoLu3").className += " contenedor-informacion-off";
+        document.getElementById("contenedorInfoLu3").className +=
+          " contenedor-informacion-off";
       }
     }
   }, 1000);
 };
 
 // btnStateLu3("Nov 15 2021 16:50:20 GMT-05:00", "btnStateLu3", "Ingresar");
-btnStateLu3("Oct 22 2021 12:19:20 GMT-05:00", "btnStateLu3", "Ingresar");
+btnStateLu3(tarjeta3Time, "btnStateLu3", "Ingresar");
 
 const btnStateLu4 = (deadline, elem, finalMessage) => {
   const el = document.getElementById(elem);
@@ -477,7 +474,7 @@ const btnStateLu4 = (deadline, elem, finalMessage) => {
       </div>
     </a>`;
       document.getElementById("btnAccionLu4").style.backgroundColor = "#3EE45F";
-      // FINALIZADO 
+      // FINALIZADO
       if (t.remainTime <= -5.0) {
         clearInterval(timerUpdate);
         console.log(t.remainTime);
@@ -492,13 +489,48 @@ const btnStateLu4 = (deadline, elem, finalMessage) => {
         <img class="btn-action-img" src="img/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
-        <div class="btnState" id="btnStateLu4"><p>Finalizazdo</p></div>
+        <div class="btnState" id="btnStateLu4"><p>Finalizado</p></div>
       </div>`;
-      document.getElementById("contenedorInfoLu4").className += " contenedor-informacion-off";
+        document.getElementById("contenedorInfoLu4").className +=
+          " contenedor-informacion-off";
       }
     }
   }, 1000);
 };
 
 // btnStateLu4("Nov 15 2021 17:50:20 GMT-05:00", "btnStateLu4", "Ingresar");
-btnStateLu4("Oct 22 2021 12:20:20 GMT-05:00", "btnStateLu4", "Ingresar");
+btnStateLu4(tarjeta4Time, "btnStateLu4", "Ingresar");
+
+// ------------------------------SECCION MODAL------------------------------
+// modal
+const openEls = document.querySelectorAll("[data-open]");
+const isVisible = "is-visible";
+
+for (const el of openEls) {
+  el.addEventListener("click", function () {
+    const modalId = this.dataset.open;
+    document.getElementById(modalId).classList.add(isVisible);
+  });
+}
+const closeEls = document.querySelectorAll("[data-close]");
+// const isVisible = "is-visible";
+
+for (const el of closeEls) {
+  el.addEventListener("click", function () {
+    this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+  });
+}
+// const isVisible = "is-visible";
+
+document.addEventListener("click", (e) => {
+  if (e.target == document.querySelector(".modal.is-visible")) {
+    document.querySelector(".modal.is-visible").classList.remove(isVisible);
+  }
+});
+// const isVisible = "is-visible";
+
+document.addEventListener("keyup", (e) => {
+  if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
+    document.querySelector(".modal.is-visible").classList.remove(isVisible);
+  }
+});

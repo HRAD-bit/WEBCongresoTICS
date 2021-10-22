@@ -443,6 +443,7 @@ img, svg {
 } */
 
 /* tamaño de la letra  */
+
 /* 
 .hora p {
     font-size: 1em;
@@ -722,7 +723,6 @@ img, svg {
     align-content: center;
     border-right: 1px solid rgb(44, 44, 44);
     padding-right: 10px;
-
 }
 
 /* div del tipo de taller  */
@@ -762,7 +762,6 @@ img, svg {
     font-size: 14px;
     cursor: pointer;
     text-align: center;
-
 }
 
 /* lugar de donde viene  */
@@ -795,7 +794,7 @@ img, svg {
     padding-left: 10px;
 }
 
-.contenedor-informacion-off  {
+.contenedor-informacion-off {
     -webkit-filter: grayscale(100%)!important;
     filter: grayscale(100%)!important;
 }
@@ -909,13 +908,11 @@ img, svg {
     max-width: 270px;
     margin: auto;
     width: 100%;
-    
 }
 
 .btn-accion a {
     background-color: #3EE45F;
     text-decoration: none;
-
 }
 
 .btn-input-action {
@@ -927,8 +924,7 @@ img, svg {
     max-width: 22px;
 }
 
-
-.btn-action-estado, .btn-action-estado p{
+.btn-action-estado, .btn-action-estado p {
     margin-left: 10px;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -942,7 +938,6 @@ img, svg {
     text-decoration: none;
 }
 
-
 .btn-action-estado p, .btnState {
     margin: 9px 0px;
 }
@@ -950,6 +945,183 @@ img, svg {
 .btn-A {
     /* display: flex; */
     justify-content: center;
-    
 }
 
+/* ----------------------------SECCION DE BIOGRAFIAS (MODAL) ------------------------- */
+
+:root {
+    --lightgray: #efefef;
+    --blue: steelblue;
+    --white: #fff;
+    --black: rgba(0, 0, 0, 0.8);
+    --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: inherit;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* .open-modal {
+    font-weight: bold;
+    background: var(--blue);
+    color: var(--white);
+    padding: .75rem 1.75rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  } */
+
+/*CUSTOM VARIABLES HERE*/
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: var(--black);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+}
+
+/*CUSTOM VARIABLES HERE*/
+
+.modal-dialog {
+    position: relative;
+    max-width: 650px;
+    max-height: 80vh;
+    border-radius: 5px;
+    background: var(--white);
+    overflow: auto;
+    cursor: default;
+}
+
+/*CUSTOM VARIABLES HERE*/
+
+.modal-dialog>* {
+    padding: 1rem;
+}
+
+/* .modal-header,
+  .modal-footer {
+    background: var(--lightgray);
+  } */
+
+.modal-footer {
+    background-color: #524e88;
+    color: white;
+    text-align: center;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: #eb8005d3;
+}
+
+.modal-header .modal-close {
+    font-size: 1.5rem;
+}
+
+.modal p+p {
+    margin-top: 1rem;
+}
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+}
+
+.modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content {
+    padding-top: 0px;
+}
+
+/* DISEÑO */
+
+.contenedor-VM {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.vineta-VM {
+    background-color: #3D3A6C;
+    display: flex;
+    align-items: flex-end;
+    padding: opx;
+}
+
+.vineta-VM div {
+    padding: 0px;
+    margin: opx;
+    min-width: 35px;
+}
+
+.vineta-VM div img {
+    padding: 0px;
+    margin: -4px;
+}
+
+.info-VM {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 20px 40px;
+}
+
+.foto-nombre-VM {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 20px;
+}
+
+.img-persona2 {
+    max-width: 160px;
+}
+
+.div-nombre-VM {
+    padding-left: 40px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.div-nombre-VM h3 {
+    padding-bottom: 15px;
+}
+
+.trayectoria-VM {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    font-size: .9em;
+}
