@@ -357,6 +357,14 @@ color: #c0392b;
     padding: 0;
     margin: 0;
   }
+  button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: inherit;
+    font-family: 'Montserrat', sans-serif;
+  }
   /* .open-modal {
     font-weight: bold;
     background: var(--blue);
@@ -389,7 +397,7 @@ color: #c0392b;
  
 .modal-dialog {
     position: relative;
-    max-width: 800px;
+    max-width: 650px;
     max-height: 80vh;
     border-radius: 5px;
     background: var(--white);
@@ -402,15 +410,22 @@ color: #c0392b;
     padding: 1rem;
   }
    
-  .modal-header,
+  /* .modal-header,
   .modal-footer {
     background: var(--lightgray);
+  } */
+  .modal-footer{
+      background-color: #524e88;
+      color: white;
+      text-align: center;
+      
   }
    
   .modal-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: end;
+    background-color: #eb8005d3;
   }
    
   .modal-header .modal-close {
@@ -430,3 +445,71 @@ color: #c0392b;
     visibility: visible;
     opacity: 1;
   }
+  .modal-content{
+      padding-top: 0px;
+  }
+
+  /* DISEÑO */
+  .contenedor-VM{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: stretch;
+
+  }
+  .vineta-VM{
+      background-color:#3D3A6C ;
+      display: flex;
+      align-items: flex-end;
+      padding: opx;
+  }
+  .vineta-VM div{
+      padding: 0px;
+      margin: opx;
+      min-width: 35px;
+  }
+  .vineta-VM div img{
+    padding: 0px;
+    margin: -4px;
+    
+  }
+
+
+
+  .info-VM{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 20px 40px;
+  }
+  .foto-nombre-VM{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 20px;
+  }
+  .img-persona2{
+    max-width: 160px;
+
+  }
+  .div-nombre-VM{
+      padding-left: 40px;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+  }
+
+.div-nombre-VM h3{
+    padding-bottom: 15px;
+}
+.trayectoria-VM{
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    font-size: .9em;
+}
