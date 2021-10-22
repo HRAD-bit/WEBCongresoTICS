@@ -25,10 +25,9 @@ img, svg {
     background: #1b1b1b;
     width: 100%;
     height: auto;
-    
 }
 
-#header .logo, img {
+#header .logo, #header img {
     margin-left: 25px;
     max-width: 10%;
     min-width: 150px;
@@ -52,7 +51,6 @@ img, svg {
     margin-right: auto;
     margin-left: auto;
     box-sizing: border-box;
-    
 }
 
 .menu {
@@ -66,7 +64,6 @@ img, svg {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-right: 25px;
-    
 }
 
 /* Lista e items */
@@ -150,6 +147,7 @@ img, svg {
     flex-wrap: nowrap;
     height: 500px;
     width: auto;
+    margin-top: 80px;
 }
 
 /* Imagen logo Itics */
@@ -196,7 +194,7 @@ img, svg {
 
 /* Info Portada: Titulos y link */
 
-.info-portada h2, h3, a {
+.info-portada h2, h3, .info-portada a {
     padding: 15px 0;
 }
 
@@ -244,7 +242,6 @@ img, svg {
     padding-bottom: 25px;
     color: #646464;
     font-size: 18px;
-
 }
 
 /* Botones por semestre */
@@ -298,8 +295,12 @@ img, svg {
 
 /*contenedor  general de talleres*/
 
-.contenedor-taller {
+.contenedor-taller img {
     /* background-color: #F0F6FA; */
+    margin-left: 25px;
+    max-width: 10%;
+    min-width: 150px;
+    height: auto;
 }
 
 /* barra superior */
@@ -430,7 +431,7 @@ img, svg {
 
 /* configuracion del div de la hora  */
 
-.hora {
+/* .hora {
     border: 1px solid cornflowerblue;
     margin: 7px;
     padding: 5px;
@@ -439,14 +440,14 @@ img, svg {
     color: white;
     border-radius: 5px;
     width: 180px;
-}
+} */
 
 /* tamaño de la letra  */
-
+/* 
 .hora p {
     font-size: 1em;
     margin: auto;
-}
+} */
 
 /* ventana modal  */
 
@@ -546,7 +547,7 @@ img, svg {
     background-color: #185E83;
 }
 
-/* Footer copyright */
+/* -----------------------FOOTER COPYRIGHT ---------------------------------- */
 
 .contenedor_copyright {
     width: 100%;
@@ -595,3 +596,360 @@ img, svg {
     text-decoration: none;
     color: #fff;
 }
+
+/* SECTION TALLERISTAS */
+
+.boton-modal {
+    padding: 40px;
+    background-color: white;
+}
+
+.boton-modal label {
+    padding: 10px 15px;
+    background-color: violet;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.boton-modal label:hover {
+    background-color: tomato;
+}
+
+#btn-modal {
+    display: none;
+}
+
+.container-modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#btn-modal:checked~.container-modal {
+    display: flex;
+}
+
+.content-modal {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.content-modal p {
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.content-modal .btn-cerrar {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-modal .btn-cerrar label {
+    padding: 7px 10px;
+    background-color: #5488a3;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.content-modal .btn-cerrar label:hover {
+    background-color: #185E83;
+}
+
+/* ---------------------------------Tarjetas------------------------------ */
+
+/* section  INICIO */
+
+.section-talleres {
+    background-color: #F0F6FA;
+}
+
+/* contendor de targetas INICIO */
+
+.contenedor-talleres {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 20px 10px;
+}
+
+/* Tarjeta INICIO */
+
+/* Contenedor  */
+
+.contenedor-targeta {
+    padding: 20px;
+    margin: 5px 5px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #707070;
+    border-radius: 100px 0px 100px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    /* max-width: 600px; */
+    width: 600px;
+    max-height: auto;
+}
+
+/* Seccion de información de la persona   INICIO*/
+
+.contenedor-persona {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border-right: 1px solid rgb(44, 44, 44);
+    padding-right: 10px;
+
+}
+
+/* div del tipo de taller  */
+
+.tipo-taller {
+    border-radius: 50px 0px 50px 0px;
+    background-color: #EC8603;
+    width: 180px;
+    height: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tipo-taller p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* imagen de la persona  */
+
+.img-persona {
+    max-width: 160px;
+}
+
+/* nombre de la persona  */
+
+.div-nombre {
+    max-width: 200px;
+    display: flex;
+    padding: 5px;
+}
+
+.div-nombre label {
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+/* lugar de donde viene  */
+
+.lugar-persona {
+    max-height: 30px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.lugar-persona p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+/* Seccion de la información de la persona FIN  */
+
+/* Seccion de información del evento INICIO */
+
+/* contenedor  */
+
+.contenedor-informacion {
+    /* background-color: lawngreen; */
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 240px;
+    padding-left: 10px;
+}
+
+.contenedor-informacion-off  {
+    -webkit-filter: grayscale(100%)!important;
+    filter: grayscale(100%)!important;
+}
+
+/* Seccion de grupos % LIVE */
+
+.grupos-live {
+    /* background-color: lightsalmon; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.grupos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.cont-img-grupos {
+    padding: 7px;
+    margin: 0px 5px;
+    background-color: #EB2121;
+    border-radius: 50%;
+}
+
+.cont-img-grupos img {
+    max-width: 20px;
+}
+
+.grupos-asignados {
+    text-align: center;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.grupos-asignados p {
+    text-align: center;
+    margin: 4px 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: #EB2121;
+    font-size: 12px;
+}
+
+.live {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.live img {
+    max-width: 32px;
+    max-height: 32px;
+    margin-right: 5px;
+}
+
+.cont-live {
+    background-color: #EB2121;
+    border-radius: 5px;
+}
+
+.cont-live p {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 4px 17px;
+    font-size: 13px;
+}
+
+.tema-taller {
+    /* background-color: aqua; */
+    text-align: center;
+}
+
+.tema-taller h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hora {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.hora-div-2 {
+    margin-left: 10px;
+}
+
+.hora-div-2 p {
+    font-family: 'Montserrat', sans-serif;
+    color: #3D3A6C;
+    font-size: 1em;
+}
+
+.btn-accion, .btn-accion a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* padding: 10px 0px; */
+    background-color: #3D3A6C;
+    border-radius: 10px;
+    max-width: 270px;
+    margin: auto;
+    width: 100%;
+    
+}
+
+.btn-accion a {
+    background-color: #3EE45F;
+    text-decoration: none;
+
+}
+
+.btn-input-action {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #3EE45F;
+}
+
+.btn-action-img {
+    max-width: 22px;
+}
+
+
+.btn-action-estado, .btn-action-estado p{
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.btn-action-estado a {
+    text-decoration: none;
+}
+
+
+.btn-action-estado p, .btnState {
+    margin: 9px 0px;
+}
+
+.btn-A {
+    /* display: flex; */
+    justify-content: center;
+    
+}
+
