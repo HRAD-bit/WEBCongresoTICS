@@ -283,7 +283,7 @@ header.abajo nav ul li a{
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
-    padding: 20px 10px;
+    padding: 20px 50px;
     padding-bottom: 0;
     border-bottom: 1px solid #707070;
 }
@@ -642,7 +642,7 @@ header.abajo nav ul li a{
     background-color: #F0F6FA;
 }
 
-/* contendor de targetas INICIO */
+/* contendor de tarjetas INICIO */
 
 .contenedor-talleres {
     display: flex;
@@ -658,8 +658,8 @@ header.abajo nav ul li a{
 
 /* Contenedor  */
 
-.contenedor-targeta {
-    padding: 20px;
+.contenedor-tarjeta {
+    padding: 15px;
     margin: 5px 5px;
     background-color: rgb(255, 255, 255);
     border: 1px solid #707070;
@@ -670,9 +670,8 @@ header.abajo nav ul li a{
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    /* max-width: 600px; */
-    width: 600px;
-    max-height: auto;
+    width: 750px;
+    height: auto;
 }
 
 /* Seccion de información de la persona   INICIO*/
@@ -706,7 +705,8 @@ header.abajo nav ul li a{
 /* imagen de la persona  */
 
 .img-persona {
-    max-width: 160px;
+    margin-top: 5px;
+    max-width: 180px;
 }
 
 /* nombre de la persona  */
@@ -737,6 +737,8 @@ header.abajo nav ul li a{
 .lugar-persona p {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
+    letter-spacing: 0.8px;
+    color: rgb(32, 32, 32);
 }
 
 /* Seccion de la información de la persona FIN  */
@@ -793,7 +795,7 @@ header.abajo nav ul li a{
 .grupos-asignados {
     text-align: center;
     margin-left: 5px;
-    padding: 5px;
+    padding: 0px 5px;
 }
 
 .grupos-asignados p {
@@ -801,7 +803,7 @@ header.abajo nav ul li a{
     margin: 4px 0px;
     font-family: 'Montserrat', sans-serif;
     color: #EB2121;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 .live {
@@ -837,6 +839,9 @@ header.abajo nav ul li a{
 
 .tema-taller h4 {
     font-family: 'Montserrat', sans-serif;
+    color: #4e4e4e;
+    letter-spacing: 1.12px;
+    font-size: 19px;
 }
 
 .hora {
@@ -854,7 +859,7 @@ header.abajo nav ul li a{
 .hora-div-2 p {
     font-family: 'Montserrat', sans-serif;
     color: #3D3A6C;
-    font-size: 1em;
+    font-size: 1.21em;
 }
 
 .btn-accion, .btn-accion a {
@@ -1068,7 +1073,7 @@ button {
 }
 
 .img-persona2 {
-    max-width: 160px;
+    max-width: 180px;
 }
 
 .div-nombre-VM {
@@ -1087,4 +1092,199 @@ button {
     font-size: .9em;
 }
 
-/* ---------scroll-- el menú se hace mas pequeño----  */
+/* ----------------------RESPONSIVO RESPONSIVO RESPONSIVO----------------- */
+
+@media screen and (max-width: 1650px) {
+    .contenedor-tarjeta {
+        width: 680px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1540px) {
+    .contenedor-tarjeta {
+        width: 620px;
+    }
+    .img-persona {
+        margin-top: 0;
+        max-width: 160px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .contenedor-tarjeta {
+        width: 600px;
+    }
+    .tema-taller h4 {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .contenedor-talleres {
+        padding: 0 10px;
+    }
+    .contenedor-persona {
+        padding-right: 15px;
+    }
+    .contenedor-informacion {
+        padding-left: 0;
+    }
+    .contenedor-tarjeta {
+        width: 540px;
+        padding: 8px;
+        margin: 25px 0px;
+    }
+    .grupos-asignados p {
+        font-size: 15px;
+    }
+    .tipo-taller {
+        width: 130px;
+        height: 20px;
+    }
+    .img-persona {
+        max-width: 130px;
+    }
+    .div-nombre label {
+        font-size: 10px;
+    }
+    .tema-taller h4 {
+        font-size: 14px;
+    }
+    .tipo-taller p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .contenedor-talleres {
+        padding: 0 5px;
+    }
+    .contenedor-persona {
+        padding-right: 10px;
+    }
+    .contenedor-informacion {
+        padding-right: 30px;
+        max-width: 260px;
+    }
+    .contenedor-tarjeta {
+        width: 530px;
+        padding: 8px;
+        margin: 25px 0px;
+    }
+    .grupos-asignados p {
+        font-size: 15px;
+    }
+    .tipo-taller {
+        width: 130px;
+        height: 20px;
+    }
+    .img-persona {
+        max-width: 130px;
+    }
+    .div-nombre label {
+        font-size: 10px;
+    }
+    .tema-taller h4 {
+        font-size: 12px;
+    }
+    .hora-div-2 p {
+        font-size: 0.91em;
+    }
+}
+
+/* FINALIZADO LA PARTE DOBLE */
+
+@media screen and (max-width: 1180px) {
+    .contenedor-talleres {
+        padding: 0 5px;
+    }
+    .contenedor-persona {
+        padding-right: 20px;
+        padding-left: 10px;
+        ;
+    }
+    .contenedor-informacion {
+        padding-right: 30px;
+        max-width: 360px;
+    }
+    .contenedor-tarjeta {
+        width: 630px;
+        padding: 18px 8px;
+        margin: 15px 0px;
+    }
+    .grupos-asignados p {
+        font-size: 20px;
+    }
+    .tipo-taller {
+        width: 150px;
+        height: 24px;
+    }
+    .img-persona {
+        max-width: 160px;
+    }
+    .div-nombre label {
+        font-size: 14px;
+    }
+    .tema-taller h4 {
+        font-size: 18px;
+    }
+    .hora-div-2 p {
+        font-size: 1.21em;
+    }
+}
+
+/* CAMBIO A VERTICAL  */
+
+@media screen and (max-width: 710px) {
+    .contenedor-talleres {
+        padding: 0 5px;
+    }
+    .contenedor-persona {
+        padding-right: 0px;
+        border-right: 0px;
+        padding-left: 0px;
+    }
+    .contenedor-informacion {
+        padding-right: 0px;
+        max-width: 360px;
+    }
+    .contenedor-tarjeta {
+        width: 430px;
+        padding: 18px 8px;
+        margin: 15px 0px;
+        border-radius: 3.5px;
+    }
+    .grupos-asignados p {
+        font-size: 16px;
+    }
+    .tipo-taller {
+        width: 280px;
+        height: 24px;
+        padding: 3px 0;
+    }
+    .tipo-taller p {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+    .img-persona {
+        max-width: 230px;
+    }
+    .div-nombre {
+        min-width: 100%;
+        justify-content: center;
+    }
+    .div-nombre label {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .tema-taller h4 {
+        font-size: 18px;
+    }
+    .hora-div-2 p {
+        font-size: 1.21em;
+    }
+    .grupos-asignados {
+        
+    }
+}
