@@ -17,6 +17,23 @@ img, svg {
 
 /* SECCION HEADER */
 
+/* seciion de scroll INICIO */
+header.abajo{
+    height: 100px;
+}
+/* header.abajo div div a img{
+    min-width: 100px;
+} */
+header.abajo nav ul li a{
+    font-size: 14px;
+    /* transition: .5s; */
+}
+.nav-scrolled{
+    background-color:#E75D00 ;
+    border-radius: 25px;
+    /* transition: .3s; */
+}
+/* seciion de scroll FIN */
 #header {
     position: fixed;
     z-index: 997;
@@ -27,10 +44,11 @@ img, svg {
     height: auto;
 }
 
+
 #header .logo, #header img {
     margin-left: 25px;
-    max-width: 10%;
-    min-width: 150px;
+    max-width: 70%;
+    min-width: 120px;
     height: auto;
 }
 
@@ -147,7 +165,7 @@ img, svg {
     flex-wrap: nowrap;
     height: 500px;
     width: auto;
-    margin-top: 80px;
+    margin-top: 77px;
 }
 
 /* Imagen logo Itics */

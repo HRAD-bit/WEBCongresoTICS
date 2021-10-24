@@ -1,3 +1,34 @@
+// -----efecto de tamaño scroll---
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  header.classList.toggle("abajo", window.scrollY > 0);
+
+
+})
+
+const header = document.querySelector(".con");
+const sectionOne = document.querySelector("#portada");
+
+const sectionOneOptions = {
+  rootMargin: "-100px 0px 0px 0px"
+};
+
+const sectionOneObserver = new IntersectionObserver(function (
+  entries,
+  sectionOneObserver
+) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      header.classList.add("nav-scrolled");
+    } else {
+      header.classList.remove("nav-scrolled");
+    }
+  });
+},
+  sectionOneOptions);
+
+sectionOneObserver.observe(sectionOne);
+
 // LINKS DE ZOOM
 const linkLu1 = "http://google.com",
   LinkLu2 = "http://facebook.com",
