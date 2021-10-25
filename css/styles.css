@@ -1271,6 +1271,35 @@ button {
     .hora-div-2 p {
         font-size: 1.21em;
     }
+    .btn-dias {
+        font-size: 20px;
+    }
+
+    .info-portada h2 {
+        font-size: 40px;
+    }
+
+    .img-portada img {
+        min-width: 115px;
+    }
+}
+
+@media screen and (max-width:970px) {
+    .info-portada{
+        width: 590px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info-portada{
+        width: 590px;
+    }
+    .btn-dias {
+        font-size: 18px;
+    }
+    .info-portada h2 {
+        font-size: 36px;
+    }
 }
 
 /* CAMBIO A VERTICAL  */
@@ -1293,6 +1322,9 @@ button {
         padding: 18px 8px;
         margin: 15px 0px;
         border-radius: 3.5px;
+    }
+    .contenedor-btn-semestres {
+        padding: 20px 15px;
     }
     .grupos-asignados p {
         font-size: 16px;
@@ -1323,7 +1355,180 @@ button {
     .hora-div-2 p {
         font-size: 1.21em;
     }
-    .grupos-asignados {
-        
+    .btn-dias {
+        font-size: 16px;
+        font-weight: 200;
+        color: rgb(0, 0, 0);
+        padding: 3px;
+    }
+    .info-portada{
+        width: 480px;
+    }
+    .btn-dias {
+        font-size: 18px;
+    }
+    .info-portada h2 {
+        font-size: 28px;
+    }
+
+    .info-portada h3{
+        font-size: 24px;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .contenedor-talleres {
+        padding: 0 5px;
+    }
+    .contenedor-persona {
+        padding-right: 0px;
+        border-right: 0px;
+        padding-left: 0px;
+    }
+    .contenedor-informacion {
+        padding-right: 0px;
+        max-width: 360px;
+    }
+    .contenedor-tarjeta {
+        width: 350px;
+        padding: 18px 8px;
+        margin: 15px 0px;
+        border-radius: 3.5px;
+    }
+    .grupos-asignados p {
+        font-size: 12px;
+    }
+    .tipo-taller {
+        width: 280px;
+        height: 24px;
+        padding: 3px 0;
+    }
+    .tipo-taller p {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+    .img-persona {
+        max-width: 230px;
+    }
+    .div-nombre {
+        min-width: 100%;
+        justify-content: center;
+    }
+    .div-nombre label {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .tema-taller h4 {
+        font-size: 18px;
+    }
+    .hora-div-2 p {
+        font-size: 1.21em;
+    }
+    .contenedor-btn-semestres {
+        padding: 10px 3px;
+    }
+    .btn-dias {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .contenedor-talleres {
+        padding: 0 5px;
+    }
+    .contenedor-persona {
+        padding-right: 0px;
+        border-right: 0px;
+        padding-left: 0px;
+    }
+    .contenedor-informacion {
+        padding-right: 0px;
+        max-width: 360px;
+    }
+    .contenedor-tarjeta {
+        width: 300px;
+        padding: 18px 8px;
+        margin: 15px 0px;
+        border-radius: 3.5px;
+    }
+    .grupos-asignados p {
+        font-size: 11px;
+    }
+    .tipo-taller {
+        width: 280px;
+        height: 24px;
+        padding: 3px 0;
+    }
+    .tipo-taller p {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+    .img-persona {
+        max-width: 230px;
+    }
+    .div-nombre {
+        min-width: 100%;
+        justify-content: center;
+    }
+    .div-nombre label {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .tema-taller h4 {
+        font-size: 13px;
+    }
+    .hora-div-2 p {
+        font-size: 1.21em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .contenedor-talleres {
+        padding: 0 5px;
+    }
+    .contenedor-persona {
+        padding-right: 0px;
+        border-right: 0px;
+        padding-left: 0px;
+    }
+    .contenedor-informacion {
+        padding-right: 0px;
+        max-width: 360px;
+    }
+    .contenedor-tarjeta {
+        width: 260px;
+        padding: 18px 8px;
+        margin: 15px 0px;
+        border-radius: 3.5px;
+    }
+    .grupos-asignados p {
+        font-size: 11px;
+    }
+    .tipo-taller {
+        width: 220px;
+        height: 24px;
+        padding: 3px 0;
+    }
+    .tipo-taller p {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    .img-persona {
+        max-width: 200px;
+    }
+    .div-nombre {
+        min-width: 100%;
+        justify-content: center;
+    }
+    .div-nombre label {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .tema-taller h4 {
+        font-size: 13px;
+    }
+    .hora-div-2 p {
+        font-size: 1.21em;
     }
 }
