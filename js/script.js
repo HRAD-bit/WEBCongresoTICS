@@ -1,7 +1,11 @@
 // -----efecto de tamaño scroll---
 window.addEventListener("scroll", function () {
   var header = document.querySelector("header");
-  header.classList.toggle("abajo", window.scrollY > 0);
+  if (header.classList.toggle("abajo", window.scrollY > 0)) {
+    document.getElementById("btnDesc-menu").style.backgroundColor = "#20faddb4";
+  } else {
+    document.getElementById("btnDesc-menu").style.backgroundColor = "#EB8005"
+  }
 
 
 })
