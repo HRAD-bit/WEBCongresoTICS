@@ -18,28 +18,22 @@ img, svg {
 /* SECCION HEADER */
 
 /* seciion de scroll INICIO */
-
-header.abajo {
+header.abajo{
     height: 100px;
 }
-
-header.abajo div div a img {
+header.abajo div div a img{
     max-width: 10px !important;
 }
-
-header.abajo nav ul li a {
+header.abajo nav ul li a{
     font-size: 14px;
     /* transition: .5s; */
 }
-
-.nav-scrolled {
-    background-color: #E75D00;
+.nav-scrolled{
+    background-color:#E75D00 ;
     border-radius: 25px;
     /* transition: .3s; */
 }
-
 /* seciion de scroll FIN */
-
 #header {
     position: fixed;
     z-index: 997;
@@ -49,6 +43,7 @@ header.abajo nav ul li a {
     width: 100%;
     height: auto;
 }
+
 
 #header .logo, #header img {
     margin-left: 25px;
@@ -452,6 +447,7 @@ header.abajo nav ul li a {
     font-size: 18px;
 }
 
+
 .persona-nombre label {
     border-radius: 5px;
     cursor: pointer;
@@ -732,7 +728,6 @@ header.abajo nav ul li a {
 /* lugar de donde viene  */
 
 .lugar-persona {
-    font-size: 14px;
     max-height: 30px;
     display: flex;
     align-items: center;
@@ -1108,18 +1103,6 @@ button {
 .tallerSectionAnimacion {
     opacity: 1;
 }
-#tallerSection {
-    -webkit-transition: opacity .5s ease-in-out;
-    -moz-transition: opacity .5s ease-in-out;
-    -ms-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
-}
-
-.tallerSectionAnimacion {
-    opacity: 1;
-}
-
 /* ----------------------RESPONSIVO RESPONSIVO RESPONSIVO----------------- */
 
 @media screen and (max-width: 1650px) {
@@ -1159,9 +1142,8 @@ button {
         padding-left: 0;
     }
     .contenedor-tarjeta {
-        width: 555px;
+        width: 540px;
         padding: 8px;
-        padding-right: 20px;
         margin: 25px 0px;
     }
     .grupos-asignados p {
@@ -1235,7 +1217,7 @@ button {
     }
     .contenedor-informacion {
         padding-right: 30px;
-        max-width: 330px;
+        max-width: 360px;
     }
     .contenedor-tarjeta {
         width: 630px;
@@ -1253,7 +1235,7 @@ button {
         max-width: 160px;
     }
     .div-nombre label {
-        font-size: 12px;
+        font-size: 14px;
     }
     .tema-taller h4 {
         font-size: 18px;
@@ -1264,22 +1246,24 @@ button {
     .btn-dias {
         font-size: 20px;
     }
+
     .info-portada h2 {
         font-size: 40px;
     }
+
     .img-portada img {
         min-width: 115px;
     }
 }
 
 @media screen and (max-width:970px) {
-    .info-portada {
+    .info-portada{
         width: 590px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .info-portada {
+    .info-portada{
         width: 590px;
     }
     .btn-dias {
@@ -1349,7 +1333,7 @@ button {
         color: rgb(0, 0, 0);
         padding: 3px;
     }
-    .info-portada {
+    .info-portada{
         width: 480px;
     }
     .btn-dias {
@@ -1358,7 +1342,8 @@ button {
     .info-portada h2 {
         font-size: 28px;
     }
-    .info-portada h3 {
+
+    .info-portada h3{
         font-size: 24px;
         padding: 30px;
     }
