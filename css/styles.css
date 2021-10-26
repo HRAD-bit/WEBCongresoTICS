@@ -1225,7 +1225,7 @@ button {
     }
     .contenedor-informacion {
         padding-right: 30px;
-        max-width: 360px;
+        max-width: 330px;
     }
     .contenedor-tarjeta {
         width: 630px;
@@ -1243,7 +1243,7 @@ button {
         max-width: 160px;
     }
     .div-nombre label {
-        font-size: 14px;
+        font-size: 12px;
     }
     .tema-taller h4 {
         font-size: 18px;

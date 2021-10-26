@@ -1111,7 +1111,7 @@ function informacionLunes() {
     (empresaTallerista3 = "ITS Misantla"),
     (gruposAsignados3 = "Todos los Semestres"),
     (tituloTaller3 =
-      '"INDUSTRY INSTITUTE: PEGA SYSTEMS Y HUAWEI TECHNOLOGIES"'),
+      '"INDUSTRIA INSITU: PEGA SYSTEMS Y HUAWEI TECHNOLOGIES"'),
     (horasTaller3 = "17:00 - 18:00");
 
   // TARJETAS 4 LUNES
@@ -1178,7 +1178,7 @@ function informacionMiercoles() {
   // TARJETAS 2 MIERCOLES
 
   (tipoTaller2 = "Taller"),
-    (nombreTallerista2 = "MCCyT. Keila Elena Ocaña Drouaillet"),
+    (nombreTallerista2 = "MCCyT. Keila Elena Ocaña"),
     (empresaTallerista2 = "ITS de Martínez de la Torre"),
     (gruposAsignados2 = "707"),
     (tituloTaller2 = '"ADMINISTRACIÓN DE MÁQUINAS LINUX CON WEBMIN"'),
@@ -1187,7 +1187,7 @@ function informacionMiercoles() {
   // TARJETAS 3 MIERCOLES
 
   (tipoTaller3 = "Taller"),
-    (nombreTallerista3 = "MSC. Ferdnando Alberto Hernández Guevara"),
+    (nombreTallerista3 = "MSC. Fernando Alberto Hernández"),
     (empresaTallerista3 = "ITS de Misantla"),
     (gruposAsignados3 = "107, 307 & 507"),
     (tituloTaller3 = '"DETECCIÓN DE INTRUSIÓN CON PFSENSE"'),
