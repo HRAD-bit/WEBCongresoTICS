@@ -1,10 +1,3 @@
-const iconMenu = document.querySelector('#icono-menu'),
-  menu = document.querySelector('#navbar');
-
-iconMenu.addEventListener('click', (e) => {
-  menu.classList.toggle('active');
-  // document.body.classList.toggle('opacity');
-})
 // -----efecto de tamaño scroll---
 window.addEventListener("scroll", function () {
   var header = document.querySelector("header");
