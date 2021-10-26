@@ -150,8 +150,7 @@ header.abajo nav ul li a {
 
 #portada {
     margin: 0.5rem, 0.7rem;
-    /* background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url(../img/banner-1.png); */
-    background-image: url(../img/banner-1.png);
+    background-image: url(../img/resources/banner-1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: scroll;
