@@ -1346,6 +1346,7 @@ function btnLunesON() {
   document.getElementById(
     "imagenTallerista1"
   ).innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona" />`;
+  document.getElementById("divNombre1").innerHTML = `<label class="open-modal" data-open="modal1" id="nombreTallerista1"></label>`;
   document.getElementById(
     "nombreTallerista1"
   ).innerHTML = `${nombreTallerista1}`;
@@ -1474,6 +1475,7 @@ function btnMartesON() {
   document.getElementById(
     "imagenTallerista1"
   ).innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona" />`;
+  document.getElementById("divNombre1").innerHTML = `<label class="open-modal" data-open="modal" id="nombreTallerista1"></label>`;
   document.getElementById(
     "nombreTallerista1"
   ).innerHTML = `${nombreTallerista1}`;
