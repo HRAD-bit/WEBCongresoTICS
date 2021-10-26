@@ -732,6 +732,7 @@ header.abajo nav ul li a {
 /* lugar de donde viene  */
 
 .lugar-persona {
+    font-size: 14px;
     max-height: 30px;
     display: flex;
     align-items: center;
@@ -1147,8 +1148,9 @@ button {
         padding-left: 0;
     }
     .contenedor-tarjeta {
-        width: 540px;
+        width: 555px;
         padding: 8px;
+        padding-right: 20px;
         margin: 25px 0px;
     }
     .grupos-asignados p {
