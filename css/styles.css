@@ -1335,10 +1335,10 @@ button {
     #btnDesc-menu{
         margin-left: 0;
     }
-    .menu ul li:hover{
+    /* .menu ul li:hover{
     background-color: white;
     color: rgb(88, 88, 88);
-    }
+    } */
 }
 
 /* CAMBIO A VERTICAL  */
