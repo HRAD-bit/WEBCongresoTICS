@@ -1,10 +1,10 @@
-const iconMenu = document.querySelector('#icono-menu'),
-  menu = document.querySelector('#navbar');
+const iconMenu = document.querySelector("#icono-menu"),
+  menu = document.querySelector("#navbar");
 
-iconMenu.addEventListener('click', (e) => {
-  menu.classList.toggle('active');
+iconMenu.addEventListener("click", (e) => {
+  menu.classList.toggle("active");
   // document.body.classList.toggle('opacity');
-})
+});
 // -----efecto de tamaño scroll---
 window.addEventListener("scroll", function () {
   var header = document.querySelector("header");
@@ -109,7 +109,7 @@ const btnStateLu1 = (deadline, elem, finalMessage) => {
       document.getElementById(
         "btnAccionLu1"
       ).innerHTML = `<a href="${linkLu1}" target="_blank">
-      <div><img src="img/ingresar.png" alt="" class="btn-action-img" /></div>
+      <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateLu1"><p>Acceder</p></div>
       </div>
@@ -128,7 +128,7 @@ const btnStateLu1 = (deadline, elem, finalMessage) => {
           "#858585";
         document.getElementById("btnAccionLu1").style.cursor = "no-drop";
         document.getElementById("btnAccionLu1").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/ingresar.png" alt="" />
+        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateLu1"><p>Finalizado</p></div>
@@ -162,7 +162,7 @@ const btnStateLu2 = (deadline, elem, finalMessage) => {
       document.getElementById(
         "btnAccionLu2"
       ).innerHTML = `<a href="${LinkLu2}" target="_blank">
-    <div><img src="img/ingresar.png" alt="" class="btn-action-img" /></div>
+    <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateLu2"><p>Acceder</p></div>
     </div>
@@ -181,7 +181,7 @@ const btnStateLu2 = (deadline, elem, finalMessage) => {
           "#858585";
         document.getElementById("btnAccionLu2").style.cursor = "no-drop";
         document.getElementById("btnAccionLu2").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/ingresar.png" alt="" />
+        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateLu2"><p>Finalizado</p></div>
@@ -212,7 +212,7 @@ const btnStateLu3 = (deadline, elem, finalMessage) => {
       document.getElementById(
         "btnAccionLu3"
       ).innerHTML = `<a href="${linkLu1}" target="_blank">
-      <div><img src="img/ingresar.png" alt="" class="btn-action-img" /></div>
+      <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateLu3"><p>Acceder</p></div>
       </div>
@@ -229,7 +229,7 @@ const btnStateLu3 = (deadline, elem, finalMessage) => {
           "#858585";
         document.getElementById("btnAccionLu3").style.cursor = "no-drop";
         document.getElementById("btnAccionLu3").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/ingresar.png" alt="" />
+        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateLu3"><p>Finalizado</p></div>
@@ -260,7 +260,7 @@ const btnStateLu4 = (deadline, elem, finalMessage) => {
       document.getElementById(
         "btnAccionLu4"
       ).innerHTML = `<a href="${linkLu1}" target="_blank">
-      <div><img src="img/ingresar.png" alt="" class="btn-action-img" /></div>
+      <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateLu4"><p>Acceder</p></div>
       </div>
@@ -278,7 +278,7 @@ const btnStateLu4 = (deadline, elem, finalMessage) => {
           "#858585";
         document.getElementById("btnAccionLu4").style.cursor = "no-drop";
         document.getElementById("btnAccionLu4").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/ingresar.png" alt="" />
+        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateLu4"><p>Finalizado</p></div>
@@ -307,7 +307,7 @@ const btnStateMa1 = (deadline, elem, finalMessage) => {
       document.getElementById(
         "btnAccionLu1"
       ).innerHTML = `<a href="${linkMa1}" target="_blank">
-      <div><img src="img/ingresar.png" alt="" class="btn-action-img" /></div>
+      <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateMa1"><p>Acceder</p></div>
       </div>
@@ -326,7 +326,7 @@ const btnStateMa1 = (deadline, elem, finalMessage) => {
           "#858585";
         document.getElementById("btnAccionLu1").style.cursor = "no-drop";
         document.getElementById("btnAccionLu1").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/ingresar.png" alt="" />
+        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateMa1"><p>Finalizado</p></div>
@@ -360,7 +360,7 @@ const btnStateMa2 = (deadline, elem, finalMessage) => {
       document.getElementById(
         "btnAccionLu2"
       ).innerHTML = `<a href="${LinkMa2}" target="_blank">
-    <div><img src="img/ingresar.png" alt="" class="btn-action-img" /></div>
+    <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateMa2"><p>Acceder</p></div>
     </div>
@@ -379,7 +379,7 @@ const btnStateMa2 = (deadline, elem, finalMessage) => {
           "#858585";
         document.getElementById("btnAccionLu2").style.cursor = "no-drop";
         document.getElementById("btnAccionLu2").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/ingresar.png" alt="" />
+        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateMa2"><p>Finalizado</p></div>
@@ -408,7 +408,7 @@ const btnStateMa3 = (deadline, elem, finalMessage) => {
       document.getElementById(
         "btnAccionLu3"
       ).innerHTML = `<a href="${LinkMa3}" target="_blank">
-    <div><img src="img/ingresar.png" alt="" class="btn-action-img" /></div>
+    <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateMa3"><p>Acceder</p></div>
     </div>
@@ -427,7 +427,7 @@ const btnStateMa3 = (deadline, elem, finalMessage) => {
           "#858585";
         document.getElementById("btnAccionLu3").style.cursor = "no-drop";
         document.getElementById("btnAccionLu3").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/ingresar.png" alt="" />
+        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateMa3"><p>Finalizado</p></div>
@@ -461,7 +461,7 @@ const btnStateMa4 = (deadline, elem, finalMessage) => {
       document.getElementById(
         "btnAccionLu4"
       ).innerHTML = `<a href="${LinkMa2}" target="_blank">
-    <div><img src="img/ingresar.png" alt="" class="btn-action-img" /></div>
+    <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateMa4"><p>Acceder</p></div>
     </div>
@@ -480,7 +480,7 @@ const btnStateMa4 = (deadline, elem, finalMessage) => {
           "#858585";
         document.getElementById("btnAccionLu4").style.cursor = "no-drop";
         document.getElementById("btnAccionLu2").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/ingresar.png" alt="" />
+        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateMa4"><p>Finalizado</p></div>
@@ -509,7 +509,7 @@ const btnStateMi1 = (deadline, elem, finalMessage) => {
       document.getElementById(
         "btnAccionLu1"
       ).innerHTML = `<a href="${linkMa1}" target="_blank">
-      <div><img src="img/ingresar.png" alt="" class="btn-action-img" /></div>
+      <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateMi1"><p>Acceder</p></div>
       </div>
@@ -528,7 +528,7 @@ const btnStateMi1 = (deadline, elem, finalMessage) => {
           "#858585";
         document.getElementById("btnAccionLu1").style.cursor = "no-drop";
         document.getElementById("btnAccionLu1").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/ingresar.png" alt="" />
+        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateMi1"><p>Finalizado</p></div>
@@ -562,7 +562,7 @@ const btnStateMi2 = (deadline, elem, finalMessage) => {
       document.getElementById(
         "btnAccionLu2"
       ).innerHTML = `<a href="${LinkMa2}" target="_blank">
-    <div><img src="img/ingresar.png" alt="" class="btn-action-img" /></div>
+    <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateMi2"><p>Acceder</p></div>
     </div>
@@ -581,7 +581,7 @@ const btnStateMi2 = (deadline, elem, finalMessage) => {
           "#858585";
         document.getElementById("btnAccionLu2").style.cursor = "no-drop";
         document.getElementById("btnAccionLu2").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/ingresar.png" alt="" />
+        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateMi2"><p>Finalizado</p></div>
@@ -610,7 +610,7 @@ const btnStateMi3 = (deadline, elem, finalMessage) => {
       document.getElementById(
         "btnAccionLu3"
       ).innerHTML = `<a href="${LinkMa3}" target="_blank">
-    <div><img src="img/ingresar.png" alt="" class="btn-action-img" /></div>
+    <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateMi3"><p>Acceder</p></div>
     </div>
@@ -629,7 +629,7 @@ const btnStateMi3 = (deadline, elem, finalMessage) => {
           "#858585";
         document.getElementById("btnAccionLu3").style.cursor = "no-drop";
         document.getElementById("btnAccionLu3").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/ingresar.png" alt="" />
+        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateMi3"><p>Finalizado</p></div>
@@ -663,7 +663,7 @@ const btnStateMi4 = (deadline, elem, finalMessage) => {
       document.getElementById(
         "btnAccionLu4"
       ).innerHTML = `<a href="${LinkMa2}" target="_blank">
-    <div><img src="img/ingresar.png" alt="" class="btn-action-img" /></div>
+    <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateMi4"><p>Acceder</p></div>
     </div>
@@ -682,7 +682,7 @@ const btnStateMi4 = (deadline, elem, finalMessage) => {
           "#858585";
         document.getElementById("btnAccionLu4").style.cursor = "no-drop";
         document.getElementById("btnAccionLu2").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/ingresar.png" alt="" />
+        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateMi4"><p>Finalizado</p></div>
@@ -711,7 +711,7 @@ const btnStateJu1 = (deadline, elem, finalMessage) => {
       document.getElementById(
         "btnAccionLu1"
       ).innerHTML = `<a href="${linkMa1}" target="_blank">
-      <div><img src="img/ingresar.png" alt="" class="btn-action-img" /></div>
+      <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateJu1"><p>Acceder</p></div>
       </div>
@@ -730,7 +730,7 @@ const btnStateJu1 = (deadline, elem, finalMessage) => {
           "#858585";
         document.getElementById("btnAccionLu1").style.cursor = "no-drop";
         document.getElementById("btnAccionLu1").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/ingresar.png" alt="" />
+        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateJu1"><p>Finalizado</p></div>
@@ -764,7 +764,7 @@ const btnStateJu2 = (deadline, elem, finalMessage) => {
       document.getElementById(
         "btnAccionLu2"
       ).innerHTML = `<a href="${LinkMa2}" target="_blank">
-    <div><img src="img/ingresar.png" alt="" class="btn-action-img" /></div>
+    <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateJu2"><p>Acceder</p></div>
     </div>
@@ -783,7 +783,7 @@ const btnStateJu2 = (deadline, elem, finalMessage) => {
           "#858585";
         document.getElementById("btnAccionLu2").style.cursor = "no-drop";
         document.getElementById("btnAccionLu2").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/ingresar.png" alt="" />
+        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateJu2"><p>Finalizado</p></div>
@@ -812,7 +812,7 @@ const btnStateVi1 = (deadline, elem, finalMessage) => {
       document.getElementById(
         "btnAccionLu1"
       ).innerHTML = `<a href="${linkMa1}" target="_blank">
-      <div><img src="img/ingresar.png" alt="" class="btn-action-img" /></div>
+      <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateVi1"><p>Acceder</p></div>
       </div>
@@ -831,7 +831,7 @@ const btnStateVi1 = (deadline, elem, finalMessage) => {
           "#858585";
         document.getElementById("btnAccionLu1").style.cursor = "no-drop";
         document.getElementById("btnAccionLu1").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/ingresar.png" alt="" />
+        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateVi1"><p>Finalizado</p></div>
@@ -865,7 +865,7 @@ const btnStateVi2 = (deadline, elem, finalMessage) => {
       document.getElementById(
         "btnAccionLu2"
       ).innerHTML = `<a href="${LinkMa2}" target="_blank">
-    <div><img src="img/ingresar.png" alt="" class="btn-action-img" /></div>
+    <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateVi2"><p>Acceder</p></div>
     </div>
@@ -884,7 +884,7 @@ const btnStateVi2 = (deadline, elem, finalMessage) => {
           "#858585";
         document.getElementById("btnAccionLu2").style.cursor = "no-drop";
         document.getElementById("btnAccionLu2").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/ingresar.png" alt="" />
+        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateVi2"><p>Finalizado</p></div>
@@ -913,7 +913,7 @@ const btnStateVi3 = (deadline, elem, finalMessage) => {
       document.getElementById(
         "btnAccionLu3"
       ).innerHTML = `<a href="${LinkMa3}" target="_blank">
-    <div><img src="img/ingresar.png" alt="" class="btn-action-img" /></div>
+    <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateVi3"><p>Acceder</p></div>
     </div>
@@ -932,7 +932,7 @@ const btnStateVi3 = (deadline, elem, finalMessage) => {
           "#858585";
         document.getElementById("btnAccionLu3").style.cursor = "no-drop";
         document.getElementById("btnAccionLu3").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/ingresar.png" alt="" />
+        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
       </div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateVi3"><p>Finalizado</p></div>
@@ -945,103 +945,6 @@ const btnStateVi3 = (deadline, elem, finalMessage) => {
 };
 btnStateVi3(tarjeta3TimeVi, "btnStateVi3", "Ingresar");
 
-// const btnStateLu3 = (deadline, elem, finalMessage) => {
-//   const el = document.getElementById(elem);
-
-//   const timerUpdate = setInterval(() => {
-//     let t = getRemainingTime(deadline);
-//     el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
-
-//     if (t.remainTime <= 1) {
-//       console.log(t.remainTime);
-//       // clearInterval(timerUpdate);
-//       // el.innerHTML = finalMessage;
-//       el.innerHTML = `<p> Acceder <p>`;
-//       document.getElementById("liveIDLu3").style.display = "flex";
-//       document.getElementById("gruposLiveLu3").style.justifyContent =
-//         "space-between";
-//       document.getElementById(
-//         "btnAccionLu3"
-//       ).innerHTML = `<a href="${linkLu1}" target="_blank">
-//       <div><img src="img/ingresar.png" alt="" class="btn-action-img" /></div>
-//       <div class="btn-action-estado">
-//         <div class="btnState" id="btnStateLu3"><p>Acceder</p></div>
-//       </div>
-//     </a>`;
-//       document.getElementById("btnAccionLu3").style.backgroundColor = "#3EE45F";
-//       if (t.remainTime <= -5.0) {
-//         clearInterval(timerUpdate);
-//         console.log(t.remainTime);
-//         el.innerHTML = "FINALIZADO";
-//         document.getElementById("liveIDLu3").style.display = "none";
-//         document.getElementById("gruposLiveLu3").style.justifyContent =
-//           "space-around";
-//         document.getElementById("btnAccionLu3").style.backgroundColor =
-//           "#858585";
-//         document.getElementById("btnAccionLu3").style.cursor = "no-drop";
-//         document.getElementById("btnAccionLu3").innerHTML = ` <div>
-//         <img class="btn-action-img" src="img/ingresar.png" alt="" />
-//       </div>
-//       <div class="btn-action-estado">
-//         <div class="btnState" id="btnStateLu3"><p>Finalizado</p></div>
-//       </div>`;
-//         document.getElementById("contenedorInfoLu3").className +=
-//           " contenedor-informacion-off";
-//       }
-//     }
-//   }, 1000);
-// };
-// btnStateLu3(tarjeta3TimeLu, "btnStateLu3", "Ingresar");
-
-// const btnStateLu4 = (deadline, elem, finalMessage) => {
-//   const el = document.getElementById(elem);
-
-//   const timerUpdate = setInterval(() => {
-//     let t = getRemainingTime(deadline);
-//     el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
-//     // EN VIVO
-//     if (t.remainTime <= 1) {
-//       console.log(t.remainTime);
-//       // clearInterval(timerUpdate);
-//       // el.innerHTML = finalMessage;
-//       el.innerHTML = `<p> Acceder <p>`;
-//       document.getElementById("liveIDLu4").style.display = "flex";
-//       document.getElementById("gruposLiveLu4").style.justifyContent =
-//         "space-between";
-//       document.getElementById(
-//         "btnAccionLu4"
-//       ).innerHTML = `<a href="${linkLu1}" target="_blank">
-//       <div><img src="img/ingresar.png" alt="" class="btn-action-img" /></div>
-//       <div class="btn-action-estado">
-//         <div class="btnState" id="btnStateLu4"><p>Acceder</p></div>
-//       </div>
-//     </a>`;
-//       document.getElementById("btnAccionLu4").style.backgroundColor = "#3EE45F";
-//       // FINALIZADO
-//       if (t.remainTime <= -5.0) {
-//         clearInterval(timerUpdate);
-//         console.log(t.remainTime);
-//         el.innerHTML = "FINALIZADO";
-//         document.getElementById("liveIDLu4").style.display = "none";
-//         document.getElementById("gruposLiveLu4").style.justifyContent =
-//           "space-around";
-//         document.getElementById("btnAccionLu4").style.backgroundColor =
-//           "#858585";
-//         document.getElementById("btnAccionLu4").style.cursor = "no-drop";
-//         document.getElementById("btnAccionLu4").innerHTML = ` <div>
-//         <img class="btn-action-img" src="img/ingresar.png" alt="" />
-//       </div>
-//       <div class="btn-action-estado">
-//         <div class="btnState" id="btnStateLu4"><p>Finalizado</p></div>
-//       </div>`;
-//         document.getElementById("contenedorInfoLu4").className +=
-//           " contenedor-informacion-off";
-//       }
-//     }
-//   }, 1000);
-// };
-// btnStateLu4(tarjeta4TimeLu, "btnStateLu4", "Ingresar");
-
 // DECLARACION DE VARIABLES PARA LAS TARJETAS
 var tipoTaller1 = "",
   nombreTallerista1 = "",
@@ -1049,23 +952,27 @@ var tipoTaller1 = "",
   gruposAsignados1 = "",
   tituloTaller1 = "",
   horasTaller1 = "",
+  imagenTaller1 = "",
   tipoTaller2 = "",
   nombreTallerista2 = "",
   empresaTallerista2 = "",
   gruposAsignados2 = "",
   tituloTaller2 = "",
   horasTaller2 = "",
+  imagenTaller2 = "",
   tipoTaller3 = "",
   nombreTallerista3 = "",
   empresaTallerista3 = "",
   gruposAsignados3 = "",
   tituloTaller3 = "",
   horasTaller3 = "",
+  imagenTaller3 = "",
   tipoTaller4 = "",
   nombreTallerista4 = "",
   empresaTallerista4 = "",
   gruposAsignados4 = "",
   tituloTaller4 = "",
+  imagenTaller4 = "",
   horasTaller4 = "";
 
 // MOSTRAR Y OCULTAR TARJETAS DIVS
@@ -1093,7 +1000,8 @@ function informacionLunes() {
     (empresaTallerista1 = "ITS Misantla"),
     (gruposAsignados1 = "107 & 307"),
     (tituloTaller1 = '"CONFIGURACIÓN Y ADMINISTRACIÓN DE HOSTING"'),
-    (horasTaller1 = "10:00 - 14:00");
+    (horasTaller1 = "10:00 - 14:00"),
+    (imagenTaller1 = "img/talleristas/JoseJuan.png");
 
   // TARJETAS 2 LUNES
 
@@ -1102,7 +1010,8 @@ function informacionLunes() {
     (empresaTallerista2 = "Drone COllision Center"),
     (gruposAsignados2 = "Todos los Semestres"),
     (tituloTaller2 = '"LA IA EN LOS DRONES Y LOS SECTORES PRODUCTIVOS"'),
-    (horasTaller2 = "16:00 - 17:00");
+    (horasTaller2 = "16:00 - 17:00"),
+    (imagenTaller2 = "img/talleristas/JoseRiojas.png");
 
   // TARJETAS 3 LUNES
 
@@ -1110,9 +1019,9 @@ function informacionLunes() {
     (nombreTallerista3 = "Academia de Ing. en TICS"),
     (empresaTallerista3 = "ITS Misantla"),
     (gruposAsignados3 = "Todos los Semestres"),
-    (tituloTaller3 =
-      '"INDUSTRIA INSITU: PEGA SYSTEMS Y HUAWEI TECHNOLOGIES"'),
-    (horasTaller3 = "17:00 - 18:00");
+    (tituloTaller3 = '"INDUSTRIA INSITU: PEGA SYSTEMS Y HUAWEI TECHNOLOGIES"'),
+    (horasTaller3 = "17:00 - 18:00"),
+    (imagenTaller3 = "img/talleristas/Hombre.png");
 
   // TARJETAS 4 LUNES
 
@@ -1121,7 +1030,8 @@ function informacionLunes() {
     (empresaTallerista4 = "Mobiik Development"),
     (gruposAsignados4 = "507 & 707"),
     (tituloTaller4 = '"CONCEPTOS BÁSICOS DE IONIC"'),
-    (horasTaller4 = "18:00 - 21:00");
+    (horasTaller4 = "18:00 - 21:00"),
+    (imagenTaller4 = "img/talleristas/UrielPerez.png");
   MostrarTodoTarjetas();
 }
 // ------------------------MARTES-------------------------
@@ -1132,7 +1042,8 @@ function informacionMartes() {
     (empresaTallerista1 = "ITS Misantla"),
     (gruposAsignados1 = "107 & 307"),
     (tituloTaller1 = '"CONFIGURACIÓN Y ADMINISTRACIÓN DE HOSTING"'),
-    (horasTaller1 = "10:00 - 14:00");
+    (horasTaller1 = "10:00 - 14:00"),
+    (imagenTaller1 = "img/talleristas/JoseJuan.png");
 
   // TARJETAS 2 MARTES
 
@@ -1141,7 +1052,8 @@ function informacionMartes() {
     (empresaTallerista2 = "Volkswagen México"),
     (gruposAsignados2 = "Por Confirmar"),
     (tituloTaller2 = '"5G EN EL SECTOR AUTOMOTRÍZ"'),
-    (horasTaller2 = "16:00 - 17:00");
+    (horasTaller2 = "16:00 - 17:00"),
+    (imagenTaller2 = "img/talleristas/Hombre.png");
 
   // TARJETAS 3 MARTES
 
@@ -1151,7 +1063,8 @@ function informacionMartes() {
     (gruposAsignados3 = "Todos los Semestres"),
     (tituloTaller3 =
       '"LA IMPORTANCIA DE SCRUM COMO METODOLOGÍA ÁGIL PARA LA GESTIÓN DE PROYECTOS DE TI"'),
-    (horasTaller3 = "17:00 - 18:00");
+    (horasTaller3 = "17:00 - 18:00"),
+    (imagenTaller3 = "img/talleristas/LauraMaySalazar.png");
 
   // TARJETAS 4 MARTES
 
@@ -1160,7 +1073,8 @@ function informacionMartes() {
     (empresaTallerista4 = "Mobiik Development"),
     (gruposAsignados4 = "507 & 707"),
     (tituloTaller4 = '"CONCEPTOS BÁSICOS DE IONIC"'),
-    (horasTaller4 = "18:00 - 21:00");
+    (horasTaller4 = "18:00 - 21:00"),
+    imagenTaller4 = "img/talleristas/UrielPerez.png";
 
   MostrarTodoTarjetas();
 }
@@ -1173,7 +1087,8 @@ function informacionMiercoles() {
     (empresaTallerista1 = "IDS Comercial"),
     (tituloTaller1 = '"AGILE O MINDSET, ¿QUÉ VA PRIMERO?"'),
     (gruposAsignados1 = "Todos los semestres"),
-    (horasTaller1 = "10:00 - 11:00");
+    (horasTaller1 = "10:00 - 11:00"),
+    imagenTaller1 = "img/talleristas/JoseJuan.png";
 
   // TARJETAS 2 MIERCOLES
 
@@ -1182,7 +1097,8 @@ function informacionMiercoles() {
     (empresaTallerista2 = "ITS de Martínez de la Torre"),
     (gruposAsignados2 = "707"),
     (tituloTaller2 = '"ADMINISTRACIÓN DE MÁQUINAS LINUX CON WEBMIN"'),
-    (horasTaller2 = "15:00 - 18:00");
+    (horasTaller2 = "15:00 - 18:00"),
+    imagenTaller2 = "img/talleristas/KeilaElena.png";
 
   // TARJETAS 3 MIERCOLES
 
@@ -1191,7 +1107,8 @@ function informacionMiercoles() {
     (empresaTallerista3 = "ITS de Misantla"),
     (gruposAsignados3 = "107, 307 & 507"),
     (tituloTaller3 = '"DETECCIÓN DE INTRUSIÓN CON PFSENSE"'),
-    (horasTaller3 = "16:00 - 18:00");
+    (horasTaller3 = "16:00 - 18:00"),
+    imagenTaller3 = "img/talleristas/Hombre.png";
 
   // TARJETAS 4 MIERCOLES
 
@@ -1200,7 +1117,8 @@ function informacionMiercoles() {
     (empresaTallerista4 = "IKAGI Consultoría Informática"),
     (gruposAsignados4 = "Todos los Semestres"),
     (tituloTaller4 = '"TÉCNICAS DE PENTEST"'),
-    (horasTaller4 = "19:00 - 20:00");
+    (horasTaller4 = "19:00 - 20:00"),
+    imagenTaller4 = "img/talleristas/AleidaPerez.png";
 
   MostrarTodoTarjetas();
 }
@@ -1213,7 +1131,8 @@ function informacionJueves() {
     (empresaTallerista1 = "ITS de Martínez de la Torre"),
     (gruposAsignados1 = "707"),
     (tituloTaller1 = '"ADMINISTRACIÓN DE MÁQUINAS LINUX CON WEBMIN"'),
-    (horasTaller1 = "15:00 - 18:00");
+    (horasTaller1 = "15:00 - 18:00"),
+    imagenTaller1 = "img/talleristas/KeilaElena.png";
 
   // TARJETA 2 JUEVES
 
@@ -1222,7 +1141,8 @@ function informacionJueves() {
     (empresaTallerista2 = "ITS de Misantla"),
     (gruposAsignados2 = "107, 307 & 507"),
     (tituloTaller2 = '"DETECCIÓN DE INTRUSIÓN CON PFSENSE"'),
-    (horasTaller2 = "16:00 - 18:00");
+    (horasTaller2 = "16:00 - 18:00"),
+    imagenTaller2 = "img/talleristas/Hombre.png";
 
   OcultarSeccion2Completa();
 }
@@ -1235,7 +1155,8 @@ function informacionViernes() {
     (empresaTallerista1 = "IDS Comercial"),
     (tituloTaller1 = '"¿CÓMO SER UN GRAN DESARROLLADOR DE APLICACIONES?"'),
     (gruposAsignados1 = "Todos los Semestres"),
-    (horasTaller1 = "13:00 - 15:00");
+    (horasTaller1 = "13:00 - 15:00"),
+    imagenTaller1 = "img/talleristas/Hombre.png";
 
   // TARJETA 2 VIERNES
   (tipoTaller2 = "Taller"),
@@ -1243,7 +1164,8 @@ function informacionViernes() {
     (empresaTallerista2 = "ITS de Martínez de la Torre"),
     (gruposAsignados2 = "707"),
     (tituloTaller2 = '"ADMINISTRACIÓN DE MÁQUINAS LINUX CON WEBMIN"'),
-    (horasTaller2 = "15:00 - 18:00");
+    (horasTaller2 = "15:00 - 18:00"),
+    imagenTaller2 = "img/talleristas/KeilaElena.png";
 
   // TARJETA 3 VIERNES
 
@@ -1252,7 +1174,8 @@ function informacionViernes() {
     (empresaTallerista3 = "ITS de Misantla"),
     (gruposAsignados3 = "107, 307 & 507"),
     (tituloTaller3 = '"DETECCIÓN DE INTRUSIÓN CON PFSENSE"'),
-    (horasTaller3 = "16:00 - 18:00");
+    (horasTaller3 = "16:00 - 18:00"),
+    imagenTaller3 = "img/talleristas/Hombre.png";
 
   OcultarTarjeta4();
 }
@@ -1422,7 +1345,7 @@ function btnLunesON() {
   document.getElementById("tipoTaller1").innerHTML = `<p>${tipoTaller1}</p>`;
   document.getElementById(
     "imagenTallerista1"
-  ).innerHTML = `<img src="img/Jose Juan.png" alt="" class="img-persona" />`;
+  ).innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona" />`;
   document.getElementById(
     "nombreTallerista1"
   ).innerHTML = `${nombreTallerista1}`;
@@ -1440,7 +1363,7 @@ function btnLunesON() {
   document.getElementById("tipoTaller2").innerHTML = `<p>${tipoTaller2}</p>`;
   document.getElementById(
     "imagenTallerista2"
-  ).innerHTML = `<img src="img/Jose Riojas.png" alt="" class="img-persona" />`;
+  ).innerHTML = `<img src="${imagenTaller2}" alt="" class="img-persona" />`;
   document.getElementById(
     "nombreTallerista2"
   ).innerHTML = `${nombreTallerista2}`;
@@ -1458,7 +1381,7 @@ function btnLunesON() {
   document.getElementById("tipoTaller3").innerHTML = `<p>${tipoTaller3}</p>`;
   document.getElementById(
     "imagenTallerista3"
-  ).innerHTML = `<img src="img/Hombre.png" alt="" class="img-persona" />`;
+  ).innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona" />`;
   document.getElementById(
     "nombreTallerista3"
   ).innerHTML = `${nombreTallerista3}`;
@@ -1476,7 +1399,7 @@ function btnLunesON() {
   document.getElementById("tipoTaller4").innerHTML = `<p>${tipoTaller4}</p>`;
   document.getElementById(
     "imagenTallerista4"
-  ).innerHTML = ` <img src="img/ing-Uriel.png" alt="" class="img-persona" />`;
+  ).innerHTML = ` <img src="${imagenTaller4}" alt="" class="img-persona" />`;
   document.getElementById(
     "nombreTallerista4"
   ).innerHTML = `${nombreTallerista4}`;
@@ -1550,7 +1473,7 @@ function btnMartesON() {
   document.getElementById("tipoTaller1").innerHTML = `<p>${tipoTaller1}</p>`;
   document.getElementById(
     "imagenTallerista1"
-  ).innerHTML = `<img src="img/Jose Juan.png" alt="" class="img-persona" />`;
+  ).innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona" />`;
   document.getElementById(
     "nombreTallerista1"
   ).innerHTML = `${nombreTallerista1}`;
@@ -1568,7 +1491,7 @@ function btnMartesON() {
   document.getElementById("tipoTaller2").innerHTML = `<p>${tipoTaller2}</p>`;
   document.getElementById(
     "imagenTallerista2"
-  ).innerHTML = `<img src="img/Jose Riojas.png" alt="" class="img-persona" />`;
+  ).innerHTML = `<img src="${imagenTaller2}" alt="" class="img-persona" />`;
   document.getElementById(
     "nombreTallerista2"
   ).innerHTML = `${nombreTallerista2}`;
@@ -1586,7 +1509,7 @@ function btnMartesON() {
   document.getElementById("tipoTaller3").innerHTML = `<p>${tipoTaller3}</p>`;
   document.getElementById(
     "imagenTallerista3"
-  ).innerHTML = `<img src="img/Hombre.png" alt="" class="img-persona" />`;
+  ).innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona" />`;
   document.getElementById(
     "nombreTallerista3"
   ).innerHTML = `${nombreTallerista3}`;
@@ -1604,7 +1527,7 @@ function btnMartesON() {
   document.getElementById("tipoTaller4").innerHTML = `<p>${tipoTaller4}</p>`;
   document.getElementById(
     "imagenTallerista4"
-  ).innerHTML = ` <img src="img/ing-Uriel.png" alt="" class="img-persona" />`;
+  ).innerHTML = ` <img src="${imagenTaller4}" alt="" class="img-persona" />`;
   document.getElementById(
     "nombreTallerista4"
   ).innerHTML = `${nombreTallerista4}`;
@@ -1674,7 +1597,7 @@ function btnMiercolesON() {
   document.getElementById("tipoTaller1").innerHTML = `<p>${tipoTaller1}</p>`;
   document.getElementById(
     "imagenTallerista1"
-  ).innerHTML = `<img src="img/Jose Juan.png" alt="" class="img-persona" />`;
+  ).innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona" />`;
   document.getElementById(
     "nombreTallerista1"
   ).innerHTML = `${nombreTallerista1}`;
@@ -1692,7 +1615,7 @@ function btnMiercolesON() {
   document.getElementById("tipoTaller2").innerHTML = `<p>${tipoTaller2}</p>`;
   document.getElementById(
     "imagenTallerista2"
-  ).innerHTML = `<img src="img/Jose Riojas.png" alt="" class="img-persona" />`;
+  ).innerHTML = `<img src="${imagenTaller2}" alt="" class="img-persona" />`;
   document.getElementById(
     "nombreTallerista2"
   ).innerHTML = `${nombreTallerista2}`;
@@ -1710,7 +1633,7 @@ function btnMiercolesON() {
   document.getElementById("tipoTaller3").innerHTML = `<p>${tipoTaller3}</p>`;
   document.getElementById(
     "imagenTallerista3"
-  ).innerHTML = `<img src="img/Hombre.png" alt="" class="img-persona" />`;
+  ).innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona" />`;
   document.getElementById(
     "nombreTallerista3"
   ).innerHTML = `${nombreTallerista3}`;
@@ -1728,7 +1651,7 @@ function btnMiercolesON() {
   document.getElementById("tipoTaller4").innerHTML = `<p>${tipoTaller4}</p>`;
   document.getElementById(
     "imagenTallerista4"
-  ).innerHTML = ` <img src="img/ing-Uriel.png" alt="" class="img-persona" />`;
+  ).innerHTML = ` <img src="${imagenTaller4}" alt="" class="img-persona" />`;
   document.getElementById(
     "nombreTallerista4"
   ).innerHTML = `${nombreTallerista4}`;
@@ -1757,7 +1680,7 @@ function btnMiercolesON() {
 }
 
 function btnJuevesON() {
-  // Lunes 15  
+  // Lunes 15
   document.getElementById("btnStateLu1").style.display = "none";
   document.getElementById("btnStateLu2").style.display = "none";
   document.getElementById("btnStateLu3").style.display = "none";
@@ -1795,7 +1718,7 @@ function btnJuevesON() {
   document.getElementById("tipoTaller1").innerHTML = `<p>${tipoTaller1}</p>`;
   document.getElementById(
     "imagenTallerista1"
-  ).innerHTML = `<img src="img/Jose Juan.png" alt="" class="img-persona" />`;
+  ).innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona" />`;
   document.getElementById(
     "nombreTallerista1"
   ).innerHTML = `${nombreTallerista1}`;
@@ -1813,7 +1736,7 @@ function btnJuevesON() {
   document.getElementById("tipoTaller2").innerHTML = `<p>${tipoTaller2}</p>`;
   document.getElementById(
     "imagenTallerista2"
-  ).innerHTML = `<img src="img/Jose Riojas.png" alt="" class="img-persona" />`;
+  ).innerHTML = `<img src="${imagenTaller2}" alt="" class="img-persona" />`;
   document.getElementById(
     "nombreTallerista2"
   ).innerHTML = `${nombreTallerista2}`;
@@ -1831,7 +1754,7 @@ function btnJuevesON() {
   document.getElementById("tipoTaller3").innerHTML = `<p>${tipoTaller3}</p>`;
   document.getElementById(
     "imagenTallerista3"
-  ).innerHTML = `<img src="img/Hombre.png" alt="" class="img-persona" />`;
+  ).innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona" />`;
   document.getElementById(
     "nombreTallerista3"
   ).innerHTML = `${nombreTallerista3}`;
@@ -1849,7 +1772,7 @@ function btnJuevesON() {
   document.getElementById("tipoTaller4").innerHTML = `<p>${tipoTaller4}</p>`;
   document.getElementById(
     "imagenTallerista4"
-  ).innerHTML = ` <img src="img/ing-Uriel.png" alt="" class="img-persona" />`;
+  ).innerHTML = ` <img src="${imagenTaller4}" alt="" class="img-persona" />`;
   document.getElementById(
     "nombreTallerista4"
   ).innerHTML = `${nombreTallerista4}`;
@@ -1910,6 +1833,61 @@ function btnViernesON() {
   document.getElementById("Sbtn5").style.borderColor = "#F0F6FA";
   document.getElementById("contenedorBtnSemestre").style.borderBottomColor =
     "#707070";
+
+      // INFORMACION TALLERISTAS VIERNES
+  // TARJETA 1
+  document.getElementById("tipoTaller1").innerHTML = `<p>${tipoTaller1}</p>`;
+  document.getElementById(
+    "imagenTallerista1"
+  ).innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona" />`;
+  document.getElementById(
+    "nombreTallerista1"
+  ).innerHTML = `${nombreTallerista1}`;
+  document.getElementById("empresaTallerista1").innerHTML = `<p>
+  <b>${empresaTallerista1}</b>
+  </p>`;
+  document.getElementById("gruposLu1").innerHTML = `<p>Grupos</p>
+  <p>${gruposAsignados1}</p>`;
+  document.getElementById(
+    "temaTaller1"
+  ).innerHTML = `<h4>${tituloTaller1}</h4>`;
+  document.getElementById("horaTaller1").innerHTML = ` <p>${horasTaller1}</p>`;
+
+  // TARJETA 2
+  document.getElementById("tipoTaller2").innerHTML = `<p>${tipoTaller2}</p>`;
+  document.getElementById(
+    "imagenTallerista2"
+  ).innerHTML = `<img src="${imagenTaller2}" alt="" class="img-persona" />`;
+  document.getElementById(
+    "nombreTallerista2"
+  ).innerHTML = `${nombreTallerista2}`;
+  document.getElementById("empresaTallerista2").innerHTML = `<p>
+  <b>${empresaTallerista2}</b>
+  </p>`;
+  document.getElementById("gruposLu2").innerHTML = `<p>Grupos</p>
+  <p>${gruposAsignados2}</p>`;
+  document.getElementById(
+    "temaTaller2"
+  ).innerHTML = `<h4>${tituloTaller2}</h4>`;
+  document.getElementById("horaTaller2").innerHTML = ` <p>${horasTaller2}</p>`;
+
+  // TARJETA 3
+  document.getElementById("tipoTaller3").innerHTML = `<p>${tipoTaller3}</p>`;
+  document.getElementById(
+    "imagenTallerista3"
+  ).innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona" />`;
+  document.getElementById(
+    "nombreTallerista3"
+  ).innerHTML = `${nombreTallerista3}`;
+  document.getElementById("empresaTallerista3").innerHTML = `<p>
+  <b>${empresaTallerista3}</b>
+  </p>`;
+  document.getElementById("gruposLu3").innerHTML = `<p>Grupos</p>
+  <p>${gruposAsignados3}</p>`;
+  document.getElementById(
+    "temaTaller3"
+  ).innerHTML = `<h4>${tituloTaller3}</h4>`;
+  document.getElementById("horaTaller3").innerHTML = ` <p>${horasTaller3}</p>`;
 }
 
 // ------------------------------SECCION MODAL------------------------------
