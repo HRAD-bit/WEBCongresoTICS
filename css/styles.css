@@ -69,11 +69,13 @@ header.abajo nav ul li a {
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
+    /* height: auto !important; */
     padding-right: 10px;
     padding-left: 10px;
     margin-right: auto;
     margin-left: auto;
     box-sizing: border-box;
+    
 }
 
 .menu {
@@ -87,6 +89,7 @@ header.abajo nav ul li a {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-right: 25px;
+    /* background-color: #000; */
 }
 
 /* Lista e items */
