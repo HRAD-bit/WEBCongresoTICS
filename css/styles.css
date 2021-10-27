@@ -187,7 +187,7 @@ header.abajo nav ul li a {
 .img-portada img {
     margin: 0;
     max-width: 100%;
-    min-width: 150px;
+    min-width: 250px;
     height: auto;
     transition: 1.2s;
 }
@@ -1260,7 +1260,12 @@ button {
         font-size: 40px;
     }
     .img-portada img {
-        min-width: 115px;
+        min-width: 101px;
+        max-width: 150px;
+        padding-left: 30px;
+    }
+    .img-portada a img:hover {
+        min-width: 155px;
     }
 }
 
@@ -1272,13 +1277,13 @@ button {
 
 @media screen and (max-width: 768px) {
     .info-portada {
-        width: 590px;
+        width: 690px;
     }
     .btn-dias {
         font-size: 18px;
     }
     .info-portada h2 {
-        font-size: 36px;
+        font-size: 42px;
     }
     /* -----Menu--- */
     /* estilos del icono */
@@ -1346,10 +1351,9 @@ button {
     #btnDesc-menu {
         margin-left: 0;
     }
-    /* .menu ul li:hover{
-    background-color: white;
-    color: rgb(88, 88, 88);
-    } */
+    .img-portada {
+        /* display: none; */
+    }
 }
 
 /* CAMBIO A VERTICAL  */
@@ -1412,18 +1416,19 @@ button {
         padding: 3px;
     }
     .info-portada {
-        width: 480px;
+        width: 400px;
     }
     .btn-dias {
         font-size: 18px;
     }
     .info-portada h2 {
-        font-size: 28px;
+        font-size: 26px;
     }
     .info-portada h3 {
-        font-size: 24px;
+        font-size: 16px;
         padding: 30px;
     }
+    
 }
 
 @media screen and (max-width: 520px) {
