@@ -61,9 +61,10 @@ const tarjeta1TimeLu = "Nov 15 2021 10:00:00 GMT-05:00",
   tarjeta4TimeMa = "Nov 16 2021 18:00:00 GMT-05:00",
   // MIERCOLES
   tarjeta1TimeMi = "Nov 17 2021 10:00:00 GMT-05:00",
-  tarjeta2TimeMi = "Nov 17 2021 15:00:00 GMT-05:00",
-  tarjeta3TimeMi = "Nov 17 2021 16:00:00 GMT-05:00",
-  tarjeta4TimeMi = "Nov 17 2021 19:00:00 GMT-05:00",
+  tarjeta2TimeMi = "Nov 17 2021 11:00:00 GMT-05:00",
+  tarjeta3TimeMi = "Nov 17 2021 15:00:00 GMT-05:00",
+  tarjeta4TimeMi = "Nov 17 2021 16:00:00 GMT-05:00",
+  tarjeta5TimeMi = "Nov 17 2021 19:00:00 GMT-05:00",
   // JUEVES
   tarjeta1TimeJu = "Nov 18 2021 15:00:00 GMT-05:00",
   tarjeta2TimeJu = "Nov 18 2021 16:00:00 GMT-05:00",
@@ -695,6 +696,59 @@ const btnStateMi4 = (deadline, elem, finalMessage) => {
 };
 btnStateMi4(tarjeta4TimeMi, "btnStateMi4", "Ingresar");
 
+const btnStateMi5 = (deadline, elem, finalMessage) => {
+  const el = document.getElementById(elem);
+
+  const timerUpdate = setInterval(() => {
+    let t = getRemainingTime(deadline);
+    el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
+    // EN VIVO
+    if (t.remainTime <= 1) {
+      console.log(t.remainTime);
+      // clearInterval(timerUpdate);
+      // el.innerHTML = finalMessage;
+      //   el.innerHTML = `<a href="http://itsm.edu.mx" target="_blank">
+      //   <p>Ingresar</p>
+      // </a>`;
+      el.innerHTML = `<p> Acceder <p>`;
+      document.getElementById("liveIDLu5").style.display = "flex";
+      document.getElementById("gruposLiveLu5").style.justifyContent =
+        "space-between";
+      document.getElementById(
+        "btnAccionLu5"
+      ).innerHTML = `<a href="${LinkMa2}" target="_blank">
+    <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
+    <div class="btn-action-estado">
+      <div class="btnState" id="btnStateMi5"><p>Acceder</p></div>
+    </div>
+  </a>`;
+      document.getElementById("btnAccionLu5").style.backgroundColor = "#3EE45F";
+
+      // FINALIZADO
+      if (t.remainTime <= -15.0) {
+        clearInterval(timerUpdate);
+        console.log(t.remainTime);
+        el.innerHTML = "FINALIZADO";
+        document.getElementById("liveIDLu5").style.display = "none";
+        document.getElementById("gruposLiveLu5").style.justifyContent =
+          "space-around";
+        document.getElementById("btnAccionLu5").style.backgroundColor =
+          "#858585";
+        document.getElementById("btnAccionLu5").style.cursor = "no-drop";
+        document.getElementById("btnAccionLu2").innerHTML = ` <div>
+        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
+      </div>
+      <div class="btn-action-estado">
+        <div class="btnState" id="btnStateMi5"><p>Finalizado</p></div>
+      </div>`;
+        document.getElementById("contenedorInfoLu5").className +=
+          " contenedor-informacion-off";
+      }
+    }
+  }, 1000);
+};
+btnStateMi5(tarjeta5TimeMi, "btnStateMi5", "Ingresar");
+
 // JUEVES
 const btnStateJu1 = (deadline, elem, finalMessage) => {
   const el = document.getElementById(elem);
@@ -953,6 +1007,7 @@ var tipoTaller1 = "",
   tituloTaller1 = "",
   horasTaller1 = "",
   imagenTaller1 = "",
+  bioTallerista1 = "",
   tipoTaller2 = "",
   nombreTallerista2 = "",
   empresaTallerista2 = "",
@@ -960,6 +1015,7 @@ var tipoTaller1 = "",
   tituloTaller2 = "",
   horasTaller2 = "",
   imagenTaller2 = "",
+  bioTallerista2 = "",
   tipoTaller3 = "",
   nombreTallerista3 = "",
   empresaTallerista3 = "",
@@ -967,30 +1023,49 @@ var tipoTaller1 = "",
   tituloTaller3 = "",
   horasTaller3 = "",
   imagenTaller3 = "",
+  bioTallerista3 = "",
   tipoTaller4 = "",
   nombreTallerista4 = "",
   empresaTallerista4 = "",
   gruposAsignados4 = "",
   tituloTaller4 = "",
   imagenTaller4 = "",
-  horasTaller4 = "";
+  horasTaller4 = "",
+  bioTallerista4 = "",
+  tipoTaller5 = "",
+  nombreTallerista5 = "",
+  empresaTallerista5 = "",
+  gruposAsignados5 = "",
+  tituloTaller5 = "",
+  imagenTaller5 = "",
+  horasTaller5 = "",
+  bioTallerista5 = "";
 
 // MOSTRAR Y OCULTAR TARJETAS DIVS
 // TARJETAS MOSTRADAS DETERMINADO
-function MostrarTodoTarjetas() {
+function MostrarTarjetasPredeterminado() {
   document.getElementById("contenedorPrimerTarjetas").style.display = "flex";
   document.getElementById("contenedorSegundoTarjetas").style.display = "flex";
+  document.getElementById("contenedorTerceroTarjetas").style.display = "none";
   document.getElementById("contenedorTarjeta4").style.display = "flex";
 }
 function OcultarSeccion2Completa() {
   document.getElementById("contenedorPrimerTarjetas").style.display = "flex";
   document.getElementById("contenedorSegundoTarjetas").style.display = "none";
+  document.getElementById("contenedorTerceroTarjetas").style.display = "none";
   document.getElementById("contenedorTarjeta4").style.display = "flex";
 }
 function OcultarTarjeta4() {
   document.getElementById("contenedorPrimerTarjetas").style.display = "flex";
   document.getElementById("contenedorSegundoTarjetas").style.display = "flex";
+  document.getElementById("contenedorTerceroTarjetas").style.display = "none";
   document.getElementById("contenedorTarjeta4").style.display = "none";
+}
+function MostrarTodasTarjetas() {
+  document.getElementById("contenedorPrimerTarjetas").style.display = "flex";
+  document.getElementById("contenedorSegundoTarjetas").style.display = "flex";
+  document.getElementById("contenedorTerceroTarjetas").style.display = "flex";
+  document.getElementById("contenedorTarjeta4").style.display = "flex";
 }
 // --------------------------LUNES--------------------
 function informacionLunes() {
@@ -1001,7 +1076,9 @@ function informacionLunes() {
     (gruposAsignados1 = "107 & 307"),
     (tituloTaller1 = '"CONFIGURACIÓN Y ADMINISTRACIÓN DE HOSTING"'),
     (horasTaller1 = "10:00 - 14:00"),
-    (imagenTaller1 = "img/talleristas/JoseJuan.png");
+    (imagenTaller1 = "img/talleristas/JoseJuan.png"),
+    (bioTallerista1 =
+      "Licenciado en Informática con 17 años de trayectoria en docencia, impartiendo materias y cursos; Experiencia como encargado del área de servidores, administración y seguridad de redes. Encargado de la dirección de informática del H. ayuntamiento de Misantla en la administración de 2014 - 2017. Especialista en el área de redes y telecomunicaciones, seguridad informática, sistemas operativos, servicios de red y ruteo, switcheo, Licenciado en informática con maestría en redes y telecomunicaciones en la universidad Cristobal Colón.");
 
   // TARJETAS 2 LUNES
 
@@ -1011,7 +1088,9 @@ function informacionLunes() {
     (gruposAsignados2 = "Todos los Semestres"),
     (tituloTaller2 = '"LA IA EN LOS DRONES Y LOS SECTORES PRODUCTIVOS"'),
     (horasTaller2 = "16:00 - 17:00"),
-    (imagenTaller2 = "img/talleristas/JoseRiojas.png");
+    (imagenTaller2 = "img/talleristas/JoseRiojas.png"),
+    (bioTallerista2 =
+      "Ingeniero en sistemas, actualmente cursando un MD en Inteligencia Artificial en el Tecmilenio apasionado de la electrónica y la tecnología, fundador de 2 empresas relacionadas al mercado de los sistemas no tripulados, ha participado en diferentes foros tanto nacionales como internacionales, impartido talleres y capacitaciones a empresas civiles y de gobierno. Fundador de Drone SAR México una ONG de apoyo social en situaciones de desastre y personas extraviadas. Actualmente trabajando en varios proyectos que integran los sistemas no tripulados y la IA en diversos sectores comercial y sociales");
 
   // TARJETAS 3 LUNES
 
@@ -1021,7 +1100,8 @@ function informacionLunes() {
     (gruposAsignados3 = "Todos los Semestres"),
     (tituloTaller3 = '"INDUSTRIA INSITU: PEGA SYSTEMS Y HUAWEI TECHNOLOGIES"'),
     (horasTaller3 = "17:00 - 18:00"),
-    (imagenTaller3 = "img/talleristas/pega-huawei.png");
+    (imagenTaller3 = "img/talleristas/pega-huawei.png"),
+    (bioTallerista3 = "MUY PRONTO!");
 
   // TARJETAS 4 LUNES
 
@@ -1031,8 +1111,9 @@ function informacionLunes() {
     (gruposAsignados4 = "507 & 707"),
     (tituloTaller4 = '"CONCEPTOS BÁSICOS DE IONIC"'),
     (horasTaller4 = "18:00 - 21:00"),
-    (imagenTaller4 = "img/talleristas/UrielPerez.png");
-  MostrarTodoTarjetas();
+    (imagenTaller4 = "img/talleristas/UrielPerez.png"),
+    (bioTallerista4 = "MUY PRONTO!");
+  MostrarTarjetasPredeterminado();
 }
 // ------------------------MARTES-------------------------
 function informacionMartes() {
@@ -1043,7 +1124,9 @@ function informacionMartes() {
     (gruposAsignados1 = "107 & 307"),
     (tituloTaller1 = '"CONFIGURACIÓN Y ADMINISTRACIÓN DE HOSTING"'),
     (horasTaller1 = "10:00 - 14:00"),
-    (imagenTaller1 = "img/talleristas/JoseJuan.png");
+    (imagenTaller1 = "img/talleristas/JoseJuan.png"),
+    (bioTallerista1 =
+      "Licenciado en Informática con 17 años de trayectoria en docencia, impartiendo materias y cursos; Experiencia como encargado del área de servidores, administración y seguridad de redes. Encargado de la dirección de informática del H. ayuntamiento de Misantla en la administración de 2014 - 2017. Especialista en el área de redes y telecomunicaciones, seguridad informática, sistemas operativos, servicios de red y ruteo, switcheo, Licenciado en informática con maestría en redes y telecomunicaciones en la universidad Cristobal Colón.");
 
   // TARJETAS 2 MARTES
 
@@ -1053,7 +1136,8 @@ function informacionMartes() {
     (gruposAsignados2 = "Por Confirmar"),
     (tituloTaller2 = '"5G EN EL SECTOR AUTOMOTRÍZ"'),
     (horasTaller2 = "16:00 - 17:00"),
-    (imagenTaller2 = "img/talleristas/Hombre.png");
+    (imagenTaller2 = "img/talleristas/Hombre.png"),
+    (bioTallerista2 = "MUY PRONTO!");
 
   // TARJETAS 3 MARTES
 
@@ -1064,7 +1148,9 @@ function informacionMartes() {
     (tituloTaller3 =
       '"LA IMPORTANCIA DE SCRUM COMO METODOLOGÍA ÁGIL PARA LA GESTIÓN DE PROYECTOS DE TI"'),
     (horasTaller3 = "17:00 - 18:00"),
-    (imagenTaller3 = "img/talleristas/LauraMaySalazar.png");
+    (imagenTaller3 = "img/talleristas/LauraMaySalazar.png"),
+    (bioTallerista3 =
+      "Catedrática de Sistemas y Computación en el TecNM Campus Campeche y de Posgrado en la Maestría en Tecnologías de la Información y la Comunicación en UNID Mérida. Maestra en Gestión de Tecnologías de Información por la Universidad Anáhuac-Mayab. Scrum Máster certificada por CertiProf®. Administrador de Proyectos de TI por el Centro de Inclusión Digital. Diplomado en Sistemas de Gestión de Información ISO 27000 Seguridad de la Información por la Anáhuac-Mayab. Con 13 años de experiencia como consultora y auditora líder implementando Sistemas de Gestión basados en ISO 9000, 14000 y 50001, NMX 025-SCFI para 160 Institutos Tecnológicos del TecNM, así como liderando proyectos de consultoría en ISO 27000 para CSI y en la LFPDPPP para Toyota.");
 
   // TARJETAS 4 MARTES
 
@@ -1074,9 +1160,10 @@ function informacionMartes() {
     (gruposAsignados4 = "507 & 707"),
     (tituloTaller4 = '"CONCEPTOS BÁSICOS DE IONIC"'),
     (horasTaller4 = "18:00 - 21:00"),
-    imagenTaller4 = "img/talleristas/UrielPerez.png";
+    (imagenTaller4 = "img/talleristas/UrielPerez.png"),
+    (bioTallerista4 = "MUY PRONTO!");
 
-  MostrarTodoTarjetas();
+  MostrarTarjetasPredeterminado();
 }
 
 // ------------------------MIERCOLES-------------------------
@@ -1088,61 +1175,83 @@ function informacionMiercoles() {
     (tituloTaller1 = '"AGILE O MINDSET, ¿QUÉ VA PRIMERO?"'),
     (gruposAsignados1 = "Todos los semestres"),
     (horasTaller1 = "10:00 - 11:00"),
-    imagenTaller1 = "img/talleristas/JoseJuan.png";
+    (imagenTaller1 = "img/talleristas/ids-taller.png"),
+    (bioTallerista1 = "MUY PRONTO!");
 
-  // TARJETAS 2 MIERCOLES
-
+  // TARJETA 2 MIERCOLES
   (tipoTaller2 = "Taller"),
-    (nombreTallerista2 = "MCCyT. Keila Elena Ocaña"),
-    (empresaTallerista2 = "ITS de Martínez de la Torre"),
+    (nombreTallerista2 = "ING. Juan Diego Aquino Barrios"),
+    (empresaTallerista2 = "AmCoder"),
+    (tituloTaller2 =
+      '"WEB APLICATION WITH CODEMONO: INSPIRAR PARA CREAR, CREAR PARA INSPIRAR"'),
     (gruposAsignados2 = "707"),
-    (tituloTaller2 = '"ADMINISTRACIÓN DE MÁQUINAS LINUX CON WEBMIN"'),
-    (horasTaller2 = "15:00 - 18:00"),
-    imagenTaller2 = "img/talleristas/KeilaElena.png";
+    (horasTaller2 = "11:00 - 14:00"),
+    (imagenTaller2 = "img/talleristas/amcoder.png"),
+    (bioTallerista2 = "MUY PRONTO!");
 
   // TARJETAS 3 MIERCOLES
 
   (tipoTaller3 = "Taller"),
-    (nombreTallerista3 = "MSC. Fernando Alberto Hernández"),
-    (empresaTallerista3 = "ITS de Misantla"),
-    (gruposAsignados3 = "107, 307 & 507"),
-    (tituloTaller3 = '"DETECCIÓN DE INTRUSIÓN CON PFSENSE"'),
-    (horasTaller3 = "16:00 - 18:00"),
-    imagenTaller3 = "img/talleristas/Fernando.png";
+    (nombreTallerista3 = "MCCyT. Keila Elena Ocaña"),
+    (empresaTallerista3 = "ITS de Martínez de la Torre"),
+    (gruposAsignados3 = "707"),
+    (tituloTaller3 = '"ADMINISTRACIÓN DE MÁQUINAS LINUX CON WEBMIN"'),
+    (horasTaller3 = "15:00 - 18:00"),
+    (imagenTaller3 = "img/talleristas/KeilaElena.png"),
+    (bioTallerista3 =
+      "Realizó sus estudios de licenciatura en Informática en el Instituto Tecnológico Superior de Teziutlán y sus estudios de Maestría en Ciencias Computacionales y Telecomunicaciones en la Universidad IEU, cuenta con certificaciones por parte del Consejo Nacional de Normalización y Certificación de Competencias Laborales (CONOCER) como EC0772, EC0477, EC0366, EC0217 y EC0301. Trabaja como docente en el Instituto Tecnológico Superior de Martínez de la Torre, impartiendo asignaturas de licenciatura como administración de redes, redes de computadoras, fundamentos de telecomunicaciones, administración de servidores, arquitectura de computadores, sistemas operativos, administración de bases de datos, taller de bases de datos, entre otras. Actualmente es docente investigadora en el ITS de Martínez de la Torre colaborando en distintos proyectos, es miembro del comité de investigación, innovación, emprendimiento y vinculación del ITSMT, presidenta de la academia de Ing. en Sistemas Computacionales, miembro activo de la unión internacional por los derechos de todos y de la sociedad mexicana de agricultura sostenible A.C. (SOMAS A.C).");
 
   // TARJETAS 4 MIERCOLES
 
-  (tipoTaller4 = "Conferencia"),
-    (nombreTallerista4 = " ING. Aleida Pérez "),
-    (empresaTallerista4 = "IKAGI Consultoría Informática"),
-    (gruposAsignados4 = "Todos los Semestres"),
-    (tituloTaller4 = '"TÉCNICAS DE PENTEST"'),
-    (horasTaller4 = "19:00 - 20:00"),
-    imagenTaller4 = "img/talleristas/AleidaPerez.png";
+  (tipoTaller4 = "Taller"),
+    (nombreTallerista4 = "MSC. Fernando Alberto Hernández"),
+    (empresaTallerista4 = "ITS de Misantla"),
+    (gruposAsignados4 = "107, 307 & 507"),
+    (tituloTaller4 = '"DETECCIÓN DE INTRUSIÓN CON PFSENSE"'),
+    (horasTaller4 = "16:00 - 18:00"),
+    (imagenTaller4 = "img/talleristas/Fernando.png"),
+    (bioTallerista4 =
+      "MSC Fernando Alberto Hernández Guevara realizó la Maestría en Sistemas Computacionales en el Instituto Tecnológico Superior de Misantla, es egresado de la carrera de Licenciatura en Informática por el Instituto Tecnológico Superior de Misantla. Actualmente jefe del departamento de sistematización, donde realiza funciones de network engineer, DB manager, Server Administrator, Linux system administration, Domain Name Service administration y gestión de cuentas de correos en la plataforma de Gsuite education y Microsoft 365 for faculty, gestión de plataformas de educación a distancia moodle, es líder de proyectos de desarrollo de sotfware como Sistema del portal de pago en línea, sistema del congreso internacional de ingenierías, gestión de pagos en caja, sistema de inventarios institucional, actualmente se está llevando a cabo el desarrollo de sistema de control de proceso de la revista ingeniantes, la migración de las tecnologías del ISP a fibra óptica, interconexión entre edificios por medio de fibra óptica . Desde la dupla educación y sistemas computacionales ha trabajado como docente de tiempo parcial en el sistema semiescolarizado impartiendo asignaturas enfocadas a las redes de computadoras, conmutación y enrutamiento de redes de datos, administración de redes, administración de bases de datos, entre otras.");
 
-  MostrarTodoTarjetas();
+  // TARJETAS 5 MIERCOLES
+
+  (tipoTaller5 = "Conferencia"),
+    (nombreTallerista5 = " ING. Aleida Pérez "),
+    (empresaTallerista5 = "IKIGAI Consultoría Informática"),
+    (gruposAsignados5 = "Todos los Semestres"),
+    (tituloTaller5 = '"TÉCNICAS DE PENTEST"'),
+    (horasTaller5 = "19:00 - 20:00"),
+    (imagenTaller5 = "img/talleristas/AleidaPerez.png"),
+    (bioTallerista5 =
+      "Cuenta con 9 años de experiencia dentro del área de seguridad informática. Impartiendo a nivel internacional cursos, talleres y conferencias relacionados a la auditoría, explotación, análisis de vulnerabilidades y diseño de soluciones en hardening, además de asesoría en desarrollo de código seguro e Inteligencia Artificial integrada al mHealth & eHealth. Actualmente es CEO de Ikigai Consultoría Informática, empresa consultora en ciberseguridad y tecnologías de la información.");
+
+  MostrarTodasTarjetas();
 }
 
 // ------------------------JUEVES-------------------------
 function informacionJueves() {
   // TARJETA 1 JUEVES
   (tipoTaller1 = "Taller"),
-    (nombreTallerista1 = "MCCyT. Keila Elena Ocaña Drouaillet"),
+    (nombreTallerista1 = "MCCyT. Keila Elena Ocaña"),
     (empresaTallerista1 = "ITS de Martínez de la Torre"),
     (gruposAsignados1 = "707"),
     (tituloTaller1 = '"ADMINISTRACIÓN DE MÁQUINAS LINUX CON WEBMIN"'),
     (horasTaller1 = "15:00 - 18:00"),
-    imagenTaller1 = "img/talleristas/KeilaElena.png";
+    (imagenTaller1 = "img/talleristas/KeilaElena.png"),
+    (bioTallerista1 =
+      "Realizó sus estudios de licenciatura en Informática en el Instituto Tecnológico Superior de Teziutlán y sus estudios de Maestría en Ciencias Computacionales y Telecomunicaciones en la Universidad IEU, cuenta con certificaciones por parte del Consejo Nacional de Normalización y Certificación de Competencias Laborales (CONOCER) como EC0772, EC0477, EC0366, EC0217 y EC0301. Trabaja como docente en el Instituto Tecnológico Superior de Martínez de la Torre, impartiendo asignaturas de licenciatura como administración de redes, redes de computadoras, fundamentos de telecomunicaciones, administración de servidores, arquitectura de computadores, sistemas operativos, administración de bases de datos, taller de bases de datos, entre otras. Actualmente es docente investigadora en el ITS de Martínez de la Torre colaborando en distintos proyectos, es miembro del comité de investigación, innovación, emprendimiento y vinculación del ITSMT, presidenta de la academia de Ing. en Sistemas Computacionales, miembro activo de la unión internacional por los derechos de todos y de la sociedad mexicana de agricultura sostenible A.C. (SOMAS A.C).");
 
   // TARJETA 2 JUEVES
 
   (tipoTaller2 = "Taller"),
-    (nombreTallerista2 = "MSC. Ferdnando Alberto Hernández Guevara"),
+    (nombreTallerista2 = "MSC. Fernando Alberto Hernández"),
     (empresaTallerista2 = "ITS de Misantla"),
     (gruposAsignados2 = "107, 307 & 507"),
     (tituloTaller2 = '"DETECCIÓN DE INTRUSIÓN CON PFSENSE"'),
     (horasTaller2 = "16:00 - 18:00"),
-    imagenTaller2 = "img/talleristas/Fernando.png";
+    (imagenTaller2 = "img/talleristas/Fernando.png"),
+    (bioTallerista2 =
+      "MSC Fernando Alberto Hernández Guevara realizó la Maestría en Sistemas Computacionales en el Instituto Tecnológico Superior de Misantla, es egresado de la carrera de Licenciatura en Informática por el Instituto Tecnológico Superior de Misantla. Actualmente jefe del departamento de sistematización, donde realiza funciones de network engineer, DB manager, Server Administrator, Linux system administration, Domain Name Service administration y gestión de cuentas de correos en la plataforma de Gsuite education y Microsoft 365 for faculty, gestión de plataformas de educación a distancia moodle, es líder de proyectos de desarrollo de sotfware como Sistema del portal de pago en línea, sistema del congreso internacional de ingenierías, gestión de pagos en caja, sistema de inventarios institucional, actualmente se está llevando a cabo el desarrollo de sistema de control de proceso de la revista ingeniantes, la migración de las tecnologías del ISP a fibra óptica, interconexión entre edificios por medio de fibra óptica . Desde la dupla educación y sistemas computacionales ha trabajado como docente de tiempo parcial en el sistema semiescolarizado impartiendo asignaturas enfocadas a las redes de computadoras, conmutación y enrutamiento de redes de datos, administración de redes, administración de bases de datos, entre otras.");
 
   OcultarSeccion2Completa();
 }
@@ -1156,26 +1265,31 @@ function informacionViernes() {
     (tituloTaller1 = '"¿CÓMO SER UN GRAN DESARROLLADOR DE APLICACIONES?"'),
     (gruposAsignados1 = "Todos los Semestres"),
     (horasTaller1 = "13:00 - 15:00"),
-    imagenTaller1 = "img/talleristas/Hombre.png";
+    (imagenTaller1 = "img/talleristas/ids-taller.png"),
+    (bioTallerista1 = "MUY PRONTO!");
 
   // TARJETA 2 VIERNES
   (tipoTaller2 = "Taller"),
-    (nombreTallerista2 = "MCCyT. Keila Elena Ocaña Drouaillet"),
+    (nombreTallerista2 = "MCCyT. Keila Elena Ocaña"),
     (empresaTallerista2 = "ITS de Martínez de la Torre"),
     (gruposAsignados2 = "707"),
     (tituloTaller2 = '"ADMINISTRACIÓN DE MÁQUINAS LINUX CON WEBMIN"'),
     (horasTaller2 = "15:00 - 18:00"),
-    imagenTaller2 = "img/talleristas/KeilaElena.png";
+    (imagenTaller2 = "img/talleristas/KeilaElena.png"),
+    (bioTallerista2 =
+      "Realizó sus estudios de licenciatura en Informática en el Instituto Tecnológico Superior de Teziutlán y sus estudios de Maestría en Ciencias Computacionales y Telecomunicaciones en la Universidad IEU, cuenta con certificaciones por parte del Consejo Nacional de Normalización y Certificación de Competencias Laborales (CONOCER) como EC0772, EC0477, EC0366, EC0217 y EC0301. Trabaja como docente en el Instituto Tecnológico Superior de Martínez de la Torre, impartiendo asignaturas de licenciatura como administración de redes, redes de computadoras, fundamentos de telecomunicaciones, administración de servidores, arquitectura de computadores, sistemas operativos, administración de bases de datos, taller de bases de datos, entre otras. Actualmente es docente investigadora en el ITS de Martínez de la Torre colaborando en distintos proyectos, es miembro del comité de investigación, innovación, emprendimiento y vinculación del ITSMT, presidenta de la academia de Ing. en Sistemas Computacionales, miembro activo de la unión internacional por los derechos de todos y de la sociedad mexicana de agricultura sostenible A.C. (SOMAS A.C).");
 
   // TARJETA 3 VIERNES
 
   (tipoTaller3 = "Taller"),
-    (nombreTallerista3 = "MSC. Ferdnando Alberto Hernández Guevara"),
+    (nombreTallerista3 = "MSC. Fernando Alberto Hernández"),
     (empresaTallerista3 = "ITS de Misantla"),
     (gruposAsignados3 = "107, 307 & 507"),
     (tituloTaller3 = '"DETECCIÓN DE INTRUSIÓN CON PFSENSE"'),
     (horasTaller3 = "16:00 - 18:00"),
-    imagenTaller3 = "img/talleristas/Fernando.png";
+    (imagenTaller3 = "img/talleristas/Fernando.png"),
+    (bioTallerista3 =
+      "Realizó sus estudios de licenciatura en Informática en el Instituto Tecnológico Superior de Teziutlán y sus estudios de Maestría en Ciencias Computacionales y Telecomunicaciones en la Universidad IEU, cuenta con certificaciones por parte del Consejo Nacional de Normalización y Certificación de Competencias Laborales (CONOCER) como EC0772, EC0477, EC0366, EC0217 y EC0301. Trabaja como docente en el Instituto Tecnológico Superior de Martínez de la Torre, impartiendo asignaturas de licenciatura como administración de redes, redes de computadoras, fundamentos de telecomunicaciones, administración de servidores, arquitectura de computadores, sistemas operativos, administración de bases de datos, taller de bases de datos, entre otras. Actualmente es docente investigadora en el ITS de Martínez de la Torre colaborando en distintos proyectos, es miembro del comité de investigación, innovación, emprendimiento y vinculación del ITSMT, presidenta de la academia de Ing. en Sistemas Computacionales, miembro activo de la unión internacional por los derechos de todos y de la sociedad mexicana de agricultura sostenible A.C. (SOMAS A.C).");
 
   OcultarTarjeta4();
 }
@@ -1358,6 +1472,10 @@ function btnLunesON() {
     "temaTaller1"
   ).innerHTML = `<h4>${tituloTaller1}</h4>`;
   document.getElementById("horaTaller1").innerHTML = ` <p>${horasTaller1}</p>`;
+  document.getElementById("imagenBio1").innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona2">`;
+  document.getElementById("nombreBio1").innerHTML = `<h3>${nombreTallerista1}</h3>
+  <h4>${empresaTallerista1}</h4>`;
+  document.getElementById("trayectoriaBio1").innerText = `${bioTallerista1}`;
 
   // TARJETA 2
   document.getElementById("tipoTaller2").innerHTML = `<p>${tipoTaller2}</p>`;
@@ -1376,6 +1494,10 @@ function btnLunesON() {
     "temaTaller2"
   ).innerHTML = `<h4>${tituloTaller2}</h4>`;
   document.getElementById("horaTaller2").innerHTML = ` <p>${horasTaller2}</p>`;
+  document.getElementById("imagenBio2").innerHTML = `<img src="${imagenTaller2}" alt="" class="img-persona2">`;
+  document.getElementById("nombreBio2").innerHTML = `<h3>${nombreTallerista2}</h3>
+  <h4>${empresaTallerista2}</h4>`;
+  document.getElementById("trayectoriaBio2").innerText = `${bioTallerista2}`;
 
   // TARJETA 3
   document.getElementById("tipoTaller3").innerHTML = `<p>${tipoTaller3}</p>`;
@@ -1394,6 +1516,10 @@ function btnLunesON() {
     "temaTaller3"
   ).innerHTML = `<h4>${tituloTaller3}</h4>`;
   document.getElementById("horaTaller3").innerHTML = ` <p>${horasTaller3}</p>`;
+  document.getElementById("imagenBio3").innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona2">`;
+  document.getElementById("nombreBio3").innerHTML = `<h3>${nombreTallerista3}</h3>
+  <h4>${empresaTallerista3}</h4>`;
+  document.getElementById("trayectoriaBio3").innerText = `${bioTallerista3}`;
 
   // TARJETA 4
   document.getElementById("tipoTaller4").innerHTML = `<p>${tipoTaller4}</p>`;
@@ -1412,6 +1538,10 @@ function btnLunesON() {
     "temaTaller4"
   ).innerHTML = `<h4>${tituloTaller4}</h4>`;
   document.getElementById("horaTaller4").innerHTML = ` <p>${horasTaller4}</p>`;
+  document.getElementById("imagenBio4").innerHTML = `<img src="${imagenTaller4}" alt="" class="img-persona2">`;
+  document.getElementById("nombreBio4").innerHTML = `<h3>${nombreTallerista4}</h3>
+  <h4>${empresaTallerista4}</h4>`;
+  document.getElementById("trayectoriaBio4").innerText = `${bioTallerista4}`;
 
   // Martes 16
   document.getElementById("Sbtn2").style.backgroundColor = "#fff";
@@ -1447,8 +1577,6 @@ function btnLunesON() {
 }
 
 function btnMartesON() {
-  // btnStateLu1;
-  // btnStateLu1(tarjeta1Time, "btnStateLu1", "Ingresar");
   // Lunes 15
   document.getElementById("Sbtn1").style.backgroundColor = "#fff";
   document.getElementById("Sbtn1").style.color = "#3D3A6C";
@@ -1486,6 +1614,10 @@ function btnMartesON() {
     "temaTaller1"
   ).innerHTML = `<h4>${tituloTaller1}</h4>`;
   document.getElementById("horaTaller1").innerHTML = ` <p>${horasTaller1}</p>`;
+  document.getElementById("imagenBio1").innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona2">`;
+  document.getElementById("nombreBio1").innerHTML = `<h3>${nombreTallerista1}</h3>
+  <h4>${empresaTallerista1}</h4>`;
+  document.getElementById("trayectoriaBio1").innerText = `${bioTallerista1}`;
 
   // TARJETA 2
   document.getElementById("tipoTaller2").innerHTML = `<p>${tipoTaller2}</p>`;
@@ -1504,6 +1636,10 @@ function btnMartesON() {
     "temaTaller2"
   ).innerHTML = `<h4>${tituloTaller2}</h4>`;
   document.getElementById("horaTaller2").innerHTML = ` <p>${horasTaller2}</p>`;
+  document.getElementById("imagenBio2").innerHTML = `<img src="${imagenTaller2}" alt="" class="img-persona2">`;
+  document.getElementById("nombreBio2").innerHTML = `<h3>${nombreTallerista2}</h3>
+  <h4>${empresaTallerista2}</h4>`;
+  document.getElementById("trayectoriaBio2").innerText = `${bioTallerista2}`;
 
   // TARJETA 3
   document.getElementById("tipoTaller3").innerHTML = `<p>${tipoTaller3}</p>`;
@@ -1522,6 +1658,10 @@ function btnMartesON() {
     "temaTaller3"
   ).innerHTML = `<h4>${tituloTaller3}</h4>`;
   document.getElementById("horaTaller3").innerHTML = ` <p>${horasTaller3}</p>`;
+  document.getElementById("imagenBio3").innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona2">`;
+  document.getElementById("nombreBio3").innerHTML = `<h3>${nombreTallerista3}</h3>
+  <h4>${empresaTallerista3}</h4>`;
+  document.getElementById("trayectoriaBio3").innerText = `${bioTallerista3}`;
 
   // TARJETA 4
   document.getElementById("tipoTaller4").innerHTML = `<p>${tipoTaller4}</p>`;
@@ -1540,6 +1680,10 @@ function btnMartesON() {
     "temaTaller4"
   ).innerHTML = `<h4>${tituloTaller4}</h4>`;
   document.getElementById("horaTaller4").innerHTML = ` <p>${horasTaller4}</p>`;
+  document.getElementById("imagenBio4").innerHTML = `<img src="${imagenTaller4}" alt="" class="img-persona2">`;
+  document.getElementById("nombreBio4").innerHTML = `<h3>${nombreTallerista4}</h3>
+  <h4>${empresaTallerista4}</h4>`;
+  document.getElementById("trayectoriaBio4").innerText = `${bioTallerista4}`;
 
   // Miercoles 17
   document.getElementById("btnStateMi1").style.display = "none";
@@ -1610,6 +1754,10 @@ function btnMiercolesON() {
     "temaTaller1"
   ).innerHTML = `<h4>${tituloTaller1}</h4>`;
   document.getElementById("horaTaller1").innerHTML = ` <p>${horasTaller1}</p>`;
+  document.getElementById("imagenBio1").innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona2">`;
+  document.getElementById("nombreBio1").innerHTML = `<h3>${nombreTallerista1}</h3>
+  <h4>${empresaTallerista1}</h4>`;
+  document.getElementById("trayectoriaBio1").innerText = `${bioTallerista1}`;
 
   // TARJETA 2
   document.getElementById("tipoTaller2").innerHTML = `<p>${tipoTaller2}</p>`;
@@ -1628,6 +1776,10 @@ function btnMiercolesON() {
     "temaTaller2"
   ).innerHTML = `<h4>${tituloTaller2}</h4>`;
   document.getElementById("horaTaller2").innerHTML = ` <p>${horasTaller2}</p>`;
+  document.getElementById("imagenBio2").innerHTML = `<img src="${imagenTaller2}" alt="" class="img-persona2">`;
+  document.getElementById("nombreBio2").innerHTML = `<h3>${nombreTallerista2}</h3>
+  <h4>${empresaTallerista2}</h4>`;
+  document.getElementById("trayectoriaBio2").innerText = `${bioTallerista2}`;
 
   // TARJETA 3
   document.getElementById("tipoTaller3").innerHTML = `<p>${tipoTaller3}</p>`;
@@ -1646,6 +1798,10 @@ function btnMiercolesON() {
     "temaTaller3"
   ).innerHTML = `<h4>${tituloTaller3}</h4>`;
   document.getElementById("horaTaller3").innerHTML = ` <p>${horasTaller3}</p>`;
+  document.getElementById("imagenBio3").innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona2">`;
+  document.getElementById("nombreBio3").innerHTML = `<h3>${nombreTallerista3}</h3>
+  <h4>${empresaTallerista3}</h4>`;
+  document.getElementById("trayectoriaBio3").innerText = `${bioTallerista3}`;
 
   // TARJETA 4
   document.getElementById("tipoTaller4").innerHTML = `<p>${tipoTaller4}</p>`;
@@ -1664,6 +1820,32 @@ function btnMiercolesON() {
     "temaTaller4"
   ).innerHTML = `<h4>${tituloTaller4}</h4>`;
   document.getElementById("horaTaller4").innerHTML = ` <p>${horasTaller4}</p>`;
+  document.getElementById("imagenBio4").innerHTML = `<img src="${imagenTaller4}" alt="" class="img-persona2">`;
+  document.getElementById("nombreBio4").innerHTML = `<h3>${nombreTallerista4}</h3>
+  <h4>${empresaTallerista4}</h4>`;
+  document.getElementById("trayectoriaBio4").innerText = `${bioTallerista4}`;
+
+  // TARJETA 5
+  document.getElementById("tipoTaller5").innerHTML = `<p>${tipoTaller5}</p>`;
+  document.getElementById(
+    "imagenTallerista5"
+  ).innerHTML = ` <img src="${imagenTaller5}" alt="" class="img-persona" />`;
+  document.getElementById(
+    "nombreTallerista5"
+  ).innerHTML = `${nombreTallerista5}`;
+  document.getElementById("empresaTallerista5").innerHTML = `<p>
+  <b>${empresaTallerista5}</b>
+  </p>`;
+  document.getElementById("gruposLu5").innerHTML = `<p>Grupos</p>
+  <p>${gruposAsignados5}</p>`;
+  document.getElementById(
+    "temaTaller5"
+  ).innerHTML = `<h4>${tituloTaller5}</h4>`;
+  document.getElementById("horaTaller5").innerHTML = ` <p>${horasTaller5}</p>`;
+  document.getElementById("imagenBio5").innerHTML = `<img src="${imagenTaller5}" alt="" class="img-persona2">`;
+  document.getElementById("nombreBio5").innerHTML = `<h3>${nombreTallerista5}</h3>
+  <h4>${empresaTallerista5}</h4>`;
+  document.getElementById("trayectoriaBio5").innerText = `${bioTallerista5}`;
   // Jueves 18
   document.getElementById("btnStateJu1").style.display = "none";
   document.getElementById("btnStateJu2").style.display = "none";
@@ -1731,6 +1913,10 @@ function btnJuevesON() {
     "temaTaller1"
   ).innerHTML = `<h4>${tituloTaller1}</h4>`;
   document.getElementById("horaTaller1").innerHTML = ` <p>${horasTaller1}</p>`;
+  document.getElementById("imagenBio1").innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona2">`;
+  document.getElementById("nombreBio1").innerHTML = `<h3>${nombreTallerista1}</h3>
+  <h4>${empresaTallerista1}</h4>`;
+  document.getElementById("trayectoriaBio1").innerText = `${bioTallerista1}`;
 
   // TARJETA 2
   document.getElementById("tipoTaller2").innerHTML = `<p>${tipoTaller2}</p>`;
@@ -1749,6 +1935,10 @@ function btnJuevesON() {
     "temaTaller2"
   ).innerHTML = `<h4>${tituloTaller2}</h4>`;
   document.getElementById("horaTaller2").innerHTML = ` <p>${horasTaller2}</p>`;
+  document.getElementById("imagenBio2").innerHTML = `<img src="${imagenTaller2}" alt="" class="img-persona2">`;
+  document.getElementById("nombreBio2").innerHTML = `<h3>${nombreTallerista2}</h3>
+  <h4>${empresaTallerista2}</h4>`;
+  document.getElementById("trayectoriaBio2").innerText = `${bioTallerista2}`;
 
   // TARJETA 3
   document.getElementById("tipoTaller3").innerHTML = `<p>${tipoTaller3}</p>`;
@@ -1767,6 +1957,10 @@ function btnJuevesON() {
     "temaTaller3"
   ).innerHTML = `<h4>${tituloTaller3}</h4>`;
   document.getElementById("horaTaller3").innerHTML = ` <p>${horasTaller3}</p>`;
+  document.getElementById("imagenBio3").innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona2">`;
+  document.getElementById("nombreBio3").innerHTML = `<h3>${nombreTallerista3}</h3>
+  <h4>${empresaTallerista3}</h4>`;
+  document.getElementById("trayectoriaBio3").innerText = `${bioTallerista3}`;
 
   // TARJETA 4
   document.getElementById("tipoTaller4").innerHTML = `<p>${tipoTaller4}</p>`;
@@ -1785,6 +1979,10 @@ function btnJuevesON() {
     "temaTaller4"
   ).innerHTML = `<h4>${tituloTaller4}</h4>`;
   document.getElementById("horaTaller4").innerHTML = ` <p>${horasTaller4}</p>`;
+  document.getElementById("imagenBio4").innerHTML = `<img src="${imagenTaller4}" alt="" class="img-persona2">`;
+  document.getElementById("nombreBio4").innerHTML = `<h3>${nombreTallerista4}</h3>
+  <h4>${empresaTallerista4}</h4>`;
+  document.getElementById("trayectoriaBio4").innerText = `${bioTallerista4}`;
   // Viernes 19
   document.getElementById("btnStateVi1").style.display = "none";
   document.getElementById("btnStateVi2").style.display = "none";
@@ -1834,7 +2032,7 @@ function btnViernesON() {
   document.getElementById("contenedorBtnSemestre").style.borderBottomColor =
     "#707070";
 
-      // INFORMACION TALLERISTAS VIERNES
+  // INFORMACION TALLERISTAS VIERNES
   // TARJETA 1
   document.getElementById("tipoTaller1").innerHTML = `<p>${tipoTaller1}</p>`;
   document.getElementById(
@@ -1852,6 +2050,10 @@ function btnViernesON() {
     "temaTaller1"
   ).innerHTML = `<h4>${tituloTaller1}</h4>`;
   document.getElementById("horaTaller1").innerHTML = ` <p>${horasTaller1}</p>`;
+  document.getElementById("imagenBio1").innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona2">`;
+  document.getElementById("nombreBio1").innerHTML = `<h3>${nombreTallerista1}</h3>
+  <h4>${empresaTallerista1}</h4>`;
+  document.getElementById("trayectoriaBio1").innerText = `${bioTallerista1}`;
 
   // TARJETA 2
   document.getElementById("tipoTaller2").innerHTML = `<p>${tipoTaller2}</p>`;
@@ -1870,6 +2072,10 @@ function btnViernesON() {
     "temaTaller2"
   ).innerHTML = `<h4>${tituloTaller2}</h4>`;
   document.getElementById("horaTaller2").innerHTML = ` <p>${horasTaller2}</p>`;
+  document.getElementById("imagenBio2").innerHTML = `<img src="${imagenTaller2}" alt="" class="img-persona2">`;
+  document.getElementById("nombreBio2").innerHTML = `<h3>${nombreTallerista2}</h3>
+  <h4>${empresaTallerista2}</h4>`;
+  document.getElementById("trayectoriaBio2").innerText = `${bioTallerista2}`;
 
   // TARJETA 3
   document.getElementById("tipoTaller3").innerHTML = `<p>${tipoTaller3}</p>`;
@@ -1888,6 +2094,10 @@ function btnViernesON() {
     "temaTaller3"
   ).innerHTML = `<h4>${tituloTaller3}</h4>`;
   document.getElementById("horaTaller3").innerHTML = ` <p>${horasTaller3}</p>`;
+  document.getElementById("imagenBio3").innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona2">`;
+  document.getElementById("nombreBio3").innerHTML = `<h3>${nombreTallerista3}</h3>
+  <h4>${empresaTallerista3}</h4>`;
+  document.getElementById("trayectoriaBio3").innerText = `${bioTallerista3}`;
 }
 
 // ------------------------------SECCION MODAL------------------------------
@@ -1908,7 +2118,7 @@ const closeEls = document.querySelectorAll("[data-close]");
 for (const el of closeEls) {
   el.addEventListener("click", function () {
     this.parentElement.parentElement.parentElement.classList.remove(isVisible);
-    console.log("Se hizo invisible.")
+    console.log("Se hizo invisible.");
   });
 }
 // const isVisible = "is-visible";
