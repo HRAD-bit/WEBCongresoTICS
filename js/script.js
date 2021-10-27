@@ -34,7 +34,7 @@ const sectionOneObserver = new IntersectionObserver(function (
     }
   });
 },
-sectionOneOptions);
+  sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
 
@@ -2134,4 +2134,12 @@ document.addEventListener("keyup", (e) => {
   if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
     document.querySelector(".modal.is-visible").classList.remove(isVisible);
   }
+});
+// ---------------Empresas------------
+document.addEventListener('DOMContentLoaded', () => {
+  const elementosCarousel = document.querySelectorAll('.carousel');
+  M.Carousel.init(elementosCarousel, {
+    duration: 150,
+    padding: 300
+  })
 });

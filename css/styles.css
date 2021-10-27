@@ -511,6 +511,57 @@ header.abajo nav ul li a {
 .content-modal .btn-cerrar label:hover {
     background-color: #185E83;
 }
+/* -----------------------------Empresas---------------------------------- */
+/* .contenedor-empreas{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.empresas-titulo h2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 15px 0px;
+}
+.fila-uno{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin: 10px 0px 20px 0px;
+}
+.fila-uno img{
+    max-width: 70px;
+    margin: 5px;
+}
+.fila-dos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin: 10px 0px 20px 0px;
+}
+.fila-dos img{
+    max-width: 70px;
+    margin: 5px;
+} */
+.carousel{
+    max-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-item img{
+    max-width: 200px;
+}
+
 
 /* -----------------------FOOTER COPYRIGHT ---------------------------------- */
 
