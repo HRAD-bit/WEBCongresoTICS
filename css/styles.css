@@ -1352,7 +1352,7 @@ button {
         margin-left: 0;
     }
     .img-portada {
-        /* display: none; */
+        display: none;
     }
 }
 
@@ -1416,16 +1416,17 @@ button {
         padding: 3px;
     }
     .info-portada {
-        width: 400px;
+        width: 600px;
     }
     .btn-dias {
         font-size: 18px;
     }
     .info-portada h2 {
-        font-size: 26px;
+        font-size: 40px;
+    
     }
     .info-portada h3 {
-        font-size: 16px;
+        font-size: 18px;
         padding: 30px;
     }
     
@@ -1542,6 +1543,13 @@ button {
     }
     .hora-div-2 p {
         font-size: 1.21em;
+    }
+    .info-portada {
+        width: 300px;
+    }
+
+    .info-portada h2 {
+        font-size: 30px;
     }
 }
 
