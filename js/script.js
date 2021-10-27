@@ -1084,7 +1084,7 @@ function informacionLunes() {
 
   (tipoTaller2 = "Conferencia"),
     (nombreTallerista2 = " ING. José Riojas "),
-    (empresaTallerista2 = "Drone COllision Center"),
+    (empresaTallerista2 = "Drone COllision<br>Center"),
     (gruposAsignados2 = "Todos los Semestres"),
     (tituloTaller2 = '"LA IA EN LOS DRONES Y LOS SECTORES PRODUCTIVOS"'),
     (horasTaller2 = "16:00 - 17:00"),
@@ -1180,7 +1180,7 @@ function informacionMiercoles() {
 
   // TARJETA 2 MIERCOLES
   (tipoTaller2 = "Taller"),
-    (nombreTallerista2 = "ING. Juan Diego Aquino Barrios"),
+    (nombreTallerista2 = "ING. Juan Diego Aquino<br>Barrios"),
     (empresaTallerista2 = "AmCoder"),
     (tituloTaller2 =
       '"WEB APLICATION WITH CODEMONO: INSPIRAR PARA CREAR, CREAR PARA INSPIRAR"'),
@@ -1193,7 +1193,7 @@ function informacionMiercoles() {
 
   (tipoTaller3 = "Taller"),
     (nombreTallerista3 = "MCCyT. Keila Elena Ocaña"),
-    (empresaTallerista3 = "ITS de Martínez de la Torre"),
+    (empresaTallerista3 = "ITS de Martínez<br>de la Torre"),
     (gruposAsignados3 = "707"),
     (tituloTaller3 = '"ADMINISTRACIÓN DE MÁQUINAS LINUX CON WEBMIN"'),
     (horasTaller3 = "15:00 - 18:00"),
@@ -1204,7 +1204,7 @@ function informacionMiercoles() {
   // TARJETAS 4 MIERCOLES
 
   (tipoTaller4 = "Taller"),
-    (nombreTallerista4 = "MSC. Fernando Alberto Hernández"),
+    (nombreTallerista4 = "MSC. Fernando Alberto<br>Hernández"),
     (empresaTallerista4 = "ITS de Misantla"),
     (gruposAsignados4 = "107, 307 & 507"),
     (tituloTaller4 = '"DETECCIÓN DE INTRUSIÓN CON PFSENSE"'),
@@ -1233,7 +1233,7 @@ function informacionJueves() {
   // TARJETA 1 JUEVES
   (tipoTaller1 = "Taller"),
     (nombreTallerista1 = "MCCyT. Keila Elena Ocaña"),
-    (empresaTallerista1 = "ITS de Martínez de la Torre"),
+    (empresaTallerista1 = "ITS de Martínez<br>de la Torre"),
     (gruposAsignados1 = "707"),
     (tituloTaller1 = '"ADMINISTRACIÓN DE MÁQUINAS LINUX CON WEBMIN"'),
     (horasTaller1 = "15:00 - 18:00"),
@@ -1244,7 +1244,7 @@ function informacionJueves() {
   // TARJETA 2 JUEVES
 
   (tipoTaller2 = "Taller"),
-    (nombreTallerista2 = "MSC. Fernando Alberto Hernández"),
+    (nombreTallerista2 = "MSC. Fernando Alberto<br>Hernández"),
     (empresaTallerista2 = "ITS de Misantla"),
     (gruposAsignados2 = "107, 307 & 507"),
     (tituloTaller2 = '"DETECCIÓN DE INTRUSIÓN CON PFSENSE"'),
@@ -1271,7 +1271,7 @@ function informacionViernes() {
   // TARJETA 2 VIERNES
   (tipoTaller2 = "Taller"),
     (nombreTallerista2 = "MCCyT. Keila Elena Ocaña"),
-    (empresaTallerista2 = "ITS de Martínez de la Torre"),
+    (empresaTallerista2 = "ITS de Martínez<br>de la Torre"),
     (gruposAsignados2 = "707"),
     (tituloTaller2 = '"ADMINISTRACIÓN DE MÁQUINAS LINUX CON WEBMIN"'),
     (horasTaller2 = "15:00 - 18:00"),
@@ -1282,7 +1282,7 @@ function informacionViernes() {
   // TARJETA 3 VIERNES
 
   (tipoTaller3 = "Taller"),
-    (nombreTallerista3 = "MSC. Fernando Alberto Hernández"),
+    (nombreTallerista3 = "MSC. Fernando Alberto<br>Hernández"),
     (empresaTallerista3 = "ITS de Misantla"),
     (gruposAsignados3 = "107, 307 & 507"),
     (tituloTaller3 = '"DETECCIÓN DE INTRUSIÓN CON PFSENSE"'),
