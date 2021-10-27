@@ -1021,7 +1021,7 @@ function informacionLunes() {
     (gruposAsignados3 = "Todos los Semestres"),
     (tituloTaller3 = '"INDUSTRIA INSITU: PEGA SYSTEMS Y HUAWEI TECHNOLOGIES"'),
     (horasTaller3 = "17:00 - 18:00"),
-    (imagenTaller3 = "img/talleristas/Hombre.png");
+    (imagenTaller3 = "img/talleristas/pega-huawei.png");
 
   // TARJETAS 4 LUNES
 
@@ -1108,7 +1108,7 @@ function informacionMiercoles() {
     (gruposAsignados3 = "107, 307 & 507"),
     (tituloTaller3 = '"DETECCIÓN DE INTRUSIÓN CON PFSENSE"'),
     (horasTaller3 = "16:00 - 18:00"),
-    imagenTaller3 = "img/talleristas/Hombre.png";
+    imagenTaller3 = "img/talleristas/Fernando.png";
 
   // TARJETAS 4 MIERCOLES
 
@@ -1142,7 +1142,7 @@ function informacionJueves() {
     (gruposAsignados2 = "107, 307 & 507"),
     (tituloTaller2 = '"DETECCIÓN DE INTRUSIÓN CON PFSENSE"'),
     (horasTaller2 = "16:00 - 18:00"),
-    imagenTaller2 = "img/talleristas/Hombre.png";
+    imagenTaller2 = "img/talleristas/Fernando.png";
 
   OcultarSeccion2Completa();
 }
@@ -1175,7 +1175,7 @@ function informacionViernes() {
     (gruposAsignados3 = "107, 307 & 507"),
     (tituloTaller3 = '"DETECCIÓN DE INTRUSIÓN CON PFSENSE"'),
     (horasTaller3 = "16:00 - 18:00"),
-    imagenTaller3 = "img/talleristas/Hombre.png";
+    imagenTaller3 = "img/talleristas/Fernando.png";
 
   OcultarTarjeta4();
 }
@@ -1346,7 +1346,6 @@ function btnLunesON() {
   document.getElementById(
     "imagenTallerista1"
   ).innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona" />`;
-  document.getElementById("divNombre1").innerHTML = `<label class="open-modal" data-open="modal1" id="nombreTallerista1"></label>`;
   document.getElementById(
     "nombreTallerista1"
   ).innerHTML = `${nombreTallerista1}`;
@@ -1475,7 +1474,6 @@ function btnMartesON() {
   document.getElementById(
     "imagenTallerista1"
   ).innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona" />`;
-  document.getElementById("divNombre1").innerHTML = `<label class="open-modal" data-open="modal" id="nombreTallerista1"></label>`;
   document.getElementById(
     "nombreTallerista1"
   ).innerHTML = `${nombreTallerista1}`;
@@ -1901,6 +1899,7 @@ for (const el of openEls) {
   el.addEventListener("click", function () {
     const modalId = this.dataset.open;
     document.getElementById(modalId).classList.add(isVisible);
+    console.log("Se hizo visible.");
   });
 }
 const closeEls = document.querySelectorAll("[data-close]");
@@ -1909,6 +1908,7 @@ const closeEls = document.querySelectorAll("[data-close]");
 for (const el of closeEls) {
   el.addEventListener("click", function () {
     this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+    console.log("Se hizo invisible.")
   });
 }
 // const isVisible = "is-visible";
