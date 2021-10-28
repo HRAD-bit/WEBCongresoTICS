@@ -1,10 +1,18 @@
 const iconMenu = document.querySelector("#icono-menu"),
   menu = document.querySelector("#navbar"),
-  botonesMenu = document.querySelector(".nav-link")
+  botonesMenu = document.querySelector(".nav-link"),
+  botonesMenu2 = document.querySelector(".emp"),
+  botonesMenu3 = document.querySelector(".btn-descarga-responsivo");
 
 iconMenu.addEventListener("click", (e) => {
   menu.classList.toggle("active");
   botonesMenu.addEventListener("click", (e) => {
+    menu.classList.add("active");
+  });
+  botonesMenu2.addEventListener("click", (e) => {
+    menu.classList.add("active");
+  });
+  botonesMenu3.addEventListener("click", (e) => {
     menu.classList.add("active");
   });
 });
@@ -2139,10 +2147,31 @@ document.addEventListener("keyup", (e) => {
   }
 });
 // ---------------Empresas------------
-document.addEventListener('DOMContentLoaded', () => {
-  const elementosCarousel = document.querySelectorAll('.carousel');
-  M.Carousel.init(elementosCarousel, {
-    duration: 150,
-    padding: 300
-  })
-});
+// ----------Carrusel de imagenes----
+const carrusel = document.querySelector(".carusel-items");
+
+let maxScrollLeft = carrusel.scrollWidth - carrusel.clientWidth;
+let intervalo = null;
+let step = 1;
+
+const start = () => {
+  intervalo = setInterval(function () {
+    carrusel.scrollLeft = carrusel.scrollLeft + step;
+    if (carrusel.scrollLeft === maxScrollLeft) {
+      step = step * (-1);
+    } else if (carrusel.scrollLeft === 0) {
+      step = step * (-1);
+    }
+  }, 10);
+};
+const stop = () => {
+  clearInterval(intervalo);
+};
+carrusel.addEventListener('mouseover', () => {
+  stop();
+})
+carrusel.addEventListener('mouseout', () => {
+  start();
+})
+
+start();

@@ -515,60 +515,35 @@ header.abajo nav ul li a {
     background-color: #185E83;
 }
 /* -----------------------------Empresas---------------------------------- */
-/* .contenedor-empreas{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 
-}
-.empresas-titulo h2{
-    font-family: 'Montserrat', sans-serif;
+.carrusel{
     text-align: center;
-    margin: 15px 0px;
 }
-.fila-uno{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    margin: 10px 0px 20px 0px;
-}
-.fila-uno img{
-    max-width: 70px;
-    margin: 5px;
-}
-.fila-dos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    margin: 10px 0px 20px 0px;
-}
-.fila-dos img{
-    max-width: 70px;
-    margin: 5px;
-} */
-h2.center-align{
-margin: 30px 0px;
+.carrusel h1{
+    margin: 20px 0px;
 font-family: 'Anton', sans-serif;
-/* font-size: 1.5em; */
 }
-.carousel{
-    max-height: 200px;
+.carusel-items{
     display: flex;
-    flex-wrap: wrap;
-    
-    align-content: center;
-    align-items: center;
-    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
-
-.carousel-item img{
-    max-width: 200px;
+.carrusel-item{
+    min-width: 100px;
+    max-width: 100px;
+    height: 100px;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.carrusel-item:hover{
+    transform: scale(1.5);
+}
+.carrusel-item img{
+width: 100%;
+object-fit: cover;
+/* height: 100%; */
 }
 
 
@@ -1002,14 +977,7 @@ button {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* .open-modal {
-    font-weight: bold;
-    background: var(--blue);
-    color: var(--white);
-    padding: .75rem 1.75rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-  } */
+
 
 /*CUSTOM VARIABLES HERE*/
 
@@ -1357,21 +1325,19 @@ button {
     }
     #icono-menu {
         vertical-align: top;
-        width: 28px !important;
+        width: 25px !important;
         min-width: 4px !important;
         cursor: pointer;
         padding: 5px;
-        background-color: black;
-        border-radius: 5px;
+        /* background-color: black; */
+        border-radius: 5px ;
+        border: 1px solid white;
     }
     /* estilos javaScript */
     .active {
         transform: translate(740px);
     }
-    /* .opacity{
-        background-color: rgba(0, 0, 0, 0.5);
-        transition: all .5s ease;
-    } */
+
     /* Estilos para el contenido del menu  */
     .menu {
         background-color: #1b1b1b;
