@@ -1,9 +1,12 @@
 const iconMenu = document.querySelector("#icono-menu"),
-  menu = document.querySelector("#navbar");
+  menu = document.querySelector("#navbar"),
+  botonesMenu = document.querySelector(".nav-link")
 
 iconMenu.addEventListener("click", (e) => {
   menu.classList.toggle("active");
-  // document.body.classList.toggle('opacity');
+  botonesMenu.addEventListener("click", (e) => {
+    menu.classList.add("active");
+  });
 });
 // -----efecto de tamaño scroll---
 window.addEventListener("scroll", function () {
