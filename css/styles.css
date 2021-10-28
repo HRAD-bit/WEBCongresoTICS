@@ -518,10 +518,11 @@ header.abajo nav ul li a {
 
 .carrusel{
     text-align: center;
+    
 }
 .carrusel h1{
-    margin: 20px 0px;
-font-family: 'Anton', sans-serif;
+    padding: 20px 0px;
+    font-family: 'Montserrat', sans-serif;
 }
 .carusel-items{
     display: flex;
@@ -710,6 +711,7 @@ object-fit: cover;
     align-content: center;
     width: 750px;
     height: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.562);
 }
 
 /* Seccion de información de la persona   INICIO*/
