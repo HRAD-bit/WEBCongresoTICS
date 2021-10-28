@@ -172,7 +172,7 @@ header.abajo nav ul li a {
     flex-wrap: nowrap;
     height: 500px;
     width: auto;
-    margin-top: 77px;
+    margin-top: 70px;
 }
 
 /* Imagen logo Itics */
@@ -1490,6 +1490,9 @@ button {
     .info-portada h3 {
         font-size: 18px;
         padding: 30px;
+    }
+    .contenedor-taller {
+        display: none;
     }
     
 }
