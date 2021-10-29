@@ -244,9 +244,9 @@ header.abajo nav ul li a {
 .info-portada a {
     text-decoration: none;
     background: #E75D00;
-    border-radius: 9px;
+    border-radius: 15px;
     /* width: 200px; */
-    padding: 20px;
+    padding: 16px 20px;
     margin-top: 13px;
     color: #fff;
     font-family: 'Ubuntu', sans-serif;
