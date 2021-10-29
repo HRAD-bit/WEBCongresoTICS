@@ -1095,7 +1095,7 @@ function informacionLunes() {
 
   (tipoTaller2 = "Conferencia"),
     (nombreTallerista2 = " ING. José Riojas "),
-    (empresaTallerista2 = "Drone COllision<br>Center"),
+    (empresaTallerista2 = "Drone Collision<br>Center"),
     (gruposAsignados2 = "Todos los Semestres"),
     (tituloTaller2 = '"LA IA EN LOS DRONES Y LOS SECTORES PRODUCTIVOS"'),
     (horasTaller2 = "16:00 - 17:00"),
