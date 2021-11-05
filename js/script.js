@@ -78,37 +78,50 @@ sectionTwoObserver.observe(sectionTwo);
 // -----------------------INFORMACIÓN DE TALLERISTAS--------------------
 
 // LINKS DE ZOOM
-const linkLu1 = "http://google.com",
-  LinkLu2 = "http://facebook.com",
-  LinkLu3 = "http://google.com",
-  LinkLu4 = "http://google.com";
+const linkLu1 = "https://meet.google.com/hwb-dpmp-hpb",
+  LinkLu2 = "https://meet.google.com/xvj-rzwv-ung",
+  LinkMa1 = "https://meet.google.com/hwb-dpmp-hpb",
+  LinkMa2 = "https://meet.google.com/rbk-vsgo-epn",
+  LinkMa3 = "https://meet.google.com/vai-nofp-zac",
+  LinkMa4 = "https://meet.google.com/xvj-rzwv-ung",
+  LinkMi1 = "https://meet.google.com/gic-ioxq-uqf",
+  LinkMi2 = "https://meet.google.com/bic-vpgf-uyt",
+  LinkMi3 = "https://meet.google.com/qde-owyx-dgo",
+  LinkMi4 = "https://meet.google.com/zky-bmpj-xed",
+  LinkMi5 = "https://meet.google.com/qwi-bibf-adc",
+  LinkJu1 = "https://meet.google.com/zig-fzft-gxz",
+  LinkJu2 = "https://meet.google.com/zky-bmpj-xed",
+  LinkVi1 = "http://google.com",
+  LinkVi2 = "https://meet.google.com/zig-fzft-gxz",
+  LinkVi3 = "https://meet.google.com/zky-bmpj-xed";
+
 
 // ------------------------------TIEMPOS DE ESPERA-----------------
 
 // ---------------VARIABLES DE TIEMPO-----------
 // Lunes
-const tarjeta1TimeLu = "Nov 15 2021 10:00:00 GMT-05:00",
-  tarjeta2TimeLu = "Nov 15 2021 16:00:00 GMT-05:00",
-  tarjeta3TimeLu = "Nov 15 2021 17:00:00 GMT-05:00",
-  tarjeta4TimeLu = "Nov 15 2021 18:00:00 GMT-05:00",
+const tarjeta1TimeLu = "Nov 15 2021 10:00:00 GMT-06:00",
+  tarjeta2TimeLu = "Nov 15 2021 18:00:00 GMT-06:00",
+  // tarjeta3TimeLu = "Nov 15 2021 17:00:00 GMT-05:00",
+  // tarjeta4TimeLu = "Nov 15 2021 18:00:00 GMT-05:00",
   // MARTES
-  tarjeta1TimeMa = "Nov 16 2021 10:00:00 GMT-05:00",
-  tarjeta2TimeMa = "Nov 16 2021 16:00:00 GMT-05:00",
-  tarjeta3TimeMa = "Nov 16 2021 17:00:00 GMT-05:00",
-  tarjeta4TimeMa = "Nov 16 2021 18:00:00 GMT-05:00",
+  tarjeta1TimeMa = "Nov 16 2021 10:00:00 GMT-06:00",
+  tarjeta2TimeMa = "Nov 16 2021 16:00:00 GMT-06:00",
+  tarjeta3TimeMa = "Nov 16 2021 17:00:00 GMT-06:00",
+  tarjeta4TimeMa = "Nov 16 2021 18:00:00 GMT-06:00",
   // MIERCOLES
-  tarjeta1TimeMi = "Nov 17 2021 10:00:00 GMT-05:00",
-  tarjeta2TimeMi = "Nov 17 2021 11:00:00 GMT-05:00",
-  tarjeta3TimeMi = "Nov 17 2021 15:00:00 GMT-05:00",
-  tarjeta4TimeMi = "Nov 17 2021 16:00:00 GMT-05:00",
-  tarjeta5TimeMi = "Nov 17 2021 19:00:00 GMT-05:00",
+  tarjeta1TimeMi = "Nov 17 2021 10:00:00 GMT-06:00",
+  tarjeta2TimeMi = "Nov 17 2021 11:00:00 GMT-06:00",
+  tarjeta3TimeMi = "Nov 17 2021 15:00:00 GMT-06:00",
+  tarjeta4TimeMi = "Nov 17 2021 16:00:00 GMT-06:00",
+  tarjeta5TimeMi = "Nov 17 2021 19:00:00 GMT-06:00",
   // JUEVES
-  tarjeta1TimeJu = "Nov 18 2021 15:00:00 GMT-05:00",
-  tarjeta2TimeJu = "Nov 18 2021 16:00:00 GMT-05:00",
+  tarjeta1TimeJu = "Nov 18 2021 15:00:00 GMT-06:00",
+  tarjeta2TimeJu = "Nov 18 2021 16:00:00 GMT-06:00",
   // VIERNES
-  tarjeta1TimeVi = "Nov 19 2021 13:00:00 GMT-05:00",
-  tarjeta2TimeVi = "Nov 19 2021 15:00:00 GMT-05:00",
-  tarjeta3TimeVi = "Nov 19 2021 16:00:00 GMT-05:00";
+  tarjeta1TimeVi = "Nov 19 2021 13:00:00 GMT-06:00",
+  tarjeta2TimeVi = "Nov 19 2021 15:00:00 GMT-06:00",
+  tarjeta3TimeVi = "Nov 19 2021 16:00:00 GMT-06:00";
 
 // TIMER Y COUNTDOWN
 
@@ -155,7 +168,7 @@ const btnStateLu1 = (deadline, elem, finalMessage) => {
       document.getElementById("btnAccionLu1").style.backgroundColor = "#3EE45F";
 
       // FINALIZADO
-      if (t.remainTime <= -50.0) {
+      if (t.remainTime <= -14400.0) {
         clearInterval(timerUpdate);
         console.log(t.remainTime);
         el.innerHTML = "FINALIZADO";
@@ -208,7 +221,7 @@ const btnStateLu2 = (deadline, elem, finalMessage) => {
       document.getElementById("btnAccionLu2").style.backgroundColor = "#3EE45F";
 
       // FINALIZADO
-      if (t.remainTime <= -15.0) {
+      if (t.remainTime <= -10800.0) {
         clearInterval(timerUpdate);
         console.log(t.remainTime);
         el.innerHTML = "FINALIZADO";
@@ -232,102 +245,102 @@ const btnStateLu2 = (deadline, elem, finalMessage) => {
 };
 btnStateLu2(tarjeta2TimeLu, "btnStateLu2", "Ingresar");
 
-const btnStateLu3 = (deadline, elem, finalMessage) => {
-  const el = document.getElementById(elem);
+// const btnStateLu3 = (deadline, elem, finalMessage) => {
+//   const el = document.getElementById(elem);
 
-  const timerUpdate = setInterval(() => {
-    let t = getRemainingTime(deadline);
-    el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
+//   const timerUpdate = setInterval(() => {
+//     let t = getRemainingTime(deadline);
+//     el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
 
-    if (t.remainTime <= 1) {
-      console.log(t.remainTime);
-      // clearInterval(timerUpdate);
-      // el.innerHTML = finalMessage;
-      el.innerHTML = `<p> Acceder <p>`;
-      document.getElementById("liveIDLu3").style.display = "flex";
-      document.getElementById("gruposLiveLu3").style.justifyContent =
-        "space-between";
-      document.getElementById(
-        "btnAccionLu3"
-      ).innerHTML = `<a href="${linkLu1}" target="_blank">
-      <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
-      <div class="btn-action-estado">
-        <div class="btnState" id="btnStateLu3"><p>Acceder</p></div>
-      </div>
-    </a>`;
-      document.getElementById("btnAccionLu3").style.backgroundColor = "#3EE45F";
-      if (t.remainTime <= -5.0) {
-        clearInterval(timerUpdate);
-        console.log(t.remainTime);
-        el.innerHTML = "FINALIZADO";
-        document.getElementById("liveIDLu3").style.display = "none";
-        document.getElementById("gruposLiveLu3").style.justifyContent =
-          "space-around";
-        document.getElementById("btnAccionLu3").style.backgroundColor =
-          "#858585";
-        document.getElementById("btnAccionLu3").style.cursor = "no-drop";
-        document.getElementById("btnAccionLu3").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
-      </div>
-      <div class="btn-action-estado">
-        <div class="btnState" id="btnStateLu3"><p>Finalizado</p></div>
-      </div>`;
-        document.getElementById("contenedorInfoLu3").className +=
-          " contenedor-informacion-off";
-      }
-    }
-  }, 1000);
-};
-btnStateLu3(tarjeta3TimeLu, "btnStateLu3", "Ingresar");
+//     if (t.remainTime <= 1) {
+//       console.log(t.remainTime);
+//       // clearInterval(timerUpdate);
+//       // el.innerHTML = finalMessage;
+//       el.innerHTML = `<p> Acceder <p>`;
+//       document.getElementById("liveIDLu3").style.display = "flex";
+//       document.getElementById("gruposLiveLu3").style.justifyContent =
+//         "space-between";
+//       document.getElementById(
+//         "btnAccionLu3"
+//       ).innerHTML = `<a href="${linkLu1}" target="_blank">
+//       <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
+//       <div class="btn-action-estado">
+//         <div class="btnState" id="btnStateLu3"><p>Acceder</p></div>
+//       </div>
+//     </a>`;
+//       document.getElementById("btnAccionLu3").style.backgroundColor = "#3EE45F";
+//       if (t.remainTime <= -5.0) {
+//         clearInterval(timerUpdate);
+//         console.log(t.remainTime);
+//         el.innerHTML = "FINALIZADO";
+//         document.getElementById("liveIDLu3").style.display = "none";
+//         document.getElementById("gruposLiveLu3").style.justifyContent =
+//           "space-around";
+//         document.getElementById("btnAccionLu3").style.backgroundColor =
+//           "#858585";
+//         document.getElementById("btnAccionLu3").style.cursor = "no-drop";
+//         document.getElementById("btnAccionLu3").innerHTML = ` <div>
+//         <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
+//       </div>
+//       <div class="btn-action-estado">
+//         <div class="btnState" id="btnStateLu3"><p>Finalizado</p></div>
+//       </div>`;
+//         document.getElementById("contenedorInfoLu3").className +=
+//           " contenedor-informacion-off";
+//       }
+//     }
+//   }, 1000);
+// };
+// btnStateLu3(tarjeta3TimeLu, "btnStateLu3", "Ingresar");
 
-const btnStateLu4 = (deadline, elem, finalMessage) => {
-  const el = document.getElementById(elem);
+// const btnStateLu4 = (deadline, elem, finalMessage) => {
+//   const el = document.getElementById(elem);
 
-  const timerUpdate = setInterval(() => {
-    let t = getRemainingTime(deadline);
-    el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
-    // EN VIVO
-    if (t.remainTime <= 1) {
-      console.log(t.remainTime);
-      // clearInterval(timerUpdate);
-      // el.innerHTML = finalMessage;
-      el.innerHTML = `<p> Acceder <p>`;
-      document.getElementById("liveIDLu4").style.display = "flex";
-      document.getElementById("gruposLiveLu4").style.justifyContent =
-        "space-between";
-      document.getElementById(
-        "btnAccionLu4"
-      ).innerHTML = `<a href="${linkLu1}" target="_blank">
-      <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
-      <div class="btn-action-estado">
-        <div class="btnState" id="btnStateLu4"><p>Acceder</p></div>
-      </div>
-    </a>`;
-      document.getElementById("btnAccionLu4").style.backgroundColor = "#3EE45F";
-      // FINALIZADO
-      if (t.remainTime <= -5.0) {
-        clearInterval(timerUpdate);
-        console.log(t.remainTime);
-        el.innerHTML = "FINALIZADO";
-        document.getElementById("liveIDLu4").style.display = "none";
-        document.getElementById("gruposLiveLu4").style.justifyContent =
-          "space-around";
-        document.getElementById("btnAccionLu4").style.backgroundColor =
-          "#858585";
-        document.getElementById("btnAccionLu4").style.cursor = "no-drop";
-        document.getElementById("btnAccionLu4").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
-      </div>
-      <div class="btn-action-estado">
-        <div class="btnState" id="btnStateLu4"><p>Finalizado</p></div>
-      </div>`;
-        document.getElementById("contenedorInfoLu4").className +=
-          " contenedor-informacion-off";
-      }
-    }
-  }, 1000);
-};
-btnStateLu4(tarjeta4TimeLu, "btnStateLu4", "Ingresar");
+//   const timerUpdate = setInterval(() => {
+//     let t = getRemainingTime(deadline);
+//     el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
+//     // EN VIVO
+//     if (t.remainTime <= 1) {
+//       console.log(t.remainTime);
+//       // clearInterval(timerUpdate);
+//       // el.innerHTML = finalMessage;
+//       el.innerHTML = `<p> Acceder <p>`;
+//       document.getElementById("liveIDLu4").style.display = "flex";
+//       document.getElementById("gruposLiveLu4").style.justifyContent =
+//         "space-between";
+//       document.getElementById(
+//         "btnAccionLu4"
+//       ).innerHTML = `<a href="${linkLu1}" target="_blank">
+//       <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
+//       <div class="btn-action-estado">
+//         <div class="btnState" id="btnStateLu4"><p>Acceder</p></div>
+//       </div>
+//     </a>`;
+//       document.getElementById("btnAccionLu4").style.backgroundColor = "#3EE45F";
+//       // FINALIZADO
+//       if (t.remainTime <= -5.0) {
+//         clearInterval(timerUpdate);
+//         console.log(t.remainTime);
+//         el.innerHTML = "FINALIZADO";
+//         document.getElementById("liveIDLu4").style.display = "none";
+//         document.getElementById("gruposLiveLu4").style.justifyContent =
+//           "space-around";
+//         document.getElementById("btnAccionLu4").style.backgroundColor =
+//           "#858585";
+//         document.getElementById("btnAccionLu4").style.cursor = "no-drop";
+//         document.getElementById("btnAccionLu4").innerHTML = ` <div>
+//         <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
+//       </div>
+//       <div class="btn-action-estado">
+//         <div class="btnState" id="btnStateLu4"><p>Finalizado</p></div>
+//       </div>`;
+//         document.getElementById("contenedorInfoLu4").className +=
+//           " contenedor-informacion-off";
+//       }
+//     }
+//   }, 1000);
+// };
+// btnStateLu4(tarjeta4TimeLu, "btnStateLu4", "Ingresar");
 
 // MARTES
 const btnStateMa1 = (deadline, elem, finalMessage) => {
@@ -344,7 +357,7 @@ const btnStateMa1 = (deadline, elem, finalMessage) => {
         "space-between";
       document.getElementById(
         "btnAccionLu1"
-      ).innerHTML = `<a href="${linkMa1}" target="_blank">
+      ).innerHTML = `<a href="${LinkMa1}" target="_blank">
       <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateMa1"><p>Acceder</p></div>
@@ -353,7 +366,7 @@ const btnStateMa1 = (deadline, elem, finalMessage) => {
       document.getElementById("btnAccionLu1").style.backgroundColor = "#3EE45F";
 
       // FINALIZADO
-      if (t.remainTime <= -50.0) {
+      if (t.remainTime <= -14400.0) {
         clearInterval(timerUpdate);
         console.log(t.remainTime);
         el.innerHTML = "FINALIZADO";
@@ -406,7 +419,7 @@ const btnStateMa2 = (deadline, elem, finalMessage) => {
       document.getElementById("btnAccionLu2").style.backgroundColor = "#3EE45F";
 
       // FINALIZADO
-      if (t.remainTime <= -15.0) {
+      if (t.remainTime <= -3600.0) {
         clearInterval(timerUpdate);
         console.log(t.remainTime);
         el.innerHTML = "FINALIZADO";
@@ -454,7 +467,7 @@ const btnStateMa3 = (deadline, elem, finalMessage) => {
       document.getElementById("btnAccionLu3").style.backgroundColor = "#3EE45F";
 
       // FINALIZADO
-      if (t.remainTime <= -15.0) {
+      if (t.remainTime <= -3600.0) {
         clearInterval(timerUpdate);
         console.log(t.remainTime);
         el.innerHTML = "FINALIZADO";
@@ -498,7 +511,7 @@ const btnStateMa4 = (deadline, elem, finalMessage) => {
         "space-between";
       document.getElementById(
         "btnAccionLu4"
-      ).innerHTML = `<a href="${LinkMa2}" target="_blank">
+      ).innerHTML = `<a href="${LinkMa4}" target="_blank">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateMa4"><p>Acceder</p></div>
@@ -507,7 +520,7 @@ const btnStateMa4 = (deadline, elem, finalMessage) => {
       document.getElementById("btnAccionLu4").style.backgroundColor = "#3EE45F";
 
       // FINALIZADO
-      if (t.remainTime <= -15.0) {
+      if (t.remainTime <= -10800.0) {
         clearInterval(timerUpdate);
         console.log(t.remainTime);
         el.innerHTML = "FINALIZADO";
@@ -546,7 +559,7 @@ const btnStateMi1 = (deadline, elem, finalMessage) => {
         "space-between";
       document.getElementById(
         "btnAccionLu1"
-      ).innerHTML = `<a href="${linkMa1}" target="_blank">
+      ).innerHTML = `<a href="${LinkMi1}" target="_blank">
       <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateMi1"><p>Acceder</p></div>
@@ -555,7 +568,7 @@ const btnStateMi1 = (deadline, elem, finalMessage) => {
       document.getElementById("btnAccionLu1").style.backgroundColor = "#3EE45F";
 
       // FINALIZADO
-      if (t.remainTime <= -50.0) {
+      if (t.remainTime <= -3600.0) {
         clearInterval(timerUpdate);
         console.log(t.remainTime);
         el.innerHTML = "FINALIZADO";
@@ -599,7 +612,7 @@ const btnStateMi2 = (deadline, elem, finalMessage) => {
         "space-between";
       document.getElementById(
         "btnAccionLu2"
-      ).innerHTML = `<a href="${LinkMa2}" target="_blank">
+      ).innerHTML = `<a href="${LinkMi2}" target="_blank">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateMi2"><p>Acceder</p></div>
@@ -608,7 +621,7 @@ const btnStateMi2 = (deadline, elem, finalMessage) => {
       document.getElementById("btnAccionLu2").style.backgroundColor = "#3EE45F";
 
       // FINALIZADO
-      if (t.remainTime <= -15.0) {
+      if (t.remainTime <= -10800.0) {
         clearInterval(timerUpdate);
         console.log(t.remainTime);
         el.innerHTML = "FINALIZADO";
@@ -647,7 +660,7 @@ const btnStateMi3 = (deadline, elem, finalMessage) => {
         "space-between";
       document.getElementById(
         "btnAccionLu3"
-      ).innerHTML = `<a href="${LinkMa3}" target="_blank">
+      ).innerHTML = `<a href="${LinkMi3}" target="_blank">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateMi3"><p>Acceder</p></div>
@@ -656,7 +669,7 @@ const btnStateMi3 = (deadline, elem, finalMessage) => {
       document.getElementById("btnAccionLu3").style.backgroundColor = "#3EE45F";
 
       // FINALIZADO
-      if (t.remainTime <= -15.0) {
+      if (t.remainTime <= -14400.0) {
         clearInterval(timerUpdate);
         console.log(t.remainTime);
         el.innerHTML = "FINALIZADO";
@@ -700,7 +713,7 @@ const btnStateMi4 = (deadline, elem, finalMessage) => {
         "space-between";
       document.getElementById(
         "btnAccionLu4"
-      ).innerHTML = `<a href="${LinkMa2}" target="_blank">
+      ).innerHTML = `<a href="${LinkMi4}" target="_blank">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateMi4"><p>Acceder</p></div>
@@ -709,7 +722,7 @@ const btnStateMi4 = (deadline, elem, finalMessage) => {
       document.getElementById("btnAccionLu4").style.backgroundColor = "#3EE45F";
 
       // FINALIZADO
-      if (t.remainTime <= -15.0) {
+      if (t.remainTime <= -10800.0) {
         clearInterval(timerUpdate);
         console.log(t.remainTime);
         el.innerHTML = "FINALIZADO";
@@ -753,7 +766,7 @@ const btnStateMi5 = (deadline, elem, finalMessage) => {
         "space-between";
       document.getElementById(
         "btnAccionLu5"
-      ).innerHTML = `<a href="${LinkMa2}" target="_blank">
+      ).innerHTML = `<a href="${LinkMi5}" target="_blank">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateMi5"><p>Acceder</p></div>
@@ -762,7 +775,7 @@ const btnStateMi5 = (deadline, elem, finalMessage) => {
       document.getElementById("btnAccionLu5").style.backgroundColor = "#3EE45F";
 
       // FINALIZADO
-      if (t.remainTime <= -15.0) {
+      if (t.remainTime <= -3600.0) {
         clearInterval(timerUpdate);
         console.log(t.remainTime);
         el.innerHTML = "FINALIZADO";
@@ -801,7 +814,7 @@ const btnStateJu1 = (deadline, elem, finalMessage) => {
         "space-between";
       document.getElementById(
         "btnAccionLu1"
-      ).innerHTML = `<a href="${linkMa1}" target="_blank">
+      ).innerHTML = `<a href="${LinkJu1}" target="_blank">
       <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateJu1"><p>Acceder</p></div>
@@ -810,7 +823,7 @@ const btnStateJu1 = (deadline, elem, finalMessage) => {
       document.getElementById("btnAccionLu1").style.backgroundColor = "#3EE45F";
 
       // FINALIZADO
-      if (t.remainTime <= -50.0) {
+      if (t.remainTime <= -14400.0) {
         clearInterval(timerUpdate);
         console.log(t.remainTime);
         el.innerHTML = "FINALIZADO";
@@ -854,7 +867,7 @@ const btnStateJu2 = (deadline, elem, finalMessage) => {
         "space-between";
       document.getElementById(
         "btnAccionLu2"
-      ).innerHTML = `<a href="${LinkMa2}" target="_blank">
+      ).innerHTML = `<a href="${LinkJu2}" target="_blank">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateJu2"><p>Acceder</p></div>
@@ -863,7 +876,7 @@ const btnStateJu2 = (deadline, elem, finalMessage) => {
       document.getElementById("btnAccionLu2").style.backgroundColor = "#3EE45F";
 
       // FINALIZADO
-      if (t.remainTime <= -15.0) {
+      if (t.remainTime <= -10800.0) {
         clearInterval(timerUpdate);
         console.log(t.remainTime);
         el.innerHTML = "FINALIZADO";
@@ -902,7 +915,7 @@ const btnStateVi1 = (deadline, elem, finalMessage) => {
         "space-between";
       document.getElementById(
         "btnAccionLu1"
-      ).innerHTML = `<a href="${linkMa1}" target="_blank">
+      ).innerHTML = `<a href="${LinkVi1}" target="_blank">
       <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateVi1"><p>Acceder</p></div>
@@ -911,7 +924,7 @@ const btnStateVi1 = (deadline, elem, finalMessage) => {
       document.getElementById("btnAccionLu1").style.backgroundColor = "#3EE45F";
 
       // FINALIZADO
-      if (t.remainTime <= -50.0) {
+      if (t.remainTime <= -3600.0) {
         clearInterval(timerUpdate);
         console.log(t.remainTime);
         el.innerHTML = "FINALIZADO";
@@ -955,7 +968,7 @@ const btnStateVi2 = (deadline, elem, finalMessage) => {
         "space-between";
       document.getElementById(
         "btnAccionLu2"
-      ).innerHTML = `<a href="${LinkMa2}" target="_blank">
+      ).innerHTML = `<a href="${LinkVi2}" target="_blank">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateVi2"><p>Acceder</p></div>
@@ -964,7 +977,7 @@ const btnStateVi2 = (deadline, elem, finalMessage) => {
       document.getElementById("btnAccionLu2").style.backgroundColor = "#3EE45F";
 
       // FINALIZADO
-      if (t.remainTime <= -15.0) {
+      if (t.remainTime <= -14400.0) {
         clearInterval(timerUpdate);
         console.log(t.remainTime);
         el.innerHTML = "FINALIZADO";
@@ -1003,7 +1016,7 @@ const btnStateVi3 = (deadline, elem, finalMessage) => {
         "space-between";
       document.getElementById(
         "btnAccionLu3"
-      ).innerHTML = `<a href="${LinkMa3}" target="_blank">
+      ).innerHTML = `<a href="${LinkVi3}" target="_blank">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateVi3"><p>Acceder</p></div>
@@ -1012,7 +1025,7 @@ const btnStateVi3 = (deadline, elem, finalMessage) => {
       document.getElementById("btnAccionLu3").style.backgroundColor = "#3EE45F";
 
       // FINALIZADO
-      if (t.remainTime <= -15.0) {
+      if (t.remainTime <= -10800.0) {
         clearInterval(timerUpdate);
         console.log(t.remainTime);
         el.innerHTML = "FINALIZADO";
@@ -1117,40 +1130,41 @@ function informacionLunes() {
     (bioTallerista1 =
       "Licenciado en Informática con 17 años de trayectoria en docencia, impartiendo materias y cursos; Experiencia como encargado del área de servidores, administración y seguridad de redes. Encargado de la dirección de informática del H. ayuntamiento de Misantla en la administración de 2014 - 2017. Especialista en el área de redes y telecomunicaciones, seguridad informática, sistemas operativos, servicios de red y ruteo, switcheo, Licenciado en informática con maestría en redes y telecomunicaciones en la universidad Cristobal Colón.");
 
+  // // TARJETAS 2 LUNES
+
+  // (tipoTaller2 = "Conferencia"),
+  //   (nombreTallerista2 = " ING. José Riojas "),
+  //   (empresaTallerista2 = "Drone Collision<br>Center"),
+  //   (gruposAsignados2 = "Todos los Semestres"),
+  //   (tituloTaller2 = '"LA IA EN LOS DRONES Y LOS SECTORES PRODUCTIVOS"'),
+  //   (horasTaller2 = "16:00 - 17:00"),
+  //   (imagenTaller2 = "img/talleristas/JoseRiojas.png"),
+  //   (bioTallerista2 =
+  //     "Ingeniero en sistemas, actualmente cursando un MD en Inteligencia Artificial en el Tecmilenio apasionado de la electrónica y la tecnología, fundador de 2 empresas relacionadas al mercado de los sistemas no tripulados, ha participado en diferentes foros tanto nacionales como internacionales, impartido talleres y capacitaciones a empresas civiles y de gobierno. Fundador de Drone SAR México una ONG de apoyo social en situaciones de desastre y personas extraviadas. Actualmente trabajando en varios proyectos que integran los sistemas no tripulados y la IA en diversos sectores comercial y sociales");
+
+  // // TARJETAS 3 LUNES
+
+  // (tipoTaller3 = "Mesa Redonda"),
+  //   (nombreTallerista3 = "Academia de Ing. en TICS"),
+  //   (empresaTallerista3 = "ITS Misantla"),
+  //   (gruposAsignados3 = "Todos los Semestres"),
+  //   (tituloTaller3 = '"INDUSTRIA INSITU: PEGA SYSTEMS Y HUAWEI TECHNOLOGIES"'),
+  //   (horasTaller3 = "17:00 - 18:00"),
+  //   (imagenTaller3 = "img/talleristas/pega-huawei.png"),
+  //   (bioTallerista3 = "MUY PRONTO!");
+
   // TARJETAS 2 LUNES
 
-  (tipoTaller2 = "Conferencia"),
-    (nombreTallerista2 = " ING. José Riojas "),
-    (empresaTallerista2 = "Drone Collision<br>Center"),
-    (gruposAsignados2 = "Todos los Semestres"),
-    (tituloTaller2 = '"LA IA EN LOS DRONES Y LOS SECTORES PRODUCTIVOS"'),
-    (horasTaller2 = "16:00 - 17:00"),
-    (imagenTaller2 = "img/talleristas/JoseRiojas.png"),
-    (bioTallerista2 =
-      "Ingeniero en sistemas, actualmente cursando un MD en Inteligencia Artificial en el Tecmilenio apasionado de la electrónica y la tecnología, fundador de 2 empresas relacionadas al mercado de los sistemas no tripulados, ha participado en diferentes foros tanto nacionales como internacionales, impartido talleres y capacitaciones a empresas civiles y de gobierno. Fundador de Drone SAR México una ONG de apoyo social en situaciones de desastre y personas extraviadas. Actualmente trabajando en varios proyectos que integran los sistemas no tripulados y la IA en diversos sectores comercial y sociales");
-
-  // TARJETAS 3 LUNES
-
-  (tipoTaller3 = "Mesa Redonda"),
-    (nombreTallerista3 = "Academia de Ing. en TICS"),
-    (empresaTallerista3 = "ITS Misantla"),
-    (gruposAsignados3 = "Todos los Semestres"),
-    (tituloTaller3 = '"INDUSTRIA INSITU: PEGA SYSTEMS Y HUAWEI TECHNOLOGIES"'),
-    (horasTaller3 = "17:00 - 18:00"),
-    (imagenTaller3 = "img/talleristas/pega-huawei.png"),
-    (bioTallerista3 = "MUY PRONTO!");
-
-  // TARJETAS 4 LUNES
-
-  (tipoTaller4 = "Taller"),
-    (nombreTallerista4 = " ING. Uriel Pérez Amador "),
-    (empresaTallerista4 = "Mobiik Development"),
-    (gruposAsignados4 = "507 & 707"),
-    (tituloTaller4 = '"CONCEPTOS BÁSICOS DE IONIC"'),
-    (horasTaller4 = "18:00 - 21:00"),
-    (imagenTaller4 = "img/talleristas/UrielPerez.png"),
-    (bioTallerista4 = "MUY PRONTO!");
-  MostrarTarjetasPredeterminado();
+  (tipoTaller2 = "Taller"),
+    (nombreTallerista2 = " ING. Uriel Pérez Amador "),
+    (empresaTallerista2 = "Mobiik Development"),
+    (gruposAsignados2 = "507 & 707"),
+    (tituloTaller2 = '"CONCEPTOS BÁSICOS DE IONIC"'),
+    (horasTaller2 = "18:00 - 21:00"),
+    (imagenTaller2 = "img/talleristas/UrielPerez.png"),
+    (bioTallerista2 = "MUY PRONTO!");
+  // MostrarTarjetasPredeterminado();
+  OcultarSeccion2Completa();
 }
 // ------------------------MARTES-------------------------
 function informacionMartes() {
@@ -1167,19 +1181,30 @@ function informacionMartes() {
 
   // TARJETAS 2 MARTES
 
-  (tipoTaller2 = "Conferencia"),
-    (nombreTallerista2 = " ING. Gustavo Carballo Arroyo "),
-    (empresaTallerista2 = "Volkswagen México"),
-    (gruposAsignados2 = "Por Confirmar"),
-    (tituloTaller2 = '"5G EN EL SECTOR AUTOMOTRÍZ"'),
+    (tipoTaller2 = "Conferencia"),
+    (nombreTallerista2 = " ING. José Riojas "),
+    (empresaTallerista2 = "Drone Collision<br>Center"),
+    (gruposAsignados2 = "Todos los Semestres"),
+    (tituloTaller2 = '"LA IA EN LOS DRONES Y LOS SECTORES PRODUCTIVOS"'),
     (horasTaller2 = "16:00 - 17:00"),
-    (imagenTaller2 = "img/talleristas/Hombre.png"),
-    (bioTallerista2 = "MUY PRONTO!");
+    (imagenTaller2 = "img/talleristas/JoseRiojas.png"),
+    (bioTallerista2 =
+      "Ingeniero en sistemas, actualmente cursando un MD en Inteligencia Artificial en el Tecmilenio apasionado de la electrónica y la tecnología, fundador de 2 empresas relacionadas al mercado de los sistemas no tripulados, ha participado en diferentes foros tanto nacionales como internacionales, impartido talleres y capacitaciones a empresas civiles y de gobierno. Fundador de Drone SAR México una ONG de apoyo social en situaciones de desastre y personas extraviadas. Actualmente trabajando en varios proyectos que integran los sistemas no tripulados y la IA en diversos sectores comercial y sociales");
+
+
+  // (tipoTaller2 = "Conferencia"),
+  //   (nombreTallerista2 = " ING. Gustavo Carballo Arroyo "),
+  //   (empresaTallerista2 = "Volkswagen México"),
+  //   (gruposAsignados2 = "Por Confirmar"),
+  //   (tituloTaller2 = '"5G EN EL SECTOR AUTOMOTRÍZ"'),
+  //   (horasTaller2 = "16:00 - 17:00"),
+  //   (imagenTaller2 = "img/talleristas/Hombre.png"),
+  //   (bioTallerista2 = "MUY PRONTO!");
 
   // TARJETAS 3 MARTES
 
   (tipoTaller3 = "Conferencia"),
-    (nombreTallerista3 = "MTI. Laura May Salazar"),
+    (nombreTallerista3 = "MGTI. Laura May Salazar"),
     (empresaTallerista3 = "IT de Campeche"),
     (gruposAsignados3 = "Todos los Semestres"),
     (tituloTaller3 =
@@ -1233,7 +1258,7 @@ function informacionMiercoles() {
     (empresaTallerista3 = "ITS de Martínez<br>de la Torre"),
     (gruposAsignados3 = "707"),
     (tituloTaller3 = '"ADMINISTRACIÓN DE MÁQUINAS LINUX CON WEBMIN"'),
-    (horasTaller3 = "15:00 - 18:00"),
+    (horasTaller3 = "15:00 - 19:00"),
     (imagenTaller3 = "img/talleristas/KeilaElena.png"),
     (bioTallerista3 =
       "Realizó sus estudios de licenciatura en Informática en el Instituto Tecnológico Superior de Teziutlán y sus estudios de Maestría en Ciencias Computacionales y Telecomunicaciones en la Universidad IEU, cuenta con certificaciones por parte del Consejo Nacional de Normalización y Certificación de Competencias Laborales (CONOCER) como EC0772, EC0477, EC0366, EC0217 y EC0301. Trabaja como docente en el Instituto Tecnológico Superior de Martínez de la Torre, impartiendo asignaturas de licenciatura como administración de redes, redes de computadoras, fundamentos de telecomunicaciones, administración de servidores, arquitectura de computadores, sistemas operativos, administración de bases de datos, taller de bases de datos, entre otras. Actualmente es docente investigadora en el ITS de Martínez de la Torre colaborando en distintos proyectos, es miembro del comité de investigación, innovación, emprendimiento y vinculación del ITSMT, presidenta de la academia de Ing. en Sistemas Computacionales, miembro activo de la unión internacional por los derechos de todos y de la sociedad mexicana de agricultura sostenible A.C. (SOMAS A.C).");
@@ -1245,7 +1270,7 @@ function informacionMiercoles() {
     (empresaTallerista4 = "ITS de Misantla"),
     (gruposAsignados4 = "107, 307 & 507"),
     (tituloTaller4 = '"DETECCIÓN DE INTRUSIÓN CON PFSENSE"'),
-    (horasTaller4 = "16:00 - 18:00"),
+    (horasTaller4 = "16:00 - 19:00"),
     (imagenTaller4 = "img/talleristas/Fernando.png"),
     (bioTallerista4 =
       "MSC Fernando Alberto Hernández Guevara realizó la Maestría en Sistemas Computacionales en el Instituto Tecnológico Superior de Misantla, es egresado de la carrera de Licenciatura en Informática por el Instituto Tecnológico Superior de Misantla. Actualmente jefe del departamento de sistematización, donde realiza funciones de network engineer, DB manager, Server Administrator, Linux system administration, Domain Name Service administration y gestión de cuentas de correos en la plataforma de Gsuite education y Microsoft 365 for faculty, gestión de plataformas de educación a distancia moodle, es líder de proyectos de desarrollo de sotfware como Sistema del portal de pago en línea, sistema del congreso internacional de ingenierías, gestión de pagos en caja, sistema de inventarios institucional, actualmente se está llevando a cabo el desarrollo de sistema de control de proceso de la revista ingeniantes, la migración de las tecnologías del ISP a fibra óptica, interconexión entre edificios por medio de fibra óptica . Desde la dupla educación y sistemas computacionales ha trabajado como docente de tiempo parcial en el sistema semiescolarizado impartiendo asignaturas enfocadas a las redes de computadoras, conmutación y enrutamiento de redes de datos, administración de redes, administración de bases de datos, entre otras.");
@@ -1273,7 +1298,7 @@ function informacionJueves() {
     (empresaTallerista1 = "ITS de Martínez<br>de la Torre"),
     (gruposAsignados1 = "707"),
     (tituloTaller1 = '"ADMINISTRACIÓN DE MÁQUINAS LINUX CON WEBMIN"'),
-    (horasTaller1 = "15:00 - 18:00"),
+    (horasTaller1 = "15:00 - 19:00"),
     (imagenTaller1 = "img/talleristas/KeilaElena.png"),
     (bioTallerista1 =
       "Realizó sus estudios de licenciatura en Informática en el Instituto Tecnológico Superior de Teziutlán y sus estudios de Maestría en Ciencias Computacionales y Telecomunicaciones en la Universidad IEU, cuenta con certificaciones por parte del Consejo Nacional de Normalización y Certificación de Competencias Laborales (CONOCER) como EC0772, EC0477, EC0366, EC0217 y EC0301. Trabaja como docente en el Instituto Tecnológico Superior de Martínez de la Torre, impartiendo asignaturas de licenciatura como administración de redes, redes de computadoras, fundamentos de telecomunicaciones, administración de servidores, arquitectura de computadores, sistemas operativos, administración de bases de datos, taller de bases de datos, entre otras. Actualmente es docente investigadora en el ITS de Martínez de la Torre colaborando en distintos proyectos, es miembro del comité de investigación, innovación, emprendimiento y vinculación del ITSMT, presidenta de la academia de Ing. en Sistemas Computacionales, miembro activo de la unión internacional por los derechos de todos y de la sociedad mexicana de agricultura sostenible A.C. (SOMAS A.C).");
@@ -1285,7 +1310,7 @@ function informacionJueves() {
     (empresaTallerista2 = "ITS de Misantla"),
     (gruposAsignados2 = "107, 307 & 507"),
     (tituloTaller2 = '"DETECCIÓN DE INTRUSIÓN CON PFSENSE"'),
-    (horasTaller2 = "16:00 - 18:00"),
+    (horasTaller2 = "16:00 - 19:00"),
     (imagenTaller2 = "img/talleristas/Fernando.png"),
     (bioTallerista2 =
       "MSC Fernando Alberto Hernández Guevara realizó la Maestría en Sistemas Computacionales en el Instituto Tecnológico Superior de Misantla, es egresado de la carrera de Licenciatura en Informática por el Instituto Tecnológico Superior de Misantla. Actualmente jefe del departamento de sistematización, donde realiza funciones de network engineer, DB manager, Server Administrator, Linux system administration, Domain Name Service administration y gestión de cuentas de correos en la plataforma de Gsuite education y Microsoft 365 for faculty, gestión de plataformas de educación a distancia moodle, es líder de proyectos de desarrollo de sotfware como Sistema del portal de pago en línea, sistema del congreso internacional de ingenierías, gestión de pagos en caja, sistema de inventarios institucional, actualmente se está llevando a cabo el desarrollo de sistema de control de proceso de la revista ingeniantes, la migración de las tecnologías del ISP a fibra óptica, interconexión entre edificios por medio de fibra óptica . Desde la dupla educación y sistemas computacionales ha trabajado como docente de tiempo parcial en el sistema semiescolarizado impartiendo asignaturas enfocadas a las redes de computadoras, conmutación y enrutamiento de redes de datos, administración de redes, administración de bases de datos, entre otras.");
@@ -1301,7 +1326,7 @@ function informacionViernes() {
     (empresaTallerista1 = "IDS Comercial"),
     (tituloTaller1 = '"¿CÓMO SER UN GRAN DESARROLLADOR DE APLICACIONES?"'),
     (gruposAsignados1 = "Todos los Semestres"),
-    (horasTaller1 = "13:00 - 15:00"),
+    (horasTaller1 = "13:00 - 14:00"),
     (imagenTaller1 = "img/talleristas/ids-taller.png"),
     (bioTallerista1 = "MUY PRONTO!");
 
@@ -1311,7 +1336,7 @@ function informacionViernes() {
     (empresaTallerista2 = "ITS de Martínez<br>de la Torre"),
     (gruposAsignados2 = "707"),
     (tituloTaller2 = '"ADMINISTRACIÓN DE MÁQUINAS LINUX CON WEBMIN"'),
-    (horasTaller2 = "15:00 - 18:00"),
+    (horasTaller2 = "15:00 - 19:00"),
     (imagenTaller2 = "img/talleristas/KeilaElena.png"),
     (bioTallerista2 =
       "Realizó sus estudios de licenciatura en Informática en el Instituto Tecnológico Superior de Teziutlán y sus estudios de Maestría en Ciencias Computacionales y Telecomunicaciones en la Universidad IEU, cuenta con certificaciones por parte del Consejo Nacional de Normalización y Certificación de Competencias Laborales (CONOCER) como EC0772, EC0477, EC0366, EC0217 y EC0301. Trabaja como docente en el Instituto Tecnológico Superior de Martínez de la Torre, impartiendo asignaturas de licenciatura como administración de redes, redes de computadoras, fundamentos de telecomunicaciones, administración de servidores, arquitectura de computadores, sistemas operativos, administración de bases de datos, taller de bases de datos, entre otras. Actualmente es docente investigadora en el ITS de Martínez de la Torre colaborando en distintos proyectos, es miembro del comité de investigación, innovación, emprendimiento y vinculación del ITSMT, presidenta de la academia de Ing. en Sistemas Computacionales, miembro activo de la unión internacional por los derechos de todos y de la sociedad mexicana de agricultura sostenible A.C. (SOMAS A.C).");
@@ -1323,7 +1348,7 @@ function informacionViernes() {
     (empresaTallerista3 = "ITS de Misantla"),
     (gruposAsignados3 = "107, 307 & 507"),
     (tituloTaller3 = '"DETECCIÓN DE INTRUSIÓN CON PFSENSE"'),
-    (horasTaller3 = "16:00 - 18:00"),
+    (horasTaller3 = "16:00 - 19:00"),
     (imagenTaller3 = "img/talleristas/Fernando.png"),
     (bioTallerista3 =
       "Realizó sus estudios de licenciatura en Informática en el Instituto Tecnológico Superior de Teziutlán y sus estudios de Maestría en Ciencias Computacionales y Telecomunicaciones en la Universidad IEU, cuenta con certificaciones por parte del Consejo Nacional de Normalización y Certificación de Competencias Laborales (CONOCER) como EC0772, EC0477, EC0366, EC0217 y EC0301. Trabaja como docente en el Instituto Tecnológico Superior de Martínez de la Torre, impartiendo asignaturas de licenciatura como administración de redes, redes de computadoras, fundamentos de telecomunicaciones, administración de servidores, arquitectura de computadores, sistemas operativos, administración de bases de datos, taller de bases de datos, entre otras. Actualmente es docente investigadora en el ITS de Martínez de la Torre colaborando en distintos proyectos, es miembro del comité de investigación, innovación, emprendimiento y vinculación del ITSMT, presidenta de la academia de Ing. en Sistemas Computacionales, miembro activo de la unión internacional por los derechos de todos y de la sociedad mexicana de agricultura sostenible A.C. (SOMAS A.C).");
