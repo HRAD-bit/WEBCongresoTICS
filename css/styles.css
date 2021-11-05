@@ -1,5 +1,6 @@
 /* Set por defecto */
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); */
 html, body {
     max-width: 100% !important;
     overflow: auto !important;
@@ -1127,14 +1128,14 @@ object-fit: cover;
 }
 .informacion-personal{
     font-family: 'Montserrat', sans-serif;
-    color: rgb(107, 107, 107);
+    color: rgb(65, 65, 65);
 }
 .card-accione{
     text-align: center;
     margin-top: 25px;
 }
 .botones{
-    color: rgb(0, 0, 0);
+    color: #fff;
     border: none;
     border-radius: 30px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
@@ -1145,13 +1146,13 @@ object-fit: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ffffff;
+    background: #3D3A6C;
 }
 .botones:hover{
     cursor: pointer;
     width: 95%;
-    background-color: #df8620;
-    color: white;
+    background-color: #fff;
+    color: black;
 }
 .botones i{
     margin-right: 10px;
