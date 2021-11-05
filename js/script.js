@@ -25,12 +25,12 @@ window.addEventListener("scroll", function () {
     document.getElementById("btnDesc-menu").style.backgroundColor = "#EB8005";
   }
 });
-
+// ------SELECCIONDE POR SECCION----
 const header = document.querySelector(".con");
-const sectionOne = document.querySelector("#portada");
+const sectionOne = document.querySelector("#tallerSection");
 
 const sectionOneOptions = {
-  rootMargin: "-100px 0px 0px 0px",
+  rootMargin: "1px 0px 0px 0px",
 };
 
 const sectionOneObserver = new IntersectionObserver(function (
@@ -38,7 +38,8 @@ const sectionOneObserver = new IntersectionObserver(function (
   sectionOneObserver
 ) {
   entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
+    console.log(entry);
+    if (entry.isIntersecting) {
       header.classList.add("nav-scrolled");
     } else {
       header.classList.remove("nav-scrolled");
@@ -48,6 +49,31 @@ const sectionOneObserver = new IntersectionObserver(function (
   sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
+// --------------------------
+const headerU = document.querySelector(".contwo");
+const sectionTwo = document.querySelector("#gggggg");
+
+const sectionTwoOptions = {
+  rootMargin: "100px 0px 0px 0px",
+};
+
+const sectionTwoObserver = new IntersectionObserver(function (
+  entries2,
+  sectionTwoObserver
+) {
+  entries2.forEach((entry2) => {
+    if (entry2.isIntersecting) {
+      headerU.classList.add("nav-scrolled");
+      header.classList.remove("nav-scrolled");
+    } else {
+      headerU.classList.remove("nav-scrolled");
+      header.classList.add("nav-scrolled");
+    }
+  });
+},
+  sectionTwoOptions);
+
+sectionTwoObserver.observe(sectionTwo);
 
 // -----------------------INFORMACIÓN DE TALLERISTAS--------------------
 
