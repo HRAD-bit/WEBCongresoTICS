@@ -530,6 +530,7 @@ header.abajo nav ul li a {
     display: flex;
     overflow-x: hidden;
     overflow-y: hidden;
+    margin-bottom: 25px;
 }
 .carrusel-item{
     min-width: 100px;
@@ -960,7 +961,7 @@ object-fit: cover;
 /* -------------------COLABORADORES--------------- */
 .colaboradores{
     margin: 0;
-    padding: 50px;
+    padding: 50px 50px 70px 50px;
     background-color: rgb(31, 97, 97);
     display: flex;
     flex-direction: column;
