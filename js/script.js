@@ -27,10 +27,10 @@ window.addEventListener("scroll", function () {
 });
 // ------SELECCIONDE POR SECCION----
 const header = document.querySelector(".con");
-const sectionOne = document.querySelector("#tallerSection");
+const sectionOne = document.querySelector("#ancla-eje");
 
 const sectionOneOptions = {
-  rootMargin: "1px 0px 0px 0px",
+  rootMargin: "-100px 0px 0px 0px",
 };
 
 const sectionOneObserver = new IntersectionObserver(function (
@@ -41,6 +41,7 @@ const sectionOneObserver = new IntersectionObserver(function (
     console.log(entry);
     if (entry.isIntersecting) {
       header.classList.add("nav-scrolled");
+      headerU.classList.remove("nav-scrolled");
     } else {
       header.classList.remove("nav-scrolled");
     }
@@ -51,7 +52,7 @@ const sectionOneObserver = new IntersectionObserver(function (
 sectionOneObserver.observe(sectionOne);
 // --------------------------
 const headerU = document.querySelector(".contwo");
-const sectionTwo = document.querySelector("#gggggg");
+const sectionTwo = document.querySelector("#Colab-uno");
 
 const sectionTwoOptions = {
   rootMargin: "100px 0px 0px 0px",
@@ -74,7 +75,31 @@ const sectionTwoObserver = new IntersectionObserver(function (
   sectionTwoOptions);
 
 sectionTwoObserver.observe(sectionTwo);
+// --------------------------------------------
+const headerD = document.querySelector(".emp");
+const sectionD = document.querySelector("#separador");
 
+const sectionDOptions = {
+  rootMargin: "100px 0px 0px 0px",
+};
+
+const sectionDObserver = new IntersectionObserver(function (
+  entries3,
+  sectionDObserver
+) {
+  entries3.forEach((entry3) => {
+    if (entry3.isIntersecting) {
+      headerD.classList.add("nav-scrolled");
+      headerU.classList.remove("nav-scrolled");
+    } else {
+      headerD.classList.remove("nav-scrolled");
+      headerU.classList.add("nav-scrolled");
+    }
+  });
+},
+  sectionDOptions);
+
+sectionDObserver.observe(sectionD);
 // -----------------------INFORMACIÓN DE TALLERISTAS--------------------
 
 // LINKS DE ZOOM
@@ -1181,7 +1206,7 @@ function informacionMartes() {
 
   // TARJETAS 2 MARTES
 
-    (tipoTaller2 = "Conferencia"),
+  (tipoTaller2 = "Conferencia"),
     (nombreTallerista2 = " ING. José Riojas "),
     (empresaTallerista2 = "Drone Collision<br>Center"),
     (gruposAsignados2 = "Todos los Semestres"),
