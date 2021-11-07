@@ -1604,7 +1604,8 @@ button {
         display: none;
     }
     .contenedor-taller {
-        display: none;
+        opacity: 0;
+        height: 1px;
     }
 }
 
