@@ -26,6 +26,28 @@ window.addEventListener("scroll", function () {
   }
 });
 // ------SELECCIONDE POR SECCION----
+const sectionPR = document.querySelector("#portada");
+
+const sectionPROptions = {
+  rootMargin: "-100px 0px 0px 0px",
+};
+
+const sectionPRObserver = new IntersectionObserver(function (
+  entriesPR,
+  sectionPRObserver
+) {
+  entriesPR.forEach((entry) => {
+    // console.log(entry);
+    if (entry.isIntersecting) {
+      header.classList.remove("nav-scrolled");
+      headerU.classList.remove("nav-scrolled");
+    }
+  });
+},
+  sectionPROptions);
+
+sectionPRObserver.observe(sectionPR);
+// ------------
 const header = document.querySelector(".con");
 const sectionOne = document.querySelector("#ancla-eje");
 
@@ -41,13 +63,13 @@ const sectionOneObserver = new IntersectionObserver(function (
     console.log(entry);
     if (entry.isIntersecting) {
       header.classList.add("nav-scrolled");
-      headerU.classList.remove("nav-scrolled");
+      // headerU.classList.remove("nav-scrolled");
     } else {
       header.classList.remove("nav-scrolled");
     }
   });
 },
-sectionOneOptions);
+  sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
 // --------------------------
@@ -72,7 +94,7 @@ const sectionTwoObserver = new IntersectionObserver(function (
     }
   });
 },
-sectionTwoOptions);
+  sectionTwoOptions);
 
 sectionTwoObserver.observe(sectionTwo);
 // --------------------------------------------
@@ -97,7 +119,7 @@ const sectionDObserver = new IntersectionObserver(function (
     }
   });
 },
-sectionDOptions);
+  sectionDOptions);
 
 sectionDObserver.observe(sectionD);
 // -----------------------INFORMACIÓN DE TALLERISTAS--------------------
