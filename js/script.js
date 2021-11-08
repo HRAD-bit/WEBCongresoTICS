@@ -47,7 +47,7 @@ const sectionOneObserver = new IntersectionObserver(function (
     }
   });
 },
-  sectionOneOptions);
+sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
 // --------------------------
@@ -72,7 +72,7 @@ const sectionTwoObserver = new IntersectionObserver(function (
     }
   });
 },
-  sectionTwoOptions);
+sectionTwoOptions);
 
 sectionTwoObserver.observe(sectionTwo);
 // --------------------------------------------
@@ -97,7 +97,7 @@ const sectionDObserver = new IntersectionObserver(function (
     }
   });
 },
-  sectionDOptions);
+sectionDOptions);
 
 sectionDObserver.observe(sectionD);
 // -----------------------INFORMACIÓN DE TALLERISTAS--------------------
@@ -119,7 +119,6 @@ const linkLu1 = "https://meet.google.com/hwb-dpmp-hpb",
   LinkVi1 = "http://google.com",
   LinkVi2 = "https://meet.google.com/zig-fzft-gxz",
   LinkVi3 = "https://meet.google.com/zky-bmpj-xed";
-
 
 // ------------------------------TIEMPOS DE ESPERA-----------------
 
@@ -1187,7 +1186,8 @@ function informacionLunes() {
     (tituloTaller2 = '"CONCEPTOS BÁSICOS DE IONIC"'),
     (horasTaller2 = "18:00 - 21:00"),
     (imagenTaller2 = "img/talleristas/UrielPerez.png"),
-    (bioTallerista2 = "MUY PRONTO!");
+    (bioTallerista2 =
+      "Uriel Pérez A. es un Programming & Platform Development Senior con más de 13 años de experiencia en el desarrollo de software, aplicaciones web corporativas, desarrollo de aplicaciones móviles, así como desarrollo de servicios y microservicios para empresas a nivel nacional e internacional. Con su amplia experiencia se ha desarrollado en distintas empresas de renombre, tales como Femsa Comercio (ramo gasolinero), Binbit (aplicaciones móviles comerciales), Flynode (Servicio de SMS), Centro de Control Comando (Supervisor del CCTV), Ganprover (Grupo Ganadero) y muchas otras empresas. Actualmente radica en la ciudad de Xalapa, Veracruz, por cuestiones de contingencia y se encuentra desarrollando servicios y aplicaciones de gobierno mediante contrato privado a la par de microsoft.");
   // MostrarTarjetasPredeterminado();
   OcultarSeccion2Completa();
 }
@@ -1215,7 +1215,6 @@ function informacionMartes() {
     (imagenTaller2 = "img/talleristas/JoseRiojas.png"),
     (bioTallerista2 =
       "Ingeniero en sistemas, actualmente cursando un MD en Inteligencia Artificial en el Tecmilenio apasionado de la electrónica y la tecnología, fundador de 2 empresas relacionadas al mercado de los sistemas no tripulados, ha participado en diferentes foros tanto nacionales como internacionales, impartido talleres y capacitaciones a empresas civiles y de gobierno. Fundador de Drone SAR México una ONG de apoyo social en situaciones de desastre y personas extraviadas. Actualmente trabajando en varios proyectos que integran los sistemas no tripulados y la IA en diversos sectores comercial y sociales");
-
 
   // (tipoTaller2 = "Conferencia"),
   //   (nombreTallerista2 = " ING. Gustavo Carballo Arroyo "),
@@ -1248,7 +1247,8 @@ function informacionMartes() {
     (tituloTaller4 = '"CONCEPTOS BÁSICOS DE IONIC"'),
     (horasTaller4 = "18:00 - 21:00"),
     (imagenTaller4 = "img/talleristas/UrielPerez.png"),
-    (bioTallerista4 = "MUY PRONTO!");
+    (bioTallerista4 =
+      "Uriel Pérez A. es un Programming & Platform Development Senior con más de 13 años de experiencia en el desarrollo de software, aplicaciones web corporativas, desarrollo de aplicaciones móviles, así como desarrollo de servicios y microservicios para empresas a nivel nacional e internacional. Con su amplia experiencia se ha desarrollado en distintas empresas de renombre, tales como Femsa Comercio (ramo gasolinero), Binbit (aplicaciones móviles comerciales), Flynode (Servicio de SMS), Centro de Control Comando (Supervisor del CCTV), Ganprover (Grupo Ganadero) y muchas otras empresas. Actualmente radica en la ciudad de Xalapa, Veracruz, por cuestiones de contingencia y se encuentra desarrollando servicios y aplicaciones de gobierno mediante contrato privado a la par de microsoft.");
 
   MostrarTarjetasPredeterminado();
 }
@@ -1559,8 +1559,12 @@ function btnLunesON() {
     "temaTaller1"
   ).innerHTML = `<h4>${tituloTaller1}</h4>`;
   document.getElementById("horaTaller1").innerHTML = ` <p>${horasTaller1}</p>`;
-  document.getElementById("imagenBio1").innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona2">`;
-  document.getElementById("nombreBio1").innerHTML = `<h3>${nombreTallerista1}</h3>
+  document.getElementById(
+    "imagenBio1"
+  ).innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona2">`;
+  document.getElementById(
+    "nombreBio1"
+  ).innerHTML = `<h3>${nombreTallerista1}</h3>
   <h4>${empresaTallerista1}</h4>`;
   document.getElementById("trayectoriaBio1").innerText = `${bioTallerista1}`;
 
@@ -1581,8 +1585,12 @@ function btnLunesON() {
     "temaTaller2"
   ).innerHTML = `<h4>${tituloTaller2}</h4>`;
   document.getElementById("horaTaller2").innerHTML = ` <p>${horasTaller2}</p>`;
-  document.getElementById("imagenBio2").innerHTML = `<img src="${imagenTaller2}" alt="" class="img-persona2">`;
-  document.getElementById("nombreBio2").innerHTML = `<h3>${nombreTallerista2}</h3>
+  document.getElementById(
+    "imagenBio2"
+  ).innerHTML = `<img src="${imagenTaller2}" alt="" class="img-persona2">`;
+  document.getElementById(
+    "nombreBio2"
+  ).innerHTML = `<h3>${nombreTallerista2}</h3>
   <h4>${empresaTallerista2}</h4>`;
   document.getElementById("trayectoriaBio2").innerText = `${bioTallerista2}`;
 
@@ -1603,8 +1611,12 @@ function btnLunesON() {
     "temaTaller3"
   ).innerHTML = `<h4>${tituloTaller3}</h4>`;
   document.getElementById("horaTaller3").innerHTML = ` <p>${horasTaller3}</p>`;
-  document.getElementById("imagenBio3").innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona2">`;
-  document.getElementById("nombreBio3").innerHTML = `<h3>${nombreTallerista3}</h3>
+  document.getElementById(
+    "imagenBio3"
+  ).innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona2">`;
+  document.getElementById(
+    "nombreBio3"
+  ).innerHTML = `<h3>${nombreTallerista3}</h3>
   <h4>${empresaTallerista3}</h4>`;
   document.getElementById("trayectoriaBio3").innerText = `${bioTallerista3}`;
 
@@ -1625,8 +1637,12 @@ function btnLunesON() {
     "temaTaller4"
   ).innerHTML = `<h4>${tituloTaller4}</h4>`;
   document.getElementById("horaTaller4").innerHTML = ` <p>${horasTaller4}</p>`;
-  document.getElementById("imagenBio4").innerHTML = `<img src="${imagenTaller4}" alt="" class="img-persona2">`;
-  document.getElementById("nombreBio4").innerHTML = `<h3>${nombreTallerista4}</h3>
+  document.getElementById(
+    "imagenBio4"
+  ).innerHTML = `<img src="${imagenTaller4}" alt="" class="img-persona2">`;
+  document.getElementById(
+    "nombreBio4"
+  ).innerHTML = `<h3>${nombreTallerista4}</h3>
   <h4>${empresaTallerista4}</h4>`;
   document.getElementById("trayectoriaBio4").innerText = `${bioTallerista4}`;
 
@@ -1701,8 +1717,12 @@ function btnMartesON() {
     "temaTaller1"
   ).innerHTML = `<h4>${tituloTaller1}</h4>`;
   document.getElementById("horaTaller1").innerHTML = ` <p>${horasTaller1}</p>`;
-  document.getElementById("imagenBio1").innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona2">`;
-  document.getElementById("nombreBio1").innerHTML = `<h3>${nombreTallerista1}</h3>
+  document.getElementById(
+    "imagenBio1"
+  ).innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona2">`;
+  document.getElementById(
+    "nombreBio1"
+  ).innerHTML = `<h3>${nombreTallerista1}</h3>
   <h4>${empresaTallerista1}</h4>`;
   document.getElementById("trayectoriaBio1").innerText = `${bioTallerista1}`;
 
@@ -1723,8 +1743,12 @@ function btnMartesON() {
     "temaTaller2"
   ).innerHTML = `<h4>${tituloTaller2}</h4>`;
   document.getElementById("horaTaller2").innerHTML = ` <p>${horasTaller2}</p>`;
-  document.getElementById("imagenBio2").innerHTML = `<img src="${imagenTaller2}" alt="" class="img-persona2">`;
-  document.getElementById("nombreBio2").innerHTML = `<h3>${nombreTallerista2}</h3>
+  document.getElementById(
+    "imagenBio2"
+  ).innerHTML = `<img src="${imagenTaller2}" alt="" class="img-persona2">`;
+  document.getElementById(
+    "nombreBio2"
+  ).innerHTML = `<h3>${nombreTallerista2}</h3>
   <h4>${empresaTallerista2}</h4>`;
   document.getElementById("trayectoriaBio2").innerText = `${bioTallerista2}`;
 
@@ -1745,8 +1769,12 @@ function btnMartesON() {
     "temaTaller3"
   ).innerHTML = `<h4>${tituloTaller3}</h4>`;
   document.getElementById("horaTaller3").innerHTML = ` <p>${horasTaller3}</p>`;
-  document.getElementById("imagenBio3").innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona2">`;
-  document.getElementById("nombreBio3").innerHTML = `<h3>${nombreTallerista3}</h3>
+  document.getElementById(
+    "imagenBio3"
+  ).innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona2">`;
+  document.getElementById(
+    "nombreBio3"
+  ).innerHTML = `<h3>${nombreTallerista3}</h3>
   <h4>${empresaTallerista3}</h4>`;
   document.getElementById("trayectoriaBio3").innerText = `${bioTallerista3}`;
 
@@ -1767,8 +1795,12 @@ function btnMartesON() {
     "temaTaller4"
   ).innerHTML = `<h4>${tituloTaller4}</h4>`;
   document.getElementById("horaTaller4").innerHTML = ` <p>${horasTaller4}</p>`;
-  document.getElementById("imagenBio4").innerHTML = `<img src="${imagenTaller4}" alt="" class="img-persona2">`;
-  document.getElementById("nombreBio4").innerHTML = `<h3>${nombreTallerista4}</h3>
+  document.getElementById(
+    "imagenBio4"
+  ).innerHTML = `<img src="${imagenTaller4}" alt="" class="img-persona2">`;
+  document.getElementById(
+    "nombreBio4"
+  ).innerHTML = `<h3>${nombreTallerista4}</h3>
   <h4>${empresaTallerista4}</h4>`;
   document.getElementById("trayectoriaBio4").innerText = `${bioTallerista4}`;
 
@@ -1841,8 +1873,12 @@ function btnMiercolesON() {
     "temaTaller1"
   ).innerHTML = `<h4>${tituloTaller1}</h4>`;
   document.getElementById("horaTaller1").innerHTML = ` <p>${horasTaller1}</p>`;
-  document.getElementById("imagenBio1").innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona2">`;
-  document.getElementById("nombreBio1").innerHTML = `<h3>${nombreTallerista1}</h3>
+  document.getElementById(
+    "imagenBio1"
+  ).innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona2">`;
+  document.getElementById(
+    "nombreBio1"
+  ).innerHTML = `<h3>${nombreTallerista1}</h3>
   <h4>${empresaTallerista1}</h4>`;
   document.getElementById("trayectoriaBio1").innerText = `${bioTallerista1}`;
 
@@ -1863,8 +1899,12 @@ function btnMiercolesON() {
     "temaTaller2"
   ).innerHTML = `<h4>${tituloTaller2}</h4>`;
   document.getElementById("horaTaller2").innerHTML = ` <p>${horasTaller2}</p>`;
-  document.getElementById("imagenBio2").innerHTML = `<img src="${imagenTaller2}" alt="" class="img-persona2">`;
-  document.getElementById("nombreBio2").innerHTML = `<h3>${nombreTallerista2}</h3>
+  document.getElementById(
+    "imagenBio2"
+  ).innerHTML = `<img src="${imagenTaller2}" alt="" class="img-persona2">`;
+  document.getElementById(
+    "nombreBio2"
+  ).innerHTML = `<h3>${nombreTallerista2}</h3>
   <h4>${empresaTallerista2}</h4>`;
   document.getElementById("trayectoriaBio2").innerText = `${bioTallerista2}`;
 
@@ -1885,8 +1925,12 @@ function btnMiercolesON() {
     "temaTaller3"
   ).innerHTML = `<h4>${tituloTaller3}</h4>`;
   document.getElementById("horaTaller3").innerHTML = ` <p>${horasTaller3}</p>`;
-  document.getElementById("imagenBio3").innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona2">`;
-  document.getElementById("nombreBio3").innerHTML = `<h3>${nombreTallerista3}</h3>
+  document.getElementById(
+    "imagenBio3"
+  ).innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona2">`;
+  document.getElementById(
+    "nombreBio3"
+  ).innerHTML = `<h3>${nombreTallerista3}</h3>
   <h4>${empresaTallerista3}</h4>`;
   document.getElementById("trayectoriaBio3").innerText = `${bioTallerista3}`;
 
@@ -1907,8 +1951,12 @@ function btnMiercolesON() {
     "temaTaller4"
   ).innerHTML = `<h4>${tituloTaller4}</h4>`;
   document.getElementById("horaTaller4").innerHTML = ` <p>${horasTaller4}</p>`;
-  document.getElementById("imagenBio4").innerHTML = `<img src="${imagenTaller4}" alt="" class="img-persona2">`;
-  document.getElementById("nombreBio4").innerHTML = `<h3>${nombreTallerista4}</h3>
+  document.getElementById(
+    "imagenBio4"
+  ).innerHTML = `<img src="${imagenTaller4}" alt="" class="img-persona2">`;
+  document.getElementById(
+    "nombreBio4"
+  ).innerHTML = `<h3>${nombreTallerista4}</h3>
   <h4>${empresaTallerista4}</h4>`;
   document.getElementById("trayectoriaBio4").innerText = `${bioTallerista4}`;
 
@@ -1929,8 +1977,12 @@ function btnMiercolesON() {
     "temaTaller5"
   ).innerHTML = `<h4>${tituloTaller5}</h4>`;
   document.getElementById("horaTaller5").innerHTML = ` <p>${horasTaller5}</p>`;
-  document.getElementById("imagenBio5").innerHTML = `<img src="${imagenTaller5}" alt="" class="img-persona2">`;
-  document.getElementById("nombreBio5").innerHTML = `<h3>${nombreTallerista5}</h3>
+  document.getElementById(
+    "imagenBio5"
+  ).innerHTML = `<img src="${imagenTaller5}" alt="" class="img-persona2">`;
+  document.getElementById(
+    "nombreBio5"
+  ).innerHTML = `<h3>${nombreTallerista5}</h3>
   <h4>${empresaTallerista5}</h4>`;
   document.getElementById("trayectoriaBio5").innerText = `${bioTallerista5}`;
   // Jueves 18
@@ -2000,8 +2052,12 @@ function btnJuevesON() {
     "temaTaller1"
   ).innerHTML = `<h4>${tituloTaller1}</h4>`;
   document.getElementById("horaTaller1").innerHTML = ` <p>${horasTaller1}</p>`;
-  document.getElementById("imagenBio1").innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona2">`;
-  document.getElementById("nombreBio1").innerHTML = `<h3>${nombreTallerista1}</h3>
+  document.getElementById(
+    "imagenBio1"
+  ).innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona2">`;
+  document.getElementById(
+    "nombreBio1"
+  ).innerHTML = `<h3>${nombreTallerista1}</h3>
   <h4>${empresaTallerista1}</h4>`;
   document.getElementById("trayectoriaBio1").innerText = `${bioTallerista1}`;
 
@@ -2022,8 +2078,12 @@ function btnJuevesON() {
     "temaTaller2"
   ).innerHTML = `<h4>${tituloTaller2}</h4>`;
   document.getElementById("horaTaller2").innerHTML = ` <p>${horasTaller2}</p>`;
-  document.getElementById("imagenBio2").innerHTML = `<img src="${imagenTaller2}" alt="" class="img-persona2">`;
-  document.getElementById("nombreBio2").innerHTML = `<h3>${nombreTallerista2}</h3>
+  document.getElementById(
+    "imagenBio2"
+  ).innerHTML = `<img src="${imagenTaller2}" alt="" class="img-persona2">`;
+  document.getElementById(
+    "nombreBio2"
+  ).innerHTML = `<h3>${nombreTallerista2}</h3>
   <h4>${empresaTallerista2}</h4>`;
   document.getElementById("trayectoriaBio2").innerText = `${bioTallerista2}`;
 
@@ -2044,8 +2104,12 @@ function btnJuevesON() {
     "temaTaller3"
   ).innerHTML = `<h4>${tituloTaller3}</h4>`;
   document.getElementById("horaTaller3").innerHTML = ` <p>${horasTaller3}</p>`;
-  document.getElementById("imagenBio3").innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona2">`;
-  document.getElementById("nombreBio3").innerHTML = `<h3>${nombreTallerista3}</h3>
+  document.getElementById(
+    "imagenBio3"
+  ).innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona2">`;
+  document.getElementById(
+    "nombreBio3"
+  ).innerHTML = `<h3>${nombreTallerista3}</h3>
   <h4>${empresaTallerista3}</h4>`;
   document.getElementById("trayectoriaBio3").innerText = `${bioTallerista3}`;
 
@@ -2066,8 +2130,12 @@ function btnJuevesON() {
     "temaTaller4"
   ).innerHTML = `<h4>${tituloTaller4}</h4>`;
   document.getElementById("horaTaller4").innerHTML = ` <p>${horasTaller4}</p>`;
-  document.getElementById("imagenBio4").innerHTML = `<img src="${imagenTaller4}" alt="" class="img-persona2">`;
-  document.getElementById("nombreBio4").innerHTML = `<h3>${nombreTallerista4}</h3>
+  document.getElementById(
+    "imagenBio4"
+  ).innerHTML = `<img src="${imagenTaller4}" alt="" class="img-persona2">`;
+  document.getElementById(
+    "nombreBio4"
+  ).innerHTML = `<h3>${nombreTallerista4}</h3>
   <h4>${empresaTallerista4}</h4>`;
   document.getElementById("trayectoriaBio4").innerText = `${bioTallerista4}`;
   // Viernes 19
@@ -2137,8 +2205,12 @@ function btnViernesON() {
     "temaTaller1"
   ).innerHTML = `<h4>${tituloTaller1}</h4>`;
   document.getElementById("horaTaller1").innerHTML = ` <p>${horasTaller1}</p>`;
-  document.getElementById("imagenBio1").innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona2">`;
-  document.getElementById("nombreBio1").innerHTML = `<h3>${nombreTallerista1}</h3>
+  document.getElementById(
+    "imagenBio1"
+  ).innerHTML = `<img src="${imagenTaller1}" alt="" class="img-persona2">`;
+  document.getElementById(
+    "nombreBio1"
+  ).innerHTML = `<h3>${nombreTallerista1}</h3>
   <h4>${empresaTallerista1}</h4>`;
   document.getElementById("trayectoriaBio1").innerText = `${bioTallerista1}`;
 
@@ -2159,8 +2231,12 @@ function btnViernesON() {
     "temaTaller2"
   ).innerHTML = `<h4>${tituloTaller2}</h4>`;
   document.getElementById("horaTaller2").innerHTML = ` <p>${horasTaller2}</p>`;
-  document.getElementById("imagenBio2").innerHTML = `<img src="${imagenTaller2}" alt="" class="img-persona2">`;
-  document.getElementById("nombreBio2").innerHTML = `<h3>${nombreTallerista2}</h3>
+  document.getElementById(
+    "imagenBio2"
+  ).innerHTML = `<img src="${imagenTaller2}" alt="" class="img-persona2">`;
+  document.getElementById(
+    "nombreBio2"
+  ).innerHTML = `<h3>${nombreTallerista2}</h3>
   <h4>${empresaTallerista2}</h4>`;
   document.getElementById("trayectoriaBio2").innerText = `${bioTallerista2}`;
 
@@ -2181,8 +2257,12 @@ function btnViernesON() {
     "temaTaller3"
   ).innerHTML = `<h4>${tituloTaller3}</h4>`;
   document.getElementById("horaTaller3").innerHTML = ` <p>${horasTaller3}</p>`;
-  document.getElementById("imagenBio3").innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona2">`;
-  document.getElementById("nombreBio3").innerHTML = `<h3>${nombreTallerista3}</h3>
+  document.getElementById(
+    "imagenBio3"
+  ).innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona2">`;
+  document.getElementById(
+    "nombreBio3"
+  ).innerHTML = `<h3>${nombreTallerista3}</h3>
   <h4>${empresaTallerista3}</h4>`;
   document.getElementById("trayectoriaBio3").innerText = `${bioTallerista3}`;
 }
@@ -2234,20 +2314,20 @@ const start = () => {
   intervalo = setInterval(function () {
     carrusel.scrollLeft = carrusel.scrollLeft + step;
     if (carrusel.scrollLeft === maxScrollLeft) {
-      step = step * (-1);
+      step = step * -1;
     } else if (carrusel.scrollLeft === 0) {
-      step = step * (-1);
+      step = step * -1;
     }
   }, 10);
 };
 const stop = () => {
   clearInterval(intervalo);
 };
-carrusel.addEventListener('mouseover', () => {
+carrusel.addEventListener("mouseover", () => {
   stop();
-})
-carrusel.addEventListener('mouseout', () => {
+});
+carrusel.addEventListener("mouseout", () => {
   start();
-})
+});
 
 start();
