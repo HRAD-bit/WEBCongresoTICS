@@ -156,11 +156,17 @@ const tarjeta1TimeLu = "Nov 15 2021 10:00:00 GMT-06:00",
   tarjeta3TimeMa = "Nov 16 2021 17:00:00 GMT-06:00",
   tarjeta4TimeMa = "Nov 16 2021 18:00:00 GMT-06:00",
   // MIERCOLES
-  tarjeta1TimeMi = "Nov 17 2021 10:00:00 GMT-06:00",
-  tarjeta2TimeMi = "Nov 17 2021 11:00:00 GMT-06:00",
-  tarjeta3TimeMi = "Nov 17 2021 15:00:00 GMT-06:00",
-  tarjeta4TimeMi = "Nov 17 2021 16:00:00 GMT-06:00",
-  tarjeta5TimeMi = "Nov 17 2021 19:00:00 GMT-06:00",
+  // tarjeta1TimeMi = "Nov 17 2021 10:00:00 GMT-06:00",
+  // tarjeta2TimeMi = "Nov 17 2021 11:00:00 GMT-06:00",
+  // tarjeta3TimeMi = "Nov 17 2021 15:00:00 GMT-06:00",
+  // tarjeta4TimeMi = "Nov 17 2021 16:00:00 GMT-06:00",
+  // tarjeta5TimeMi = "Nov 17 2021 19:00:00 GMT-06:00",
+
+  tarjeta1TimeMi = "Nov 9 2021 10:00:00 GMT-06:00",
+  tarjeta2TimeMi = "Nov 9 2021 11:00:00 GMT-06:00",
+  tarjeta3TimeMi = "Nov 9 2021 15:00:00 GMT-06:00",
+  tarjeta4TimeMi = "Nov 9 2021 16:00:00 GMT-06:00",
+  tarjeta5TimeMi = "Nov 9 2021 19:00:00 GMT-06:00",
   // JUEVES
   tarjeta1TimeJu = "Nov 18 2021 15:00:00 GMT-06:00",
   tarjeta2TimeJu = "Nov 18 2021 16:00:00 GMT-06:00",
@@ -1279,7 +1285,7 @@ function informacionMartes() {
 function informacionMiercoles() {
   // TARJETA 1 MIERCOLES
   (tipoTaller1 = "Conferencia"),
-    (nombreTallerista1 = " IDS Comercial "),
+    (nombreTallerista1 = " Luz Adriana Lopez Hernandez "),
     (empresaTallerista1 = "IDS Comercial"),
     (tituloTaller1 = '"AGILE O MINDSET, ¿QUÉ VA PRIMERO?"'),
     (gruposAsignados1 = "Todos los semestres"),
@@ -1369,7 +1375,7 @@ function informacionJueves() {
 function informacionViernes() {
   // TARJETA 1 VIERNES
   (tipoTaller1 = "Conferencia"),
-    (nombreTallerista1 = "IDS Comercial"),
+    (nombreTallerista1 = "Ramiro González Sánchez"),
     (empresaTallerista1 = "IDS Comercial"),
     (tituloTaller1 = '"¿CÓMO SER UN GRAN DESARROLLADOR DE APLICACIONES?"'),
     (gruposAsignados1 = "Todos los Semestres"),
@@ -1560,8 +1566,8 @@ function btnLunesON() {
     "#707070";
   document.getElementById("btnStateLu1").style.display = "block";
   document.getElementById("btnStateLu2").style.display = "block";
-  document.getElementById("btnStateLu3").style.display = "block";
-  document.getElementById("btnStateLu4").style.display = "block";
+  // document.getElementById("btnStateLu3").style.display = "block";
+  // document.getElementById("btnStateLu4").style.display = "block";
 
   // INFORMACION TALLERISTAS LUNES
   // TARJETA 1
@@ -1617,56 +1623,56 @@ function btnLunesON() {
   document.getElementById("trayectoriaBio2").innerText = `${bioTallerista2}`;
 
   // TARJETA 3
-  document.getElementById("tipoTaller3").innerHTML = `<p>${tipoTaller3}</p>`;
-  document.getElementById(
-    "imagenTallerista3"
-  ).innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona" />`;
-  document.getElementById(
-    "nombreTallerista3"
-  ).innerHTML = `${nombreTallerista3}`;
-  document.getElementById("empresaTallerista3").innerHTML = `<p>
-  <b>${empresaTallerista3}</b>
-  </p>`;
-  document.getElementById("gruposLu3").innerHTML = `<p>Grupos</p>
-  <p>${gruposAsignados3}</p>`;
-  document.getElementById(
-    "temaTaller3"
-  ).innerHTML = `<h4>${tituloTaller3}</h4>`;
-  document.getElementById("horaTaller3").innerHTML = ` <p>${horasTaller3}</p>`;
-  document.getElementById(
-    "imagenBio3"
-  ).innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona2">`;
-  document.getElementById(
-    "nombreBio3"
-  ).innerHTML = `<h3>${nombreTallerista3}</h3>
-  <h4>${empresaTallerista3}</h4>`;
-  document.getElementById("trayectoriaBio3").innerText = `${bioTallerista3}`;
+  // document.getElementById("tipoTaller3").innerHTML = `<p>${tipoTaller3}</p>`;
+  // document.getElementById(
+  //   "imagenTallerista3"
+  // ).innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona" />`;
+  // document.getElementById(
+  //   "nombreTallerista3"
+  // ).innerHTML = `${nombreTallerista3}`;
+  // document.getElementById("empresaTallerista3").innerHTML = `<p>
+  // <b>${empresaTallerista3}</b>
+  // </p>`;
+  // document.getElementById("gruposLu3").innerHTML = `<p>Grupos</p>
+  // <p>${gruposAsignados3}</p>`;
+  // document.getElementById(
+  //   "temaTaller3"
+  // ).innerHTML = `<h4>${tituloTaller3}</h4>`;
+  // document.getElementById("horaTaller3").innerHTML = ` <p>${horasTaller3}</p>`;
+  // document.getElementById(
+  //   "imagenBio3"
+  // ).innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona2">`;
+  // document.getElementById(
+  //   "nombreBio3"
+  // ).innerHTML = `<h3>${nombreTallerista3}</h3>
+  // <h4>${empresaTallerista3}</h4>`;
+  // document.getElementById("trayectoriaBio3").innerText = `${bioTallerista3}`;
 
-  // TARJETA 4
-  document.getElementById("tipoTaller4").innerHTML = `<p>${tipoTaller4}</p>`;
-  document.getElementById(
-    "imagenTallerista4"
-  ).innerHTML = ` <img src="${imagenTaller4}" alt="" class="img-persona" />`;
-  document.getElementById(
-    "nombreTallerista4"
-  ).innerHTML = `${nombreTallerista4}`;
-  document.getElementById("empresaTallerista4").innerHTML = `<p>
-  <b>${empresaTallerista4}</b>
-  </p>`;
-  document.getElementById("gruposLu4").innerHTML = `<p>Grupos</p>
-  <p>${gruposAsignados4}</p>`;
-  document.getElementById(
-    "temaTaller4"
-  ).innerHTML = `<h4>${tituloTaller4}</h4>`;
-  document.getElementById("horaTaller4").innerHTML = ` <p>${horasTaller4}</p>`;
-  document.getElementById(
-    "imagenBio4"
-  ).innerHTML = `<img src="${imagenTaller4}" alt="" class="img-persona2">`;
-  document.getElementById(
-    "nombreBio4"
-  ).innerHTML = `<h3>${nombreTallerista4}</h3>
-  <h4>${empresaTallerista4}</h4>`;
-  document.getElementById("trayectoriaBio4").innerText = `${bioTallerista4}`;
+  // // TARJETA 4
+  // document.getElementById("tipoTaller4").innerHTML = `<p>${tipoTaller4}</p>`;
+  // document.getElementById(
+  //   "imagenTallerista4"
+  // ).innerHTML = ` <img src="${imagenTaller4}" alt="" class="img-persona" />`;
+  // document.getElementById(
+  //   "nombreTallerista4"
+  // ).innerHTML = `${nombreTallerista4}`;
+  // document.getElementById("empresaTallerista4").innerHTML = `<p>
+  // <b>${empresaTallerista4}</b>
+  // </p>`;
+  // document.getElementById("gruposLu4").innerHTML = `<p>Grupos</p>
+  // <p>${gruposAsignados4}</p>`;
+  // document.getElementById(
+  //   "temaTaller4"
+  // ).innerHTML = `<h4>${tituloTaller4}</h4>`;
+  // document.getElementById("horaTaller4").innerHTML = ` <p>${horasTaller4}</p>`;
+  // document.getElementById(
+  //   "imagenBio4"
+  // ).innerHTML = `<img src="${imagenTaller4}" alt="" class="img-persona2">`;
+  // document.getElementById(
+  //   "nombreBio4"
+  // ).innerHTML = `<h3>${nombreTallerista4}</h3>
+  // <h4>${empresaTallerista4}</h4>`;
+  // document.getElementById("trayectoriaBio4").innerText = `${bioTallerista4}`;
 
   // Martes 16
   document.getElementById("Sbtn2").style.backgroundColor = "#fff";

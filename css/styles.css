@@ -769,6 +769,10 @@ object-fit: cover;
     text-align: center;
 }
 
+.div-nombre label:hover{
+    transition: 0.2s;
+    color: #0d6efd;
+}
 /* lugar de donde viene  */
 
 .lugar-persona {
@@ -1413,6 +1417,7 @@ button {
     .div-nombre label {
         font-size: 10px;
     }
+    
     .tema-taller h4 {
         font-size: 14px;
     }
@@ -1524,6 +1529,14 @@ button {
     .info-portada {
         width: 590px;
     }
+
+    .taller-mes-barra {
+        padding: 3px 25px;
+    }
+
+    .logo-tics-lateral{
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1557,6 +1570,9 @@ button {
     /* estilos javaScript */
     .active {
         transform: translate(740px);
+    }
+    .contenedor-taller img{
+        display: none;
     }
 
     /* Estilos para el contenido del menu  */
