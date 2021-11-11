@@ -810,6 +810,7 @@ object-fit: cover;
 .contenedor-informacion-off {
     -webkit-filter: grayscale(100%)!important;
     filter: grayscale(100%)!important;
+    
 }
 
 /* Seccion de grupos % LIVE */

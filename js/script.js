@@ -44,7 +44,7 @@ const sectionPRObserver = new IntersectionObserver(function (
     }
   });
 },
-  sectionPROptions);
+sectionPROptions);
 
 sectionPRObserver.observe(sectionPR);
 // ------------
@@ -69,7 +69,7 @@ const sectionOneObserver = new IntersectionObserver(function (
     }
   });
 },
-  sectionOneOptions);
+sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
 // --------------------------
@@ -94,7 +94,7 @@ const sectionTwoObserver = new IntersectionObserver(function (
     }
   });
 },
-  sectionTwoOptions);
+sectionTwoOptions);
 
 sectionTwoObserver.observe(sectionTwo);
 // --------------------------------------------
@@ -119,9 +119,501 @@ const sectionDObserver = new IntersectionObserver(function (
     }
   });
 },
-  sectionDOptions);
+sectionDOptions);
 
 sectionDObserver.observe(sectionD);
+
+//// VARIABLES DE ESTADO DE TARJETAS EN DIAS
+var stateActLu1 = 0,
+  stateActMa1 = 0,
+  stateActMi1 = 0,
+  stateActJu1 = 0,
+  stateActVi1 = 0,
+  stateActLu2 = 0,
+  stateActMa2 = 0,
+  stateActMi2 = 0,
+  stateActJu2 = 0,
+  stateActVi2 = 0,
+  stateActLu3 = 0,
+  stateActMa3 = 0,
+  stateActMi3 = 0,
+  stateActJu3 = 0,
+  stateActVi3 = 0,
+  stateActLu4 = 0,
+  stateActMa4 = 0,
+  stateActMi4 = 0,
+  stateActJu4 = 0,
+  stateActVi4 = 0,
+  stateActLu5 = 0,
+  stateActMa5 = 0,
+  stateActMi5 = 0,
+  stateActJu5 = 0,
+  stateActVi5 = 0;
+
+function verifyStateCards() {
+  ////////// TARJETAS DEL LUNEEEEEEEEEEEES
+  /// CONDICIONALES PARA LA PRIMERA TARJETA DEL LUNES
+  if (stateActLu1 == 1 && cont1 == 1) {
+    console.log("Se muestra que esta en espera");
+    document.getElementById("liveIDLu1").style.display = "none";
+    document.getElementById("gruposLiveLu1").style.justifyContent = "center";
+    document.getElementById("contenedorInfoLu1").className =
+      "contenedor-informacion";
+  } else if (stateActLu1 == 2 && cont1 == 1) {
+    console.log("Se muestra que esta en vivo");
+    document.getElementById("liveIDLu1").style.display = "flex";
+    document.getElementById("gruposLiveLu1").style.justifyContent =
+      "space-between";
+    document.getElementById("btnAccionLu1").style.backgroundColor = "#3EE45F";
+    document.getElementById("contenedorInfoLu1").className =
+      "contenedor-informacion";
+  } else if (stateActLu1 == 3 && cont1 == 1) {
+    document.getElementById("liveIDLu1").style.display = "none";
+    document.getElementById("gruposLiveLu1").style.justifyContent =
+      "space-around";
+    document.getElementById("btnAccionLu1").style.backgroundColor = "#858585";
+    document.getElementById("btnAccionLu1").style.cursor = "no-drop";
+    document.getElementById("contenedorInfoLu1").className =
+      "contenedor-informacion contenedor-informacion-off";
+    document.getElementById("btnStateLu1").style.display = "block";
+  }
+
+  /// CONDICIONALES PARA LA SEGUNDA TARJETA DEL LUNES
+  if (stateActLu2 == 1 && cont1 == 1) {
+    // console.log("Se muestra que esta en espera");
+    document.getElementById("liveIDLu2").style.display = "none";
+    document.getElementById("gruposLiveLu2").style.justifyContent = "center";
+    document.getElementById("contenedorInfoLu2").className =
+      "contenedor-informacion";
+  } else if (stateActLu2 == 2 && cont1 == 1) {
+    // console.log("Se muestra que esta en vivo");
+    document.getElementById("liveIDLu2").style.display = "flex";
+    document.getElementById("gruposLiveLu2").style.justifyContent =
+      "space-between";
+    document.getElementById("btnAccionLu2").style.backgroundColor = "#3EE45F";
+    document.getElementById("contenedorInfoLu2").className =
+      "contenedor-informacion";
+  } else if (stateActLu2 == 3 && cont1 == 1) {
+    document.getElementById("liveIDLu2").style.display = "none";
+    document.getElementById("gruposLiveLu2").style.justifyContent =
+      "space-around";
+    document.getElementById("btnAccionLu2").style.backgroundColor = "#858585";
+    document.getElementById("btnAccionLu2").style.cursor = "no-drop";
+    document.getElementById("btnStateLu2").style.display = "block";
+    document.getElementById("contenedorInfoLu2").className =
+      "contenedor-informacion contenedor-informacion-off";
+  }
+  ///////////////MARTEEEEEEEEEEEEEES SON 4 TARJETAS
+  ///CONDICIONALES PARA LA PRIMERA TARJETA DEL MARTES
+  if (stateActMa1 == 1 && cont2 == 1) {
+    console.log("Se muestra que esta en espera");
+    document.getElementById("liveIDLu1").style.display = "none";
+    document.getElementById("gruposLiveLu1").style.justifyContent = "center";
+    document.getElementById("contenedorInfoLu1").className =
+      "contenedor-informacion";
+  } else if (stateActMa1 == 2 && cont2 == 1) {
+    console.log("Se muestra que esta en vivo");
+    document.getElementById("liveIDLu1").style.display = "flex";
+    document.getElementById("gruposLiveLu1").style.justifyContent =
+      "space-between";
+    document.getElementById("btnAccionMa1").style.backgroundColor = "#3EE45F";
+    document.getElementById("contenedorInfoLu1").className =
+      "contenedor-informacion";
+  } else if (stateActMa1 == 3 && cont2 == 1) {
+    console.log("se muestra que se termino");
+    document.getElementById("liveIDLu1").style.display = "none";
+    document.getElementById("gruposLiveLu1").style.justifyContent =
+      "space-around";
+    document.getElementById("btnAccionMa1").style.backgroundColor = "#858585";
+    document.getElementById("btnAccionMa1").style.cursor = "no-drop";
+    document.getElementById("btnStateMa1").style.display = "block";
+    document.getElementById("contenedorInfoLu1").className =
+      "contenedor-informacion contenedor-informacion-off";
+  }
+
+  ///CONDICIONALES PARA LA SEGUNDA TARJETA DEL MARTES
+  if (stateActMa2 == 1 && cont2 == 1) {
+    console.log("Se muestra que esta en espera");
+    document.getElementById("liveIDLu2").style.display = "none";
+    document.getElementById("gruposLiveLu2").style.justifyContent = "center";
+    document.getElementById("contenedorInfoLu2").className =
+      "contenedor-informacion";
+  } else if (stateActMa2 == 2 && cont2 == 1) {
+    console.log("Se muestra que esta en vivo");
+    document.getElementById("liveIDLu2").style.display = "flex";
+    document.getElementById("gruposLiveLu2").style.justifyContent =
+      "space-between";
+    document.getElementById("btnAccionMa2").style.backgroundColor = "#3EE45F";
+    document.getElementById("contenedorInfoLu2").className =
+      "contenedor-informacion";
+  } else if (stateActMa2 == 3 && cont2 == 1) {
+    console.log("se muestra que se termino");
+    document.getElementById("liveIDLu2").style.display = "none";
+    document.getElementById("gruposLiveLu2").style.justifyContent =
+      "space-around";
+    document.getElementById("btnAccionMa2").style.backgroundColor = "#858585";
+    document.getElementById("btnAccionMa2").style.cursor = "no-drop";
+    document.getElementById("btnStateMa2").style.display = "block";
+    document.getElementById("contenedorInfoLu2").className =
+      "contenedor-informacion contenedor-informacion-off";
+  }
+
+  ///CONDICIONALES PARA LA TERCERA TARJETA DEL MARTES
+  if (stateActMa3 == 1 && cont2 == 1) {
+    console.log("Se muestra que esta en espera");
+    document.getElementById("liveIDLu3").style.display = "none";
+    document.getElementById("gruposLiveLu3").style.justifyContent = "center";
+    document.getElementById("contenedorInfoLu3").className =
+      "contenedor-informacion";
+  } else if (stateActMa3 == 2 && cont2 == 1) {
+    console.log("Se muestra que esta en vivo");
+    document.getElementById("liveIDLu3").style.display = "flex";
+    document.getElementById("gruposLiveLu3").style.justifyContent =
+      "space-between";
+    document.getElementById("btnAccionMa3").style.backgroundColor = "#3EE45F";
+    document.getElementById("contenedorInfoLu3").className =
+      "contenedor-informacion";
+  } else if (stateActMa3 == 3 && cont2 == 1) {
+    console.log("se muestra que se termino");
+    document.getElementById("liveIDLu3").style.display = "none";
+    document.getElementById("gruposLiveLu3").style.justifyContent =
+      "space-around";
+    document.getElementById("btnAccionMa3").style.backgroundColor = "#858585";
+    document.getElementById("btnAccionMa3").style.cursor = "no-drop";
+    document.getElementById("btnStateMa3").style.display = "block";
+    document.getElementById("contenedorInfoLu3").className =
+      "contenedor-informacion contenedor-informacion-off";
+  }
+
+  ///CONDICIONALES PARA LA CUARTA TARJETA DEL MARTES
+  if (stateActMa4 == 1 && cont2 == 1) {
+    console.log("Se muestra que esta en espera");
+    document.getElementById("liveIDLu4").style.display = "none";
+    document.getElementById("gruposLiveLu4").style.justifyContent = "center";
+    document.getElementById("contenedorInfoLu4").className =
+      "contenedor-informacion";
+  } else if (stateActMa4 == 2 && cont2 == 1) {
+    console.log("Se muestra que esta en vivo");
+    document.getElementById("liveIDLu4").style.display = "flex";
+    document.getElementById("gruposLiveLu4").style.justifyContent =
+      "space-between";
+    document.getElementById("btnAccionMa4").style.backgroundColor = "#3EE45F";
+    document.getElementById("contenedorInfoLu4").className =
+      "contenedor-informacion";
+  } else if (stateActMa4 == 3 && cont2 == 1) {
+    console.log("se muestra que se termino");
+    document.getElementById("liveIDLu4").style.display = "none";
+    document.getElementById("gruposLiveLu4").style.justifyContent =
+      "space-around";
+    document.getElementById("btnAccionMa4").style.backgroundColor = "#858585";
+    document.getElementById("btnAccionMa4").style.cursor = "no-drop";
+    document.getElementById("btnStateMa4").style.display = "block";
+    document.getElementById("contenedorInfoLu4").className =
+      "contenedor-informacion contenedor-informacion-off";
+  }
+
+  ///CONDICIONALES PARA LA CUARTA TARJETA DEL MARTES
+  if (stateActMa4 == 1 && cont2 == 1) {
+    console.log("Se muestra que esta en espera");
+    document.getElementById("liveIDLu4").style.display = "none";
+    document.getElementById("gruposLiveLu4").style.justifyContent = "center";
+    document.getElementById("contenedorInfoLu4").className =
+      "contenedor-informacion";
+  } else if (stateActMa4 == 2 && cont2 == 1) {
+    console.log("Se muestra que esta en vivo");
+    document.getElementById("liveIDLu4").style.display = "flex";
+    document.getElementById("gruposLiveLu4").style.justifyContent =
+      "space-between";
+    document.getElementById("btnAccionMa4").style.backgroundColor = "#3EE45F";
+    document.getElementById("contenedorInfoLu4").className =
+      "contenedor-informacion";
+  } else if (stateActMa4 == 3 && cont2 == 1) {
+    console.log("se muestra que se termino");
+    document.getElementById("liveIDLu4").style.display = "none";
+    document.getElementById("gruposLiveLu4").style.justifyContent =
+      "space-around";
+    document.getElementById("btnAccionMa4").style.backgroundColor = "#858585";
+    document.getElementById("btnAccionMa4").style.cursor = "no-drop";
+    document.getElementById("btnStateMa4").style.display = "block";
+    document.getElementById("contenedorInfoLu4").className =
+      "contenedor-informacion contenedor-informacion-off";
+  }
+
+  console.log(
+    "contMiercoles: " + cont1 + " Estado de Miercoles: " + stateActMi1
+  );
+  /////////////////MIERCOLEEEEEEES SON 5 TARJETAS
+  /// CONDICIONALES PARA LA PRIMERA TARJETA DEL MIERCOLES
+  if (stateActMi1 == 1 && cont3 == 1) {
+    console.log("Se muestra que esta en espera");
+    document.getElementById("liveIDLu1").style.display = "none";
+    document.getElementById("gruposLiveLu1").style.justifyContent = "center";
+    document.getElementById("contenedorInfoLu1").className =
+      "contenedor-informacion";
+  } else if (stateActMi1 == 2 && cont3 == 1) {
+    console.log("Se muestra que esta en vivo");
+    document.getElementById("liveIDLu1").style.display = "flex";
+    document.getElementById("gruposLiveLu1").style.justifyContent =
+      "space-between";
+    document.getElementById("btnAccionMi1").style.backgroundColor = "#3EE45F";
+    document.getElementById("contenedorInfoLu1").className =
+      "contenedor-informacion";
+  } else if (stateActMi1 == 3 && cont3 == 1) {
+    console.log("se muestra que se termino");
+    document.getElementById("liveIDLu1").style.display = "none";
+    document.getElementById("gruposLiveLu1").style.justifyContent =
+      "space-around";
+    document.getElementById("btnAccionMi1").style.backgroundColor = "#858585";
+    document.getElementById("btnAccionMi1").style.cursor = "no-drop";
+    document.getElementById("btnStateMi1").style.display = "block";
+    document.getElementById("contenedorInfoLu1").className =
+      "contenedor-informacion contenedor-informacion-off";
+  }
+
+  /// CONDICIONALES PARA LA SEGUNDA TARJETA DEL MIERCOLES
+  if (stateActMi2 == 1 && cont3 == 1) {
+    console.log("Se muestra que esta en espera");
+    document.getElementById("liveIDLu2").style.display = "none";
+    document.getElementById("gruposLiveLu2").style.justifyContent = "center";
+    document.getElementById("contenedorInfoLu2").className =
+      "contenedor-informacion";
+  } else if (stateActMi2 == 2 && cont3 == 1) {
+    console.log("Se muestra que esta en vivo");
+    document.getElementById("liveIDLu2").style.display = "flex";
+    document.getElementById("gruposLiveLu2").style.justifyContent =
+      "space-between";
+    document.getElementById("btnAccionMi2").style.backgroundColor = "#3EE45F";
+    document.getElementById("contenedorInfoLu2").className =
+      "contenedor-informacion";
+  } else if (stateActMi2 == 3 && cont3 == 1) {
+    console.log("se muestra que se termino");
+    document.getElementById("liveIDLu2").style.display = "none";
+    document.getElementById("gruposLiveLu2").style.justifyContent =
+      "space-around";
+    document.getElementById("btnAccionMi2").style.backgroundColor = "#858585";
+    document.getElementById("btnAccionMi2").style.cursor = "no-drop";
+    document.getElementById("btnStateMi2").style.display = "block";
+    document.getElementById("contenedorInfoLu2").className =
+      "contenedor-informacion contenedor-informacion-off";
+  }
+
+  /// CONDICIONALES PARA LA TERCERA TARJETA DEL MIERCOLES
+  if (stateActMi3 == 1 && cont3 == 1) {
+    console.log("Se muestra que esta en espera");
+    document.getElementById("liveIDLu3").style.display = "none";
+    document.getElementById("gruposLiveLu3").style.justifyContent = "center";
+    document.getElementById("contenedorInfoLu3").className =
+      "contenedor-informacion";
+  } else if (stateActMi3 == 2 && cont3 == 1) {
+    console.log("Se muestra que esta en vivo");
+    document.getElementById("liveIDLu3").style.display = "flex";
+    document.getElementById("gruposLiveLu3").style.justifyContent =
+      "space-between";
+    document.getElementById("btnAccionMi3").style.backgroundColor = "#3EE45F";
+    document.getElementById("contenedorInfoLu3").className =
+      "contenedor-informacion";
+  } else if (stateActMi3 == 3 && cont3 == 1) {
+    console.log("se muestra que se termino");
+    document.getElementById("liveIDLu3").style.display = "none";
+    document.getElementById("gruposLiveLu3").style.justifyContent =
+      "space-around";
+    document.getElementById("btnAccionMi3").style.backgroundColor = "#858585";
+    document.getElementById("btnAccionMi3").style.cursor = "no-drop";
+    document.getElementById("btnStateMi3").style.display = "block";
+    document.getElementById("contenedorInfoLu3").className =
+      "contenedor-informacion contenedor-informacion-off";
+  }
+
+  /// CONDICIONALES PARA LA CUARTA TARJETA DEL MIERCOLES
+  if (stateActMi4 == 1 && cont3 == 1) {
+    console.log("Se muestra que esta en espera");
+    document.getElementById("liveIDLu4").style.display = "none";
+    document.getElementById("gruposLiveLu4").style.justifyContent = "center";
+    document.getElementById("contenedorInfoLu4").className =
+      "contenedor-informacion";
+  } else if (stateActMi4 == 2 && cont3 == 1) {
+    console.log("Se muestra que esta en vivo");
+    document.getElementById("liveIDLu4").style.display = "flex";
+    document.getElementById("gruposLiveLu4").style.justifyContent =
+      "space-between";
+    document.getElementById("btnAccionMi4").style.backgroundColor = "#3EE45F";
+    document.getElementById("contenedorInfoLu4").className =
+      "contenedor-informacion";
+  } else if (stateActMi4 == 3 && cont3 == 1) {
+    console.log("se muestra que se termino");
+    document.getElementById("liveIDLu4").style.display = "none";
+    document.getElementById("gruposLiveLu4").style.justifyContent =
+      "space-around";
+    document.getElementById("btnAccionMi4").style.backgroundColor = "#858585";
+    document.getElementById("btnAccionMi4").style.cursor = "no-drop";
+    document.getElementById("btnStateMi4").style.display = "block";
+    document.getElementById("contenedorInfoLu4").className =
+      "contenedor-informacion contenedor-informacion-off";
+  }
+
+  /// CONDICIONALES PARA LA QUINTA TARJETA DEL MIERCOLES
+  if (stateActMi5 == 1 && cont3 == 1) {
+    console.log("Se muestra que esta en espera");
+    document.getElementById("liveIDLu5").style.display = "none";
+    document.getElementById("gruposLiveLu5").style.justifyContent = "center";
+    document.getElementById("contenedorInfoLu5").className =
+      "contenedor-informacion";
+  } else if (stateActMi5 == 2 && cont3 == 1) {
+    console.log("Se muestra que esta en vivo");
+    document.getElementById("liveIDLu5").style.display = "flex";
+    document.getElementById("gruposLiveLu5").style.justifyContent =
+      "space-between";
+    document.getElementById("btnAccionMi5").style.backgroundColor = "#3EE45F";
+    document.getElementById("contenedorInfoLu5").className =
+      "contenedor-informacion";
+  } else if (stateActMi5 == 3 && cont3 == 1) {
+    console.log("se muestra que se termino");
+    document.getElementById("liveIDLu5").style.display = "none";
+    document.getElementById("gruposLiveLu5").style.justifyContent =
+      "space-around";
+    document.getElementById("btnAccionMi5").style.backgroundColor = "#858585";
+    document.getElementById("btnAccionMi5").style.cursor = "no-drop";
+    document.getElementById("btnStateMi5").style.display = "block";
+    document.getElementById("contenedorInfoLu5").className =
+      "contenedor-informacion contenedor-informacion-off";
+  }
+
+  ////////////////JUEEEEEVEEEEEEEEEEEEES SON DOS TARJETAS
+  /// CONDICIONALES PARA LA PRIMERA TARJETA DEL JUEVES
+  if (stateActJu1 == 1 && cont4 == 1) {
+    console.log("Se muestra que esta en espera");
+    document.getElementById("liveIDLu1").style.display = "none";
+    document.getElementById("gruposLiveLu1").style.justifyContent = "center";
+    document.getElementById("contenedorInfoLu1").className =
+      "contenedor-informacion";
+  } else if (stateActJu1 == 2 && cont4 == 1) {
+    console.log("Se muestra que esta en vivo");
+    document.getElementById("liveIDLu1").style.display = "flex";
+    document.getElementById("gruposLiveLu1").style.justifyContent =
+      "space-between";
+    document.getElementById("btnAccionJu1").style.backgroundColor = "#3EE45F";
+    document.getElementById("contenedorInfoLu1").className =
+      "contenedor-informacion";
+  } else if (stateActJu1 == 3 && cont4 == 1) {
+    console.log("se muestra que se termino");
+    document.getElementById("liveIDLu1").style.display = "none";
+    document.getElementById("gruposLiveLu1").style.justifyContent =
+      "space-around";
+    document.getElementById("btnAccionJu1").style.backgroundColor = "#858585";
+    document.getElementById("btnAccionJu1").style.cursor = "no-drop";
+    document.getElementById("btnStateJu1").style.display = "block";
+    document.getElementById("contenedorInfoLu1").className =
+      "contenedor-informacion contenedor-informacion-off";
+  }
+  /// CONDICIONALES PARA LA SEGUNDA TARJETA DEL JUEVES
+  if (stateActJu2 == 1 && cont4 == 1) {
+    console.log("Se muestra que esta en espera");
+    document.getElementById("liveIDLu2").style.display = "none";
+    document.getElementById("gruposLiveLu2").style.justifyContent = "center";
+    document.getElementById("contenedorInfoLu2").className =
+      "contenedor-informacion";
+  } else if (stateActJu2 == 2 && cont4 == 1) {
+    console.log("Se muestra que esta en vivo");
+    document.getElementById("liveIDLu2").style.display = "flex";
+    document.getElementById("gruposLiveLu2").style.justifyContent =
+      "space-between";
+    document.getElementById("btnAccionJu2").style.backgroundColor = "#3EE45F";
+    document.getElementById("contenedorInfoLu2").className =
+      "contenedor-informacion";
+  } else if (stateActJu2 == 3 && cont4 == 1) {
+    console.log("se muestra que se termino");
+    document.getElementById("liveIDLu2").style.display = "none";
+    document.getElementById("gruposLiveLu2").style.justifyContent =
+      "space-around";
+    document.getElementById("btnAccionJu2").style.backgroundColor = "#858585";
+    document.getElementById("btnAccionJu2").style.cursor = "no-drop";
+    document.getElementById("btnStateJu2").style.display = "block";
+    document.getElementById("contenedorInfoLu2").className =
+      "contenedor-informacion contenedor-informacion-off";
+  }
+  /////////////////VIERNEEEEEEEEEES SON 3 TARJETAS
+  /// CONDICIONALES PARA LA PRIMERA TARJETA DEL VIERNES
+  if (stateActVi1 == 1 && cont5 == 1) {
+    console.log("Se muestra que esta en espera");
+    document.getElementById("liveIDLu1").style.display = "none";
+    document.getElementById("gruposLiveLu1").style.justifyContent = "center";
+    document.getElementById("contenedorInfoLu1").className =
+      "contenedor-informacion";
+  } else if (stateActVi1 == 2 && cont5 == 1) {
+    console.log("Se muestra que esta en vivo");
+    document.getElementById("liveIDLu1").style.display = "flex";
+    document.getElementById("gruposLiveLu1").style.justifyContent =
+      "space-between";
+    document.getElementById("btnAccionJu1").style.backgroundColor = "#3EE45F";
+    document.getElementById("contenedorInfoLu1").className =
+      "contenedor-informacion";
+  } else if (stateActVi1 == 3 && cont5 == 1) {
+    console.log("se muestra que se termino");
+    document.getElementById("liveIDLu1").style.display = "none";
+    document.getElementById("gruposLiveLu1").style.justifyContent =
+      "space-around";
+    document.getElementById("btnAccionVi1").style.backgroundColor = "#858585";
+    document.getElementById("btnAccionVi1").style.cursor = "no-drop";
+    document.getElementById("btnStateVi1").style.display = "block";
+    document.getElementById("contenedorInfoLu1").className =
+      "contenedor-informacion contenedor-informacion-off";
+  }
+
+  /// CONDICIONALES PARA LA SEGUNDA TARJETA DEL VIERNES
+  if (stateActVi2 == 1 && cont5 == 1) {
+    console.log("Se muestra que esta en espera");
+    document.getElementById("liveIDLu2").style.display = "none";
+    document.getElementById("gruposLiveLu2").style.justifyContent = "center";
+    document.getElementById("contenedorInfoLu2").className =
+      "contenedor-informacion";
+  } else if (stateActVi2 == 2 && cont5 == 1) {
+    console.log("Se muestra que esta en vivo");
+    document.getElementById("liveIDLu2").style.display = "flex";
+    document.getElementById("gruposLiveLu2").style.justifyContent =
+      "space-between";
+    document.getElementById("btnAccionVi2").style.backgroundColor = "#3EE45F";
+    document.getElementById("contenedorInfoLu2").className =
+      "contenedor-informacion";
+  } else if (stateActVi2 == 3 && cont5 == 1) {
+    console.log("se muestra que se termino");
+    document.getElementById("liveIDLu2").style.display = "none";
+    document.getElementById("gruposLiveLu2").style.justifyContent =
+      "space-around";
+    document.getElementById("btnAccionVi2").style.backgroundColor = "#858585";
+    document.getElementById("btnAccionVi2").style.cursor = "no-drop";
+    document.getElementById("btnStateVi2").style.display = "block";
+    document.getElementById("contenedorInfoLu2").className =
+      "contenedor-informacion contenedor-informacion-off";
+  }
+
+  /// CONDICIONALES PARA LA TERCERA TARJETA DEL VIERNES
+  if (stateActVi3 == 1 && cont5 == 1) {
+    console.log("Se muestra que esta en espera");
+    document.getElementById("liveIDLu3").style.display = "none";
+    document.getElementById("gruposLiveLu3").style.justifyContent = "center";
+    document.getElementById("contenedorInfoLu3").className =
+      "contenedor-informacion";
+  } else if (stateActVi3 == 2 && cont5 == 1) {
+    console.log("Se muestra que esta en vivo");
+    document.getElementById("liveIDLu3").style.display = "flex";
+    document.getElementById("gruposLiveLu3").style.justifyContent =
+      "space-between";
+    document.getElementById("btnAccionVi3").style.backgroundColor = "#3EE45F";
+    document.getElementById("contenedorInfoLu3").className =
+      "contenedor-informacion";
+  } else if (stateActVi3 == 3 && cont5 == 1) {
+    console.log("se muestra que se termino");
+    document.getElementById("liveIDLu3").style.display = "none";
+    document.getElementById("gruposLiveLu3").style.justifyContent =
+      "space-around";
+    document.getElementById("btnAccionVi3").style.backgroundColor = "#858585";
+    document.getElementById("btnAccionVi3").style.cursor = "no-drop";
+    document.getElementById("btnStateVi3").style.display = "block";
+    document.getElementById("contenedorInfoLu3").className =
+      "contenedor-informacion contenedor-informacion-off";
+  }
+}
+
 // -----------------------INFORMACIÓN DE TALLERISTAS--------------------
 
 // LINKS DE ZOOM
@@ -144,34 +636,34 @@ const linkLu1 = "https://meet.google.com/hwb-dpmp-hpb",
 
 // ------------------------------TIEMPOS DE ESPERA-----------------
 
+// VARIABLES DE TIEMPO DE HORAS EN SEGNDOS
+const unaHora = -3600,
+  dosHoras = -7200,
+  tresHoras = -10800,
+  cuatroHoras = -14400;
+
 // ---------------VARIABLES DE TIEMPO-----------
 // Lunes
-const tarjeta1TimeLu = "Nov 15 2021 10:00:00 GMT-06:00",
+const tarjeta1TimeLu = "Nov 10 2021 16:02:00 GMT-06:00",
   tarjeta2TimeLu = "Nov 15 2021 18:00:00 GMT-06:00",
   // tarjeta3TimeLu = "Nov 15 2021 17:00:00 GMT-05:00",
   // tarjeta4TimeLu = "Nov 15 2021 18:00:00 GMT-05:00",
   // MARTES
-  tarjeta1TimeMa = "Nov 16 2021 10:00:00 GMT-06:00",
+  tarjeta1TimeMa = "Nov 11 2021 16:02:00 GMT-06:00",
   tarjeta2TimeMa = "Nov 16 2021 16:00:00 GMT-06:00",
   tarjeta3TimeMa = "Nov 16 2021 17:00:00 GMT-06:00",
   tarjeta4TimeMa = "Nov 16 2021 18:00:00 GMT-06:00",
   // MIERCOLES
-  // tarjeta1TimeMi = "Nov 17 2021 10:00:00 GMT-06:00",
-  // tarjeta2TimeMi = "Nov 17 2021 11:00:00 GMT-06:00",
-  // tarjeta3TimeMi = "Nov 17 2021 15:00:00 GMT-06:00",
-  // tarjeta4TimeMi = "Nov 17 2021 16:00:00 GMT-06:00",
-  // tarjeta5TimeMi = "Nov 17 2021 19:00:00 GMT-06:00",
-
-  tarjeta1TimeMi = "Nov 9 2021 10:00:00 GMT-06:00",
-  tarjeta2TimeMi = "Nov 9 2021 11:00:00 GMT-06:00",
-  tarjeta3TimeMi = "Nov 9 2021 15:00:00 GMT-06:00",
-  tarjeta4TimeMi = "Nov 9 2021 16:00:00 GMT-06:00",
-  tarjeta5TimeMi = "Nov 9 2021 19:00:00 GMT-06:00",
+  tarjeta1TimeMi = "Nov 13 2021 16:00:00 GMT-06:00",
+  tarjeta2TimeMi = "Nov 17 2021 11:00:00 GMT-06:00",
+  tarjeta3TimeMi = "Nov 17 2021 15:00:00 GMT-06:00",
+  tarjeta4TimeMi = "Nov 17 2021 16:00:00 GMT-06:00",
+  tarjeta5TimeMi = "Nov 17 2021 19:00:00 GMT-06:00",
   // JUEVES
   tarjeta1TimeJu = "Nov 18 2021 15:00:00 GMT-06:00",
   tarjeta2TimeJu = "Nov 18 2021 16:00:00 GMT-06:00",
   // VIERNES
-  tarjeta1TimeVi = "Nov 19 2021 13:00:00 GMT-06:00",
+  tarjeta1TimeVi = "Nov 11 2021 13:00:00 GMT-06:00",
   tarjeta2TimeVi = "Nov 19 2021 15:00:00 GMT-06:00",
   tarjeta3TimeVi = "Nov 19 2021 16:00:00 GMT-06:00";
 
@@ -202,66 +694,50 @@ const btnStateLu1 = (deadline, elem, finalMessage) => {
   const timerUpdate = setInterval(() => {
     let t = getRemainingTime(deadline);
     el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
+    el.style.display = "block";
+    if (t.remainTime > 1) {
+      stateActLu1 = 1; // AQUI LE PONES DE ESTADO QUE ESTÁ AUN EN ESPERA EL TALLER
+    }
     // EN VIVO
     if (t.remainTime <= 1) {
-      console.log(t.remainTime);
-      el.innerHTML = `<p> Acceder <p>`;
-      document.getElementById("liveIDLu1").style.display = "flex";
-      document.getElementById("gruposLiveLu1").style.justifyContent =
-        "space-between";
+      stateActLu1 = 2;
       document.getElementById(
         "btnAccionLu1"
-      ).innerHTML = `<a href="${linkLu1}" target="_blank">
-      <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
+      ).innerHTML = `<a href="${linkLu1}" target="_blank" rel="noopener noreferrer">
+      <div id="linkAccesoLu1"><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
       <div class="btn-action-estado">
-        <div class="btnState" id="btnStateLu1"><p>Acceder</p></div>
+        <div class="btnState" id="btnStateLu1"><p>Acceder</p></div>          
       </div>
     </a>`;
-      document.getElementById("btnAccionLu1").style.backgroundColor = "#3EE45F";
-
-      // FINALIZADO
-      if (t.remainTime <= -14400.0) {
-        clearInterval(timerUpdate);
-        console.log(t.remainTime);
-        el.innerHTML = "FINALIZADO";
-        document.getElementById("liveIDLu1").style.display = "none";
-        document.getElementById("gruposLiveLu1").style.justifyContent =
-          "space-around";
-        document.getElementById("btnAccionLu1").style.backgroundColor =
-          "#858585";
-        document.getElementById("btnAccionLu1").style.cursor = "no-drop";
-        document.getElementById("btnAccionLu1").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
-      </div>
-      <div class="btn-action-estado">
-        <div class="btnState" id="btnStateLu1"><p>Finalizado</p></div>
-      </div>`;
-        document.getElementById("contenedorInfoLu1").className +=
-          " contenedor-informacion-off";
-      }
     }
+    // FINALIZADO
+    if (t.remainTime <= cuatroHoras && t.remainTime <= 1) {
+      stateActLu1 = 3; // COLOCAMOS COMO FINALIZADO PARA EL ESTADO
+      clearInterval(timerUpdate);
+      document.getElementById("btnStateLu1").innerHTML = `<p>Finalizado</p>`;
+      document.getElementById("contenedorInfoLu1").className =
+        " contenedor-informacion-off contenedor-informacion";
+      document.getElementById("btnAccionLu1").innerHTML = `
+        <div class="btn-action-estado">
+          <div class="btnState" id="btnStateLu1"><p>Finalizado</p></div>          
+        </div>`;
+    }
+    // verifyStateCards();
   }, 1000);
 };
 btnStateLu1(tarjeta1TimeLu, "btnStateLu1", "Ingresar");
 
 const btnStateLu2 = (deadline, elem, finalMessage) => {
   const el = document.getElementById(elem);
-
   const timerUpdate = setInterval(() => {
     let t = getRemainingTime(deadline);
     el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
+    if (t.remainTime > 1) {
+      stateActLu2 = 1; // AQUI LE PONES DE ESTADO QUE ESTÁ AUN EN ESPERA EL TALLER
+    }
     // EN VIVO
     if (t.remainTime <= 1) {
-      console.log(t.remainTime);
-      // clearInterval(timerUpdate);
-      // el.innerHTML = finalMessage;
-      //   el.innerHTML = `<a href="http://itsm.edu.mx" target="_blank">
-      //   <p>Ingresar</p>
-      // </a>`;
-      el.innerHTML = `<p> Acceder <p>`;
-      document.getElementById("liveIDLu2").style.display = "flex";
-      document.getElementById("gruposLiveLu2").style.justifyContent =
-        "space-between";
+      stateActLu2 = 2;
       document.getElementById(
         "btnAccionLu2"
       ).innerHTML = `<a href="${LinkLu2}" target="_blank">
@@ -270,27 +746,18 @@ const btnStateLu2 = (deadline, elem, finalMessage) => {
       <div class="btnState" id="btnStateLu2"><p>Acceder</p></div>
     </div>
   </a>`;
-      document.getElementById("btnAccionLu2").style.backgroundColor = "#3EE45F";
-
       // FINALIZADO
-      if (t.remainTime <= -10800.0) {
+      if (t.remainTime <= tresHoras) {
         clearInterval(timerUpdate);
-        console.log(t.remainTime);
+        stateActLu2 = 3;
         el.innerHTML = "FINALIZADO";
-        document.getElementById("liveIDLu2").style.display = "none";
-        document.getElementById("gruposLiveLu2").style.justifyContent =
-          "space-around";
-        document.getElementById("btnAccionLu2").style.backgroundColor =
-          "#858585";
-        document.getElementById("btnAccionLu2").style.cursor = "no-drop";
-        document.getElementById("btnAccionLu2").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
-      </div>
-      <div class="btn-action-estado">
-        <div class="btnState" id="btnStateLu2"><p>Finalizado</p></div>
-      </div>`;
-        document.getElementById("contenedorInfoLu2").className +=
-          " contenedor-informacion-off";
+        document.getElementById("btnStateLu2").innerHTML = `<p>Finalizado</p>`;
+        document.getElementById("contenedorInfoLu2").className =
+          "contenedor-informacion-off contenedor-informacion";
+        document.getElementById("btnAccionLu2").innerHTML = `
+          <div class="btn-action-estado">
+            <div class="btnState" id="btnStateLu2"><p>Finalizado</p></div>          
+          </div>`;
       }
     }
   }, 1000);
@@ -396,46 +863,36 @@ btnStateLu2(tarjeta2TimeLu, "btnStateLu2", "Ingresar");
 
 // MARTES
 const btnStateMa1 = (deadline, elem, finalMessage) => {
-  const el = document.getElementById(elem);
+  var el = document.getElementById(elem);
   const timerUpdate = setInterval(() => {
     let t = getRemainingTime(deadline);
     el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
+    if (t.remainTime > 1) {
+      stateActMa1 = 1;
+    }
     // EN VIVO
     if (t.remainTime <= 1) {
-      console.log(t.remainTime);
-      el.innerHTML = `<p> Acceder <p>`;
-      document.getElementById("liveIDLu1").style.display = "flex";
-      document.getElementById("gruposLiveLu1").style.justifyContent =
-        "space-between";
+      // console.log(t.remainTime + " Taller MARTES 1 en VIVO");
+      stateActMa1 = 2;
       document.getElementById(
-        "btnAccionLu1"
-      ).innerHTML = `<a href="${LinkMa1}" target="_blank">
+        "btnAccionMa1"
+      ).innerHTML = `<a href="${LinkMa1}" target="_blank" rel="noopener noreferrer">
       <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateMa1"><p>Acceder</p></div>
       </div>
     </a>`;
-      document.getElementById("btnAccionLu1").style.backgroundColor = "#3EE45F";
-
       // FINALIZADO
-      if (t.remainTime <= -14400.0) {
+      if (t.remainTime <= cuatroHoras && t.remainTime <= 1) {
+        stateActMa1 = 3;
         clearInterval(timerUpdate);
-        console.log(t.remainTime);
-        el.innerHTML = "FINALIZADO";
-        document.getElementById("liveIDLu1").style.display = "none";
-        document.getElementById("gruposLiveLu1").style.justifyContent =
-          "space-around";
-        document.getElementById("btnAccionLu1").style.backgroundColor =
-          "#858585";
-        document.getElementById("btnAccionLu1").style.cursor = "no-drop";
-        document.getElementById("btnAccionLu1").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
-      </div>
-      <div class="btn-action-estado">
-        <div class="btnState" id="btnStateMa1"><p>Finalizado</p></div>
-      </div>`;
-        document.getElementById("contenedorInfoLu1").className +=
-          " contenedor-informacion-off";
+        document.getElementById("btnStateMa1").innerHTML = `<p>Finalizado</p>`;
+        document.getElementById("contenedorInfoLu1").className =
+          " contenedor-informacion-off contenedor-informacion";
+        document.getElementById("btnAccionMa1").innerHTML = `
+          <div class="btn-action-estado">
+            <div class="btnState" id="btnStateMa1"><p>Finalizado</p></div>          
+          </div>`;
       }
     }
   }, 1000);
@@ -444,51 +901,34 @@ btnStateMa1(tarjeta1TimeMa, "btnStateMa1", "Ingresar");
 
 const btnStateMa2 = (deadline, elem, finalMessage) => {
   const el = document.getElementById(elem);
-
   const timerUpdate = setInterval(() => {
     let t = getRemainingTime(deadline);
     el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
+    if (t.remainTime > 1) {
+      stateActMa2 = 1;
+    }
     // EN VIVO
     if (t.remainTime <= 1) {
-      console.log(t.remainTime);
-      // clearInterval(timerUpdate);
-      // el.innerHTML = finalMessage;
-      //   el.innerHTML = `<a href="http://itsm.edu.mx" target="_blank">
-      //   <p>Ingresar</p>
-      // </a>`;
-      el.innerHTML = `<p> Acceder <p>`;
-      document.getElementById("liveIDLu2").style.display = "flex";
-      document.getElementById("gruposLiveLu2").style.justifyContent =
-        "space-between";
+      stateActMa2 = 2;
       document.getElementById(
         "btnAccionLu2"
-      ).innerHTML = `<a href="${LinkMa2}" target="_blank">
+      ).innerHTML = `<a href="${LinkMa2}" target="_blank"  rel="noopener noreferrer">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateMa2"><p>Acceder</p></div>
     </div>
   </a>`;
-      document.getElementById("btnAccionLu2").style.backgroundColor = "#3EE45F";
-
       // FINALIZADO
-      if (t.remainTime <= -3600.0) {
+      if (t.remainTime <= unaHora) {
+        stateActMa2 = 3;
         clearInterval(timerUpdate);
-        console.log(t.remainTime);
-        el.innerHTML = "FINALIZADO";
-        document.getElementById("liveIDLu2").style.display = "none";
-        document.getElementById("gruposLiveLu2").style.justifyContent =
-          "space-around";
-        document.getElementById("btnAccionLu2").style.backgroundColor =
-          "#858585";
-        document.getElementById("btnAccionLu2").style.cursor = "no-drop";
-        document.getElementById("btnAccionLu2").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
-      </div>
-      <div class="btn-action-estado">
-        <div class="btnState" id="btnStateMa2"><p>Finalizado</p></div>
-      </div>`;
-        document.getElementById("contenedorInfoLu2").className +=
-          " contenedor-informacion-off";
+        document.getElementById("btnStateMa2").innerHTML = `<p>Finalizado</p>`;
+        document.getElementById("btnAccionMa2").innerHTML = `
+        <div class="btn-action-estado">
+          <div class="btnState" id="btnStateMa2"><p>Finalizado</p></div>          
+        </div>`;
+        document.getElementById("contenedorInfoLu2").className =
+          "contenedor-informacion contenedor-informacion-off";
       }
     }
   }, 1000);
@@ -501,42 +941,30 @@ const btnStateMa3 = (deadline, elem, finalMessage) => {
   const timerUpdate = setInterval(() => {
     let t = getRemainingTime(deadline);
     el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
+    if (t.remainTime > 1) {
+      stateActMa3 = 1; // AQUI LE PONES DE ESTADO QUE ESTÁ AUN EN ESPERA EL TALLER
+    }
     // EN VIVO
     if (t.remainTime <= 1) {
-      console.log(t.remainTime);
-      el.innerHTML = `<p> Acceder <p>`;
-      document.getElementById("liveIDLu3").style.display = "flex";
-      document.getElementById("gruposLiveLu3").style.justifyContent =
-        "space-between";
+      stateActMa3 = 2;
       document.getElementById(
         "btnAccionLu3"
-      ).innerHTML = `<a href="${LinkMa3}" target="_blank">
+      ).innerHTML = `<a href="${LinkMa3}" target="_blank" rel="noopener noreferrer">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateMa3"><p>Acceder</p></div>
     </div>
   </a>`;
-      document.getElementById("btnAccionLu3").style.backgroundColor = "#3EE45F";
-
       // FINALIZADO
-      if (t.remainTime <= -3600.0) {
+      if (t.remainTime <= unaHora) {
+        stateActMa3 = 3; // COLOCAMOS COMO FINALIZADO PARA EL ESTADO
         clearInterval(timerUpdate);
-        console.log(t.remainTime);
-        el.innerHTML = "FINALIZADO";
-        document.getElementById("liveIDLu3").style.display = "none";
-        document.getElementById("gruposLiveLu3").style.justifyContent =
-          "space-around";
-        document.getElementById("btnAccionLu3").style.backgroundColor =
-          "#858585";
-        document.getElementById("btnAccionLu3").style.cursor = "no-drop";
-        document.getElementById("btnAccionLu3").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
-      </div>
-      <div class="btn-action-estado">
-        <div class="btnState" id="btnStateMa3"><p>Finalizado</p></div>
-      </div>`;
-        document.getElementById("contenedorInfoLu3").className +=
-          " contenedor-informacion-off";
+        document.getElementById("contenedorInfoLu3").className =
+          "contenedor-informacion contenedor-informacion-off";
+        document.getElementById("btnAccionLu3").innerHTML = `
+        <div class="btn-action-estado">
+          <div class="btnState" id="btnStateMa3"><p>Finalizado</p></div>          
+        </div>`;
       }
     }
   }, 1000);
@@ -545,22 +973,15 @@ btnStateMa3(tarjeta3TimeMa, "btnStateMa3", "Ingresar");
 
 const btnStateMa4 = (deadline, elem, finalMessage) => {
   const el = document.getElementById(elem);
-
   const timerUpdate = setInterval(() => {
     let t = getRemainingTime(deadline);
     el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
+    if (t.remainTime > 1) {
+      stateActMa4 = 1; // AQUI LE PONES DE ESTADO QUE ESTÁ AUN EN ESPERA EL TALLER
+    }
     // EN VIVO
     if (t.remainTime <= 1) {
-      console.log(t.remainTime);
-      // clearInterval(timerUpdate);
-      // el.innerHTML = finalMessage;
-      //   el.innerHTML = `<a href="http://itsm.edu.mx" target="_blank">
-      //   <p>Ingresar</p>
-      // </a>`;
-      el.innerHTML = `<p> Acceder <p>`;
-      document.getElementById("liveIDLu4").style.display = "flex";
-      document.getElementById("gruposLiveLu4").style.justifyContent =
-        "space-between";
+      stateActMa4 = 2;
       document.getElementById(
         "btnAccionLu4"
       ).innerHTML = `<a href="${LinkMa4}" target="_blank">
@@ -569,27 +990,16 @@ const btnStateMa4 = (deadline, elem, finalMessage) => {
       <div class="btnState" id="btnStateMa4"><p>Acceder</p></div>
     </div>
   </a>`;
-      document.getElementById("btnAccionLu4").style.backgroundColor = "#3EE45F";
-
       // FINALIZADO
-      if (t.remainTime <= -10800.0) {
+      if (t.remainTime <= tresHora) {
+        stateActMa4 = 3; // COLOCAMOS COMO FINALIZADO PARA EL ESTADO
         clearInterval(timerUpdate);
-        console.log(t.remainTime);
-        el.innerHTML = "FINALIZADO";
-        document.getElementById("liveIDLu4").style.display = "none";
-        document.getElementById("gruposLiveLu4").style.justifyContent =
-          "space-around";
-        document.getElementById("btnAccionLu4").style.backgroundColor =
-          "#858585";
-        document.getElementById("btnAccionLu4").style.cursor = "no-drop";
-        document.getElementById("btnAccionLu2").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
-      </div>
-      <div class="btn-action-estado">
-        <div class="btnState" id="btnStateMa4"><p>Finalizado</p></div>
-      </div>`;
-        document.getElementById("contenedorInfoLu4").className +=
-          " contenedor-informacion-off";
+        document.getElementById("contenedorInfoLu4").className =
+          "contenedor-informacion contenedor-informacion-off";
+        document.getElementById("btnAccionLu4").innerHTML = `
+        <div class="btn-action-estado">
+          <div class="btnState" id="btnStateMa4"><p>Finalizado</p></div>          
+        </div>`;
       }
     }
   }, 1000);
@@ -602,42 +1012,28 @@ const btnStateMi1 = (deadline, elem, finalMessage) => {
   const timerUpdate = setInterval(() => {
     let t = getRemainingTime(deadline);
     el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
+    stateActMi1 = 1;
     // EN VIVO
     if (t.remainTime <= 1) {
       console.log(t.remainTime);
-      el.innerHTML = `<p> Acceder <p>`;
-      document.getElementById("liveIDLu1").style.display = "flex";
-      document.getElementById("gruposLiveLu1").style.justifyContent =
-        "space-between";
+      stateActMi1 = 2;
       document.getElementById(
-        "btnAccionLu1"
+        "btnAccionMi1"
       ).innerHTML = `<a href="${LinkMi1}" target="_blank">
       <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateMi1"><p>Acceder</p></div>
       </div>
     </a>`;
-      document.getElementById("btnAccionLu1").style.backgroundColor = "#3EE45F";
 
       // FINALIZADO
-      if (t.remainTime <= -3600.0) {
+      if (t.remainTime <= unaHora) {
         clearInterval(timerUpdate);
         console.log(t.remainTime);
-        el.innerHTML = "FINALIZADO";
-        document.getElementById("liveIDLu1").style.display = "none";
-        document.getElementById("gruposLiveLu1").style.justifyContent =
-          "space-around";
-        document.getElementById("btnAccionLu1").style.backgroundColor =
-          "#858585";
-        document.getElementById("btnAccionLu1").style.cursor = "no-drop";
-        document.getElementById("btnAccionLu1").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
-      </div>
-      <div class="btn-action-estado">
-        <div class="btnState" id="btnStateMi1"><p>Finalizado</p></div>
-      </div>`;
-        document.getElementById("contenedorInfoLu1").className +=
-          " contenedor-informacion-off";
+        stateActMi1 = 3;
+        document.getElementById("btnStateMi1").innerHTML = `<p>Finalizado</p>`;
+        document.getElementById("contenedorInfoLu1").className =
+          " contenedor-informacion-off contenedor-informacion";
       }
     }
   }, 1000);
@@ -646,51 +1042,34 @@ btnStateMi1(tarjeta1TimeMi, "btnStateMi1", "Ingresar");
 
 const btnStateMi2 = (deadline, elem, finalMessage) => {
   const el = document.getElementById(elem);
-
   const timerUpdate = setInterval(() => {
     let t = getRemainingTime(deadline);
     el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
+    if (t.remainTime > 1) {
+      stateActMi2 = 1;
+    }
     // EN VIVO
     if (t.remainTime <= 1) {
       console.log(t.remainTime);
-      // clearInterval(timerUpdate);
-      // el.innerHTML = finalMessage;
-      //   el.innerHTML = `<a href="http://itsm.edu.mx" target="_blank">
-      //   <p>Ingresar</p>
-      // </a>`;
-      el.innerHTML = `<p> Acceder <p>`;
-      document.getElementById("liveIDLu2").style.display = "flex";
-      document.getElementById("gruposLiveLu2").style.justifyContent =
-        "space-between";
+      stateActMi2 = 2;
       document.getElementById(
         "btnAccionLu2"
-      ).innerHTML = `<a href="${LinkMi2}" target="_blank">
+      ).innerHTML = `<a href="${LinkMi2}" target="_blank" rel="noopener noreferrer">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateMi2"><p>Acceder</p></div>
     </div>
   </a>`;
-      document.getElementById("btnAccionLu2").style.backgroundColor = "#3EE45F";
-
       // FINALIZADO
-      if (t.remainTime <= -10800.0) {
+      if (t.remainTime <= tresHoras) {
+        stateActMi2 = 3;
         clearInterval(timerUpdate);
-        console.log(t.remainTime);
-        el.innerHTML = "FINALIZADO";
-        document.getElementById("liveIDLu2").style.display = "none";
-        document.getElementById("gruposLiveLu2").style.justifyContent =
-          "space-around";
-        document.getElementById("btnAccionLu2").style.backgroundColor =
-          "#858585";
-        document.getElementById("btnAccionLu2").style.cursor = "no-drop";
-        document.getElementById("btnAccionLu2").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
-      </div>
-      <div class="btn-action-estado">
-        <div class="btnState" id="btnStateMi2"><p>Finalizado</p></div>
-      </div>`;
-        document.getElementById("contenedorInfoLu2").className +=
-          " contenedor-informacion-off";
+        document.getElementById("contenedorInfoLu2").className =
+          "contenedor-informacion contenedor-informacion-off";
+        document.getElementById("btnAccionLu2").innerHTML = `
+        <div class="btn-action-estado">
+          <div class="btnState" id="btnStateMi2"><p>Finalizado</p></div>          
+        </div>`;
       }
     }
   }, 1000);
@@ -699,46 +1078,33 @@ btnStateMi2(tarjeta2TimeMi, "btnStateMi2", "Ingresar");
 
 const btnStateMi3 = (deadline, elem, finalMessage) => {
   const el = document.getElementById(elem);
-
   const timerUpdate = setInterval(() => {
     let t = getRemainingTime(deadline);
     el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
+    if (t.remainTime > 1) {
+      stateActMi3 = 1; // AQUI LE PONES DE ESTADO QUE ESTÁ AUN EN ESPERA EL TALLER
+    }
     // EN VIVO
     if (t.remainTime <= 1) {
-      console.log(t.remainTime);
-      el.innerHTML = `<p> Acceder <p>`;
-      document.getElementById("liveIDLu3").style.display = "flex";
-      document.getElementById("gruposLiveLu3").style.justifyContent =
-        "space-between";
+      stateActMi3 = 2;
       document.getElementById(
         "btnAccionLu3"
-      ).innerHTML = `<a href="${LinkMi3}" target="_blank">
+      ).innerHTML = `<a href="${LinkMi3}" target="_blank" rel="noopener noreferrer">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateMi3"><p>Acceder</p></div>
     </div>
   </a>`;
-      document.getElementById("btnAccionLu3").style.backgroundColor = "#3EE45F";
-
       // FINALIZADO
-      if (t.remainTime <= -14400.0) {
+      if (t.remainTime <= cuatroHoras) {
+        stateActMi3 = 3;
         clearInterval(timerUpdate);
-        console.log(t.remainTime);
-        el.innerHTML = "FINALIZADO";
-        document.getElementById("liveIDLu3").style.display = "none";
-        document.getElementById("gruposLiveLu3").style.justifyContent =
-          "space-around";
-        document.getElementById("btnAccionLu3").style.backgroundColor =
-          "#858585";
-        document.getElementById("btnAccionLu3").style.cursor = "no-drop";
-        document.getElementById("btnAccionLu3").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
-      </div>
-      <div class="btn-action-estado">
-        <div class="btnState" id="btnStateMi3"><p>Finalizado</p></div>
-      </div>`;
-        document.getElementById("contenedorInfoLu3").className +=
-          " contenedor-informacion-off";
+        document.getElementById("contenedorInfoLu3").className =
+          "contenedor-informacion contenedor-informacion-off";
+        document.getElementById("btnAccionLu3").innerHTML = `
+        <div class="btn-action-estado">
+          <div class="btnState" id="btnStateMi3"><p>Finalizado</p></div>          
+        </div>`;
       }
     }
   }, 1000);
@@ -747,51 +1113,33 @@ btnStateMi3(tarjeta3TimeMi, "btnStateMi3", "Ingresar");
 
 const btnStateMi4 = (deadline, elem, finalMessage) => {
   const el = document.getElementById(elem);
-
   const timerUpdate = setInterval(() => {
     let t = getRemainingTime(deadline);
     el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
+    if (t.remainTime > 1) {
+      stateActMi4 = 1; // AQUI LE PONES DE ESTADO QUE ESTÁ AUN EN ESPERA EL TALLER
+    }
     // EN VIVO
     if (t.remainTime <= 1) {
-      console.log(t.remainTime);
-      // clearInterval(timerUpdate);
-      // el.innerHTML = finalMessage;
-      //   el.innerHTML = `<a href="http://itsm.edu.mx" target="_blank">
-      //   <p>Ingresar</p>
-      // </a>`;
-      el.innerHTML = `<p> Acceder <p>`;
-      document.getElementById("liveIDLu4").style.display = "flex";
-      document.getElementById("gruposLiveLu4").style.justifyContent =
-        "space-between";
+      stateActMi4 = 2;
       document.getElementById(
         "btnAccionLu4"
-      ).innerHTML = `<a href="${LinkMi4}" target="_blank">
+      ).innerHTML = `<a href="${LinkMi4}" target="_blank" rel="noopener noreferrer">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateMi4"><p>Acceder</p></div>
     </div>
   </a>`;
-      document.getElementById("btnAccionLu4").style.backgroundColor = "#3EE45F";
-
       // FINALIZADO
-      if (t.remainTime <= -10800.0) {
+      if (t.remainTime <= tresHoras) {
+        stateActMi4 = 3;
         clearInterval(timerUpdate);
-        console.log(t.remainTime);
-        el.innerHTML = "FINALIZADO";
-        document.getElementById("liveIDLu4").style.display = "none";
-        document.getElementById("gruposLiveLu4").style.justifyContent =
-          "space-around";
-        document.getElementById("btnAccionLu4").style.backgroundColor =
-          "#858585";
-        document.getElementById("btnAccionLu4").style.cursor = "no-drop";
-        document.getElementById("btnAccionLu2").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
-      </div>
-      <div class="btn-action-estado">
-        <div class="btnState" id="btnStateMi4"><p>Finalizado</p></div>
-      </div>`;
-        document.getElementById("contenedorInfoLu4").className +=
-          " contenedor-informacion-off";
+        document.getElementById("contenedorInfoLu4").className =
+          "contenedor-informacion contenedor-informacion-off";
+        document.getElementById("btnAccionLu4").innerHTML = `
+        <div class="btn-action-estado">
+          <div class="btnState" id="btnStateLu4"><p>Finalizado</p></div>          
+        </div>`;
       }
     }
   }, 1000);
@@ -800,51 +1148,33 @@ btnStateMi4(tarjeta4TimeMi, "btnStateMi4", "Ingresar");
 
 const btnStateMi5 = (deadline, elem, finalMessage) => {
   const el = document.getElementById(elem);
-
   const timerUpdate = setInterval(() => {
     let t = getRemainingTime(deadline);
     el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
+    if (t.remainTime > 1) {
+      stateActMi5 = 1; // AQUI LE PONES DE ESTADO QUE ESTÁ AUN EN ESPERA EL TALLER
+    }
     // EN VIVO
     if (t.remainTime <= 1) {
-      console.log(t.remainTime);
-      // clearInterval(timerUpdate);
-      // el.innerHTML = finalMessage;
-      //   el.innerHTML = `<a href="http://itsm.edu.mx" target="_blank">
-      //   <p>Ingresar</p>
-      // </a>`;
-      el.innerHTML = `<p> Acceder <p>`;
-      document.getElementById("liveIDLu5").style.display = "flex";
-      document.getElementById("gruposLiveLu5").style.justifyContent =
-        "space-between";
+      stateActMi5 = 2;
       document.getElementById(
         "btnAccionLu5"
-      ).innerHTML = `<a href="${LinkMi5}" target="_blank">
+      ).innerHTML = `<a href="${LinkMi5}" target="_blank" rel="noopener noreferrer">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateMi5"><p>Acceder</p></div>
     </div>
   </a>`;
-      document.getElementById("btnAccionLu5").style.backgroundColor = "#3EE45F";
-
       // FINALIZADO
-      if (t.remainTime <= -3600.0) {
+      if (t.remainTime <= unaHora) {
+        stateActMi5 = 3; // COLOCAMOS COMO FINALIZADO PARA EL ESTADO
         clearInterval(timerUpdate);
-        console.log(t.remainTime);
-        el.innerHTML = "FINALIZADO";
-        document.getElementById("liveIDLu5").style.display = "none";
-        document.getElementById("gruposLiveLu5").style.justifyContent =
-          "space-around";
-        document.getElementById("btnAccionLu5").style.backgroundColor =
-          "#858585";
-        document.getElementById("btnAccionLu5").style.cursor = "no-drop";
-        document.getElementById("btnAccionLu2").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
-      </div>
-      <div class="btn-action-estado">
-        <div class="btnState" id="btnStateMi5"><p>Finalizado</p></div>
-      </div>`;
-        document.getElementById("contenedorInfoLu5").className +=
-          " contenedor-informacion-off";
+        document.getElementById("contenedorInfoLu5").className =
+          "contenedor-informacion contenedor-informacion-off";
+        document.getElementById("btnAccionLu5").innerHTML = `
+        <div class="btn-action-estado">
+          <div class="btnState" id="btnStateMi5"><p>Finalizado</p></div>          
+        </div>`;
       }
     }
   }, 1000);
@@ -857,42 +1187,32 @@ const btnStateJu1 = (deadline, elem, finalMessage) => {
   const timerUpdate = setInterval(() => {
     let t = getRemainingTime(deadline);
     el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
+    el.style.display = "block";
+    if (t.remainTime > 1) {
+      stateActJu1 = 1; // AQUI LE PONES DE ESTADO QUE ESTÁ AUN EN ESPERA EL TALLER
+    }
     // EN VIVO
     if (t.remainTime <= 1) {
-      console.log(t.remainTime);
-      el.innerHTML = `<p> Acceder <p>`;
-      document.getElementById("liveIDLu1").style.display = "flex";
-      document.getElementById("gruposLiveLu1").style.justifyContent =
-        "space-between";
+      stateActJu1 = 2; //
       document.getElementById(
-        "btnAccionLu1"
-      ).innerHTML = `<a href="${LinkJu1}" target="_blank">
+        "btnAccionJu1"
+      ).innerHTML = `<a href="${LinkJu1}" target="_blank" rel="noopener noreferrer">
       <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateJu1"><p>Acceder</p></div>
       </div>
     </a>`;
-      document.getElementById("btnAccionLu1").style.backgroundColor = "#3EE45F";
-
       // FINALIZADO
-      if (t.remainTime <= -14400.0) {
+      if (t.remainTime <= cuatroHoras) {
         clearInterval(timerUpdate);
-        console.log(t.remainTime);
+        stateActJu1 = 3;
         el.innerHTML = "FINALIZADO";
-        document.getElementById("liveIDLu1").style.display = "none";
-        document.getElementById("gruposLiveLu1").style.justifyContent =
-          "space-around";
-        document.getElementById("btnAccionLu1").style.backgroundColor =
-          "#858585";
-        document.getElementById("btnAccionLu1").style.cursor = "no-drop";
-        document.getElementById("btnAccionLu1").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
-      </div>
-      <div class="btn-action-estado">
-        <div class="btnState" id="btnStateJu1"><p>Finalizado</p></div>
-      </div>`;
-        document.getElementById("contenedorInfoLu1").className +=
-          " contenedor-informacion-off";
+        document.getElementById("btnAccionJu1").innerHTML = `
+        <div class="btn-action-estado">
+          <div class="btnState" id="btnStateJu1"><p>Finalizado</p></div>          
+        </div>`;
+        document.getElementById("contenedorInfoLu1").className =
+          "contenedor-informacion contenedor-informacion-off";
       }
     }
   }, 1000);
@@ -901,51 +1221,33 @@ btnStateJu1(tarjeta1TimeJu, "btnStateJu1", "Ingresar");
 
 const btnStateJu2 = (deadline, elem, finalMessage) => {
   const el = document.getElementById(elem);
-
   const timerUpdate = setInterval(() => {
     let t = getRemainingTime(deadline);
     el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
+    if (t.remainTime > 1) {
+      stateActJu2 = 1;
+    }
     // EN VIVO
     if (t.remainTime <= 1) {
-      console.log(t.remainTime);
-      // clearInterval(timerUpdate);
-      // el.innerHTML = finalMessage;
-      //   el.innerHTML = `<a href="http://itsm.edu.mx" target="_blank">
-      //   <p>Ingresar</p>
-      // </a>`;
-      el.innerHTML = `<p> Acceder <p>`;
-      document.getElementById("liveIDLu2").style.display = "flex";
-      document.getElementById("gruposLiveLu2").style.justifyContent =
-        "space-between";
+      stateActJu2 = 2;
       document.getElementById(
         "btnAccionLu2"
-      ).innerHTML = `<a href="${LinkJu2}" target="_blank">
+      ).innerHTML = `<a href="${LinkJu2}" target="_blank" rel="noopener noreferrer">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateJu2"><p>Acceder</p></div>
     </div>
   </a>`;
-      document.getElementById("btnAccionLu2").style.backgroundColor = "#3EE45F";
-
       // FINALIZADO
-      if (t.remainTime <= -10800.0) {
+      if (t.remainTime <= tresHoras) {
+        stateActJu2 = 3;
         clearInterval(timerUpdate);
-        console.log(t.remainTime);
-        el.innerHTML = "FINALIZADO";
-        document.getElementById("liveIDLu2").style.display = "none";
-        document.getElementById("gruposLiveLu2").style.justifyContent =
-          "space-around";
-        document.getElementById("btnAccionLu2").style.backgroundColor =
-          "#858585";
-        document.getElementById("btnAccionLu2").style.cursor = "no-drop";
-        document.getElementById("btnAccionLu2").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
-      </div>
-      <div class="btn-action-estado">
-        <div class="btnState" id="btnStateJu2"><p>Finalizado</p></div>
-      </div>`;
-        document.getElementById("contenedorInfoLu2").className +=
-          " contenedor-informacion-off";
+        document.getElementById("contenedorInfoLu2").className =
+          "contenedor-informacion contenedor-informacion-off";
+        document.getElementById("btnAccionLu2").innerHTML = `
+        <div class="btn-action-estado">
+          <div class="btnState" id="btnStateJu2"><p>Finalizado</p></div>          
+        </div>`;
       }
     }
   }, 1000);
@@ -958,42 +1260,31 @@ const btnStateVi1 = (deadline, elem, finalMessage) => {
   const timerUpdate = setInterval(() => {
     let t = getRemainingTime(deadline);
     el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
+    el.style.display = "block";
+    if (t.remainTime > 1) {
+      stateActVi1 = 1; // AQUI LE PONES DE ESTADO QUE ESTÁ AUN EN ESPERA EL TALLER
+    }
     // EN VIVO
     if (t.remainTime <= 1) {
-      console.log(t.remainTime);
-      el.innerHTML = `<p> Acceder <p>`;
-      document.getElementById("liveIDLu1").style.display = "flex";
-      document.getElementById("gruposLiveLu1").style.justifyContent =
-        "space-between";
+      stateActVi1 = 2;
       document.getElementById(
-        "btnAccionLu1"
-      ).innerHTML = `<a href="${LinkVi1}" target="_blank">
+        "btnAccionVi1"
+      ).innerHTML = `<a href="${LinkVi1}" target="_blank" rel="noopener noreferrer">
       <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateVi1"><p>Acceder</p></div>
       </div>
     </a>`;
-      document.getElementById("btnAccionLu1").style.backgroundColor = "#3EE45F";
-
       // FINALIZADO
-      if (t.remainTime <= -3600.0) {
+      if (t.remainTime <= unaHora) {
+        stateActVi1 = 3;
         clearInterval(timerUpdate);
-        console.log(t.remainTime);
-        el.innerHTML = "FINALIZADO";
-        document.getElementById("liveIDLu1").style.display = "none";
-        document.getElementById("gruposLiveLu1").style.justifyContent =
-          "space-around";
-        document.getElementById("btnAccionLu1").style.backgroundColor =
-          "#858585";
-        document.getElementById("btnAccionLu1").style.cursor = "no-drop";
-        document.getElementById("btnAccionLu1").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
-      </div>
-      <div class="btn-action-estado">
-        <div class="btnState" id="btnStateVi1"><p>Finalizado</p></div>
-      </div>`;
-        document.getElementById("contenedorInfoLu1").className +=
-          " contenedor-informacion-off";
+        document.getElementById("btnAccionVi1").innerHTML = `
+        <div class="btn-action-estado">
+        <div class="btnState" id="btnStateVi1"><p>Finalizado</p></div>          
+        </div>`;
+        document.getElementById("contenedorInfoLu1").className =
+          "contenedor-informacion contenedor-informacion-off";
       }
     }
   }, 1000);
@@ -1002,51 +1293,34 @@ btnStateVi1(tarjeta1TimeVi, "btnStateVi1", "Ingresar");
 
 const btnStateVi2 = (deadline, elem, finalMessage) => {
   const el = document.getElementById(elem);
-
   const timerUpdate = setInterval(() => {
     let t = getRemainingTime(deadline);
     el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
+    if (t.remainTime > 1) {
+      stateActVi2 = 1;
+    }
     // EN VIVO
     if (t.remainTime <= 1) {
-      console.log(t.remainTime);
-      // clearInterval(timerUpdate);
-      // el.innerHTML = finalMessage;
-      //   el.innerHTML = `<a href="http://itsm.edu.mx" target="_blank">
-      //   <p>Ingresar</p>
-      // </a>`;
-      el.innerHTML = `<p> Acceder <p>`;
-      document.getElementById("liveIDLu2").style.display = "flex";
-      document.getElementById("gruposLiveLu2").style.justifyContent =
-        "space-between";
+      stateActVi2 = 2;
       document.getElementById(
         "btnAccionLu2"
-      ).innerHTML = `<a href="${LinkVi2}" target="_blank">
+      ).innerHTML = `<a href="${LinkVi2}" target="_blank" rel="noopener noreferrer">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateVi2"><p>Acceder</p></div>
     </div>
   </a>`;
-      document.getElementById("btnAccionLu2").style.backgroundColor = "#3EE45F";
-
       // FINALIZADO
-      if (t.remainTime <= -14400.0) {
+      if (t.remainTime <= cuatroHoras) {
+        stateActVi2 = 3;
         clearInterval(timerUpdate);
-        console.log(t.remainTime);
-        el.innerHTML = "FINALIZADO";
-        document.getElementById("liveIDLu2").style.display = "none";
-        document.getElementById("gruposLiveLu2").style.justifyContent =
-          "space-around";
-        document.getElementById("btnAccionLu2").style.backgroundColor =
-          "#858585";
-        document.getElementById("btnAccionLu2").style.cursor = "no-drop";
-        document.getElementById("btnAccionLu2").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
-      </div>
-      <div class="btn-action-estado">
-        <div class="btnState" id="btnStateVi2"><p>Finalizado</p></div>
-      </div>`;
-        document.getElementById("contenedorInfoLu2").className +=
-          " contenedor-informacion-off";
+        document.getElementById("contenedorInfoLu2").className =
+          "contenedor-informacion contenedor-informacion-off";
+
+        document.getElementById("btnAccionLu2").innerHTML = `
+        <div class="btn-action-estado">
+          <div class="btnState" id="btnStateVi2"><p>Finalizado</p></div>          
+        </div>`;
       }
     }
   }, 1000);
@@ -1055,46 +1329,33 @@ btnStateVi2(tarjeta2TimeVi, "btnStateVi2", "Ingresar");
 
 const btnStateVi3 = (deadline, elem, finalMessage) => {
   const el = document.getElementById(elem);
-
   const timerUpdate = setInterval(() => {
     let t = getRemainingTime(deadline);
     el.innerHTML = `${t.remainDays}d: ${t.remainHours}h: ${t.remainMinutes}m: ${t.remainSeconds}s `;
+    if (t.remainTime > 1) {
+      stateActVi3 = 1; // AQUI LE PONES DE ESTADO QUE ESTÁ AUN EN ESPERA EL TALLER
+    }
     // EN VIVO
     if (t.remainTime <= 1) {
-      console.log(t.remainTime);
-      el.innerHTML = `<p> Acceder <p>`;
-      document.getElementById("liveIDLu3").style.display = "flex";
-      document.getElementById("gruposLiveLu3").style.justifyContent =
-        "space-between";
+      stateActVi3 = 2;
       document.getElementById(
         "btnAccionLu3"
-      ).innerHTML = `<a href="${LinkVi3}" target="_blank">
+      ).innerHTML = `<a href="${LinkVi3}" target="_blank" rel="noopener noreferrer">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateVi3"><p>Acceder</p></div>
     </div>
   </a>`;
-      document.getElementById("btnAccionLu3").style.backgroundColor = "#3EE45F";
-
       // FINALIZADO
-      if (t.remainTime <= -10800.0) {
+      if (t.remainTime <= tresHoras) {
+        stateActVi3 = 3;
         clearInterval(timerUpdate);
-        console.log(t.remainTime);
-        el.innerHTML = "FINALIZADO";
-        document.getElementById("liveIDLu3").style.display = "none";
-        document.getElementById("gruposLiveLu3").style.justifyContent =
-          "space-around";
-        document.getElementById("btnAccionLu3").style.backgroundColor =
-          "#858585";
-        document.getElementById("btnAccionLu3").style.cursor = "no-drop";
-        document.getElementById("btnAccionLu3").innerHTML = ` <div>
-        <img class="btn-action-img" src="img/resources/ingresar.png" alt="" />
-      </div>
-      <div class="btn-action-estado">
-        <div class="btnState" id="btnStateVi3"><p>Finalizado</p></div>
-      </div>`;
-        document.getElementById("contenedorInfoLu3").className +=
-          " contenedor-informacion-off";
+        document.getElementById("contenedorInfoLu3").className =
+          "contenedor-informacion contenedor-informacion-off";
+        document.getElementById("btnAccionLu3").innerHTML = `
+        <div class="btn-action-estado">
+          <div class="btnState" id="btnStateVi3"><p>Finalizado</p></div>          
+        </div>`;
       }
     }
   }, 1000);
@@ -1421,30 +1682,33 @@ var btn1 = document.getElementById("Sbtn1"),
   cont3 = 0,
   cont4 = 0,
   cont5 = 0;
-informacionLunes();
-btnLunesON();
-
 btn1.addEventListener("click", mostrarLu, true);
 btn2.addEventListener("click", mostrarMa, true);
 btn3.addEventListener("click", mostrarMi, true);
 btn4.addEventListener("click", mostrarJu, true);
 btn5.addEventListener("click", mostrarVi, true);
+mostrarLu();
 
 function mostrarLu() {
   if (cont1 == 0) {
-    tallerSection.style.opacity = 0;
-    setTimeout(function () {
-      tallerSection.style.opacity = 1;
-      informacionLunes();
-      btnLunesON();
-    }, 400);
-
-    console.log("Lunes seleccionado");
     cont1 = 1;
     cont2 = 0;
     cont3 = 0;
     cont4 = 0;
     cont5 = 0;
+    tallerSection.style.opacity = 0;
+    setTimeout(function () {
+      tallerSection.style.opacity = 1;
+      informacionLunes();
+      btnLunesON();
+      // verifyStateCards();
+    }, 400);
+    setTimeout(function () {
+      verifyStateCards();
+      console.log("cont LUNES: " + cont1 + " Estado de lunes: " + stateActLu1);
+    }, 1200);
+    // console.log("Lunes seleccionado");
+    // console.log("cont LUNES: " + cont1 + " Estado de lunes: " + stateActLu1);
   } else {
     // btnOFF();
     // console.log("LUNES DESELECCIONADO");
@@ -1454,18 +1718,18 @@ function mostrarLu() {
 }
 function mostrarMa() {
   if (cont2 == 0) {
-    tallerSection.style.opacity = 0;
-    setTimeout(function () {
-      tallerSection.style.opacity = 1;
-      informacionMartes();
-      btnMartesON();
-    }, 400);
-
     cont2 = 1;
     cont1 = 0;
     cont3 = 0;
     cont4 = 0;
     cont5 = 0;
+    tallerSection.style.opacity = 0;
+    setTimeout(function () {
+      tallerSection.style.opacity = 1;
+      informacionMartes();
+      btnMartesON();
+      verifyStateCards();
+    }, 400);
   } else {
     // btnOFF();
     cont2 = 0;
@@ -1473,17 +1737,18 @@ function mostrarMa() {
 }
 function mostrarMi() {
   if (cont3 == 0) {
-    tallerSection.style.opacity = 0;
-    setTimeout(function () {
-      tallerSection.style.opacity = 1;
-      informacionMiercoles();
-      btnMiercolesON();
-    }, 400);
     cont3 = 1;
     cont1 = 0;
     cont2 = 0;
     cont4 = 0;
     cont5 = 0;
+    tallerSection.style.opacity = 0;
+    setTimeout(function () {
+      tallerSection.style.opacity = 1;
+      informacionMiercoles();
+      btnMiercolesON();
+      verifyStateCards();
+    }, 400);
   } else {
     // btnOFF();
     cont3 = 0;
@@ -1491,17 +1756,18 @@ function mostrarMi() {
 }
 function mostrarJu() {
   if (cont4 == 0) {
-    tallerSection.style.opacity = 0;
-    setTimeout(function () {
-      tallerSection.style.opacity = 1;
-      informacionJueves();
-      btnJuevesON();
-    }, 400);
     cont4 = 1;
     cont1 = 0;
     cont3 = 0;
     cont2 = 0;
     cont5 = 0;
+    tallerSection.style.opacity = 0;
+    setTimeout(function () {
+      tallerSection.style.opacity = 1;
+      informacionJueves();
+      btnJuevesON();
+      verifyStateCards();
+    }, 400);
   } else {
     // btnOFF();
     cont4 = 0;
@@ -1510,17 +1776,18 @@ function mostrarJu() {
 
 function mostrarVi() {
   if (cont5 == 0) {
-    tallerSection.style.opacity = 0;
-    setTimeout(function () {
-      tallerSection.style.opacity = 1;
-      informacionViernes();
-      btnViernesON();
-    }, 400);
     cont5 = 1;
     cont1 = 0;
     cont3 = 0;
     cont2 = 0;
     cont4 = 0;
+    tallerSection.style.opacity = 0;
+    setTimeout(function () {
+      tallerSection.style.opacity = 1;
+      informacionViernes();
+      btnViernesON();
+      verifyStateCards();
+    }, 400);
   } else {
     // btnOFF();
     cont5 = 0;
@@ -1558,16 +1825,47 @@ function btnLunesON() {
     tallerSection.classList.remove("tallerSectionAnimacion");
     tallerSection.style.opacity = 1;
   }, 100);
+
   // Lunes 15
   document.getElementById("Sbtn1").style.backgroundColor = "#F0F6FA";
   document.getElementById("Sbtn1").style.color = "#222";
   document.getElementById("Sbtn1").style.borderColor = "#F0F6FA";
   document.getElementById("contenedorBtnSemestre").style.borderBottomColor =
     "#707070";
-  document.getElementById("btnStateLu1").style.display = "block";
-  document.getElementById("btnStateLu2").style.display = "block";
-  // document.getElementById("btnStateLu3").style.display = "block";
-  // document.getElementById("btnStateLu4").style.display = "block";
+
+  ////BOTONES DE ACCESO LUNES TARJETA 1
+  if (!!document.getElementById("btnAccionLu1")) {
+    document.getElementById("btnAccionLu1").style.display = "flex";
+  }
+  if (!!document.getElementById("btnAccionMa1")) {
+    document.getElementById("btnAccionMa1").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMi1")) {
+    document.getElementById("btnAccionMi1").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionJu1")) {
+    document.getElementById("btnAccionJu1").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionVi1")) {
+    document.getElementById("btnAccionVi1").style.display = "none";
+  }
+
+  ////BOTONES DE ACCESO LUNES TARJETA 2
+  if (!!document.getElementById("btnAccionLu2")) {
+    document.getElementById("btnAccionLu2").style.display = "flex";
+  }
+  if (!!document.getElementById("btnAccionMa2")) {
+    document.getElementById("btnAccionMa2").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMi2")) {
+    document.getElementById("btnAccionMi2").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionJu2")) {
+    document.getElementById("btnAccionJu2").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionVi2")) {
+    document.getElementById("btnAccionVi2").style.display = "none";
+  }
 
   // INFORMACION TALLERISTAS LUNES
   // TARJETA 1
@@ -1622,84 +1920,32 @@ function btnLunesON() {
   <h4>${empresaTallerista2}</h4>`;
   document.getElementById("trayectoriaBio2").innerText = `${bioTallerista2}`;
 
-  // TARJETA 3
-  // document.getElementById("tipoTaller3").innerHTML = `<p>${tipoTaller3}</p>`;
-  // document.getElementById(
-  //   "imagenTallerista3"
-  // ).innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona" />`;
-  // document.getElementById(
-  //   "nombreTallerista3"
-  // ).innerHTML = `${nombreTallerista3}`;
-  // document.getElementById("empresaTallerista3").innerHTML = `<p>
-  // <b>${empresaTallerista3}</b>
-  // </p>`;
-  // document.getElementById("gruposLu3").innerHTML = `<p>Grupos</p>
-  // <p>${gruposAsignados3}</p>`;
-  // document.getElementById(
-  //   "temaTaller3"
-  // ).innerHTML = `<h4>${tituloTaller3}</h4>`;
-  // document.getElementById("horaTaller3").innerHTML = ` <p>${horasTaller3}</p>`;
-  // document.getElementById(
-  //   "imagenBio3"
-  // ).innerHTML = `<img src="${imagenTaller3}" alt="" class="img-persona2">`;
-  // document.getElementById(
-  //   "nombreBio3"
-  // ).innerHTML = `<h3>${nombreTallerista3}</h3>
-  // <h4>${empresaTallerista3}</h4>`;
-  // document.getElementById("trayectoriaBio3").innerText = `${bioTallerista3}`;
-
-  // // TARJETA 4
-  // document.getElementById("tipoTaller4").innerHTML = `<p>${tipoTaller4}</p>`;
-  // document.getElementById(
-  //   "imagenTallerista4"
-  // ).innerHTML = ` <img src="${imagenTaller4}" alt="" class="img-persona" />`;
-  // document.getElementById(
-  //   "nombreTallerista4"
-  // ).innerHTML = `${nombreTallerista4}`;
-  // document.getElementById("empresaTallerista4").innerHTML = `<p>
-  // <b>${empresaTallerista4}</b>
-  // </p>`;
-  // document.getElementById("gruposLu4").innerHTML = `<p>Grupos</p>
-  // <p>${gruposAsignados4}</p>`;
-  // document.getElementById(
-  //   "temaTaller4"
-  // ).innerHTML = `<h4>${tituloTaller4}</h4>`;
-  // document.getElementById("horaTaller4").innerHTML = ` <p>${horasTaller4}</p>`;
-  // document.getElementById(
-  //   "imagenBio4"
-  // ).innerHTML = `<img src="${imagenTaller4}" alt="" class="img-persona2">`;
-  // document.getElementById(
-  //   "nombreBio4"
-  // ).innerHTML = `<h3>${nombreTallerista4}</h3>
-  // <h4>${empresaTallerista4}</h4>`;
-  // document.getElementById("trayectoriaBio4").innerText = `${bioTallerista4}`;
-
   // Martes 16
   document.getElementById("Sbtn2").style.backgroundColor = "#fff";
   document.getElementById("Sbtn2").style.color = "#3D3A6C";
   document.getElementById("Sbtn2").style.borderColor = "#fff";
-  document.getElementById("btnStateMa1").style.display = "none";
-  document.getElementById("btnStateMa2").style.display = "none";
+  // document.getElementById("btnStateMa1").style.display = "none";
+  // document.getElementById("btnStateMa2").style.display = "none";
   document.getElementById("btnStateMa3").style.display = "none";
   document.getElementById("btnStateMa4").style.display = "none";
   // Miercoles 17
-  document.getElementById("btnStateMi1").style.display = "none";
-  document.getElementById("btnStateMi2").style.display = "none";
+  // document.getElementById("btnStateMi1").style.display = "none";
+  // document.getElementById("btnStateMi2").style.display = "none";
   document.getElementById("btnStateMi3").style.display = "none";
   document.getElementById("btnStateMi4").style.display = "none";
   document.getElementById("Sbtn3").style.backgroundColor = "#fff";
   document.getElementById("Sbtn3").style.color = "#3D3A6C";
   document.getElementById("Sbtn3").style.borderColor = "#fff";
   // Jueves 18
-  document.getElementById("btnStateJu1").style.display = "none";
-  document.getElementById("btnStateJu2").style.display = "none";
+  // document.getElementById("btnStateJu1").style.display = "none";
+  // document.getElementById("btnStateJu2").style.display = "none";
   document.getElementById("Sbtn4").style.backgroundColor = "#fff";
   document.getElementById("Sbtn4").style.color = "#3D3A6C";
   document.getElementById("Sbtn4").style.borderColor = "#fff";
   document.getElementById("btnStateJu1").style.display = "none";
   // Viernes 19
-  document.getElementById("btnStateVi1").style.display = "none";
-  document.getElementById("btnStateVi2").style.display = "none";
+  // document.getElementById("btnStateVi1").style.display = "none";
+  // document.getElementById("btnStateVi2").style.display = "none";
   document.getElementById("btnStateVi3").style.display = "none";
   document.getElementById("Sbtn5").style.backgroundColor = "#fff";
   document.getElementById("Sbtn5").style.color = "#3D3A6C";
@@ -1708,17 +1954,84 @@ function btnLunesON() {
 }
 
 function btnMartesON() {
+  ////BOTONES DE ACCESO MARTES TARJETA 1
+  if (!!document.getElementById("btnAccionLu1")) {
+    document.getElementById("btnAccionLu1").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMa1")) {
+    document.getElementById("btnAccionMa1").style.display = "flex";
+  }
+  if (!!document.getElementById("btnAccionMi1")) {
+    document.getElementById("btnAccionMi1").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionJu1")) {
+    document.getElementById("btnAccionJu1").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionVi1")) {
+    document.getElementById("btnAccionVi1").style.display = "none";
+  }
+
+  ////BOTONES DE ACCESO MARTES TARJETA 2
+  if (!!document.getElementById("btnAccionLu2")) {
+    document.getElementById("btnAccionLu2").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMa2")) {
+    document.getElementById("btnAccionMa2").style.display = "flex";
+  }
+  if (!!document.getElementById("btnAccionMi2")) {
+    document.getElementById("btnAccionMi2").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionJu2")) {
+    document.getElementById("btnAccionJu2").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionVi2")) {
+    document.getElementById("btnAccionVi2").style.display = "none";
+  }
+  ////BOTONES DE ACCESO MARTES TARJETA 3
+  if (!!document.getElementById("btnAccionLu3")) {
+    document.getElementById("btnAccionLu3").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMa3")) {
+    document.getElementById("btnAccionMa3").style.display = "flex";
+  }
+  if (!!document.getElementById("btnAccionMi3")) {
+    document.getElementById("btnAccionMi3").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionJu3")) {
+    document.getElementById("btnAccionJu3").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionVi3")) {
+    document.getElementById("btnAccionVi3").style.display = "none";
+  }
+
+  ////BOTONES DE ACCESO MARTES TARJETA 4
+  if (!!document.getElementById("btnAccionLu4")) {
+    document.getElementById("btnAccionLu4").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMa4")) {
+    document.getElementById("btnAccionMa4").style.display = "flex";
+  }
+  if (!!document.getElementById("btnAccionMi4")) {
+    document.getElementById("btnAccionMi4").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionJu4")) {
+    document.getElementById("btnAccionJu4").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionVi4")) {
+    document.getElementById("btnAccionVi4").style.display = "none";
+  }
+
   // Lunes 15
   document.getElementById("Sbtn1").style.backgroundColor = "#fff";
   document.getElementById("Sbtn1").style.color = "#3D3A6C";
   document.getElementById("Sbtn1").style.borderColor = "#fff";
-  document.getElementById("btnStateLu1").style.display = "none";
-  document.getElementById("btnStateLu2").style.display = "none";
+  // document.getElementById("btnStateLu1").style.display = "none";
+  // document.getElementById("btnStateLu2").style.display = "none";
   document.getElementById("btnStateLu3").style.display = "none";
   document.getElementById("btnStateLu4").style.display = "none";
   // Martes 16
-  document.getElementById("btnStateMa1").style.display = "block";
-  document.getElementById("btnStateMa2").style.display = "block";
+  // document.getElementById("btnStateMa1").style.display = "block";
+  // document.getElementById("btnStateMa2").style.display = "block";
   document.getElementById("btnStateMa3").style.display = "block";
   document.getElementById("btnStateMa4").style.display = "block";
   document.getElementById("Sbtn2").style.backgroundColor = "#F0F6FA";
@@ -1833,22 +2146,22 @@ function btnMartesON() {
   document.getElementById("trayectoriaBio4").innerText = `${bioTallerista4}`;
 
   // Miercoles 17
-  document.getElementById("btnStateMi1").style.display = "none";
-  document.getElementById("btnStateMi2").style.display = "none";
+  // document.getElementById("btnStateMi1").style.display = "none";
+  // document.getElementById("btnStateMi2").style.display = "none";
   document.getElementById("btnStateMi3").style.display = "none";
   document.getElementById("btnStateMi4").style.display = "none";
   document.getElementById("Sbtn3").style.backgroundColor = "#fff";
   document.getElementById("Sbtn3").style.color = "#3D3A6C";
   document.getElementById("Sbtn3").style.borderColor = "#fff";
   // Jueves 18
-  document.getElementById("btnStateJu1").style.display = "none";
-  document.getElementById("btnStateJu2").style.display = "none";
+  // document.getElementById("btnStateJu1").style.display = "none";
+  // document.getElementById("btnStateJu2").style.display = "none";
   document.getElementById("Sbtn4").style.backgroundColor = "#fff";
   document.getElementById("Sbtn4").style.color = "#3D3A6C";
   document.getElementById("Sbtn4").style.borderColor = "#fff";
   // Viernes 19
-  document.getElementById("btnStateVi1").style.display = "none";
-  document.getElementById("btnStateVi2").style.display = "none";
+  // document.getElementById("btnStateVi1").style.display = "none";
+  // document.getElementById("btnStateVi2").style.display = "none";
   document.getElementById("btnStateVi3").style.display = "none";
   document.getElementById("Sbtn5").style.backgroundColor = "#fff";
   document.getElementById("Sbtn5").style.color = "#3D3A6C";
@@ -1856,25 +2169,107 @@ function btnMartesON() {
 }
 
 function btnMiercolesON() {
+  if (!!document.getElementById("btnAccionLu1")) {
+    document.getElementById("btnAccionLu1").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMa1")) {
+    document.getElementById("btnAccionMa1").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMi1")) {
+    document.getElementById("btnAccionMi1").style.display = "flex";
+  }
+  if (!!document.getElementById("btnAccionJu1")) {
+    document.getElementById("btnAccionJu1").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionVi1")) {
+    document.getElementById("btnAccionVi1").style.display = "none";
+  }
+  ////BOTONES DE ACCESO MARTES TARJETA 2
+  if (!!document.getElementById("btnAccionLu2")) {
+    document.getElementById("btnAccionLu2").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMa2")) {
+    document.getElementById("btnAccionMa2").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMi2")) {
+    document.getElementById("btnAccionMi2").style.display = "flex";
+  }
+  if (!!document.getElementById("btnAccionJu2")) {
+    document.getElementById("btnAccionJu2").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionVi2")) {
+    document.getElementById("btnAccionVi2").style.display = "none";
+  }
+
+  ////BOTONES DE ACCESO MARTES TARJETA 3
+  if (!!document.getElementById("btnAccionLu3")) {
+    document.getElementById("btnAccionLu3").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMa3")) {
+    document.getElementById("btnAccionMa3").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMi3")) {
+    document.getElementById("btnAccionMi3").style.display = "flex";
+  }
+  if (!!document.getElementById("btnAccionJu3")) {
+    document.getElementById("btnAccionJu3").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionVi3")) {
+    document.getElementById("btnAccionVi3").style.display = "none";
+  }
+
+  ////BOTONES DE ACCESO MARTES TARJETA 4
+  if (!!document.getElementById("btnAccionLu4")) {
+    document.getElementById("btnAccionLu4").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMa4")) {
+    document.getElementById("btnAccionMa4").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMi4")) {
+    document.getElementById("btnAccionMi4").style.display = "flex";
+  }
+  if (!!document.getElementById("btnAccionJu4")) {
+    document.getElementById("btnAccionJu4").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionVi4")) {
+    document.getElementById("btnAccionVi4").style.display = "none";
+  }
+  ////BOTONES DE ACCESO MARTES TARJETA 5
+  if (!!document.getElementById("btnAccionLu5")) {
+    document.getElementById("btnAccionLu5").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMa5")) {
+    document.getElementById("btnAccionMa5").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMi5")) {
+    document.getElementById("btnAccionMi5").style.display = "flex";
+  }
+  if (!!document.getElementById("btnAccionJu5")) {
+    document.getElementById("btnAccionJu5").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionVi5")) {
+    document.getElementById("btnAccionVi5").style.display = "none";
+  }
+
   // Lunes 15
   document.getElementById("Sbtn1").style.backgroundColor = "#fff";
   document.getElementById("Sbtn1").style.color = "#3D3A6C";
   document.getElementById("Sbtn1").style.borderColor = "#fff";
-  document.getElementById("btnStateLu1").style.display = "none";
-  document.getElementById("btnStateLu2").style.display = "none";
+  // document.getElementById("btnStateLu1").style.display = "none";
+  // document.getElementById("btnStateLu2").style.display = "none";
   document.getElementById("btnStateLu3").style.display = "none";
   document.getElementById("btnStateLu4").style.display = "none";
   // Martes 16
-  document.getElementById("btnStateMa1").style.display = "none";
-  document.getElementById("btnStateMa2").style.display = "none";
+  // document.getElementById("btnStateMa1").style.display = "none";
+  // document.getElementById("btnStateMa2").style.display = "none";
   document.getElementById("btnStateMa3").style.display = "none";
   document.getElementById("btnStateMa4").style.display = "none";
   document.getElementById("Sbtn2").style.backgroundColor = "#fff";
   document.getElementById("Sbtn2").style.color = "#3D3A6C";
   document.getElementById("Sbtn2").style.borderColor = "#fff";
   // Miercoles 17
-  document.getElementById("btnStateMi1").style.display = "block";
-  document.getElementById("btnStateMi2").style.display = "block";
+  // document.getElementById("btnStateMi1").style.display = "block";
+  // document.getElementById("btnStateMi2").style.display = "block";
   document.getElementById("btnStateMi3").style.display = "block";
   document.getElementById("btnStateMi4").style.display = "block";
   document.getElementById("Sbtn3").style.backgroundColor = "#F0F6FA";
@@ -2014,14 +2409,14 @@ function btnMiercolesON() {
   <h4>${empresaTallerista5}</h4>`;
   document.getElementById("trayectoriaBio5").innerText = `${bioTallerista5}`;
   // Jueves 18
-  document.getElementById("btnStateJu1").style.display = "none";
-  document.getElementById("btnStateJu2").style.display = "none";
+  // document.getElementById("btnStateJu1").style.display = "none";
+  // document.getElementById("btnStateJu2").style.display = "none";
   document.getElementById("Sbtn4").style.backgroundColor = "#fff";
   document.getElementById("Sbtn4").style.color = "#3D3A6C";
   document.getElementById("Sbtn4").style.borderColor = "#fff";
   // Viernes 19
-  document.getElementById("btnStateVi1").style.display = "none";
-  document.getElementById("btnStateVi2").style.display = "none";
+  // document.getElementById("btnStateVi1").style.display = "none";
+  // document.getElementById("btnStateVi2").style.display = "none";
   document.getElementById("btnStateVi3").style.display = "none";
   document.getElementById("Sbtn5").style.backgroundColor = "#fff";
   document.getElementById("Sbtn5").style.color = "#3D3A6C";
@@ -2029,33 +2424,64 @@ function btnMiercolesON() {
 }
 
 function btnJuevesON() {
+  if (!!document.getElementById("btnAccionLu1")) {
+    document.getElementById("btnAccionLu1").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMa1")) {
+    document.getElementById("btnAccionMa1").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMi1")) {
+    document.getElementById("btnAccionMi1").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionJu1")) {
+    document.getElementById("btnAccionJu1").style.display = "flex";
+  }
+  if (!!document.getElementById("btnAccionVi1")) {
+    document.getElementById("btnAccionVi1").style.display = "none";
+  }
+  ////BOTONES DE ACCESO MARTES TARJETA 2
+  if (!!document.getElementById("btnAccionLu2")) {
+    document.getElementById("btnAccionLu2").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMa2")) {
+    document.getElementById("btnAccionMa2").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMi2")) {
+    document.getElementById("btnAccionMi2").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionJu2")) {
+    document.getElementById("btnAccionJu2").style.display = "flex";
+  }
+  if (!!document.getElementById("btnAccionVi2")) {
+    document.getElementById("btnAccionVi2").style.display = "none";
+  }
   // Lunes 15
-  document.getElementById("btnStateLu1").style.display = "none";
-  document.getElementById("btnStateLu2").style.display = "none";
+  // document.getElementById("btnStateLu1").style.display = "none";
+  // document.getElementById("btnStateLu2").style.display = "none";
   document.getElementById("btnStateLu3").style.display = "none";
   document.getElementById("btnStateLu4").style.display = "none";
   document.getElementById("Sbtn1").style.backgroundColor = "#fff";
   document.getElementById("Sbtn1").style.color = "#3D3A6C";
   document.getElementById("Sbtn1").style.borderColor = "#fff";
   // Martes 16
-  document.getElementById("btnStateMa1").style.display = "none";
-  document.getElementById("btnStateMa2").style.display = "none";
+  // document.getElementById("btnStateMa1").style.display = "none";
+  // document.getElementById("btnStateMa2").style.display = "none";
   document.getElementById("btnStateMa3").style.display = "none";
   document.getElementById("btnStateMa4").style.display = "none";
   document.getElementById("Sbtn2").style.backgroundColor = "#fff";
   document.getElementById("Sbtn2").style.color = "#3D3A6C";
   document.getElementById("Sbtn2").style.borderColor = "#fff";
   // Miercoles 17
-  document.getElementById("btnStateMi1").style.display = "none";
-  document.getElementById("btnStateMi2").style.display = "none";
+  // document.getElementById("btnStateMi1").style.display = "none";
+  // document.getElementById("btnStateMi2").style.display = "none";
   document.getElementById("btnStateMi3").style.display = "none";
   document.getElementById("btnStateMi4").style.display = "none";
   document.getElementById("Sbtn3").style.backgroundColor = "#fff";
   document.getElementById("Sbtn3").style.color = "#3D3A6C";
   document.getElementById("Sbtn3").style.borderColor = "#fff";
   // Jueves 18
-  document.getElementById("btnStateJu1").style.display = "block";
-  document.getElementById("btnStateJu2").style.display = "block";
+  // document.getElementById("btnStateJu1").style.display = "block";
+  // document.getElementById("btnStateJu2").style.display = "block";
   document.getElementById("Sbtn4").style.backgroundColor = "#F0F6FA";
   document.getElementById("Sbtn4").style.color = "#222222";
   document.getElementById("Sbtn4").style.borderColor = "#F0F6FA";
@@ -2167,47 +2593,94 @@ function btnJuevesON() {
   <h4>${empresaTallerista4}</h4>`;
   document.getElementById("trayectoriaBio4").innerText = `${bioTallerista4}`;
   // Viernes 19
-  document.getElementById("btnStateVi1").style.display = "none";
-  document.getElementById("btnStateVi2").style.display = "none";
+  // document.getElementById("btnStateVi1").style.display = "none";
+  // document.getElementById("btnStateVi2").style.display = "none";
   document.getElementById("btnStateVi3").style.display = "none";
   document.getElementById("Sbtn5").style.backgroundColor = "#fff";
   document.getElementById("Sbtn5").style.color = "#3D3A6C";
   document.getElementById("Sbtn5").style.borderColor = "#fff";
 }
 function btnViernesON() {
+  if (!!document.getElementById("btnAccionLu1")) {
+    document.getElementById("btnAccionLu1").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMa1")) {
+    document.getElementById("btnAccionMa1").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMi1")) {
+    document.getElementById("btnAccionMi1").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionJu1")) {
+    document.getElementById("btnAccionJu1").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionVi1")) {
+    document.getElementById("btnAccionVi1").style.display = "flex";
+  }
+  ////BOTONES DE ACCESO MARTES TARJETA 2
+  if (!!document.getElementById("btnAccionLu2")) {
+    document.getElementById("btnAccionLu2").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMa2")) {
+    document.getElementById("btnAccionMa2").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMi2")) {
+    document.getElementById("btnAccionMi2").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionJu2")) {
+    document.getElementById("btnAccionJu2").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionVi2")) {
+    document.getElementById("btnAccionVi2").style.display = "flex";
+  }
+  ////BOTONES DE ACCESO MARTES TARJETA 3
+  if (!!document.getElementById("btnAccionLu3")) {
+    document.getElementById("btnAccionLu3").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMa3")) {
+    document.getElementById("btnAccionMa3").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionMi3")) {
+    document.getElementById("btnAccionMi3").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionJu3")) {
+    document.getElementById("btnAccionJu3").style.display = "none";
+  }
+  if (!!document.getElementById("btnAccionVi3")) {
+    document.getElementById("btnAccionVi3").style.display = "flex";
+  }
   // Lunes 15
-  document.getElementById("btnStateLu1").style.display = "none";
-  document.getElementById("btnStateLu2").style.display = "none";
+  // document.getElementById("btnStateLu1").style.display = "none";
+  // document.getElementById("btnStateLu2").style.display = "none";
   document.getElementById("btnStateLu3").style.display = "none";
   document.getElementById("btnStateLu4").style.display = "none";
   document.getElementById("Sbtn1").style.backgroundColor = "#fff";
   document.getElementById("Sbtn1").style.color = "#3D3A6C";
   document.getElementById("Sbtn1").style.borderColor = "#fff";
   // Martes 16
-  document.getElementById("btnStateMa1").style.display = "none";
-  document.getElementById("btnStateMa2").style.display = "none";
+  // document.getElementById("btnStateMa1").style.display = "none";
+  // document.getElementById("btnStateMa2").style.display = "none";
   document.getElementById("btnStateMa3").style.display = "none";
   document.getElementById("btnStateMa4").style.display = "none";
   document.getElementById("Sbtn2").style.backgroundColor = "#fff";
   document.getElementById("Sbtn2").style.color = "#3D3A6C";
   document.getElementById("Sbtn2").style.borderColor = "#fff";
   // Miercoles 17
-  document.getElementById("btnStateMi1").style.display = "none";
-  document.getElementById("btnStateMi2").style.display = "none";
+  // document.getElementById("btnStateMi1").style.display = "none";
+  // document.getElementById("btnStateMi2").style.display = "none";
   document.getElementById("btnStateMi3").style.display = "none";
   document.getElementById("btnStateMi4").style.display = "none";
   document.getElementById("Sbtn3").style.backgroundColor = "#fff";
   document.getElementById("Sbtn3").style.color = "#3D3A6C";
   document.getElementById("Sbtn3").style.borderColor = "#fff";
   // Jueves 18
-  document.getElementById("btnStateJu1").style.display = "none";
-  document.getElementById("btnStateJu2").style.display = "none";
+  // document.getElementById("btnStateJu1").style.display = "none";
+  // document.getElementById("btnStateJu2").style.display = "none";
   document.getElementById("Sbtn4").style.backgroundColor = "#fff";
   document.getElementById("Sbtn4").style.color = "#3D3A6C";
   document.getElementById("Sbtn4").style.borderColor = "#fff";
   // Viernes 19
-  document.getElementById("btnStateVi1").style.display = "block";
-  document.getElementById("btnStateVi2").style.display = "block";
+  // document.getElementById("btnStateVi1").style.display = "block";
+  // document.getElementById("btnStateVi2").style.display = "block";
   document.getElementById("btnStateVi3").style.display = "block";
   document.getElementById("Sbtn5").style.backgroundColor = "#F0F6FA";
   document.getElementById("Sbtn5").style.color = "#222222";
