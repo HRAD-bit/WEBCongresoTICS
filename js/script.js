@@ -179,6 +179,7 @@ function verifyStateCards() {
   }
 
   /// CONDICIONALES PARA LA SEGUNDA TARJETA DEL LUNES
+  console.log(stateActLu2 + " Lunes: " + cont1 )
   if (stateActLu2 == 1 && cont1 == 1) {
     // console.log("Se muestra que esta en espera");
     document.getElementById("liveIDLu2").style.display = "none";
@@ -644,28 +645,28 @@ const unaHora = -3600,
 
 // ---------------VARIABLES DE TIEMPO-----------
 // Lunes
-const tarjeta1TimeLu = "Nov 10 2021 16:02:00 GMT-06:00",
-  tarjeta2TimeLu = "Nov 15 2021 18:00:00 GMT-06:00",
+const tarjeta1TimeLu = "Nov 15 2021 09:50:00 GMT-06:00",
+  tarjeta2TimeLu = "Nov 15 2021 17:50:00 GMT-06:00",
   // tarjeta3TimeLu = "Nov 15 2021 17:00:00 GMT-05:00",
   // tarjeta4TimeLu = "Nov 15 2021 18:00:00 GMT-05:00",
   // MARTES
-  tarjeta1TimeMa = "Nov 11 2021 16:02:00 GMT-06:00",
-  tarjeta2TimeMa = "Nov 16 2021 16:00:00 GMT-06:00",
-  tarjeta3TimeMa = "Nov 16 2021 17:00:00 GMT-06:00",
-  tarjeta4TimeMa = "Nov 16 2021 18:00:00 GMT-06:00",
+  tarjeta1TimeMa = "Nov 16 2021 09:50:00 GMT-06:00",
+  tarjeta2TimeMa = "Nov 16 2021 15:50:00 GMT-06:00",
+  tarjeta3TimeMa = "Nov 16 2021 16:50:00 GMT-06:00",
+  tarjeta4TimeMa = "Nov 16 2021 17:50:00 GMT-06:00",
   // MIERCOLES
-  tarjeta1TimeMi = "Nov 13 2021 16:00:00 GMT-06:00",
-  tarjeta2TimeMi = "Nov 17 2021 11:00:00 GMT-06:00",
-  tarjeta3TimeMi = "Nov 17 2021 15:00:00 GMT-06:00",
-  tarjeta4TimeMi = "Nov 17 2021 16:00:00 GMT-06:00",
-  tarjeta5TimeMi = "Nov 17 2021 19:00:00 GMT-06:00",
+  tarjeta1TimeMi = "Nov 12 2021 09:50:00 GMT-06:00",
+  tarjeta2TimeMi = "Nov 12 2021 10:50:00 GMT-06:00",
+  tarjeta3TimeMi = "Nov 12 2021 14:50:00 GMT-06:00",
+  tarjeta4TimeMi = "Nov 12 2021 15:50:00 GMT-06:00",
+  tarjeta5TimeMi = "Nov 12 2021 18:50:00 GMT-06:00",
   // JUEVES
-  tarjeta1TimeJu = "Nov 18 2021 15:00:00 GMT-06:00",
-  tarjeta2TimeJu = "Nov 18 2021 16:00:00 GMT-06:00",
+  tarjeta1TimeJu = "Nov 18 2021 14:50:00 GMT-06:00",
+  tarjeta2TimeJu = "Nov 18 2021 15:50:00 GMT-06:00",
   // VIERNES
-  tarjeta1TimeVi = "Nov 11 2021 13:00:00 GMT-06:00",
-  tarjeta2TimeVi = "Nov 19 2021 15:00:00 GMT-06:00",
-  tarjeta3TimeVi = "Nov 19 2021 16:00:00 GMT-06:00";
+  tarjeta1TimeVi = "Nov 19 2021 12:50:00 GMT-06:00",
+  tarjeta2TimeVi = "Nov 19 2021 14:50:00 GMT-06:00",
+  tarjeta3TimeVi = "Nov 19 2021 15:50:00 GMT-06:00";
 
 // TIMER Y COUNTDOWN
 
@@ -748,9 +749,8 @@ const btnStateLu2 = (deadline, elem, finalMessage) => {
   </a>`;
       // FINALIZADO
       if (t.remainTime <= tresHoras) {
-        clearInterval(timerUpdate);
         stateActLu2 = 3;
-        el.innerHTML = "FINALIZADO";
+        clearInterval(timerUpdate);
         document.getElementById("btnStateLu2").innerHTML = `<p>Finalizado</p>`;
         document.getElementById("contenedorInfoLu2").className =
           "contenedor-informacion-off contenedor-informacion";
@@ -911,7 +911,7 @@ const btnStateMa2 = (deadline, elem, finalMessage) => {
     if (t.remainTime <= 1) {
       stateActMa2 = 2;
       document.getElementById(
-        "btnAccionLu2"
+        "btnAccionMa2"
       ).innerHTML = `<a href="${LinkMa2}" target="_blank"  rel="noopener noreferrer">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
@@ -948,7 +948,7 @@ const btnStateMa3 = (deadline, elem, finalMessage) => {
     if (t.remainTime <= 1) {
       stateActMa3 = 2;
       document.getElementById(
-        "btnAccionLu3"
+        "btnAccionMa3"
       ).innerHTML = `<a href="${LinkMa3}" target="_blank" rel="noopener noreferrer">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
@@ -961,7 +961,7 @@ const btnStateMa3 = (deadline, elem, finalMessage) => {
         clearInterval(timerUpdate);
         document.getElementById("contenedorInfoLu3").className =
           "contenedor-informacion contenedor-informacion-off";
-        document.getElementById("btnAccionLu3").innerHTML = `
+        document.getElementById("btnAccionMa3").innerHTML = `
         <div class="btn-action-estado">
           <div class="btnState" id="btnStateMa3"><p>Finalizado</p></div>          
         </div>`;
@@ -983,20 +983,20 @@ const btnStateMa4 = (deadline, elem, finalMessage) => {
     if (t.remainTime <= 1) {
       stateActMa4 = 2;
       document.getElementById(
-        "btnAccionLu4"
-      ).innerHTML = `<a href="${LinkMa4}" target="_blank">
+        "btnAccionMa4"
+      ).innerHTML = `<a href="${LinkMa4}" target="_blank" rel="noopener noreferrer">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
       <div class="btnState" id="btnStateMa4"><p>Acceder</p></div>
     </div>
   </a>`;
       // FINALIZADO
-      if (t.remainTime <= tresHora) {
+      if (t.remainTime <= tresHoras) {
         stateActMa4 = 3; // COLOCAMOS COMO FINALIZADO PARA EL ESTADO
         clearInterval(timerUpdate);
         document.getElementById("contenedorInfoLu4").className =
           "contenedor-informacion contenedor-informacion-off";
-        document.getElementById("btnAccionLu4").innerHTML = `
+        document.getElementById("btnAccionMa4").innerHTML = `
         <div class="btn-action-estado">
           <div class="btnState" id="btnStateMa4"><p>Finalizado</p></div>          
         </div>`;
@@ -1019,7 +1019,7 @@ const btnStateMi1 = (deadline, elem, finalMessage) => {
       stateActMi1 = 2;
       document.getElementById(
         "btnAccionMi1"
-      ).innerHTML = `<a href="${LinkMi1}" target="_blank">
+      ).innerHTML = `<a href="${LinkMi1}" target="_blank" rel="noopener noreferrer">
       <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
       <div class="btn-action-estado">
         <div class="btnState" id="btnStateMi1"><p>Acceder</p></div>
@@ -1028,10 +1028,13 @@ const btnStateMi1 = (deadline, elem, finalMessage) => {
 
       // FINALIZADO
       if (t.remainTime <= unaHora) {
+        stateActMi1 = 3;
         clearInterval(timerUpdate);
         console.log(t.remainTime);
-        stateActMi1 = 3;
-        document.getElementById("btnStateMi1").innerHTML = `<p>Finalizado</p>`;
+        document.getElementById("btnAccionMi1").innerHTML = `
+          <div class="btn-action-estado">
+            <div class="btnState" id="btnStateMi1"><p>Finalizado</p></div>          
+          </div>`;
         document.getElementById("contenedorInfoLu1").className =
           " contenedor-informacion-off contenedor-informacion";
       }
@@ -1053,7 +1056,7 @@ const btnStateMi2 = (deadline, elem, finalMessage) => {
       console.log(t.remainTime);
       stateActMi2 = 2;
       document.getElementById(
-        "btnAccionLu2"
+        "btnAccionMi2"
       ).innerHTML = `<a href="${LinkMi2}" target="_blank" rel="noopener noreferrer">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
@@ -1066,7 +1069,7 @@ const btnStateMi2 = (deadline, elem, finalMessage) => {
         clearInterval(timerUpdate);
         document.getElementById("contenedorInfoLu2").className =
           "contenedor-informacion contenedor-informacion-off";
-        document.getElementById("btnAccionLu2").innerHTML = `
+        document.getElementById("btnAccionMi2").innerHTML = `
         <div class="btn-action-estado">
           <div class="btnState" id="btnStateMi2"><p>Finalizado</p></div>          
         </div>`;
@@ -1088,7 +1091,7 @@ const btnStateMi3 = (deadline, elem, finalMessage) => {
     if (t.remainTime <= 1) {
       stateActMi3 = 2;
       document.getElementById(
-        "btnAccionLu3"
+        "btnAccionMi3"
       ).innerHTML = `<a href="${LinkMi3}" target="_blank" rel="noopener noreferrer">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
@@ -1101,7 +1104,7 @@ const btnStateMi3 = (deadline, elem, finalMessage) => {
         clearInterval(timerUpdate);
         document.getElementById("contenedorInfoLu3").className =
           "contenedor-informacion contenedor-informacion-off";
-        document.getElementById("btnAccionLu3").innerHTML = `
+        document.getElementById("btnAccionMi3").innerHTML = `
         <div class="btn-action-estado">
           <div class="btnState" id="btnStateMi3"><p>Finalizado</p></div>          
         </div>`;
@@ -1123,7 +1126,7 @@ const btnStateMi4 = (deadline, elem, finalMessage) => {
     if (t.remainTime <= 1) {
       stateActMi4 = 2;
       document.getElementById(
-        "btnAccionLu4"
+        "btnAccionMi4"
       ).innerHTML = `<a href="${LinkMi4}" target="_blank" rel="noopener noreferrer">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
@@ -1136,9 +1139,9 @@ const btnStateMi4 = (deadline, elem, finalMessage) => {
         clearInterval(timerUpdate);
         document.getElementById("contenedorInfoLu4").className =
           "contenedor-informacion contenedor-informacion-off";
-        document.getElementById("btnAccionLu4").innerHTML = `
+        document.getElementById("btnAccionMi4").innerHTML = `
         <div class="btn-action-estado">
-          <div class="btnState" id="btnStateLu4"><p>Finalizado</p></div>          
+          <div class="btnState" id="btnStateMi4"><p>Finalizado</p></div>          
         </div>`;
       }
     }
@@ -1158,7 +1161,7 @@ const btnStateMi5 = (deadline, elem, finalMessage) => {
     if (t.remainTime <= 1) {
       stateActMi5 = 2;
       document.getElementById(
-        "btnAccionLu5"
+        "btnAccionMi5"
       ).innerHTML = `<a href="${LinkMi5}" target="_blank" rel="noopener noreferrer">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
@@ -1171,7 +1174,7 @@ const btnStateMi5 = (deadline, elem, finalMessage) => {
         clearInterval(timerUpdate);
         document.getElementById("contenedorInfoLu5").className =
           "contenedor-informacion contenedor-informacion-off";
-        document.getElementById("btnAccionLu5").innerHTML = `
+        document.getElementById("btnAccionMi5").innerHTML = `
         <div class="btn-action-estado">
           <div class="btnState" id="btnStateMi5"><p>Finalizado</p></div>          
         </div>`;
@@ -1231,7 +1234,7 @@ const btnStateJu2 = (deadline, elem, finalMessage) => {
     if (t.remainTime <= 1) {
       stateActJu2 = 2;
       document.getElementById(
-        "btnAccionLu2"
+        "btnAccionJu2"
       ).innerHTML = `<a href="${LinkJu2}" target="_blank" rel="noopener noreferrer">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
@@ -1244,7 +1247,7 @@ const btnStateJu2 = (deadline, elem, finalMessage) => {
         clearInterval(timerUpdate);
         document.getElementById("contenedorInfoLu2").className =
           "contenedor-informacion contenedor-informacion-off";
-        document.getElementById("btnAccionLu2").innerHTML = `
+        document.getElementById("btnAccionJu2").innerHTML = `
         <div class="btn-action-estado">
           <div class="btnState" id="btnStateJu2"><p>Finalizado</p></div>          
         </div>`;
@@ -1303,7 +1306,7 @@ const btnStateVi2 = (deadline, elem, finalMessage) => {
     if (t.remainTime <= 1) {
       stateActVi2 = 2;
       document.getElementById(
-        "btnAccionLu2"
+        "btnAccionVi2"
       ).innerHTML = `<a href="${LinkVi2}" target="_blank" rel="noopener noreferrer">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
@@ -1317,7 +1320,7 @@ const btnStateVi2 = (deadline, elem, finalMessage) => {
         document.getElementById("contenedorInfoLu2").className =
           "contenedor-informacion contenedor-informacion-off";
 
-        document.getElementById("btnAccionLu2").innerHTML = `
+        document.getElementById("btnAccionVi2").innerHTML = `
         <div class="btn-action-estado">
           <div class="btnState" id="btnStateVi2"><p>Finalizado</p></div>          
         </div>`;
@@ -1339,7 +1342,7 @@ const btnStateVi3 = (deadline, elem, finalMessage) => {
     if (t.remainTime <= 1) {
       stateActVi3 = 2;
       document.getElementById(
-        "btnAccionLu3"
+        "btnAccionVi3"
       ).innerHTML = `<a href="${LinkVi3}" target="_blank" rel="noopener noreferrer">
     <div><img src="img/resources/ingresar.png" alt="" class="btn-action-img" /></div>
     <div class="btn-action-estado">
@@ -1352,7 +1355,7 @@ const btnStateVi3 = (deadline, elem, finalMessage) => {
         clearInterval(timerUpdate);
         document.getElementById("contenedorInfoLu3").className =
           "contenedor-informacion contenedor-informacion-off";
-        document.getElementById("btnAccionLu3").innerHTML = `
+        document.getElementById("btnAccionVi3").innerHTML = `
         <div class="btn-action-estado">
           <div class="btnState" id="btnStateVi3"><p>Finalizado</p></div>          
         </div>`;
@@ -1926,13 +1929,13 @@ function btnLunesON() {
   document.getElementById("Sbtn2").style.borderColor = "#fff";
   // document.getElementById("btnStateMa1").style.display = "none";
   // document.getElementById("btnStateMa2").style.display = "none";
-  document.getElementById("btnStateMa3").style.display = "none";
-  document.getElementById("btnStateMa4").style.display = "none";
+  // document.getElementById("btnStateMa3").style.display = "none";
+  // document.getElementById("btnStateMa4").style.display = "none";
   // Miercoles 17
   // document.getElementById("btnStateMi1").style.display = "none";
   // document.getElementById("btnStateMi2").style.display = "none";
-  document.getElementById("btnStateMi3").style.display = "none";
-  document.getElementById("btnStateMi4").style.display = "none";
+  // document.getElementById("btnStateMi3").style.display = "none";
+  // document.getElementById("btnStateMi4").style.display = "none";
   document.getElementById("Sbtn3").style.backgroundColor = "#fff";
   document.getElementById("Sbtn3").style.color = "#3D3A6C";
   document.getElementById("Sbtn3").style.borderColor = "#fff";
@@ -1942,15 +1945,15 @@ function btnLunesON() {
   document.getElementById("Sbtn4").style.backgroundColor = "#fff";
   document.getElementById("Sbtn4").style.color = "#3D3A6C";
   document.getElementById("Sbtn4").style.borderColor = "#fff";
-  document.getElementById("btnStateJu1").style.display = "none";
+  // document.getElementById("btnStateJu1").style.display = "none";
   // Viernes 19
   // document.getElementById("btnStateVi1").style.display = "none";
   // document.getElementById("btnStateVi2").style.display = "none";
-  document.getElementById("btnStateVi3").style.display = "none";
+  // // document.getElementById("btnStateVi3").style.display = "none";
   document.getElementById("Sbtn5").style.backgroundColor = "#fff";
   document.getElementById("Sbtn5").style.color = "#3D3A6C";
   document.getElementById("Sbtn5").style.borderColor = "#fff";
-  document.getElementById("btnStateVi1").style.display = "none";
+  // document.getElementById("btnStateVi1").style.display = "none";
 }
 
 function btnMartesON() {
@@ -2027,13 +2030,13 @@ function btnMartesON() {
   document.getElementById("Sbtn1").style.borderColor = "#fff";
   // document.getElementById("btnStateLu1").style.display = "none";
   // document.getElementById("btnStateLu2").style.display = "none";
-  document.getElementById("btnStateLu3").style.display = "none";
-  document.getElementById("btnStateLu4").style.display = "none";
+  // document.getElementById("btnStateLu3").style.display = "none";
+  // document.getElementById("btnStateLu4").style.display = "none";
   // Martes 16
   // document.getElementById("btnStateMa1").style.display = "block";
   // document.getElementById("btnStateMa2").style.display = "block";
-  document.getElementById("btnStateMa3").style.display = "block";
-  document.getElementById("btnStateMa4").style.display = "block";
+  // document.getElementById("btnStateMa3").style.display = "block";
+  // document.getElementById("btnStateMa4").style.display = "block";
   document.getElementById("Sbtn2").style.backgroundColor = "#F0F6FA";
   document.getElementById("Sbtn2").style.color = "#222222";
   document.getElementById("Sbtn2").style.borderColor = "#F0F6FA";
@@ -2148,8 +2151,8 @@ function btnMartesON() {
   // Miercoles 17
   // document.getElementById("btnStateMi1").style.display = "none";
   // document.getElementById("btnStateMi2").style.display = "none";
-  document.getElementById("btnStateMi3").style.display = "none";
-  document.getElementById("btnStateMi4").style.display = "none";
+  // document.getElementById("btnStateMi3").style.display = "none";
+  // document.getElementById("btnStateMi4").style.display = "none";
   document.getElementById("Sbtn3").style.backgroundColor = "#fff";
   document.getElementById("Sbtn3").style.color = "#3D3A6C";
   document.getElementById("Sbtn3").style.borderColor = "#fff";
@@ -2162,7 +2165,7 @@ function btnMartesON() {
   // Viernes 19
   // document.getElementById("btnStateVi1").style.display = "none";
   // document.getElementById("btnStateVi2").style.display = "none";
-  document.getElementById("btnStateVi3").style.display = "none";
+  // document.getElementById("btnStateVi3").style.display = "none";
   document.getElementById("Sbtn5").style.backgroundColor = "#fff";
   document.getElementById("Sbtn5").style.color = "#3D3A6C";
   document.getElementById("Sbtn5").style.borderColor = "#fff";
@@ -2257,21 +2260,21 @@ function btnMiercolesON() {
   document.getElementById("Sbtn1").style.borderColor = "#fff";
   // document.getElementById("btnStateLu1").style.display = "none";
   // document.getElementById("btnStateLu2").style.display = "none";
-  document.getElementById("btnStateLu3").style.display = "none";
-  document.getElementById("btnStateLu4").style.display = "none";
+  // document.getElementById("btnStateLu3").style.display = "none";
+  // document.getElementById("btnStateLu4").style.display = "none";
   // Martes 16
   // document.getElementById("btnStateMa1").style.display = "none";
   // document.getElementById("btnStateMa2").style.display = "none";
-  document.getElementById("btnStateMa3").style.display = "none";
-  document.getElementById("btnStateMa4").style.display = "none";
+  // document.getElementById("btnStateMa3").style.display = "none";
+  // document.getElementById("btnStateMa4").style.display = "none";
   document.getElementById("Sbtn2").style.backgroundColor = "#fff";
   document.getElementById("Sbtn2").style.color = "#3D3A6C";
   document.getElementById("Sbtn2").style.borderColor = "#fff";
   // Miercoles 17
   // document.getElementById("btnStateMi1").style.display = "block";
   // document.getElementById("btnStateMi2").style.display = "block";
-  document.getElementById("btnStateMi3").style.display = "block";
-  document.getElementById("btnStateMi4").style.display = "block";
+  // document.getElementById("btnStateMi3").style.display = "block";
+  // document.getElementById("btnStateMi4").style.display = "block";
   document.getElementById("Sbtn3").style.backgroundColor = "#F0F6FA";
   document.getElementById("Sbtn3").style.color = "#222222";
   document.getElementById("Sbtn3").style.borderColor = "#F0F6FA";
@@ -2417,7 +2420,7 @@ function btnMiercolesON() {
   // Viernes 19
   // document.getElementById("btnStateVi1").style.display = "none";
   // document.getElementById("btnStateVi2").style.display = "none";
-  document.getElementById("btnStateVi3").style.display = "none";
+  // document.getElementById("btnStateVi3").style.display = "none";
   document.getElementById("Sbtn5").style.backgroundColor = "#fff";
   document.getElementById("Sbtn5").style.color = "#3D3A6C";
   document.getElementById("Sbtn5").style.borderColor = "#fff";
@@ -2458,24 +2461,24 @@ function btnJuevesON() {
   // Lunes 15
   // document.getElementById("btnStateLu1").style.display = "none";
   // document.getElementById("btnStateLu2").style.display = "none";
-  document.getElementById("btnStateLu3").style.display = "none";
-  document.getElementById("btnStateLu4").style.display = "none";
+  // document.getElementById("btnStateLu3").style.display = "none";
+  // document.getElementById("btnStateLu4").style.display = "none";
   document.getElementById("Sbtn1").style.backgroundColor = "#fff";
   document.getElementById("Sbtn1").style.color = "#3D3A6C";
   document.getElementById("Sbtn1").style.borderColor = "#fff";
   // Martes 16
   // document.getElementById("btnStateMa1").style.display = "none";
   // document.getElementById("btnStateMa2").style.display = "none";
-  document.getElementById("btnStateMa3").style.display = "none";
-  document.getElementById("btnStateMa4").style.display = "none";
+  // document.getElementById("btnStateMa3").style.display = "none";
+  // document.getElementById("btnStateMa4").style.display = "none";
   document.getElementById("Sbtn2").style.backgroundColor = "#fff";
   document.getElementById("Sbtn2").style.color = "#3D3A6C";
   document.getElementById("Sbtn2").style.borderColor = "#fff";
   // Miercoles 17
   // document.getElementById("btnStateMi1").style.display = "none";
   // document.getElementById("btnStateMi2").style.display = "none";
-  document.getElementById("btnStateMi3").style.display = "none";
-  document.getElementById("btnStateMi4").style.display = "none";
+  // document.getElementById("btnStateMi3").style.display = "none";
+  // document.getElementById("btnStateMi4").style.display = "none";
   document.getElementById("Sbtn3").style.backgroundColor = "#fff";
   document.getElementById("Sbtn3").style.color = "#3D3A6C";
   document.getElementById("Sbtn3").style.borderColor = "#fff";
@@ -2595,7 +2598,7 @@ function btnJuevesON() {
   // Viernes 19
   // document.getElementById("btnStateVi1").style.display = "none";
   // document.getElementById("btnStateVi2").style.display = "none";
-  document.getElementById("btnStateVi3").style.display = "none";
+  // document.getElementById("btnStateVi3").style.display = "none";
   document.getElementById("Sbtn5").style.backgroundColor = "#fff";
   document.getElementById("Sbtn5").style.color = "#3D3A6C";
   document.getElementById("Sbtn5").style.borderColor = "#fff";
@@ -2651,24 +2654,24 @@ function btnViernesON() {
   // Lunes 15
   // document.getElementById("btnStateLu1").style.display = "none";
   // document.getElementById("btnStateLu2").style.display = "none";
-  document.getElementById("btnStateLu3").style.display = "none";
-  document.getElementById("btnStateLu4").style.display = "none";
+  // document.getElementById("btnStateLu3").style.display = "none";
+  // document.getElementById("btnStateLu4").style.display = "none";
   document.getElementById("Sbtn1").style.backgroundColor = "#fff";
   document.getElementById("Sbtn1").style.color = "#3D3A6C";
   document.getElementById("Sbtn1").style.borderColor = "#fff";
   // Martes 16
   // document.getElementById("btnStateMa1").style.display = "none";
   // document.getElementById("btnStateMa2").style.display = "none";
-  document.getElementById("btnStateMa3").style.display = "none";
-  document.getElementById("btnStateMa4").style.display = "none";
+  // document.getElementById("btnStateMa3").style.display = "none";
+  // document.getElementById("btnStateMa4").style.display = "none";
   document.getElementById("Sbtn2").style.backgroundColor = "#fff";
   document.getElementById("Sbtn2").style.color = "#3D3A6C";
   document.getElementById("Sbtn2").style.borderColor = "#fff";
   // Miercoles 17
   // document.getElementById("btnStateMi1").style.display = "none";
   // document.getElementById("btnStateMi2").style.display = "none";
-  document.getElementById("btnStateMi3").style.display = "none";
-  document.getElementById("btnStateMi4").style.display = "none";
+  // document.getElementById("btnStateMi3").style.display = "none";
+  // document.getElementById("btnStateMi4").style.display = "none";
   document.getElementById("Sbtn3").style.backgroundColor = "#fff";
   document.getElementById("Sbtn3").style.color = "#3D3A6C";
   document.getElementById("Sbtn3").style.borderColor = "#fff";
@@ -2681,7 +2684,7 @@ function btnViernesON() {
   // Viernes 19
   // document.getElementById("btnStateVi1").style.display = "block";
   // document.getElementById("btnStateVi2").style.display = "block";
-  document.getElementById("btnStateVi3").style.display = "block";
+  // document.getElementById("btnStateVi3").style.display = "block";
   document.getElementById("Sbtn5").style.backgroundColor = "#F0F6FA";
   document.getElementById("Sbtn5").style.color = "#222222";
   document.getElementById("Sbtn5").style.borderColor = "#F0F6FA";

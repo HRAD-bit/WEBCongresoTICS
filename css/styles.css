@@ -1425,6 +1425,7 @@ button {
     .tipo-taller p {
         font-size: 14px;
     }
+    
 }
 
 @media screen and (max-width: 1180px) {
@@ -1444,7 +1445,7 @@ button {
         margin: 25px 0px;
     }
     .grupos-asignados p {
-        font-size: 15px;
+        font-size: 14px;
     }
     .tipo-taller {
         width: 130px;
@@ -1485,7 +1486,7 @@ button {
         margin: 15px 0px;
     }
     .grupos-asignados p {
-        font-size: 20px;
+        font-size: 14px;
     }
     .tipo-taller {
         width: 150px;
