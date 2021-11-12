@@ -638,10 +638,10 @@ const linkLu1 = "https://meet.google.com/hwb-dpmp-hpb",
 // ------------------------------TIEMPOS DE ESPERA-----------------
 
 // VARIABLES DE TIEMPO DE HORAS EN SEGNDOS
-const unaHora = -3600,
-  dosHoras = -7200,
-  tresHoras = -10800,
-  cuatroHoras = -14400;
+const unaHora = -4200,
+  dosHoras = -7800,
+  tresHoras = -11400,
+  cuatroHoras = -15000;
 
 // ---------------VARIABLES DE TIEMPO-----------
 // Lunes
