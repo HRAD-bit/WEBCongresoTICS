@@ -44,7 +44,7 @@ const sectionPRObserver = new IntersectionObserver(function (
     }
   });
 },
-sectionPROptions);
+  sectionPROptions);
 
 sectionPRObserver.observe(sectionPR);
 // ------------
@@ -69,7 +69,7 @@ const sectionOneObserver = new IntersectionObserver(function (
     }
   });
 },
-sectionOneOptions);
+  sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
 // --------------------------
@@ -94,7 +94,7 @@ const sectionTwoObserver = new IntersectionObserver(function (
     }
   });
 },
-sectionTwoOptions);
+  sectionTwoOptions);
 
 sectionTwoObserver.observe(sectionTwo);
 // --------------------------------------------
@@ -119,7 +119,7 @@ const sectionDObserver = new IntersectionObserver(function (
     }
   });
 },
-sectionDOptions);
+  sectionDOptions);
 
 sectionDObserver.observe(sectionD);
 
@@ -179,7 +179,7 @@ function verifyStateCards() {
   }
 
   /// CONDICIONALES PARA LA SEGUNDA TARJETA DEL LUNES
-  console.log(stateActLu2 + " Lunes: " + cont1 )
+  console.log(stateActLu2 + " Lunes: " + cont1)
   if (stateActLu2 == 1 && cont1 == 1) {
     // console.log("Se muestra que esta en espera");
     document.getElementById("liveIDLu2").style.display = "none";
@@ -1554,7 +1554,7 @@ function informacionMiercoles() {
     (tituloTaller1 = '"AGILE O MINDSET, ¿QUÉ VA PRIMERO?"'),
     (gruposAsignados1 = "Todos los semestres"),
     (horasTaller1 = "10:00 - 11:00"),
-    (imagenTaller1 = "img/talleristas/ids-taller.png"),
+    (imagenTaller1 = "img/talleristas/Luz_Adriana.png"),
     (bioTallerista1 = "Subdirectora de Práctica, en ids con más de 12 años de experiencia en Tecnologías de la Información. Ha trabajado con los clientes más importantes de la compañía principalmente de la industria financiera, obtenido excelentes resultados.  Siempre está en constante actualización profesional. Cuenta con certificaciones en PMP, Ititl found, Scrum master, Product owner safe,  Leading  safe por mencionar algunas.");
 
   // TARJETA 2 MIERCOLES
@@ -1565,7 +1565,7 @@ function informacionMiercoles() {
       '"WEB APLICATION WITH CODEMONO: INSPIRAR PARA CREAR, CREAR PARA INSPIRAR"'),
     (gruposAsignados2 = "707"),
     (horasTaller2 = "11:00 - 14:00"),
-    (imagenTaller2 = "img/talleristas/amcoder.png"),
+    (imagenTaller2 = "img/talleristas/Juan_Diego.png"),
     (bioTallerista2 = "Desarrollador web con 6 años de experiencia, pero si algo me gusta aparte de mi profesión es viajar, conocer nuevos lugares e inspirarme a crear proyectos que transmitan esa sensación de emoción y alegría a quien los ve y seguir ese ciclo motivando a más persona a crear, también me gusta tecnología y creo que la parte que más destaca de mí es el humor, aunque también aprecio el trabajo en equipo y valoro el esfuerzo de las personas.");
 
   // TARJETAS 3 MIERCOLES
@@ -1644,7 +1644,7 @@ function informacionViernes() {
     (tituloTaller1 = '"¿CÓMO SER UN GRAN DESARROLLADOR DE APLICACIONES?"'),
     (gruposAsignados1 = "Todos los Semestres"),
     (horasTaller1 = "13:00 - 14:00"),
-    (imagenTaller1 = "img/talleristas/ids-taller.png"),
+    (imagenTaller1 = "img/talleristas/Ramiro_Gonzales.png"),
     (bioTallerista1 = "Subdirector de Arquitectura en ids  con más de 30 años de experiencia desarrollando software para prácticamente todas las plataformas comerciales existentes, desde mainframes hasta dispositivos móviles. Experto en Ingeniería de Software y Bases de Datos, especialista en diagnosticar sistemas deficientes. Ingeniero en Computación por parte de la UNAM y egresado de Maestría en Ciencia e Ingeniería de la Computación del IIMAS. Desde hace 15 años solo programa en powerpoint y cobra por eso. Odia el agilismo flácido.");
 
   // TARJETA 2 VIERNES
