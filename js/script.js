@@ -631,7 +631,7 @@ const linkLu1 = "https://meet.google.com/hwb-dpmp-hpb",
   LinkMi5 = "https://meet.google.com/qwi-bibf-adc",
   LinkJu1 = "https://meet.google.com/zig-fzft-gxz",
   LinkJu2 = "https://meet.google.com/zky-bmpj-xed",
-  LinkVi1 = "http://google.com",
+  LinkVi1 = "https://meet.google.com/gzz-mubn-wwb",
   LinkVi2 = "https://meet.google.com/zig-fzft-gxz",
   LinkVi3 = "https://meet.google.com/zky-bmpj-xed";
 
@@ -667,6 +667,7 @@ const tarjeta1TimeLu = "Nov 15 2021 09:50:00 GMT-06:00",
   tarjeta1TimeVi = "Nov 19 2021 12:50:00 GMT-06:00",
   tarjeta2TimeVi = "Nov 19 2021 14:50:00 GMT-06:00",
   tarjeta3TimeVi = "Nov 19 2021 15:50:00 GMT-06:00";
+
 
 // TIMER Y COUNTDOWN
 
