@@ -751,6 +751,7 @@ object-fit: cover;
 .img-persona {
     margin-top: 5px;
     max-width: 180px;
+    cursor: pointer;
 }
 
 /* nombre de la persona  */
